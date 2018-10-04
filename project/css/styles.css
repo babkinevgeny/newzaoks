@@ -178,4 +178,81 @@
     left: 30px;
     font-family: 'Open Sans', sans-serif; }
 
+.navigation {
+  width: 100%;
+  height: calc(100vh - 60px);
+  z-index: 2;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background: #fff;
+  display: none;
+  text-align: left;
+  font-family: 'Open Sans', Arial, sans-serif; }
+  .navigation__btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    background: url("../img/cancel--gray.svg") center no-repeat;
+    cursor: pointer;
+    z-index: 1;
+    -webkit-transition: -webkit-transform .5s ease-in-out;
+    transition: transform .5s ease-in-out; }
+    .navigation__btn:hover {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg); }
+  .navigation__column {
+    width: 376px;
+    margin: 0 15px;
+    position: relative; }
+    .navigation__column--right .navigation__title:last-child a {
+      color: #06abdd; }
+    .navigation__column--left {
+      width: 300px; }
+  .navigation__list {
+    margin: auto;
+    padding: 0;
+    list-style: none;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: row;
+    color: #06abdd; }
+  .navigation__underlist {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .navigation__title {
+    font-size: 24px;
+    margin-bottom: 40px;
+    padding-left: 30px;
+    border-left: 2px solid #06abdd; }
+    .navigation__title a {
+      text-decoration: none;
+      color: #8a8a8a;
+      webkit-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out;
+      display: inline-block; }
+      .navigation__title a:hover {
+        color: #06abdd;
+        transform: translateX(13px); }
+  .navigation__undertitle {
+    font-size: 16px;
+    margin-bottom: 10px;
+    webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out; }
+    .navigation__undertitle:first-child {
+      margin-top: 15px; }
+    .navigation__undertitle a {
+      color: #8a8a8a;
+      text-decoration: none;
+      webkit-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out; }
+    .navigation__undertitle:hover {
+      transform: translateX(8px); }
+      .navigation__undertitle:hover a {
+        color: #06abdd; }
+
 /*# sourceMappingURL=styles.css.map */
