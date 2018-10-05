@@ -1,0 +1,94 @@
+.navigation{
+  width: 100%;
+  height: calc(100vh - 60px);
+  z-index: 2;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background: #fff;
+  display: none;
+  text-align: left;
+  font-family: 'Open Sans', Arial, sans-serif;
+  &__btn{
+    position: absolute;
+    top:30px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    background: url('../img/cancel--gray.svg') center no-repeat;
+    cursor: pointer;
+    z-index: 1;
+    -webkit-transition: -webkit-transform .5s ease-in-out;
+    transition: transform .5s ease-in-out;
+    &:hover{
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+    }
+  }
+  &__column{
+    width: 376px;
+    margin: 0 15px;
+    position: relative;
+    &--right{
+    	.navigation__title:last-child a{
+			color: $color-blue;
+		}
+    }
+    &--left{
+    	width: 300px;
+    }
+  }
+  &__list{
+    margin: auto;
+    padding: 0;
+    list-style: none;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: row;
+    color: $color-blue;
+  }
+  &__underlist{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  &__title{
+    font-size: 24px;
+    margin-bottom: 40px;
+    padding-left: 30px;
+    border-left: 2px solid $color-blue;
+    a{
+    	text-decoration: none;
+    	color: $color-gray;
+    	webkit-transition: all .3s ease-in-out;
+    	transition: all .3s ease-in-out;
+    	display: inline-block;
+    	&:hover{
+    		color: $color-blue;
+    		transform: translateX(13px);
+    	}
+    }
+  }
+  &__undertitle{
+    font-size: 16px;
+    margin-bottom: 10px;
+    webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    &:first-child{
+      margin-top: 15px;
+    }
+    a{
+      color: $color-gray;
+      text-decoration: none;
+      webkit-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out;
+    }
+    &:hover{
+      transform: translateX(8px);
+      a{
+        color: $color-blue;
+      }
+    }
+  }
+}
