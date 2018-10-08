@@ -5,10 +5,10 @@
   position: absolute;
   top: 60px;
   left: 0;
-  background: #fff;
+  background: $color-white;
   display: none;
   text-align: left;
-  font-family: 'Open Sans', Arial, sans-serif;
+  @extend %font-family;
   &__btn{
     position: absolute;
     top:30px;

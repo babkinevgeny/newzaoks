@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  background: #8a8a8a;
+  background: $color-gray;
   box-sizing: border-box;
 
   &__inner {
@@ -79,14 +79,14 @@
       font-size: 20px;
       margin-bottom: 16px;
       padding-left: 0;
-      color: #eceded;
+      color: $color-lightgray;
 
       &--blue {
         a {
-          color: #eceded;
+          color: $color-lightgray;
 
           &:hover {
-            color: #eceded;
+            color: $color-lightgray;
           }
         }
       }
@@ -98,7 +98,7 @@
       margin-bottom: 15px;
 
       a {
-        color: #eceded;
+        color: $color-lightgray;
       }
 
       &:first-child {
@@ -135,12 +135,12 @@
     width: 100%;
     padding: 10px;
     font-size: 16px;
-    font-family: "Open Sans", Arial, sans-serif;
+    @extend %font-family;
     margin-bottom: 20px;
     box-sizing: border-box;
-    background-color: #eceded;
-    border: 2px solid rgba(255, 255, 255, 0.25);
-    color: #8a8a8a;
+    background-color: $color-lightgray;
+    border: 2px solid $color-gray;
+    color: $color-gray;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
@@ -150,7 +150,7 @@
     &:active,
     &:focus {
       outline: none;
-      background-color: lighten(#eceded, 5%);
+      background-color: lighten($color-lightgray, 5%);
     }
   }
 
@@ -171,21 +171,21 @@
   }
 
   input[type='submit'] {
-    color: #8a8a8a;
+    color: $color-gray;
 
     &:active,
     &:focus,
     &:hover {
       color: $color-blue;
-      background-color: darken(#eceded, 5%);
+      background-color: darken($color-lightgray, 5%);
     }
   }
 
   &__title {
-    color: #eceded;
+    color: $color-lightgray;
     font-size: 22px;
     margin-bottom: 20px;
-    font-family: "Open Sans", Arial, sans-serif;
+    @extend %font-family;
   }
 }
 
@@ -213,9 +213,9 @@
 
   &__column {
     width: 34%;
-    color: #eceded;
+    color: $color-lightgray;
     font-size: 16px;
-    font-family: 'Open Sans', Arial, sans-serif;
+    @extend %font-family;
     display: flex;
     align-items: center;
     @include respond-to(md) {
@@ -238,7 +238,7 @@
           display: block;
           text-align: right;
           margin-bottom: 3px;
-          color: #fff;
+          color: $color-white;
           @include respond-to(md) {
             text-align: center;
           };
