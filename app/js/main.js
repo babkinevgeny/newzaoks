@@ -38,7 +38,8 @@ $(document).ready(function(){
   $('.bxslider').bxSlider({
     adaptiveHeight: true,
     pager: false,
-    pause: 1000
+    auto: true,
+    mode: 'fade'
   });
 
 	/*Показ меню при клике на гамбургер*/
