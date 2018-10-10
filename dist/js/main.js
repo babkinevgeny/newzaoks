@@ -37,7 +37,6 @@ function enableScroll() {
 $(document).ready(function(){
   $('.bxslider').bxSlider({
     adaptiveHeight: true,
-    pager: false,
     auto: true,
     mode: 'fade'
   });

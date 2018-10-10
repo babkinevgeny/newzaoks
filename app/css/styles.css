@@ -336,6 +336,40 @@ body {
   .main-slider .bx-wrapper {
     border: none;
     margin-bottom: 0; }
+    .main-slider .bx-wrapper .bx-pager {
+      position: relative;
+      bottom: 0;
+      padding: 0;
+      width: 75px;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .main-slider .bx-wrapper .bx-controls {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      margin-left: -webkit-calc(-960px/2);
+      margin-left: calc(-960px/2);
+      width: 960px;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      height: 90px; }
+    .main-slider .bx-wrapper .bx-controls-direction {
+      position: relative;
+      width: 95px; }
 
 .partners {
   padding: 23px 0 40px; }

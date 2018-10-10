@@ -12,5 +12,34 @@
   .bx-wrapper{
     border: none;
     margin-bottom: 0;
+    .bx-pager{
+      position: relative;
+      bottom: 0;
+      padding: 0;
+      width: 75px;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      align-items: center;
+    }
+    .bx-controls {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      margin-left: calc(-960px/2);
+      width: 960px;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      justify-content: space-between;
+      height: 90px;
+    }
+    .bx-controls-direction {
+      position: relative;
+      width: 95px;
+      .bx-prev{
+
+      }
+    }
   }
 }
