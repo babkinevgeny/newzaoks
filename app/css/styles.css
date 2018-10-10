@@ -324,8 +324,20 @@ body {
       .navigation__undertitle:hover a {
         color: #06abdd; }
 
-.partners {
+.main-slider {
   margin-top: 62px;
+  margin-bottom: 60px; }
+  .main-slider .bxslider {
+    height: 500px;
+    overflow: hidden; }
+    .main-slider .bxslider li {
+      width: 1920px;
+      height: 500px; }
+  .main-slider .bx-wrapper {
+    border: none;
+    margin-bottom: 0; }
+
+.partners {
   padding: 23px 0 40px; }
   .partners h2 {
     font-size: 20px;

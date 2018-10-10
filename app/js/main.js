@@ -35,6 +35,12 @@ function enableScroll() {
 }
 
 $(document).ready(function(){
+  $('.bxslider').bxSlider({
+    adaptiveHeight: true,
+    pager: false,
+    pause: 1000
+  });
+
 	/*Показ меню при клике на гамбургер*/
 	$('.hamburger').click(function(){
 		if($('.main-header .navigation').is(':visible')){

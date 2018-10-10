@@ -1,0 +1,16 @@
+.main-slider{
+  margin-top: 62px;
+  margin-bottom: 60px;
+  .bxslider{
+    height: 500px;
+    overflow: hidden;
+    li{
+      width: 1920px;
+      height: 500px;
+    }
+  }
+  .bx-wrapper{
+    border: none;
+    margin-bottom: 0;
+  }
+}
