@@ -1,8 +1,4 @@
 @charset "UTF-8";
-.main-header__item a, .main-header__item span, .main-header .search input, .navigation, .partners h2, .partners__btn, .partners__title, .navigation__list li .search input, .dropdown h1, .dropdown-title, .tools th, .popup .popup__link, .popup h1, .popup p, .hashtag__link, .form-footer input,
-.form-footer textarea, .form-footer__title, .bottom-line__column {
-  font-family: 'Open Sans', Arial, sans-serif; }
-
 body {
   margin: 0;
   padding: 0; }
@@ -146,17 +142,20 @@ body {
       font-size: 16px;
       line-height: 14px;
       text-decoration: none;
+      font-family: "Open Sans", Arial, sans-serif;
       color: #8a8a8a; }
     .main-header__item span {
       font-size: 16px;
       line-height: 14px;
       cursor: pointer;
+      font-family: "Open Sans", Arial, sans-serif;
       -webkit-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
       transition: all 0.3s ease; }
   .main-header .search input {
     padding: 5px;
     width: 0px;
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 16px;
     color: #8a8a8a;
     outline: none;
@@ -237,7 +236,8 @@ body {
   left: 0;
   background: #fff;
   display: none;
-  text-align: left; }
+  text-align: left;
+  font-family: "Open Sans", Arial, sans-serif; }
   .navigation__btn {
     position: absolute;
     top: 30px;
@@ -330,6 +330,7 @@ body {
   .partners h2 {
     font-size: 20px;
     line-height: 24px;
+    font-family: "Open Sans", Arial, sans-serif;
     text-transform: uppercase;
     margin-bottom: 23px;
     margin-top: 0;
@@ -355,6 +356,7 @@ body {
   .partners__btn {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    font-family: "Open Sans", Arial, sans-serif;
     text-align: center;
     font-size: 13px;
     color: #262626;
@@ -470,6 +472,7 @@ body {
       transition: all 0.3s ease; }
   .partners__title {
     opacity: 0;
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 16px;
     text-align: center;
     -webkit-transform: translateY(262px);
@@ -489,6 +492,7 @@ body {
           box-sizing: border-box;
   width: 100%;
   font-size: 16px;
+  font-family: "Open Sans", Arial, sans-serif;
   color: #8a8a8a;
   padding: 10px;
   background: #fff;
@@ -510,6 +514,7 @@ body {
   margin-top: 62px;
   padding: 0; }
   .dropdown h1 {
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 24px;
     text-align: center;
     padding: 20px 0; }
@@ -525,7 +530,8 @@ body {
     -webkit-transition: .25s;
     -o-transition: .25s;
     transition: .25s;
-    position: relative; }
+    position: relative;
+    font-family: "Open Sans", Arial, sans-serif; }
     .dropdown-title:hover {
       -webkit-transition: .25s;
       -o-transition: .25s;
@@ -642,6 +648,7 @@ body {
     .tools td:nth-child(2) {
       width: 250px; }
   .tools th {
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 18px;
     color: #06abdd;
     text-align: center;
@@ -677,6 +684,7 @@ body {
     color: #06abdd;
     font-size: 16px;
     text-decoration: none;
+    font-family: "Open Sans", Arial, sans-serif;
     margin-bottom: 16px; }
     .popup .popup__link:hover {
       color: #8a8a8a; }
@@ -686,11 +694,13 @@ body {
     color: #06abdd;
     font-weight: bold;
     padding: 0;
-    margin: 5px 0; }
+    margin: 5px 0;
+    font-family: "Open Sans", Arial, sans-serif; }
   .popup p {
     font-size: 16px;
     text-align: justify;
     text-indent: 20px;
+    font-family: "Open Sans", Arial, sans-serif;
     line-height: 1.5; }
   .popup__btn {
     position: absolute;
@@ -718,6 +728,7 @@ body {
   text-align: left; }
   .hashtag__link {
     color: #06abdd;
+    font-family: "Open Sans", Arial, sans-serif;
     text-decoration: none;
     line-height: 24px;
     font-size: 16px;
@@ -863,6 +874,7 @@ body {
     width: 100%;
     padding: 10px;
     font-size: 16px;
+    font-family: "Open Sans", Arial, sans-serif;
     margin-bottom: 20px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -896,7 +908,8 @@ body {
   .form-footer__title {
     color: #eceded;
     font-size: 22px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    font-family: "Open Sans", Arial, sans-serif; }
 
 .bottom-line {
   display: -webkit-box;
@@ -931,6 +944,7 @@ body {
     width: 34%;
     color: #eceded;
     font-size: 16px;
+    font-family: "Open Sans", Arial, sans-serif;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
