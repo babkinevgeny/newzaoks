@@ -66,6 +66,15 @@ body {
   .products .assortiment__item:nth-child(5) .assortiment__link:hover .assortiment__icon {
     background-position: 0 -1900px; }
 
+.body--parallax {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.93)), to(rgba(255, 255, 255, 0.93))), url("../img/body-parallax.jpg") top center repeat;
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.93), rgba(255, 255, 255, 0.93)), url("../img/body-parallax.jpg") top center repeat;
+  background: -o-linear-gradient(rgba(255, 255, 255, 0.93), rgba(255, 255, 255, 0.93)), url("../img/body-parallax.jpg") top center repeat;
+  background: linear-gradient(rgba(255, 255, 255, 0.93), rgba(255, 255, 255, 0.93)), url("../img/body-parallax.jpg") top center repeat;
+  background-attachment: fixed;
+  -webkit-background-size: contain;
+          background-size: contain; }
+
 .btn {
   padding: 13px 30px;
   border: 1px solid #06abdd;
