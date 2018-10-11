@@ -1,0 +1,30 @@
+.btn{
+  padding: 13px 30px;
+  border: 1px solid $color-blue;
+  box-sizing: border-box;
+  font-family: $font;
+  text-align: center;
+  font-size: 13px;
+  color: #262626;
+  text-decoration: none;
+  background: #fff;
+  font-weight: 600;
+  &:hover{
+    color: #000;
+    background: $color-lightgray;
+    border: 1px solid $color-lightgray;
+  }
+  &--transparent{
+    background: transparent;
+    color: #fff;
+    &:hover{
+      color: #fff;
+      background: $color-gray;
+      border: 1px solid $color-gray;
+    }
+    &:active{
+      background: transparent;
+      border: 1px solid $color-blue;
+    }
+  }
+}
