@@ -9,4 +9,25 @@ body{
     display: block;
     width: 157px;
   }
+  .assortiment{
+    $step: 0px;
+    @for $i from 1 to 6 {
+      &__item:nth-child(#{$i}){
+        .assortiment{
+          &__link{
+            .assortiment__icon{
+              background-position: 0 $step;
+              $step: $step - 100px;
+            }
+            &:hover{
+              .assortiment__icon{
+                background-position: 0 $step;
+                $step: $step - 100px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

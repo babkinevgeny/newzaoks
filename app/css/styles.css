@@ -8,6 +8,36 @@ body {
   display: block;
   width: 157px; }
 
+.services .assortiment__item:nth-child(1) .assortiment__link .assortiment__icon {
+  background-position: 0 0px; }
+
+.services .assortiment__item:nth-child(1) .assortiment__link:hover .assortiment__icon {
+  background-position: 0 -100px; }
+
+.services .assortiment__item:nth-child(2) .assortiment__link .assortiment__icon {
+  background-position: 0 -200px; }
+
+.services .assortiment__item:nth-child(2) .assortiment__link:hover .assortiment__icon {
+  background-position: 0 -300px; }
+
+.services .assortiment__item:nth-child(3) .assortiment__link .assortiment__icon {
+  background-position: 0 -400px; }
+
+.services .assortiment__item:nth-child(3) .assortiment__link:hover .assortiment__icon {
+  background-position: 0 -500px; }
+
+.services .assortiment__item:nth-child(4) .assortiment__link .assortiment__icon {
+  background-position: 0 -600px; }
+
+.services .assortiment__item:nth-child(4) .assortiment__link:hover .assortiment__icon {
+  background-position: 0 -700px; }
+
+.services .assortiment__item:nth-child(5) .assortiment__link .assortiment__icon {
+  background-position: 0 -800px; }
+
+.services .assortiment__item:nth-child(5) .assortiment__link:hover .assortiment__icon {
+  background-position: 0 -900px; }
+
 .btn {
   padding: 13px 30px;
   border: 1px solid #06abdd;
@@ -459,7 +489,7 @@ body {
 
 .assortiment {
   list-style: none;
-  margin: 0 auto;
+  margin: 20px auto;
   padding: 0;
   max-width: 1340px;
   display: -webkit-flex;
@@ -482,10 +512,11 @@ body {
       color: #06abdd; }
   .assortiment__icon {
     display: block;
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     margin: 0 auto 20px auto;
-    background: pink; }
+    background: pink;
+    background: url(../img/assortiment-sprite.png) no-repeat; }
   .assortiment__title {
     font-size: 16px;
     font-family: "Open Sans", Arial, sans-serif;
