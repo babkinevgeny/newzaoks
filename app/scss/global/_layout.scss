@@ -15,6 +15,10 @@ body{
   }
 }
 .services{
+  .text{
+    max-width: 80%;
+    margin: 40px auto;
+  }
   .assortiment{
     $step: 0px;
     @for $i from 1 to 6 {
