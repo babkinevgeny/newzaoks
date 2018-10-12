@@ -1,0 +1,27 @@
+blockquote {
+  background: linear-gradient(135deg, lighten(#06abdd,50%) 50%, lighten(#06abdd, 45%) 50%);
+  padding: 50px 30px;
+  text-align: center;
+  position: relative;
+  color: #000;
+  padding: 30px 50px;
+  font-family: $font;
+  p {
+    font-size: 22px;
+    margin-top: 30px;
+    font-weight: 300;
+    &:before {
+      content: "\201C";
+      font-size: 100px;
+      color: lighten(#06abdd, 30%);
+      font-family: serif;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  cite{
+    font-style: normal;
+  }
+}

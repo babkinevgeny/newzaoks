@@ -6,19 +6,25 @@ body{
 .services,
 .products{
   padding-bottom: 26px;
-  max-width: 1340px;
-  margin: 0 auto;
   .btn{
     margin: 0 auto;
     display: block;
     width: 157px;
   }
 }
-.services{
+
+.info{
+  border-bottom: 1px solid $color-lightgray;
   .text{
-    max-width: 80%;
+    max-width: 1100px;
     margin: 40px auto;
   }
+  blockquote{
+    max-width: 1100px;
+    margin: 0 auto 40px auto;
+  }
+}
+.services{
   .assortiment{
     $step: 0px;
     @for $i from 1 to 6 {
