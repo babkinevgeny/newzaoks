@@ -5,7 +5,9 @@ body {
 
 .services,
 .products {
-  padding-bottom: 26px; }
+  padding-bottom: 26px;
+  max-width: 1340px;
+  margin: 0 auto; }
   .services .btn,
   .products .btn {
     margin: 0 auto;
@@ -109,6 +111,12 @@ body {
   text-align: center;
   text-transform: uppercase;
   font-weight: normal; }
+
+.text {
+  font-style: 16px;
+  font-family: "Open Sans", Arial, sans-serif;
+  text-align: center;
+  line-height: 20px; }
 
 .undertitle {
   font-style: 16px;
