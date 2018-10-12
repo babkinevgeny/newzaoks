@@ -18,7 +18,7 @@ body {
     max-width: 1100px;
     margin: 40px auto; }
   .info blockquote {
-    max-width: 1100px;
+    width: 1340px;
     margin: 0 auto 40px auto; }
 
 .services .assortiment__item:nth-child(1) .assortiment__link .assortiment__icon {
@@ -141,7 +141,9 @@ blockquote {
   position: relative;
   color: #000;
   padding: 30px 50px;
-  font-family: "Open Sans", Arial, sans-serif; }
+  font-family: "Open Sans", Arial, sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
   blockquote p {
     font-size: 22px;
     margin-top: 30px;
@@ -159,6 +161,13 @@ blockquote {
               transform: translateX(-50%); }
   blockquote cite {
     font-style: normal; }
+  blockquote a {
+    text-decoration: none;
+    color: #8a8a8a; }
+    blockquote a:hover {
+      color: #06abdd; }
+    blockquote a:active {
+      color: #0585ab; }
 
 .main-header {
   margin: 0;
