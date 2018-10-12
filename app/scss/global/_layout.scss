@@ -23,12 +23,12 @@ body{
           &__link{
             .assortiment__icon{
               background-position: 0 $step;
-              $step: $step - 100px;
+              $step: $step - 80px;
             }
             &:hover{
               .assortiment__icon{
                 background-position: 0 $step;
-                $step: $step - 100px;
+                $step: $step - 80px;
               }
             }
           }
@@ -42,19 +42,19 @@ body{
   border-top: 1px solid $color-lightgray;
   border-bottom: 1px solid $color-lightgray;
   .assortiment{
-    $step: -1000px;
+    $step: -800px;
     @for $i from 1 to 6 {
       &__item:nth-child(#{$i}){
         .assortiment{
           &__link{
             .assortiment__icon{
               background-position: 0 $step;
-              $step: $step - 100px;
+              $step: $step - 80px;
             }
             &:hover{
               .assortiment__icon{
                 background-position: 0 $step;
-                $step: $step - 100px;
+                $step: $step - 80px;
               }
             }
           }
