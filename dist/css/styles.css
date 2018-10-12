@@ -5,66 +5,72 @@ body {
 
 .services,
 .products {
-  padding-bottom: 26px; }
+  padding-bottom: 26px;
+  max-width: 1340px;
+  margin: 0 auto; }
   .services .btn,
   .products .btn {
     margin: 0 auto;
     display: block;
     width: 157px; }
 
+.services .text {
+  max-width: 80%;
+  margin: 40px auto; }
+
 .services .assortiment__item:nth-child(1) .assortiment__link .assortiment__icon {
   background-position: 0 0px; }
 
 .services .assortiment__item:nth-child(1) .assortiment__link:hover .assortiment__icon {
-  background-position: 0 -100px; }
+  background-position: 0 -80px; }
 
 .services .assortiment__item:nth-child(2) .assortiment__link .assortiment__icon {
-  background-position: 0 -200px; }
+  background-position: 0 -160px; }
 
 .services .assortiment__item:nth-child(2) .assortiment__link:hover .assortiment__icon {
-  background-position: 0 -300px; }
+  background-position: 0 -240px; }
 
 .services .assortiment__item:nth-child(3) .assortiment__link .assortiment__icon {
-  background-position: 0 -400px; }
+  background-position: 0 -320px; }
 
 .services .assortiment__item:nth-child(3) .assortiment__link:hover .assortiment__icon {
-  background-position: 0 -500px; }
+  background-position: 0 -400px; }
 
 .services .assortiment__item:nth-child(4) .assortiment__link .assortiment__icon {
-  background-position: 0 -600px; }
+  background-position: 0 -480px; }
 
 .services .assortiment__item:nth-child(4) .assortiment__link:hover .assortiment__icon {
-  background-position: 0 -700px; }
+  background-position: 0 -560px; }
 
 .services .assortiment__item:nth-child(5) .assortiment__link .assortiment__icon {
-  background-position: 0 -800px; }
+  background-position: 0 -640px; }
 
 .services .assortiment__item:nth-child(5) .assortiment__link:hover .assortiment__icon {
-  background-position: 0 -900px; }
+  background-position: 0 -720px; }
 
 .products {
   border-top: 1px solid #eceded;
   border-bottom: 1px solid #eceded; }
   .products .assortiment__item:nth-child(1) .assortiment__link .assortiment__icon {
-    background-position: 0 -1000px; }
+    background-position: 0 -800px; }
   .products .assortiment__item:nth-child(1) .assortiment__link:hover .assortiment__icon {
-    background-position: 0 -1100px; }
+    background-position: 0 -880px; }
   .products .assortiment__item:nth-child(2) .assortiment__link .assortiment__icon {
-    background-position: 0 -1200px; }
+    background-position: 0 -960px; }
   .products .assortiment__item:nth-child(2) .assortiment__link:hover .assortiment__icon {
-    background-position: 0 -1300px; }
+    background-position: 0 -1040px; }
   .products .assortiment__item:nth-child(3) .assortiment__link .assortiment__icon {
-    background-position: 0 -1400px; }
+    background-position: 0 -1120px; }
   .products .assortiment__item:nth-child(3) .assortiment__link:hover .assortiment__icon {
-    background-position: 0 -1500px; }
+    background-position: 0 -1200px; }
   .products .assortiment__item:nth-child(4) .assortiment__link .assortiment__icon {
-    background-position: 0 -1600px; }
+    background-position: 0 -1280px; }
   .products .assortiment__item:nth-child(4) .assortiment__link:hover .assortiment__icon {
-    background-position: 0 -1700px; }
+    background-position: 0 -1360px; }
   .products .assortiment__item:nth-child(5) .assortiment__link .assortiment__icon {
-    background-position: 0 -1800px; }
+    background-position: 0 -1440px; }
   .products .assortiment__item:nth-child(5) .assortiment__link:hover .assortiment__icon {
-    background-position: 0 -1900px; }
+    background-position: 0 -1520px; }
 
 .body--parallax {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.93)), to(rgba(255, 255, 255, 0.93))), url("../img/body-parallax.jpg") top center repeat;
@@ -110,11 +116,18 @@ body {
   text-transform: uppercase;
   font-weight: normal; }
 
-.undertitle {
-  font-style: 16px;
+.text {
+  font-size: 16px;
   font-family: "Open Sans", Arial, sans-serif;
   text-align: center;
   line-height: 20px; }
+
+.undertitle {
+  font-size: 16px;
+  font-family: "Open Sans", Arial, sans-serif;
+  text-align: center;
+  line-height: 20px;
+  color: #06abdd; }
 
 .main-header {
   margin: 0;
@@ -548,8 +561,8 @@ body {
       color: #06abdd; }
   .assortiment__icon {
     display: block;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     margin: 0 auto 20px auto;
     background: pink;
     background: url(../img/assortiment-sprite.png) no-repeat; }
