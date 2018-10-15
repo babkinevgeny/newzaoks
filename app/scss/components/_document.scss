@@ -1,0 +1,53 @@
+.document{
+	width: 100%;
+	box-sizing: border-box;
+	border-collapse: collapse;
+	tr{
+		border: 1px solid #ddd;
+		box-sizing: border-box;
+		&:first-child{
+			border-top: none;
+		}
+		&:last-child{
+			border-bottom: none;
+		}
+	}
+	td{
+		vertical-align: middle;
+		padding: 10px;
+		border: none;
+		min-height: 56px;
+		box-sizing: border-box;
+		span{
+			font-size: 16px;
+			font-family: $font;
+			color: $color-gray;
+			font-weight: normal;
+			margin-left: 20px;
+		}
+	}
+	&__title{
+		font-size: 20px;
+		font-family: $color-gray;
+		color: $color-blue;
+    font-family: $font;
+		font-weight: normal;
+		text-align: left;
+	}
+	&__links{
+		text-align: right;
+		a{
+			display: inline-block;
+			width: 32px;
+			height: 32px;
+			margin-right: 20px;
+			&:first-child{
+				background: url(../img/eye.png) center center no-repeat;
+			}
+			&:last-child{
+				background: url(../img/download.png) center center no-repeat;
+				margin-right: 0;
+			}
+		}
+	}
+}

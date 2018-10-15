@@ -1,0 +1,118 @@
+.dropdown{
+  margin: 62px auto 20px auto;
+  padding: 0;
+  max-width: 1340px;
+  &-title{
+    width: 100%;
+    background: #fff;
+    margin: 0;
+    text-align: left;
+    font-size: 23px;
+    font-weight: lighter;
+    cursor: pointer;
+    color: black;
+    transition: .25s;
+    position: relative;
+    font-family: 'Open Sans', Arial, sans-serif;
+    &:hover{
+      transition: .25s;
+      color: $color-blue;
+    }
+    .container{
+      position: relative;
+      border-bottom: 1px solid #ddd;
+      line-height: 67px;
+      padding: 0;
+      .switch{
+        position: absolute;
+        right:10px;
+        top:50%;
+        margin-top:-15px;
+        box-sizing: border-box;
+      }
+    }
+    & > .container {
+      box-sizing: content-box;
+      padding: 0 10px;
+    }
+    & + .container {
+      box-sizing: content-box;
+      border-bottom: 1px solid #ddd;
+    }
+  }
+  &-item{
+    position: relative;
+    list-style-type: none;
+    &-content {
+      box-sizing: border-box;
+      display: none;
+      &-show{
+        display: block;
+        background: #fff;
+      }
+    }
+    &:nth-child(3) {
+      .catalog{
+        &-link{
+          flex-direction: column;
+        }
+        &-img{
+          margin-left: auto;
+          margin-right: auto;
+        }
+        &-undertitle{
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center;
+          padding-top: 0px;
+        }
+      }
+    }
+  }
+  &-anchor{
+    position: absolute;
+    top: -75px;
+  }
+}
+
+.switch {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+  padding: 2px;
+  width: 60px;
+  height: 30px;
+  background-color: #dddddd;
+  border-radius: 60px;
+  &-bg,
+  &-btn{
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    bottom: 1px;
+  }
+  &-bg{
+    right: 1px;
+    background-color: #f1f1f1;
+    border-radius: 60px;
+    transition: background 0.4s;
+  }
+  &-btn{
+    width: 28px;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s;
+  }
+  &-checked{
+    .switch-bg{
+      background-color: $color-blue;
+    }
+    .switch-btn{
+      transform: translateX(30px);
+    }
+  }
+}
