@@ -84,6 +84,10 @@ body {
   -webkit-background-size: contain;
           background-size: contain; }
 
+.about {
+  max-width: 1340px;
+  margin: 82px auto 0 auto; }
+
 .btn {
   padding: 13px 30px;
   border: 1px solid #06abdd;
@@ -119,14 +123,19 @@ body {
   font-family: "Open Sans", Arial, sans-serif;
   color: #06abdd;
   text-align: center;
-  text-transform: uppercase;
   font-weight: normal; }
+  .title--uppercase {
+    text-transform: uppercase; }
 
 .text {
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Open Sans", Arial, sans-serif;
-  text-align: center;
-  line-height: 20px; }
+  line-height: 1.4; }
+  .text--center {
+    text-align: center; }
+  .text--left {
+    text-align: left;
+    text-indent: 40px; }
 
 .undertitle {
   font-size: 16px;
@@ -171,6 +180,17 @@ blockquote {
       color: #06abdd; }
     blockquote a:active {
       color: #0585ab; }
+
+.list {
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: "Open Sans", Arial, sans-serif;
+  text-align: justify;
+  text-indent: 40px;
+  margin: 0;
+  padding: 0; }
+  .list--ordered {
+    list-style-position: inside; }
 
 .main-header {
   margin: 0;

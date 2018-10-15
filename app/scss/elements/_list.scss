@@ -1,0 +1,12 @@
+.list{
+		font-size: 18px;
+		line-height: 1.4;
+		font-family: $font;
+		text-align: justify;
+		text-indent: 40px;
+		margin: 0;
+		padding: 0;
+    &--ordered{
+      list-style-position: inside;
+    }
+	}

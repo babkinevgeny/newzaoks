@@ -3,6 +3,8 @@
   font-family: $font;
   color: $color-blue;
   text-align: center;
-  text-transform: uppercase;
   font-weight: normal;
+  &--uppercase{
+    text-transform: uppercase;
+  }
 }
