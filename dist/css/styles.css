@@ -95,7 +95,10 @@ body {
   color: #262626;
   text-decoration: none;
   background: #fff;
-  font-weight: 600; }
+  font-weight: 600;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
   .btn:hover {
     color: #000;
     background: #eceded;
@@ -1029,7 +1032,7 @@ blockquote {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  background: #8a8a8a;
+  background: #eceded;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
   .main-footer__inner {
@@ -1104,17 +1107,15 @@ blockquote {
       font-size: 20px;
       margin-bottom: 16px;
       padding-left: 0;
-      color: #eceded; }
+      color: #8a8a8a; }
       .main-footer .navigation__title--blue a {
-        color: #eceded; }
-        .main-footer .navigation__title--blue a:hover {
-          color: #eceded; }
+        color: #8a8a8a; }
     .main-footer .navigation__undertitle {
       font-size: 16px;
       line-height: 16px;
       margin-bottom: 15px; }
       .main-footer .navigation__undertitle a {
-        color: #eceded; }
+        color: #8a8a8a; }
       .main-footer .navigation__undertitle:first-child {
         margin-top: 10px; }
 
@@ -1160,12 +1161,24 @@ blockquote {
     margin-bottom: 20px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    background-color: #eceded;
-    border: 2px solid #8a8a8a;
+    background-color: #fff;
+    border: 1px solid #bdbdbd;
     color: #8a8a8a;
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease; }
+    .form-footer input::-webkit-input-placeholder,
+    .form-footer textarea::-webkit-input-placeholder {
+      color: #d2d4d4; }
+    .form-footer input::-moz-placeholder,
+    .form-footer textarea::-moz-placeholder {
+      color: #d2d4d4; }
+    .form-footer input::-ms-input-placeholder,
+    .form-footer textarea::-ms-input-placeholder {
+      color: #d2d4d4; }
+    .form-footer input::placeholder,
+    .form-footer textarea::placeholder {
+      color: #d2d4d4; }
     .form-footer input:active, .form-footer input:focus,
     .form-footer textarea:active,
     .form-footer textarea:focus {
@@ -1224,7 +1237,7 @@ blockquote {
         padding: 20px; } }
   .bottom-line__column {
     width: 34%;
-    color: #eceded;
+    color: #8a8a8a;
     font-size: 16px;
     font-family: "Open Sans", Arial, sans-serif;
     display: -webkit-box;
@@ -1257,7 +1270,7 @@ blockquote {
         display: block;
         text-align: right;
         margin-bottom: 3px;
-        color: #fff; }
+        color: #8a8a8a; }
         @media screen and (max-width: 768px) {
           .bottom-line__column--right .block a {
             text-align: center; } }
