@@ -1,0 +1,41 @@
+.advantages{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  &__item{
+    padding-left: 72px;
+    width: 25%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    position: relative;
+    &::before{
+      content: '';
+      display: block;
+      width: 72px;
+      height: 72px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: url(../img/advantages-sprite.png) no-repeat;
+    }
+    $step: 0px;
+		@for $i from 1 to 9{
+			&:nth-child(#{$i}){
+        &::before{
+          background-position: $step 0;
+  				$step: $step - 72px;
+        }
+			}
+		}
+    .text{
+      font-size: 14px;
+      margin-left: 10px;
+    }
+    .title{
+      text-align: left;
+      margin-left: 10px;
+    }
+  }
+}
