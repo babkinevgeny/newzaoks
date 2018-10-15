@@ -9,6 +9,7 @@
   text-decoration: none;
   background: #fff;
   font-weight: 600;
+  transition: $animation;
   &:hover{
     color: #000;
     background: $color-lightgray;

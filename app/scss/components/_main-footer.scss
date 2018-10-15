@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  background: $color-gray;
+  background: $color-lightgray;
   box-sizing: border-box;
 
   &__inner {
@@ -79,15 +79,11 @@
       font-size: 20px;
       margin-bottom: 16px;
       padding-left: 0;
-      color: $color-lightgray;
+      color: $color-gray;
 
       &--blue {
         a {
-          color: $color-lightgray;
-
-          &:hover {
-            color: $color-lightgray;
-          }
+          color: $color-gray;
         }
       }
     }
@@ -98,7 +94,7 @@
       margin-bottom: 15px;
 
       a {
-        color: $color-lightgray;
+        color: $color-gray;
       }
 
       &:first-child {
@@ -138,14 +134,13 @@
     font-family: $font;
     margin-bottom: 20px;
     box-sizing: border-box;
-    background-color: $color-lightgray;
-    border: 2px solid $color-gray;
+    background-color: #fff;
+    border: 1px solid lighten($color-gray, 20%);
     color: $color-gray;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+    transition: $animation;
+    &::placeholder{
+        color: darken($color-lightgray, 10%);
+    }
 
     &:active,
     &:focus {
@@ -213,7 +208,7 @@
 
   &__column {
     width: 34%;
-    color: $color-lightgray;
+    color: $color-gray;
     font-size: 16px;
     font-family: $font;
     display: flex;
@@ -238,7 +233,7 @@
           display: block;
           text-align: right;
           margin-bottom: 3px;
-          color: $color-white;
+          color: $color-gray;
           @include respond-to(md) {
             text-align: center;
           };
