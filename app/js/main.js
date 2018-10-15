@@ -86,7 +86,7 @@ $(document).ready(function(){
 	    $(this).children('.container').children('.switch').addClass('switch-checked');
 	    $('.dropdown-title + .container > .dropdown-item-content').slideUp();
 	    $(this).siblings('.container').children('.dropdown-item-content').slideDown();
-	    $(this).siblings('.container').css('border-bottom', '1px solid #ddd');
+	    $(this).siblings('.container').css('border-bottom', '1px solid #eceded');
 	  }
 	});
 });

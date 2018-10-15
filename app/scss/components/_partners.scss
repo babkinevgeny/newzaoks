@@ -138,36 +138,6 @@
 	}
 }
 
-.tools{
-	border-collapse: collapse;
-	width: 100%;
-	td{
-		border: 1px solid #dedede;
-		padding: 5px 10px;
-		text-align: center;
-		vertical-align: middle;
-		img{
-			max-width: 100%;
-		}
-		&:first-child{
-			width:280px;
-		}
-		&:nth-child(2){
-			width: 250px;
-		}
-	}
-	th{
-		font-family: $font;
-		font-size: 18px;
-		color: $color-blue;
-		text-align: center;
-		border: 1px solid #dedede;
-		padding: 15px 10px;
-		vertical-align: middle;
-
-	}
-}
-
 .popup{
 	max-width: 750px;
 	height: 400px;

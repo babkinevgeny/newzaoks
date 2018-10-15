@@ -13,14 +13,14 @@
     color: black;
     transition: .25s;
     position: relative;
-    font-family: 'Open Sans', Arial, sans-serif;
+    font-family: $font;
     &:hover{
       transition: .25s;
       color: $color-blue;
     }
     .container{
       position: relative;
-      border-bottom: 1px solid #ddd;
+      border-bottom: 1px solid $color-lightgray;
       line-height: 67px;
       padding: 0;
       .switch{
@@ -37,7 +37,7 @@
     }
     & + .container {
       box-sizing: content-box;
-      border-bottom: 1px solid #ddd;
+      border-bottom: 1px solid $color-lightgray;
     }
   }
   &-item{
@@ -84,7 +84,7 @@
   padding: 2px;
   width: 60px;
   height: 30px;
-  background-color: #dddddd;
+  background-color: $color-lightgray;
   border-radius: 60px;
   &-bg,
   &-btn{
@@ -113,6 +113,41 @@
     }
     .switch-btn{
       transform: translateX(30px);
+    }
+  }
+}
+
+.tools{
+	border-collapse: collapse;
+	width: 100%;
+  font-family: $font;
+	td{
+		border: 1px solid $color-lightgray;
+		padding: 5px 10px;
+		text-align: center;
+		vertical-align: middle;
+		img{
+			max-width: 100%;
+		}
+		&:first-child{
+			width:280px;
+		}
+		&:nth-child(2){
+			width: 250px;
+		}
+	}
+	th{
+		font-size: 18px;
+		color: $color-blue;
+		text-align: center;
+		border: 1px solid $color-lightgray;
+    border-top: none;
+		padding: 15px 10px;
+		vertical-align: middle;
+	}
+  tr:last-child{
+    td{
+      border-bottom: none;
     }
   }
 }

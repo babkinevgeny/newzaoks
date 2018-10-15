@@ -88,6 +88,9 @@ body {
   max-width: 1340px;
   margin: 82px auto 0 auto; }
 
+.dropdown--technical {
+  margin-top: 82px !important; }
+
 .btn {
   padding: 13px 30px;
   border: 1px solid #06abdd;
@@ -814,29 +817,6 @@ blockquote {
     border: 2px solid #06abdd;
     outline: none; }
 
-.tools {
-  border-collapse: collapse;
-  width: 100%; }
-  .tools td {
-    border: 1px solid #dedede;
-    padding: 5px 10px;
-    text-align: center;
-    vertical-align: middle; }
-    .tools td img {
-      max-width: 100%; }
-    .tools td:first-child {
-      width: 280px; }
-    .tools td:nth-child(2) {
-      width: 250px; }
-  .tools th {
-    font-family: "Open Sans", Arial, sans-serif;
-    font-size: 18px;
-    color: #06abdd;
-    text-align: center;
-    border: 1px solid #dedede;
-    padding: 15px 10px;
-    vertical-align: middle; }
-
 .popup {
   max-width: 750px;
   height: 400px;
@@ -1220,7 +1200,7 @@ blockquote {
     -o-transition: .25s;
     transition: .25s;
     position: relative;
-    font-family: 'Open Sans', Arial, sans-serif; }
+    font-family: "Open Sans", Arial, sans-serif; }
     .dropdown-title:hover {
       -webkit-transition: .25s;
       -o-transition: .25s;
@@ -1228,7 +1208,7 @@ blockquote {
       color: #06abdd; }
     .dropdown-title .container {
       position: relative;
-      border-bottom: 1px solid #ddd;
+      border-bottom: 1px solid #eceded;
       line-height: 67px;
       padding: 0; }
       .dropdown-title .container .switch {
@@ -1245,7 +1225,7 @@ blockquote {
     .dropdown-title + .container {
       -webkit-box-sizing: content-box;
               box-sizing: content-box;
-      border-bottom: 1px solid #ddd; }
+      border-bottom: 1px solid #eceded; }
   .dropdown-item {
     position: relative;
     list-style-type: none; }
@@ -1286,7 +1266,7 @@ blockquote {
   padding: 2px;
   width: 60px;
   height: 30px;
-  background-color: #dddddd;
+  background-color: #eceded;
   -webkit-border-radius: 60px;
           border-radius: 60px; }
   .switch-bg, .switch-btn {
@@ -1319,6 +1299,32 @@ blockquote {
     -webkit-transform: translateX(30px);
         -ms-transform: translateX(30px);
             transform: translateX(30px); }
+
+.tools {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: "Open Sans", Arial, sans-serif; }
+  .tools td {
+    border: 1px solid #eceded;
+    padding: 5px 10px;
+    text-align: center;
+    vertical-align: middle; }
+    .tools td img {
+      max-width: 100%; }
+    .tools td:first-child {
+      width: 280px; }
+    .tools td:nth-child(2) {
+      width: 250px; }
+  .tools th {
+    font-size: 18px;
+    color: #06abdd;
+    text-align: center;
+    border: 1px solid #eceded;
+    border-top: none;
+    padding: 15px 10px;
+    vertical-align: middle; }
+  .tools tr:last-child td {
+    border-bottom: none; }
 
 .document {
   width: 100%;
