@@ -96,3 +96,44 @@ body{
     padding-left: 40px;
   }
 }
+.popupform{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  &__confidential{
+    border: 1px solid $color-lightgray;
+    padding: 20px;
+  }
+}
+
+.main-form{
+  max-width: 500px;
+  margin: auto;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  .text{
+    text-align: center;
+    font-size: 14px;
+    color: $color-gray;
+  }
+  .input,
+  .textarea,
+  label,
+  .confidentiality,
+  .submit{
+    margin: 0 auto 20px auto;
+  }
+  input[type="file"]{
+    display: none;
+  }
+  .confidentiality{
+    font-size: 9px;
+    font-family: $font;
+    color: $color-gray;
+    a{
+      color: $color-gray;
+    }
+  }
+}

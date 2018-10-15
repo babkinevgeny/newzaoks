@@ -1,0 +1,24 @@
+.label{
+  &--file{
+    width: 400px;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 22px;
+    height: 50px;
+    padding: 13px 20px;
+    color: #fff;
+    border-radius: 4px;
+    outline: 0;
+    font-family: $font;
+    background: $color-blue;
+    text-align: center;
+    transition: $animation;
+    &:hover{
+      background: lighten($color-blue, 5%);
+    }
+    &:active{
+      background: darken($color-blue, 5%);
+    }
+  }
+}

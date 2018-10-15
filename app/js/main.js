@@ -58,6 +58,34 @@ $(document).ready(function(){
 	  enableScroll();
 	});
 
+  /*Открытие формы*/
+  $('.main-header__form').click(function(){
+    if($('.popupform').is(':visible')){
+     $('.popupform').fadeOut();
+     enableScroll();
+   } else {
+      $('.popupform').fadeIn();
+     disableScroll();
+   }
+ });
+
+ /*Закрытие формы*/
+ $('.popupform__btn').click(function(){
+    $('.popupform').fadeOut();
+    enableScroll();
+});
+
+  /*Открытие политики конфиденциальности*/
+  // $('.confidentiality a').click(function(){
+  //   preventDefault();
+	//   $('.popupform__confidential').fadeIn();
+	// });
+  //
+  // /*Закрытие политики конфиденциальности*/
+  // $('.popupform__confidential_btn').click(function(){
+	//   $('.popupform__confidential').fadeOut();
+	// });
+
  /*Открытие попапа при клике на блок партнера*/
   $('.partners__item').click(function(){
  		let partnersIndex = $(this).index();

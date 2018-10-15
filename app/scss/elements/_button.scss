@@ -1,4 +1,4 @@
-.btn{
+.btn {
   padding: 13px 30px;
   border: 1px solid $color-blue;
   box-sizing: border-box;
@@ -10,22 +10,59 @@
   background: #fff;
   font-weight: 600;
   transition: $animation;
-  &:hover{
+
+  &:hover {
     color: #000;
     background: $color-lightgray;
     border: 1px solid $color-lightgray;
   }
-  &--transparent{
+
+  &--transparent {
     background: transparent;
     color: #fff;
-    &:hover{
+
+    &:hover {
       color: #fff;
       background: $color-gray;
       border: 1px solid $color-gray;
     }
-    &:active{
+
+    &:active {
       background: transparent;
       border: 1px solid $color-blue;
     }
+  }
+}
+
+.submit {
+  cursor: pointer;
+  width: 400px;
+  box-sizing: border-box;
+  font-size: 18px;
+  line-height: 20px;
+  height: 50px;
+  padding: 13px 20px;
+  color: #fff;
+  border: none;
+  box-shadow: none;
+  border-radius: 4px;
+  outline: none;
+  font-family: $font;
+  background: $color-blue;
+  transition: $animation;
+  &::placeholder {
+    color: lighten($color-gray, 10%);
+  }
+
+  &:hover {
+    background: lighten($color-blue, 5%);
+  }
+
+  &:active {
+    background: darken($color-blue, 5%);
+  }
+
+  &:focus {
+    border-color: $color-blue;
   }
 }

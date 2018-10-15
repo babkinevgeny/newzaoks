@@ -1,0 +1,65 @@
+.popupform{
+  display: none;
+  position: fixed;
+  top: 60px;
+  z-index: 8;
+  left: 0;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  &__btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    background: url(../img/cancel--gray.svg) center no-repeat;
+    cursor: pointer;
+    z-index: 1;
+    -webkit-transition: -webkit-transform .5s ease-in-out;
+    transition: -webkit-transform .5s ease-in-out;
+    -o-transition: transform .5s ease-in-out;
+    transition: transform .5s ease-in-out;
+    transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+    &:hover{
+      -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      transform: rotate(180deg);
+    }
+  }
+  // &__confidential{
+  //   display: none;
+  //   position: absolute;
+  //   top:50%;
+  //   margin-top: -400px;
+  //   left: 50%;
+  //   margin-left: -400px;
+  //   max-width: 800px;
+  //   max-height: 800px;
+  //   overflow-y: scroll;
+  //   background: #fff;
+  //   &_btn{
+  //     position: absolute;
+  //     top: 20px;
+  //     right: 20px;
+  //     width: 30px;
+  //     height: 30px;
+  //     background: url(../img/cancel--gray.svg) center no-repeat;
+  //     cursor: pointer;
+  //     z-index: 1;
+  //     -webkit-transition: -webkit-transform .5s ease-in-out;
+  //     transition: -webkit-transform .5s ease-in-out;
+  //     -o-transition: transform .5s ease-in-out;
+  //     transition: transform .5s ease-in-out;
+  //     transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+  //     &:hover{
+  //       -webkit-transform: rotate(180deg);
+  //       -ms-transform: rotate(180deg);
+  //       transform: rotate(180deg);
+  //     }
+  //   }
+  //   .text{
+  //     font-size: 12px;
+  //   }
+  // }
+}
