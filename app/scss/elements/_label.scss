@@ -1,5 +1,5 @@
-.label{
-  &--file{
+.label {
+  &--file {
     width: 400px;
     cursor: pointer;
     box-sizing: border-box;
@@ -14,11 +14,21 @@
     background: $color-blue;
     text-align: center;
     transition: $animation;
-    &:hover{
+
+    &:hover {
       background: lighten($color-blue, 5%);
     }
-    &:active{
+
+    &:active {
       background: darken($color-blue, 5%);
     }
   }
+}
+
+label.error {
+  font-family: $font;
+  font-size: 12px;
+  color: red;
+  margin-bottom: 10px;
+  margin-top: -10px;
 }
