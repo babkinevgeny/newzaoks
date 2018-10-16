@@ -1,6 +1,7 @@
 body{
   margin: 0;
   padding: 0;
+  padding-top: 62px;
 }
 
 .services,
@@ -82,13 +83,8 @@ body{
 
 .about{
   max-width: 1340px;
-  margin: 82px auto 0 auto;
-}
-
-.dropdown{
-  &--technical{
-    margin-top: 82px !important;
-  }
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .vacancies{
@@ -145,4 +141,11 @@ body{
   .text{
     font-size: 16px;
   }
+}
+
+.dropdown > .btn{
+  display: block;
+  width: 224px;
+  margin: 0 auto;
+  margin-top: 20px;
 }
