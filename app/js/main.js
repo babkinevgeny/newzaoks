@@ -93,19 +93,19 @@ $(document).ready(function() {
   });
 
   /*Проверка выпадающего списка*/
-  if ($('.switch').hasClass('switch-checked')) {
-    $('.switch-checked').parent().parent().siblings('.container').children('.dropdown-item-content').slideDown();
+  if ($('.switch').hasClass('switch--checked')) {
+    $('.switch--checked').parent().parent().siblings('.container').children('.dropdown-item-content').slideDown();
   }
   /*Открытие и закрытие выпадающего списка при клике*/
   $('.dropdown-title').click(function() {
     if ($(this).siblings('.container').children('.dropdown-item-content').is(':visible')) {
-      $(this).children('.container').children('.switch').removeClass('switch-checked');
+      $(this).children('.container').children('.switch').removeClass('switch--checked');
       $(this).siblings('.container').children('.dropdown-item-content').slideUp();
       $(this).siblings('.container').css('border-bottom', 'none');
     } else {
-      $('.dropdown-title .switch').removeClass('switch-checked');
+      $('.dropdown-title .switch').removeClass('switch--checked');
       $('.dropdown-title + .container').css('border-bottom', 'none');
-      $(this).children('.container').children('.switch').addClass('switch-checked');
+      $(this).children('.container').children('.switch').addClass('switch--checked');
       $('.dropdown-title + .container > .dropdown-item-content').slideUp();
       $(this).siblings('.container').children('.dropdown-item-content').slideDown();
       $(this).siblings('.container').css('border-bottom', '1px solid #eceded');
