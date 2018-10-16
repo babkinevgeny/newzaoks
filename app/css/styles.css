@@ -2232,9 +2232,6 @@ blockquote {
         -o-transition: all 0.3s ease;
         transition: all 0.3s ease; }
 
-body {
-  padding-top: 62px; }
-
 .switch {
   display: inline-block;
   position: relative;
