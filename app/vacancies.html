@@ -293,7 +293,20 @@
       </li>
     </ul>
   </section>
-
+  <section class="popupform">
+    <div class="popupform__btn"></div>
+    <form action="/mail.php" enctype="multipart/form-data" method="post" class="main-form" id="mainForm">
+      <p class="text">Чтобы экономить ваше время мы создали систему электронной подачи заказов. Заполните форму и наш специалист свяжется с вами в ближайшее время.</p>
+      <input type="text" class="input" name="organization" placeholder="Ваше имя или название организации">
+      <input type="text" class="input" name="email" placeholder="Ваш e-mail">
+      <input type="text" class="input" name="tel" placeholder="Ваш телефон">
+      <textarea name="message" id="" rows="6" placeholder="Текст сообщения" class="textarea"></textarea>
+      <label for="file" class="label--file">Загрузить файлы</label>
+      <input type="file" name="file" id="file">
+      <div class="confidential">Нажимая кнопку «Отправить заявку», Вы соглашаетесь на <a href="/confidentiality.html">обработку персональных данных</a></div>
+      <input type="submit" class="submit" value="Отправить заявку">
+    </form>
+  </section>
   <footer class="main-footer">
     <div class="main-footer__inner">
       <nav class="navigation">
