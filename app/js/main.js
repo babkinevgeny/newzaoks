@@ -129,6 +129,23 @@ $(document).ready(function() {
       $('.vacancies__info_item').eq(index).fadeIn();
     }
   });
+
+  $('.switch--checked').parent().siblings('.catalog__links').css('display', 'block');
+
+  $('.catalog__groupname').click(function() {
+    if( $(this).children('.switch').hasClass('switch--checked') ) {
+      $(this).siblings(".catalog__links").slideUp();
+      $(this).children('.switch').removeClass('switch--checked');
+      $(this).parent().removeClass('catalog__item--active');
+    } else {
+      $('.switch--checked').removeClass('switch--checked');
+      $('.catalog__links').slideUp();
+      $('.catalog__item--active').removeClass('catalog__item--active');
+      $(this).siblings('.catalog__links').slideDown();
+      $(this).children('.switch').addClass('switch--checked');
+      $(this).parent().addClass('catalog__item--active');
+    }
+  })
 });
 
 //Валидация формы #mainForm

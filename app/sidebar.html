@@ -9,6 +9,9 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/styles.css">
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+
 </head>
 
 <body class="body--parallax">
@@ -130,11 +133,13 @@
   <aside class="catalog">
     <h2 class="title">Каталог продукции</h2>
     <ul class="catalog__list">
-      <li>
-        <div class="catalog__groupname">Продукция</div>
-        <div class="switch switch--checked">
-          <span class="switch__bg"></span>
-          <span class="switch__btn"></span>
+      <li class="catalog__item catalog__item--active">
+        <div class="catalog__groupname">
+          Продукция
+          <div class="switch switch--checked">
+            <span class="switch__bg"></span>
+            <span class="switch__btn"></span>
+          </div>
         </div>
         <ul class="catalog__links">
           <li><a href="#">Валы, штоки, оси</a></li>
@@ -149,11 +154,13 @@
           <li><a href="#">Технологические металлоконструкции</a></li>
         </ul>
       </li>
-      <li>
-        <div class="catalog__groupname"><a href="">Механическая обработка</a></div>
-        <div class="switch">
-          <span class="switch__bg"></span>
-          <span class="switch__btn"></span>
+      <li class="catalog__item">
+        <div class="catalog__groupname">
+          Механическая обработка
+          <div class="switch">
+            <span class="switch__bg"></span>
+            <span class="switch__btn"></span>
+          </div>
         </div>
         <ul class="catalog__links">
           <li><a href="#">Фрезерные работы</a></li>
@@ -162,36 +169,39 @@
           <li><a href="#">Шлифовальные работы</a></li>
         </ul>
       </li>
-      <li>
-        <div class="catalog__groupname"><a href="">Лабораторные испытания</a></div>
-        <div class="switch">
-          <span class="switch__bg"></span>
-          <span class="switch__btn"></span>
+      <li class="catalog__item">
+        <div class="catalog__groupname">
+          Лабораторные испытания
+          <div class="switch">
+            <span class="switch__bg"></span>
+            <span class="switch__btn"></span>
+          </div>
         </div>
+
         <ul class="catalog__links">
           <li><a href="#">Хим. анализ металлов и сплавов</a></li>
           <li><a href="#">Механические испытания</a></li>
         </ul>
       </li>
-      <li>
+      <li class="catalog__item">
         <div class="catalog__groupname"><a href="#">Резка металла</a></div>
       </li>
-      <li>
+      <li class="catalog__item">
         <div class="catalog__groupname"><a href="">Гибка металла</a></div>
       </li>
-      <li>
+      <li class="catalog__item">
         <div class="catalog__groupname"><a href="">Термическая обработка</a></div>
       </li>
-      <li>
+      <li class="catalog__item">
         <div class="catalog__groupname"><a href="">Сварочные работы</a></div>
       </li>
-      <li>
+      <li class="catalog__item">
         <div class="catalog__groupname"><a href="">Слесарно-сборочные работы</a></div>
       </li>
-      <li>
+      <li class="catalog__item">
         <div class="catalog__groupname"><a href="">Нанесение покрытий</a></div>
       </li>
-      <li>
+      <li class="catalog__item">
         <div class="catalog__groupname"><a href="">Раработка чертежей и 3D-моделей</a></div>
       </li>
     </ul>
@@ -304,9 +314,5 @@
     </div>
   </footer>
 </body>
-
-<script src="js/libs.min.js"></script>
-<script src="js/main.js"></script>
-
 
 </html>

@@ -2157,27 +2157,36 @@ blockquote {
     list-style-type: none;
     margin: 0;
     padding: 0; }
-    .catalog__list > li {
-      position: relative;
-      border-bottom: 1px solid #eceded; }
-      .catalog__list > li .switch {
-        position: absolute;
-        right: 0;
-        top: 9px;
-        -webkit-box-sizing: border-box;
-                box-sizing: border-box;
-        width: 40px;
-        height: 20px; }
-        .catalog__list > li .switch__btn {
-          width: 18px;
-          height: 18px; }
-        .catalog__list > li .switch--checked .switch__btn {
-          -webkit-transform: translateX(20px);
-              -ms-transform: translateX(20px);
-                  transform: translateX(20px); }
+  .catalog__item {
+    position: relative;
+    border-bottom: 1px solid #eceded; }
+    .catalog__item .switch {
+      position: absolute;
+      right: 0;
+      top: 9px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      width: 40px;
+      height: 20px; }
+      .catalog__item .switch__btn {
+        width: 18px;
+        height: 18px; }
+      .catalog__item .switch--checked .switch__btn {
+        -webkit-transform: translateX(20px);
+            -ms-transform: translateX(20px);
+                transform: translateX(20px); }
+    .catalog__item--active .catalog__groupname {
+      color: #000; }
   .catalog__groupname {
     padding: 8px 0;
-    font-weight: 500; }
+    font-weight: 500;
+    cursor: pointer;
+    color: #8a8a8a; }
+    .catalog__groupname:hover {
+      color: #4a4a4a;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
     .catalog__groupname a {
       text-decoration: none;
       color: #8a8a8a; }
@@ -2191,7 +2200,8 @@ blockquote {
     margin: 0;
     padding: 0;
     padding-left: 20px;
-    padding-bottom: 5px; }
+    padding-bottom: 5px;
+    display: none; }
     .catalog__links > li {
       padding: 5px 0;
       line-height: 14px; }
