@@ -130,3 +130,62 @@ $(document).ready(function() {
     }
   });
 });
+
+//Валидация формы #mainForm
+$(function() {
+  $('#mainForm').validate({
+    rules: {
+      organization: {
+        required: true,
+        minlength: 3
+      },
+      email: {
+        required: true,
+        email: true
+      },
+      tel: {
+        required: true,
+        digits: true
+      },
+      message: {
+        required: true
+      }
+
+    },
+    messages: {
+      organization: {
+        required: 'Это поле обязательно для заполнения',
+        minlength: 'Введите не менее трех символов'
+      },
+      email: {
+        required: 'Это поле обязательно для заполнения',
+        email: 'Введите email в верном формате'
+      },
+      tel: {
+        required: 'Это поле обязательно для заполнения',
+        digits: 'Поле может содержать только цифры'
+      },
+      message: {
+        required: 'Это поле обязательно для заполнения'
+      }
+    },
+    submitHandler: function(form) {
+      submitMainForm();
+    }
+  });
+});
+
+//Отправка формы #mainForm
+function submitMainForm() {
+  $("#mainForm").ajaxSubmit({
+    type: "POST",
+    data: $("#mainForm").serialize(),
+    url: "./mail.php",
+    success: function() {
+      alert('Письмо отправлено');
+    },
+    error: function() {
+      alert("Ошибка");
+    }
+  });
+};
