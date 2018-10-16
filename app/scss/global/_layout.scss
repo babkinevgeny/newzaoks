@@ -100,10 +100,6 @@ body{
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  &__confidential{
-    border: 1px solid $color-lightgray;
-    padding: 20px;
-  }
 }
 
 .main-form{
@@ -125,15 +121,28 @@ body{
   .submit{
     margin: 0 auto 20px auto;
   }
+  label{
+    margin-bottom: 10px;
+  }
   input[type="file"]{
     display: none;
   }
-  .confidentiality{
+  .confidential{
     font-size: 9px;
     font-family: $font;
+    margin: auto;
     color: $color-gray;
+    margin-bottom: 10px;
     a{
       color: $color-gray;
     }
+  }
+}
+
+.confidentiality{
+  margin-top: 62px;
+  padding: 20px;
+  .text{
+    font-size: 16px;
   }
 }

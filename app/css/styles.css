@@ -100,9 +100,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .popupform__confidential {
-    border: 1px solid #eceded;
-    padding: 20px; }
 
 .main-form {
   max-width: 500px;
@@ -127,14 +124,24 @@ body {
   .main-form .confidentiality,
   .main-form .submit {
     margin: 0 auto 20px auto; }
+  .main-form label {
+    margin-bottom: 10px; }
   .main-form input[type="file"] {
     display: none; }
-  .main-form .confidentiality {
+  .main-form .confidential {
     font-size: 9px;
     font-family: "Open Sans", Arial, sans-serif;
-    color: #8a8a8a; }
-    .main-form .confidentiality a {
+    margin: auto;
+    color: #8a8a8a;
+    margin-bottom: 10px; }
+    .main-form .confidential a {
       color: #8a8a8a; }
+
+.confidentiality {
+  margin-top: 62px;
+  padding: 20px; }
+  .confidentiality .text {
+    font-size: 16px; }
 
 .input {
   width: 400px;
