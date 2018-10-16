@@ -507,7 +507,7 @@
   </section>
   <section class="popupform">
     <div class="popupform__btn"></div>
-    <form action="" class="main-form">
+    <form action="/mail.php" enctype="multipart/form-data" method="post" class="main-form" id="mainForm">
       <p class="text">Чтобы экономить ваше время мы создали систему электронной подачи заказов. Заполните форму и наш специалист свяжется с вами в ближайшее время.</p>
       <input type="text" class="input" name="organization" placeholder="Ваше имя или название организации">
       <input type="text" class="input" name="email" placeholder="Ваш e-mail">
@@ -715,5 +715,67 @@
 
 <script src="js/libs.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/form.min.js"></script>
+<script>
+  //Валидация формы #mainForm
+  $(function() {
+    $('#mainForm').validate({
+      rules: {
+        organization: {
+          required: true,
+          minlength: 3
+        },
+        email: {
+          required: true,
+          email: true
+        },
+        tel: {
+          required: true,
+          digits: true
+        },
+        message: {
+          required: true
+        }
+
+      },
+      messages: {
+        organization: {
+          required: 'Это поле обязательно для заполнения',
+          minlength: 'Введите не менее трех символов'
+        },
+        email: {
+          required: 'Это поле обязательно для заполнения',
+          email: 'Введите email в верном формате'
+        },
+        tel: {
+          required: 'Это поле обязательно для заполнения',
+          digits: 'Поле может содержать только цифры'
+        },
+        message: {
+          required: 'Это поле обязательно для заполнения'
+        }
+      },
+      submitHandler: function(form) {
+        submitMainForm();
+      }
+    });
+  });
+
+  //Отправка формы #mainForm
+  function submitMainForm() {
+    $("#mainForm").ajaxSubmit({
+      type: "POST",
+      data: $("#mainForm").serialize(),
+      url: "/mail.php",
+      success: function() {
+        alert('Письмо отправлено');
+      },
+      error: function() {
+        alert("Ошибка");
+      }
+    });
+  };
+</script>
 
 </html>
