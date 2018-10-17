@@ -626,7 +626,7 @@ blockquote {
       -ms-transform: rotate(180deg);
           transform: rotate(180deg); }
   .navigation__column {
-    width: 376px;
+    width: 303px;
     margin: 0 15px;
     position: relative; }
     .navigation__column--right .navigation__title:last-child a {
@@ -653,9 +653,9 @@ blockquote {
     margin: 0;
     padding: 0; }
   .navigation__title {
-    font-size: 24px;
-    margin-bottom: 40px;
-    padding-left: 30px;
+    font-size: 20px;
+    margin-bottom: 25px;
+    padding-left: 15px;
     border-left: 2px solid #06abdd; }
     .navigation__title a {
       text-decoration: none;
