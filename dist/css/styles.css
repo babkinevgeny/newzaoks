@@ -216,7 +216,8 @@ body {
   font-weight: 600;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+  cursor: pointer; }
   .btn:hover {
     color: #000;
     background: #eceded;
@@ -2158,13 +2159,14 @@ blockquote {
   background: #fff;
   font-family: "Open Sans", Arial, sans-serif;
   border-right: 1px solid #eceded;
-  padding: 10px 20px;
+  padding: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
   .catalog__list {
     list-style-type: none;
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    padding-bottom: 20px; }
   .catalog__item {
     position: relative;
     border-bottom: 1px solid #eceded; }
@@ -2235,6 +2237,28 @@ blockquote {
         -webkit-transition: all 0.3s ease;
         -o-transition: all 0.3s ease;
         transition: all 0.3s ease; }
+
+.worker {
+  display: none; }
+  .worker__img {
+    display: block;
+    margin: 15px auto;
+    -webkit-border-radius: 50%;
+            border-radius: 50%; }
+  .worker .text {
+    font-size: 16px;
+    color: #8a8a8a; }
+  .worker a {
+    text-align: center;
+    display: block;
+    color: #8a8a8a;
+    text-decoration: none;
+    margin-bottom: 15px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .worker a:hover {
+      color: #4a4a4a; }
 
 .switch {
   display: inline-block;

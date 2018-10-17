@@ -10,7 +10,7 @@
   background: #fff;
   font-weight: 600;
   transition: $animation;
-
+  cursor: pointer;
   &:hover {
     color: #000;
     background: $color-lightgray;

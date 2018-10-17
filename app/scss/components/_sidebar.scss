@@ -3,12 +3,14 @@
   background: #fff;
   font-family: $font;
   border-right: 1px solid $color-lightgray;
-  padding: 10px 20px;
+  padding: 20px;
   box-sizing: border-box;
+
   &__list{
     list-style-type: none;
     margin: 0;
     padding: 0;
+    padding-bottom: 20px;
   }
   &__item {
     position: relative;
@@ -86,6 +88,30 @@
         color: darken($color-gray, 25%);
         transition: $animation;
       }
+    }
+  }
+}
+
+.worker{
+  display: none;
+  &__img{
+    display: block;
+    margin: 15px auto;
+    border-radius: 50%;
+  }
+  .text{
+    font-size: 16px;
+    color: $color-gray;
+  }
+  a{
+    text-align: center;
+    display: block;
+    color: $color-gray;
+    text-decoration: none;
+    margin-bottom: 15px;
+    transition: $animation;
+    &:hover{
+      color: darken($color-gray, 25%);
     }
   }
 }

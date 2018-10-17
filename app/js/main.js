@@ -145,7 +145,15 @@ $(document).ready(function() {
       $(this).children('.switch').addClass('switch--checked');
       $(this).parent().addClass('catalog__item--active');
     }
-  })
+  });
+
+  $('.worker + .btn').click(function() {
+    if ($(this).siblings('.worker').is(':visible')) {
+      $(this).siblings('.worker').slideUp();
+    } else {
+      $(this).siblings('.worker').slideDown();
+    }
+  });
 });
 
 //Валидация формы #mainForm
