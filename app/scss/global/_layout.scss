@@ -143,9 +143,17 @@ body{
   }
 }
 
-.dropdown > .btn{
-  display: block;
-  width: 224px;
-  margin: 0 auto;
-  margin-top: 20px;
+.dropdown {
+  & > .btn{
+    display: block;
+    width: 224px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  &--technical{
+    .dropdown-item-content{
+      max-height: 423px;
+      overflow-y: scroll;
+    }
+  }
 }
