@@ -1,0 +1,71 @@
+footer.main-footer
+  .main-footer__inner
+    nav.navigation
+      .navigation__btn
+      ul.navigation__list
+        .navigation__column.navigation__column--left
+          li.navigation__title.navigation__title--blue
+            a(href='./contacts.html') Контакты
+          li.navigation__title
+            | О нас
+            ul.navigation__underlist
+              li.navigation__undertitle
+                a(href='./about.html') О компании
+              li.navigation__undertitle
+                a(href='https://zaoks.ru//technical-opportunities') Технические возможности
+              li.navigation__undertitle
+                a(href='./vacancies.html') Вакансии
+          li.navigation__title.navigation__title--blue
+            a(href='https://zaoks.ru/products') Продукция
+          li.navigation__title.navigation__title--blue
+            a(href='https://zaoks.ru/sales') Закупки
+        .navigation__column.navigation__column--center
+          li.navigation__title
+            | Услуги
+            ul.navigation__underlist
+              li.navigation__undertitle
+                a(href='https://zaoks.ru/cutting_metal') Резка металла
+              li.navigation__undertitle
+                a(href='https://zaoks.ru/bending') Гибка металла
+              li.navigation__undertitle
+                a(href='https://zaoks.ru/turning_works') Токарные работы
+              li.navigation__undertitle
+                a(href='https://zaoks.ru/milling_works') Фрезерные работы
+              li.navigation__undertitle
+                a(href='https://zaoks.ru/services/sborka') Слесарно-сборочные работы
+              li.navigation__undertitle
+                a(href='https://zaoks.ru/design_documentation') Раработка чертежей и 3D-моделей
+          li.navigation__title.navigation__title--blue
+            a(href='#') Лабораторные испытания
+          li.navigation__title.navigation__title--blue
+            a(href='https://zaoks.ru/delivery') Доставка
+    form.form-footer(action='#')
+      .form-footer__title Обратная связь
+      .form-footer__block
+        .form-footer__column.form-footer__column--left
+          input(type='text', placeholder='Ваше имя')
+          input(type='text', placeholder='Компания')
+        .form-footer__column.form-footer__column--right
+          input(type='text', placeholder='Телефон')
+          input(type='text', placeholder='E-mail')
+      textarea(name='', id='', cols='30', rows='4', placeholder='Текст заявки')
+      input(type='submit', value='Отправить')
+  .bottom-line
+    .bottom-line__inner
+      .bottom-line__column.bottom-line__column--left
+        img(src='img/logo-vertical.png', alt='Логотип', width='50')
+        p
+          | Полный цикл металлообработки 
+          br
+          | © Set Service Group 2016 - 2018
+          br
+          |  Все права защищены
+      .bottom-line__column.bottom-line__column--center
+        p
+          | 193318, г. Санкт-Петербург, ул. Ворошилова, 2, 
+          br
+          span +7(812) 627-15-16
+      .bottom-line__column.bottom-line__column--right
+        .block
+          a(href='mailto:info@zaoks.ru') info@zaoks.ru
+          // <div class="my_counters">{$counters.body}</div>
