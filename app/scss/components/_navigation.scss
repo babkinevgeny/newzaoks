@@ -57,7 +57,7 @@
   }
   &__title{
     font-size: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     padding-left: 15px;
     border-left: 2px solid $color-blue;
     a{
@@ -74,11 +74,11 @@
   }
   &__undertitle{
     font-size: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
     &:first-child{
-      margin-top: 15px;
+      margin-top: 10px;
     }
     a{
       color: $color-gray;

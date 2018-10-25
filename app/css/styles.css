@@ -579,7 +579,7 @@ blockquote {
     font-weight: normal;
     line-height: 16px;
     position: absolute;
-    top: -1px;
+    top: -2px;
     left: 30px;
     font-family: 'Open Sans', sans-serif; }
 
@@ -644,7 +644,7 @@ blockquote {
     padding: 0; }
   .navigation__title {
     font-size: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     padding-left: 15px;
     border-left: 2px solid #06abdd; }
     .navigation__title a {
@@ -662,13 +662,13 @@ blockquote {
                 transform: translateX(13px); }
   .navigation__undertitle {
     font-size: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     webkit-transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out; }
     .navigation__undertitle:first-child {
-      margin-top: 15px; }
+      margin-top: 10px; }
     .navigation__undertitle a {
       color: #8a8a8a;
       text-decoration: none;
