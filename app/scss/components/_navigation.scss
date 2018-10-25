@@ -31,8 +31,8 @@
     position: relative;
     &--right{
     	.navigation__title:last-child a{
-			color: $color-blue;
-		}
+			  color: $color-blue;
+		  }
     }
     &--left{
     	width: 300px;
@@ -47,6 +47,8 @@
     display: flex;
     flex-direction: row;
     color: $color-blue;
+    position: relative;
+    padding-top: 60px;
   }
   &__underlist{
     list-style: none;
@@ -89,6 +91,37 @@
       a{
         color: $color-blue;
       }
+    }
+  }
+  .search{
+    position: absolute;
+    top:0;
+    left: 15px;
+    input{
+      width: 300px;
+      height: 42px;
+      border: 2px solid $color-lightgray;
+      padding: 10px 40px 10px 20px;
+      outline: none;
+      background: url(../img/search--gray.png) no-repeat;
+      -webkit-background-size: 22px 22px;
+      background-size: 22px 22px;
+      background-position: 265px 8px;
+      font-family: $font;
+      font-size: 16px;
+  		color: $color-gray;
+  		&::placeholder{
+  			color: lighten($color-gray, 25%);
+  		}
+  		&:active,
+  		&:focus{
+  			border: 2px solid $color-blue;
+  			outline:none;
+        background: url(../img/search--blue.png) no-repeat;
+        -webkit-background-size: 22px 22px;
+        background-size: 22px 22px;
+        background-position: 265px 8px;
+  		}
     }
   }
 }
