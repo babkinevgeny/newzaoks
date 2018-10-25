@@ -12,7 +12,8 @@ let gulp = require('gulp'),
   autoprefixer = require('gulp-autoprefixer'),
   gutil = require('gulp-util'),
   ftp = require('vinyl-ftp'),
-  pug = require('gulp-pug');
+  pug = require('gulp-pug'),
+  htmlbeautify = require('gulp-html-beautify');
 
 gulp.task('scss', function() {
   return gulp.src('app/scss/*.scss')
@@ -70,6 +71,12 @@ gulp.task('pug', function () {
   .pipe(gulp.dest('app'))
 });
 
+gulp.task('htmlbeautify', function() {
+  return gulp.src('app/*.html')
+    .pipe(htmlbeautify())
+    .pipe(gulp.dest('app'))
+});
+
 gulp.task('clean', function() {
   return del.sync('dist');
 });
@@ -88,7 +95,7 @@ gulp.task('img', function() {
     .pipe(gulp.dest('dist/img'));
 });
 
-gulp.task('build', ['clean', 'img', 'scss', 'scripts'], function() {
+gulp.task('build', ['clean', 'img', 'scss', 'scripts', 'htmlbeautify'], function() {
 
   let buildCss = gulp.src([
       'app/css/styles.css',
