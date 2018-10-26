@@ -66,7 +66,7 @@ gulp.task('watch', ['browser-sync', 'css-libs', 'scripts', 'pug'], function() {
 });
 
 gulp.task('pug', function () {
-  return gulp.src('app/pug/global/*.pug')
+  return gulp.src('app/pug/global/**/*.pug')
   .pipe(pug({pretty: true}))
   .pipe(gulp.dest('app'))
 });
@@ -102,6 +102,9 @@ gulp.task('build', ['clean', 'img', 'scss', 'scripts', 'pug'], function() {
 
   let buildJs = gulp.src('app/js/**/*')
     .pipe(gulp.dest('dist/js'))
+
+  let buildHtmlAbout = gulp.src('app/about/*.html')
+    .pipe(gulp.dest('dist/about'));
 
   let buildHtml = gulp.src('app/*.html')
     .pipe(gulp.dest('dist'));
