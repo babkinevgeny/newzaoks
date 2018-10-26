@@ -41,7 +41,8 @@ gulp.task('scripts', function() {
       'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
       'app/libs/bxslider-4/dist/jquery.bxslider.min.js',
       'app/libs/jquery.validate/jquery.validate.min.js',
-      'app/libs/form/form.min.js'
+      'app/libs/form/form.min.js',
+      'app/libs/fotorama/fotorama.js'
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
