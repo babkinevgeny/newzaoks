@@ -1,0 +1,83 @@
+.inner-page{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  width: 100%;
+}
+.main{
+  width: calc(100vw - 324px);
+  padding: 20px;
+  &__top{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+  }
+  .fotorama{
+    margin-right: 50px;
+    &__wrapper{
+      max-width: 400px;
+      max-height: 275px;
+    }
+  }
+  &__info{
+    .text{
+      margin-top: 0;
+      font-size: 16px;
+    }
+  }
+  &__articles{
+    border: 1px solid $color-lightgray;
+    margin-top: 50px;
+    position: relative;
+    background: #fff;
+    padding: 20px;
+  }
+  &__article{
+    display: none;
+    .text{
+      font-size: 16px;
+    }
+    .list{
+      font-size: 16px;
+    }
+    &--active{
+      display: block;
+    }
+  }
+  &__buttons{
+    position: absolute;
+    left: -1px;
+    top: -45px;
+    div{
+      display: block;
+      float: left;
+      height: 45px;
+      padding: 13px 20px;
+      min-width: 1px;
+      box-sizing: border-box;
+      font-family: $font;
+      text-align: center;
+      text-indent: 0;
+      font-size: 16px;
+      font-weight: 400;
+      color: $color-gray;
+      background: lighten($color-lightgray, 5%);
+      border: 1px solid $color-lightgray;
+      border-right: none;
+      font-weight: 400;
+      cursor: pointer;
+      line-height: 16px;
+      transition: $animation;
+      &:last-child{
+        border-right: 1px solid $color-lightgray;
+      }
+      &.active{
+        border-bottom-color: $color-blue;
+        background: #fff;
+      }
+      &:hover{
+        background: $color-lightgray;
+      }
+    }
+  }
+}

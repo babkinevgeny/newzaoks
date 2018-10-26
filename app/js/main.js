@@ -154,6 +154,14 @@ $(document).ready(function() {
       $(this).siblings('.worker').slideDown();
     }
   });
+
+  $('.main__buttons div').click(function() {
+    let btnIndex = $(this).index();
+ 		$('.main__buttons .active').removeClass('active');
+ 		$(this).addClass('active');
+ 		$('.main__article--active').removeClass('main__article--active');
+ 		$('.main__article').eq(btnIndex).addClass('main__article--active');
+  });
 });
 
 //Валидация формы #mainForm
