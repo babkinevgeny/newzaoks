@@ -39,6 +39,7 @@
     }
     .list{
       font-size: 16px;
+      margin: 16px 0;
     }
     &--active{
       display: block;
@@ -50,6 +51,11 @@
         tr:last-child {
           td {
             border-bottom: 1px solid $color-lightgray;
+          }
+        }
+        &.pricelist{
+          &:nth-child(2){
+            margin-top: 20px;
           }
         }
       }
