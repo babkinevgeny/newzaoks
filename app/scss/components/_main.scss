@@ -43,6 +43,17 @@
     &--active{
       display: block;
     }
+    .dropdown-item-content{
+      padding: 20px 0;
+      table{
+        margin: 0 auto;
+        tr:last-child {
+          td {
+            border-bottom: 1px solid $color-lightgray;
+          }
+        }
+      }
+    }
   }
   &__buttons{
     position: absolute;
