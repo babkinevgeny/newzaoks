@@ -106,8 +106,11 @@ gulp.task('build', ['clean', 'img', 'scss', 'scripts', 'pug'], function() {
   let buildHtmlAbout = gulp.src('app/about/*.html')
     .pipe(gulp.dest('dist/about'));
 
-    let buildHtmlProducts = gulp.src('app/products/*.html')
-      .pipe(gulp.dest('dist/products'));
+  let buildHtmlProducts = gulp.src('app/products/*.html')
+    .pipe(gulp.dest('dist/products'));
+
+  let buildHtmlLaboratory = gulp.src('app/laboratory-tests/*.html')
+    .pipe(gulp.dest('dist/laboratory-tests'));
 
   let buildHtml = gulp.src('app/*.html')
     .pipe(gulp.dest('dist'));

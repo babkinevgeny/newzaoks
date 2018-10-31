@@ -2096,7 +2096,6 @@ blockquote {
 
 .tenders {
   padding-top: 20px;
-  margin-top: 62px;
   min-height: -webkit-calc(100vh - 62px - 576px);
   min-height: calc(100vh - 62px - 576px); }
 
