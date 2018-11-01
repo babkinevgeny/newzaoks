@@ -152,6 +152,13 @@ body {
   max-height: 423px;
   overflow-y: scroll; }
 
+.transport {
+  padding: 20px;
+  max-width: 1340px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto; }
+
 .flex {
   display: -webkit-flex;
   display: -ms-flex;
@@ -327,6 +334,9 @@ label.error {
   .text--left {
     text-align: left;
     text-indent: 40px; }
+  .text--justify {
+    text-align: justify;
+    text-indent: 40px; }
 
 .undertitle {
   font-size: 16px;
@@ -401,6 +411,42 @@ blockquote {
     background: #f6f7f7; }
   .pricelist tr:nth-child(2):hover {
     background: #fcfcfc; }
+
+.cars {
+  font-family: "Open Sans", Arial, sans-serif;
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 100%;
+  background: #fff; }
+  .cars .car-image {
+    background-image: url(../img/cars-sprite.png);
+    background-repeat: no-repeat;
+    width: 180px;
+    height: 105px;
+    margin: 0 auto; }
+  .cars tr:nth-child(2) .car-image {
+    background-position: 0 0px; }
+  .cars tr:nth-child(3) .car-image {
+    background-position: 0 -105px; }
+  .cars tr:nth-child(4) .car-image {
+    background-position: 0 -210px; }
+  .cars tr:nth-child(5) .car-image {
+    background-position: 0 -315px; }
+  .cars tr:nth-child(6) .car-image {
+    background-position: 0 -420px; }
+  .cars tr:nth-child(7) .car-image {
+    background-position: 0 -525px; }
+  .cars tr:nth-child(8) .car-image {
+    background-position: 0 -630px; }
+  .cars tr:nth-child(9) .car-image {
+    background-position: 0 -735px; }
+  .cars tr:nth-child(10) .car-image {
+    background-position: 0 -840px; }
+  .cars td, .cars th {
+    border: 1px solid #eceded;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px; }
 
 .main-header {
   margin: 0;
