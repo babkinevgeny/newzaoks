@@ -112,3 +112,32 @@
     }
   }
 }
+
+.infobuttons{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  max-width: 700px;
+  align-items: baseline;
+  .pricetext{
+    font-size: 20px;
+    padding-left: 50px;
+    color: $color-blue;
+    font-family: $font;
+    position: relative;
+    &::before{
+      content: '';
+      display: block;
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: -5px;
+      left: 0;
+      background: url('../img/money.svg') center no-repeat;
+    }
+  }
+  .btn{
+    max-width: 200px;
+  }
+}

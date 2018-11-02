@@ -64,7 +64,7 @@ $(document).ready(function() {
   });
 
   /*Открытие формы*/
-  $('.main-header__form').click(function() {
+  $('.main-header__form, .infobuttons .btn--form').click(function() {
     if ($('.popupform').is(':visible')) {
       $('.popupform').fadeOut();
       enableScroll();

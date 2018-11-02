@@ -2482,3 +2482,36 @@ blockquote {
         background: #fff; }
       .main__buttons div:hover {
         background: #eceded; }
+
+.infobuttons {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 700px;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline; }
+  .infobuttons .pricetext {
+    font-size: 20px;
+    padding-left: 50px;
+    color: #06abdd;
+    font-family: "Open Sans", Arial, sans-serif;
+    position: relative; }
+    .infobuttons .pricetext::before {
+      content: '';
+      display: block;
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: -5px;
+      left: 0;
+      background: url("../img/money.svg") center no-repeat; }
+  .infobuttons .btn {
+    max-width: 200px; }
