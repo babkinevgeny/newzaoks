@@ -2324,6 +2324,8 @@ blockquote {
         -webkit-transition: all 0.3s ease;
         -o-transition: all 0.3s ease;
         transition: all 0.3s ease; }
+      .catalog__links a.active {
+        color: black; }
 
 .worker {
   display: none; }
@@ -2515,3 +2517,26 @@ blockquote {
       background: url("../img/money.svg") center no-repeat; }
   .infobuttons .btn {
     max-width: 200px; }
+
+.loader {
+  background: none repeat scroll 0 0 #fff;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999; }
+  .loader__inner {
+    background-image: url("../img/preloader.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #fff;
+    height: 128px;
+    width: 128px;
+    margin-top: -64px;
+    margin-left: -64px;
+    left: 50%;
+    top: 50%;
+    position: absolute; }

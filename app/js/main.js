@@ -162,7 +162,19 @@ $(document).ready(function() {
  		$('.main__article--active').removeClass('main__article--active');
  		$('.main__article').eq(btnIndex).addClass('main__article--active');
   });
+
+  catalogLinks();
+
 });
+
+function catalogLinks () {
+  let title = $('title').text();
+  let catalog = $('.catalog__links li a');
+  let activeLink = $(`.catalog__links li a:contains(${title})`);
+  activeLink.addClass('active');
+  activeLink.parent().parent().css('display','block');
+  activeLink.parent().parent().siblings('.catalog__groupname').children('.switch').addClass('switch--checked');
+};
 
 //Валидация формы #mainForm
 $(function() {
@@ -222,3 +234,8 @@ function submitMainForm() {
     }
   });
 };
+
+$(window).on('load', function() {
+	$(".loader__inner").fadeOut();
+	$(".loader").delay(400).fadeOut("slow");
+});

@@ -88,6 +88,9 @@
         color: darken($color-gray, 25%);
         transition: $animation;
       }
+      &.active{
+        color: black;
+      }
     }
   }
 }
