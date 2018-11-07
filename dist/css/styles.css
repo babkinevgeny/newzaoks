@@ -2292,6 +2292,8 @@ blockquote {
         -webkit-transition: all 0.3s ease;
         -o-transition: all 0.3s ease;
         transition: all 0.3s ease; }
+      .catalog__groupname a.active {
+        color: #000; }
   .catalog__links {
     list-style-type: none;
     margin: 0;
@@ -2423,10 +2425,31 @@ blockquote {
     font-size: 16px; }
   .main__articles {
     border: 1px solid #eceded;
-    margin-top: 50px;
     position: relative;
     background: #fff;
-    padding: 20px; }
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px; }
+    .main__articles + .main__articles {
+      margin-top: 0; }
+    .main__articles .dropdown-item-content {
+      padding: 20px 0; }
+      .main__articles .dropdown-item-content table {
+        margin: 0 auto; }
+        .main__articles .dropdown-item-content table tr:last-child td {
+          border-bottom: 1px solid #eceded; }
+        .main__articles .dropdown-item-content table.pricelist:nth-child(2) {
+          margin-top: 20px; }
+        .main__articles .dropdown-item-content table.tools td:nth-child(1) {
+          width: 180px; }
+        .main__articles .dropdown-item-content table.tools td:nth-child(2) {
+          width: 180px; }
+        .main__articles .dropdown-item-content table.tools td:nth-child(4) {
+          width: 100px; }
+    .main__articles .dropdown {
+      margin-bottom: 0; }
+      .main__articles .dropdown table {
+        margin: 0 auto; }
   .main__article {
     display: none; }
     .main__article .text {
@@ -2436,20 +2459,6 @@ blockquote {
       margin: 16px 0; }
     .main__article--active {
       display: block; }
-    .main__article .dropdown-item-content {
-      padding: 20px 0; }
-      .main__article .dropdown-item-content table {
-        margin: 0 auto; }
-        .main__article .dropdown-item-content table tr:last-child td {
-          border-bottom: 1px solid #eceded; }
-        .main__article .dropdown-item-content table.pricelist:nth-child(2) {
-          margin-top: 20px; }
-        .main__article .dropdown-item-content table.tools td:nth-child(1) {
-          width: 180px; }
-        .main__article .dropdown-item-content table.tools td:nth-child(2) {
-          width: 180px; }
-        .main__article .dropdown-item-content table.tools td:nth-child(4) {
-          width: 100px; }
   .main__buttons {
     position: absolute;
     left: -1px;
