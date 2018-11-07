@@ -169,8 +169,8 @@ $(document).ready(function() {
 
 function catalogLinks () {
   let title = $('title').text();
-  let catalog = $('.catalog__links li a');
-  let activeLink = $(`.catalog__links li a:contains(${title})`);
+  let catalog = $('.catalog__item a');
+  let activeLink = $(`.catalog__item a:contains(${title})`);
   activeLink.addClass('active');
   activeLink.parent().parent().css('display','block');
   activeLink.parent().parent().siblings('.catalog__groupname').children('.switch').addClass('switch--checked');

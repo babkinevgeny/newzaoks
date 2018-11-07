@@ -2292,6 +2292,8 @@ blockquote {
         -webkit-transition: all 0.3s ease;
         -o-transition: all 0.3s ease;
         transition: all 0.3s ease; }
+      .catalog__groupname a.active {
+        color: #000; }
   .catalog__links {
     list-style-type: none;
     margin: 0;

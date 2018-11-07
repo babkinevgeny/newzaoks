@@ -54,6 +54,9 @@
         color: darken($color-gray, 25%);
         transition: $animation;
       }
+      &.active{
+        color: #000;
+      }
     }
   }
   &__links{
