@@ -689,7 +689,8 @@ blockquote {
     margin: 0 15px;
     position: relative; }
     .navigation__column--right .navigation__title:last-child a {
-      color: #06abdd; }
+      color: #06abdd;
+      font-size: 20px; }
     .navigation__column--left {
       width: 300px; }
   .navigation__list {
@@ -719,6 +720,7 @@ blockquote {
     padding-left: 15px;
     border-left: 2px solid #06abdd; }
     .navigation__title a {
+      font-size: 16px;
       text-decoration: none;
       color: #8a8a8a;
       webkit-transition: all .3s ease-in-out;
@@ -740,19 +742,6 @@ blockquote {
     transition: all .3s ease-in-out; }
     .navigation__undertitle:first-child {
       margin-top: 10px; }
-    .navigation__undertitle a {
-      color: #8a8a8a;
-      text-decoration: none;
-      webkit-transition: all .3s ease-in-out;
-      -webkit-transition: all .3s ease-in-out;
-      -o-transition: all .3s ease-in-out;
-      transition: all .3s ease-in-out; }
-    .navigation__undertitle:hover {
-      -webkit-transform: translateX(8px);
-          -ms-transform: translateX(8px);
-              transform: translateX(8px); }
-      .navigation__undertitle:hover a {
-        color: #06abdd; }
   .navigation .search {
     position: absolute;
     top: 0;
