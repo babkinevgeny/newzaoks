@@ -3,10 +3,13 @@
   display: -ms-flex;
   display: flex;
   width: 100%;
+  height: calc(100vh - 62px - 100px);
+  overflow-y: scroll;
 }
 .main{
-  width: calc(100vw - 324px);
+  width: calc(100vw - 342px);
   padding: 20px;
+  margin-left: 342px;
   &__top{
     display: -webkit-flex;
     display: -ms-flex;
