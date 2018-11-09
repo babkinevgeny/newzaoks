@@ -16,6 +16,7 @@ html
     div.inner-page
       include ../includes/catalog.pug
       main.main
+        include ../includes/header-article.pug
         h1.title.title--left Нанесение покрытий
         .main__top
           .fotorama__wrapper
@@ -110,4 +111,5 @@ html
               li РД «Покрытия цинковые защитные стальных труб судовых систем. Технические требования. Типовой технологический процесс». РД 5.95027-88;
               li СТО 02494680-0034-2004 «Покрытия защитные термодиффузионные цинковые на элементах металлических конструкций и крепежных изделиях. Общие технические условия» Стандарт организации ЦНИИ ПСК им. Мельникова.
     include ../includes/popupform.pug
-    include ../includes/main-footer.pug
+    footer.main-footer
+      include ../includes/bottom-line.pug

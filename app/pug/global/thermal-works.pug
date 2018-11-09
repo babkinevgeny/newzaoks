@@ -16,6 +16,7 @@ html
     div.inner-page
       include ../includes/catalog.pug
       main.main
+        include ../includes/header-article.pug
         h1.title.title--left Термическая обработка
         .main__top
           .fotorama__wrapper
@@ -66,4 +67,5 @@ html
               li Электропечь шахтная ПШЦ 6.9/9,5-Г (пр-во УРАЛ ЭЛЕКТРОПЕЧЬ)
               li Электропечь камерного типа ПКМ 6.12.5 (пр-во НАКАЛ) 
     include ../includes/popupform.pug
-    include ../includes/main-footer.pug
+    footer.main-footer
+      include ../includes/bottom-line.pug

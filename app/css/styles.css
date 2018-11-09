@@ -2585,6 +2585,10 @@ blockquote {
     height: 40px;
     margin-right: 15px;
     cursor: pointer; }
+    .header-article__item a {
+      width: inherit;
+      height: inherit;
+      display: block; }
     .header-article__item:nth-child(1) {
       background: url("../img/download.png") center no-repeat;
       -webkit-background-size: 25px 25px;

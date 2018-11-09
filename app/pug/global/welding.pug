@@ -16,6 +16,7 @@ html
     div.inner-page
       include ../includes/catalog.pug
       main.main
+        include ../includes/header-article.pug
         h1.title.title--left Сварочные работы
         .main__top
           .fotorama__wrapper
@@ -109,4 +110,5 @@ html
             p.text.text--justify *Итоговая стоимость изготовления металлоконструкций зависит от объема и сложности работ
             p.text.text--justify Предоставляя услуги сварки металла в Санкт-Петербурге, мы стараемся соответствовать основным требованиям наших клиентов, а именно: скорость, качество и цена. Стоимость металл сварки рассчитывается индивидуально, для того что мы могли дать вам самую интересную цену в городе, при неизменно высоком качестве выполняемых сварочных работ. Наши компетентные менеджеры всегда рады ответить на ваши вопросы.
     include ../includes/popupform.pug
-    include ../includes/main-footer.pug
+    footer.main-footer
+      include ../includes/bottom-line.pug

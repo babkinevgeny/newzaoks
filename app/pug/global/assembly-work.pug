@@ -16,6 +16,7 @@ html
     div.inner-page
       include ../includes/catalog.pug
       main.main
+        include ../includes/header-article.pug
         h1.title.title--left Слесарно-сборочные работы
         .main__top
           .fotorama__wrapper
@@ -58,4 +59,5 @@ html
             p.text.text--justify Наш слесарно-сборочный цех обладает достаточной мощностью для как производства мелкосерийных, так и для реализации крупных партий металлоизделий.
             p.text.text--justify На всех стадиях производства металлоконструкций мы производим контроль качества выпускаемой продукции: соответствие изделия чертежу,  технологии и ГОСТам, проверка на наличие видимых и скрытых дефектов. При необходимости производим испытания на прочность, пользуясь услугами специальных лабораторий, имеющих право выдачи испытательных сертификатов.
     include ../includes/popupform.pug
-    include ../includes/main-footer.pug
+    footer.main-footer
+      include ../includes/bottom-line.pug

@@ -16,6 +16,7 @@ html
     div.inner-page
       include ../includes/catalog.pug
       main.main
+        include ../includes/header-article.pug
         h1.title.title--left Разработка чертежей и 3D-моделей
         .main__top
           .fotorama__wrapper
@@ -42,4 +43,5 @@ html
               li Создание и при необходимости доработка полноценной 3д модели;
               li Векторизация чертежей.
     include ../includes/popupform.pug
-    include ../includes/main-footer.pug
+    footer.main-footer
+      include ../includes/bottom-line.pug

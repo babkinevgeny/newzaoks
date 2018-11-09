@@ -16,6 +16,7 @@ html
     div.inner-page
       include ../includes/catalog.pug
       main.main
+        include ../includes/header-article.pug
         h1.title.title--left Резка металла
         .main__top
           .fotorama__wrapper
@@ -758,6 +759,5 @@ html
                         td 990
 
     include ../includes/popupform.pug
-    include ../includes/main-footer.pug
-
-        
+    footer.main-footer
+      include ../includes/bottom-line.pug

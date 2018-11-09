@@ -27,6 +27,11 @@
     height: 40px;
     margin-right: 15px;
     cursor: pointer;
+    a{
+      width: inherit;
+      height: inherit;
+      display: block;
+    }
     &:nth-child(1){
       background: url('../img/download.png') center no-repeat;
       background-size: 25px 25px;
