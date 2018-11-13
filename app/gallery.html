@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>New Zaoks</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="/css/libs.min.css">
-    <link rel="stylesheet" href="/css/styles.css">
-  </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Слесарно-сборочные работы</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
   <body class="body--parallax">
+    <div class="loader">
+      <div class="loader__inner"></div>
+    </div>
     <header class="main-header">
       <div class="main-header__inner">
         <div class="main-header__column main-header__column--left">    
@@ -83,33 +86,7 @@
         </ul>
       </nav>
     </header>
-    <section class="tenders">
-      <h1 class="title title--uppercase">Закупки</h1>
-      <div class="tender">
-        <div class="tender__column tender__column--left"><b>Внутренний тендер</b><br><br><span>Стоимость работ</span><br><span class="tender__price">234000 руб.</span></div>
-        <div class="tender__column tender__column--center"><span class="tender__number">№ 1</span>
-          <h3 class="tender__title">Производство фланцев</h3>
-          <div>Заказчик:</div>
-          <div class="tender__orderer">ООО "Комплект Сервис"</div>
-          <div>Краткое описание:</div>
-          <div class="tender__orderer">Необходимо произвести токарные, фрезерные и координатно-расточные работы, материал давальческий, без термической обратноки, без гальванического покрытия.</div>
-        </div>
-        <div class="tender__column tender__column--right">
-          <table class="tender__time">
-            <tbody>
-              <tr>
-                <td>Дата объявления тендера: </td>
-                <td class="tender__start">06.08.2018</td>
-              </tr>
-              <tr>
-                <td>Дата окончания тендера: </td>
-                <td class="tender__end">06.09.2018</td>
-              </tr>
-            </tbody>
-          </table><a class="tender__btn" href="docs/zakupki_1.doc" download="">Скачать документацию</a><a class="tender__btn tender__btn--form" href="#">Отправить заявку</a>
-        </div>
-      </div>
-    </section>
+    <div class="inner-page"></div>
     <section class="popupform">
       <div class="popupform__btn"></div>
       <form class="main-form" id="mainForm" action="/mail.php" enctype="multipart/form-data" method="post">
@@ -125,54 +102,6 @@
       </form>
     </section>
     <footer class="main-footer">
-      <div class="main-footer__inner">
-        <nav class="navigation">
-          <div class="navigation__btn"></div>
-          <ul class="navigation__list">
-            <div class="navigation__column navigation__column--left">
-              <li class="navigation__title navigation__title--blue"><a href="/contacts.html">Контакты</a></li>
-              <li class="navigation__title">О нас
-                <ul class="navigation__underlist">
-                  <li class="navigation__undertitle"><a href="/about/about.html">О компании</a></li>
-                  <li class="navigation__undertitle"><a href="/about/technical-opportunities.html">Технические возможности</a></li>
-                  <li class="navigation__undertitle"><a href="/about/vacancies.html">Вакансии</a></li>
-                </ul>
-              </li>
-              <li class="navigation__title navigation__title--blue"><a href="https://zaoks.ru/products">Продукция</a></li>
-              <li class="navigation__title navigation__title--blue"><a href="/tenders.html">Закупки</a></li>
-            </div>
-            <div class="navigation__column navigation__column--center">
-              <li class="navigation__title">Услуги
-                <ul class="navigation__underlist">
-                  <li class="navigation__undertitle"><a href="/metal-cutting.html">Резка металла</a></li>
-                  <li class="navigation__undertitle"><a href="/metal-bending.html">Гибка металла</a></li>
-                  <li class="navigation__undertitle"><a href="/mechanical-works/milling-works.html">Токарные работы</a></li>
-                  <li class="navigation__undertitle"><a href="/mechanical-works/turning-works.html">Фрезерные работы</a></li>
-                  <li class="navigation__undertitle"><a href="/assembly-work.html">Слесарно-сборочные работы</a></li>
-                  <li class="navigation__undertitle"><a href="/development-of-drawings.html">Раработка чертежей и 3D-моделей</a></li>
-                </ul>
-              </li>
-              <li class="navigation__title navigation__title--blue"><a href="#">Лабораторные испытания</a></li>
-              <li class="navigation__title navigation__title--blue"><a href="/services-of-transport.html">Транспортные услуги</a></li>
-            </div>
-          </ul>
-        </nav>
-        <form class="form-footer" action="#">
-          <div class="form-footer__title">Обратная связь</div>
-          <div class="form-footer__block">
-            <div class="form-footer__column form-footer__column--left">
-              <input type="text" placeholder="Ваше имя">
-              <input type="text" placeholder="Компания">
-            </div>
-            <div class="form-footer__column form-footer__column--right">
-              <input type="text" placeholder="Телефон">
-              <input type="text" placeholder="E-mail">
-            </div>
-          </div>
-          <textarea name="" id="" cols="30" rows="4" placeholder="Текст заявки"></textarea>
-          <input type="submit" value="Отправить">
-        </form>
-      </div>
       <div class="bottom-line">
         <div class="bottom-line__inner">
           <div class="bottom-line__column bottom-line__column--left"><img src="/img/logo-vertical.png" alt="Логотип" width="50">
@@ -189,5 +118,3 @@
     </footer>
   </body>
 </html>
-<script src="/js/libs.min.js"></script>
-<script src="/js/main.js"></script>

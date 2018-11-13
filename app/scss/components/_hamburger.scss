@@ -5,9 +5,9 @@
   flex-direction: column;
   position: relative;
   cursor: pointer;
-  padding-right: 70px;
   margin-top: auto;
   margin-bottom: auto;
+  margin-right: 20px;
   &:hover{
     .hamburger__item:first-child{
       position: relative;
@@ -21,27 +21,14 @@
   &__item{
     display: inline-block;
     width: 20px;
-    height: 3px;
+    height: 2px;
     background: $color-gray;
-    margin-bottom: 2px;
+    margin-bottom: 3px;
     border-radius: 2px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     &:last-child{
       margin-bottom: 0;
     }
-  }
-  &::after{
-    content: 'Меню';
-    display: inline-block;
-    font-size: 16px;
-    line-height: 16px;
-    color: $color-gray;
-    font-weight: normal;
-    line-height: 16px;
-    position: absolute;
-    top: -2px;
-    left: 30px;
-    font-family: 'Open Sans', sans-serif;
   }
 }

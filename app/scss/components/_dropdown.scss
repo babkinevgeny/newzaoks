@@ -7,7 +7,7 @@
     background: #fff;
     margin: 0;
     text-align: left;
-    font-size: 23px;
+    font-size: 18px;
     font-weight: lighter;
     cursor: pointer;
     color: black;
@@ -21,13 +21,13 @@
     .container{
       position: relative;
       border-bottom: 1px solid $color-lightgray;
-      line-height: 67px;
+      line-height: 54px;
       padding: 0;
       .switch{
         position: absolute;
         right:10px;
         top:50%;
-        margin-top:-15px;
+        margin-top:-10px;
         box-sizing: border-box;
       }
     }
@@ -79,6 +79,7 @@
 	border-collapse: collapse;
 	width: 100%;
   font-family: $font;
+  font-size: 14px;
 	td{
 		border: 1px solid $color-lightgray;
 		padding: 5px 10px;

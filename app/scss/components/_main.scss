@@ -3,7 +3,7 @@
   display: -ms-flex;
   display: flex;
   width: 100%;
-  height: calc(100vh - 62px - 100px);
+  height: calc(100vh - 62px - 62px);
   overflow-y: scroll;
 }
 .main{
@@ -78,11 +78,11 @@
   &__article{
     display: none;
     .text{
-      font-size: 16px;
+      font-size: 14px;
     }
     .list{
-      font-size: 16px;
-      margin: 16px 0;
+      font-size: 14px;
+      margin: 14px 0;
     }
     &--active{
       display: block;

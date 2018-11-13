@@ -186,7 +186,7 @@
 
 .bottom-line {
   display: flex;
-  min-height: 100px;
+  min-height: 62px;
   box-sizing: border-box;
   border-top: 1px solid $color-blue;
 
@@ -213,6 +213,11 @@
     font-family: $font;
     display: flex;
     align-items: center;
+    p,
+    a,
+    span{
+      font-size: 14px;
+    }
     @include respond-to(md) {
       width: 100%;
     };
@@ -248,21 +253,17 @@
         margin: auto;
         text-align: center;
       }
-
-      span {
-        font-size: 18px;
-      }
     }
 
     &--left {
+      // flex-direction: column;
+      // align-items: center;
       img {
-        width: 50px;
-        margin-right: 10px;
+        margin: auto 10px auto 0;
+        width: 45px;
       }
-
       p {
-        margin-left: 0;
-        margin-right: auto;
+        margin: auto auto auto 0;
         text-align: left;
         @include respond-to(md) {
           margin-left: auto;

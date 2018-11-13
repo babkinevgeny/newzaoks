@@ -1,6 +1,6 @@
 .catalog{
   width: 342px;
-  height: calc(100% - 162px);
+  height: calc(100% - 62px - 62px);
   background: #fff;
   font-family: $font;
   border-right: 1px solid $color-lightgray;
@@ -21,19 +21,7 @@
     .switch{
       position: absolute;
       right: 0;
-      top: 9px;
-      box-sizing: border-box;
-      width: 40px;
-      height: 20px;
-      &__btn{
-        width: 18px;
-        height: 18px;
-      }
-      &--checked{
-        .switch__btn{
-          transform: translateX(20px);
-        }
-      }
+      top: 8px;
     }
     &--active{
       .catalog__groupname{

@@ -4,11 +4,9 @@
   position: fixed;
   top: 62px;
   margin-left: 0px;
-  padding: 0 20px;
   background: rgba(255,255,255, 1);
-  border: 1px solid $color-lightgray;
-  border-top: none;
-  z-index: 1000;
+  border-bottom: 1px solid $color-lightgray;
+  z-index: 6;
   box-sizing: border-box;
   display: none;
   &__list{
@@ -31,22 +29,32 @@
       width: inherit;
       height: inherit;
       display: block;
+      box-sizing: border-box;
     }
     &:nth-child(1){
-      background: url('../img/download.png') center no-repeat;
+      background: url('../img/reply.svg') left center no-repeat;
       background-size: 25px 25px;
+      margin-right: 0;
     }
     &:nth-child(2){
+      background: url('../img/download.png') center no-repeat;
+      background-size: 25px 25px;
+      margin-left: auto;
+    }
+    &:nth-child(3){
       background: url('../img/eye.png') center no-repeat;
       background-size: 25px 25px;
     }
-    &:nth-child(3){
+    &:nth-child(4){
       background: url('../img/envelope--blue.png') center no-repeat;
       background-size: 25px 25px;
     }
-    &:nth-child(4){
+    &:nth-child(5){
       background: url('../img/phone--blue.png') center no-repeat;
       background-size: 25px 25px;
+    }
+    &:last-child{
+      margin-right: 0;
     }
     &:hover{
       opacity: .8;
