@@ -1,14 +1,38 @@
 .catalog{
-  width: 342px;
+  width: 320px;
   height: calc(100% - 62px - 62px);
   background: #fff;
   font-family: $font;
   border-right: 1px solid $color-lightgray;
-  padding: 10px 20px;
+  padding: 10px 40px 10px 20px ;
   box-sizing: border-box;
   position: fixed;
-  left: 0;
+  left: -280px;
   top: 62px;
+  z-index: 2;
+  cursor: pointer;
+  transition: transform .5s ease-in-out;
+  &:after{
+    content: '';
+    display: block;
+    height: 40px;
+    width: 40px;
+    background: #fff;
+    border-top: 1px solid $color-lightgray;
+    border-right: 1px solid $color-lightgray;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    right: -20px;
+    transform: rotate(45deg);
+  }
+  &:hover{
+    transform: translateX(280px);
+    &:after{
+      display: none;
+    }
+  }
   &__list{
     list-style-type: none;
     margin: 0;

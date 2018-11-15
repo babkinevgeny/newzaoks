@@ -1,12 +1,12 @@
 .header-article{
   height: 50px;
-  width: calc(100% - 342px - 40px);
+  width: calc(100% - 80px);
   position: fixed;
   top: 62px;
   margin-left: 0px;
   background: rgba(255,255,255, 1);
   border-bottom: 1px solid $color-lightgray;
-  z-index: 6;
+  z-index: 1;
   box-sizing: border-box;
   display: none;
   &__list{
