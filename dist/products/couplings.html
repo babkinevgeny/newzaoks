@@ -7,14 +7,13 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="/css/libs.min.css">
   <link rel="stylesheet" href="/css/styles.css">
-  <script src="/js/libs.min.js"></script>
-  <script src="/js/main.js"></script>
   <body class="body--parallax">
-    <div class="loader">
-      <div class="loader__inner"></div>
-    </div>
-    <div class="loader">
-      <div class="loader__inner"></div>
+    <div id="preloader">
+      <div class="svg-wrapper">
+        <svg height="150" width="150" xmlns="http://www.w3.org/2000/svg">
+          <rect class="animate" height="150" width="150"></rect>
+        </svg>
+      </div>
     </div>
     <header class="main-header">
       <div class="main-header__inner">
@@ -26,7 +25,7 @@
           <ul class="main-header__list">
             <li class="main-header__item"><a href="mailto:info@zaoks.ru">info@zaoks.ru</a></li>
             <li class="main-header__item"><a href="tel:+78126271516">8 (812) 627 15 16</a></li>
-            <li class="main-header__item main-header__form"><span>Разместить заказ</span></li>
+            <li class="main-header__item" title="Раздел в разработке"><span>Личный кабинет</span></li>
           </ul>
         </div>
       </div>
@@ -178,10 +177,14 @@
             <p>193318, г. Санкт-Петербург, ул. Ворошилова, 2, <br><span>+7(812) 627-15-16</span></p>
           </div>
           <div class="bottom-line__column bottom-line__column--right">
-            <div class="block"><a href="mailto:info@zaoks.ru">info@zaoks.ru</a></div>
+            <div class="block"><a href="mailto:info@zaoks.ru">info@zaoks.ru</a>
+              <div class="socials"><a class="socials__item socials__item--vk" src="#"><img src="/img/vk.svg"></a><a class="socials__item socials__item--fb" src="#"><img src="/img/facebook.svg"></a><a class="socials__item socials__item--inst" src="#"><img src="/img/instagram.svg"></a></div>
+            </div>
           </div>
         </div>
       </div>
     </footer>
   </body>
+  <script src="/js/libs.min.js"></script>
+  <script src="/js/main.js"></script>
 </html>

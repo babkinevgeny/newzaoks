@@ -7,13 +7,8 @@ html
   link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic', rel='stylesheet')
   link(rel='stylesheet', href='/css/libs.min.css') 
   link(rel='stylesheet', href='/css/styles.css')
-  script(src="/js/libs.min.js")
-  script(src="/js/main.js")
   body.body--parallax
-    .loader
-      .loader__inner
-    .loader
-      .loader__inner
+    include ../../includes/preloader.pug
     include ../../includes/main-header.pug
     div.inner-page
       - var sidebar = 'products'
@@ -100,5 +95,6 @@ html
     include ../../includes/popupform.pug
     footer.main-footer
       include ../../includes/bottom-line.pug
+  include ../../includes/scripts.pug
 
         

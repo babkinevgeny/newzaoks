@@ -7,9 +7,8 @@ html
   link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic', rel='stylesheet')
   link(rel='stylesheet', href='css/libs.min.css') 
   link(rel='stylesheet', href='css/styles.css')
-  script(src="js/libs.min.js")
-  script(src="js/main.js")
   body.body--parallax
+    include ../includes/preloader.pug
     include ../includes/main-header.pug
     section.transport
       h1.title  Транспортные услуги
@@ -178,3 +177,4 @@ html
       p.text.text--justify Заказать металлопрокат с доставкой – просто, если вы сотрудничаете с Set Service Group
     include ../includes/popupform.pug
     include ../includes/main-footer.pug
+  include ../includes/scripts.pug

@@ -1,3 +1,15 @@
+let loader = document.querySelector('.animate'),
+    offset = 0;
+
+const offsetMe = function() {
+  if(offset < 0) {offset = 600;}
+  loader.style.strokeDashoffset = offset;
+  offset= offset- 5;
+
+  requestAnimationFrame(offsetMe);
+}
+offsetMe();
+
 // left: 37, up: 38, right: 39, down: 40,
 // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
 var keys = {
@@ -64,7 +76,7 @@ $(document).ready(function() {
   });
 
   /*Открытие формы*/
-  $('.main-header__form, .infobuttons .btn--form').click(function() {
+  $('.infobuttons .btn--form').click(function() {
     if ($('.popupform').is(':visible')) {
       $('.popupform').fadeOut();
       enableScroll();
@@ -178,7 +190,9 @@ $(document).ready(function() {
 function catalogLinks () {
   let title = $('title').text();
   let catalog = $('.catalog__item a');
-  let activeLink = $(`.catalog__item a:contains(${title})`);
+  let activeLink = catalog.filter(function() {
+    return $(this).text() === title;
+  });
   activeLink.addClass('active');
   activeLink.parent().parent().css('display','block');
   activeLink.parent().parent().siblings('.catalog__groupname').children('.switch').addClass('switch--checked');
@@ -244,8 +258,7 @@ function submitMainForm() {
 };
 
 $(window).on('load', function() {
-	$(".loader__inner").fadeOut();
-	$(".loader").delay(400).fadeOut("slow");
+	$("#preloader").fadeOut();
 });
 
 // (function($){

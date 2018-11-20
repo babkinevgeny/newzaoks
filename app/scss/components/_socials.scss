@@ -1,0 +1,32 @@
+.socials{
+  text-align: right;
+  &__item{
+    display: inline-block !important;
+    margin: 0 5px;
+    width: 22px;
+    height: 22px;
+    //background: url('../img/socials-sprite.png') center no-repeat;
+    cursor: pointer;
+    img {
+      width: 22px;
+      height: 22px;
+      border-radius: 5px;
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+      opacity: .5;
+      transition: all .3s ease-in-out;
+    }
+    &:hover{
+      img{
+        filter: none;
+        opacity: 1;
+      }
+    }
+    &:first-child{
+      margin-left: 0;
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}

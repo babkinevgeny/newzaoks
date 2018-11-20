@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="/css/styles.css">
   </head>
   <body class="body--parallax">
+    <div id="preloader">
+      <div class="svg-wrapper">
+        <svg height="150" width="150" xmlns="http://www.w3.org/2000/svg">
+          <rect class="animate" height="150" width="150"></rect>
+        </svg>
+      </div>
+    </div>
     <header class="main-header">
       <div class="main-header__inner">
         <div class="main-header__column main-header__column--left">    
@@ -20,7 +27,7 @@
           <ul class="main-header__list">
             <li class="main-header__item"><a href="mailto:info@zaoks.ru">info@zaoks.ru</a></li>
             <li class="main-header__item"><a href="tel:+78126271516">8 (812) 627 15 16</a></li>
-            <li class="main-header__item main-header__form"><span>Разместить заказ</span></li>
+            <li class="main-header__item" title="Раздел в разработке"><span>Личный кабинет</span></li>
           </ul>
         </div>
       </div>
@@ -85,15 +92,12 @@
     </header>
     <section class="main-slider">
       <ul class="bxslider">
-        <li style="background: url('img/bxslider-1.jpg') center no-repeat">
-          <div class="bxslider__text"><a class="btn btn--transparent" href="#">Подробнее</a></div>
-        </li>
-        <li style="background: url('img/bxslider-2.jpg') center no-repeat">
-          <div class="bxslider__text"><a class="btn btn--transparent" href="#">Подробнее</a></div>
-        </li>
-        <li style="background: url('img/bxslider-3.jpg') center no-repeat">
-          <div class="bxslider__text"><a class="btn btn--transparent" href="#">Подробнее</a></div>
-        </li>
+        <li style="background: url('img/slider/proba.jpg') center no-repeat"></li>
+        <li style="background: url('img/slider/2.jpg') center no-repeat"></li>
+        <li style="background: url('img/slider/3.jpg') center no-repeat"></li>
+        <li style="background: url('img/slider/4.jpg') center no-repeat"></li>
+        <li style="background: url('img/slider/5.jpg') center no-repeat"></li>
+        <li style="background: url('img/slider/6.jpg') center no-repeat"></li>
       </ul>
     </section>
     <section class="info">
@@ -379,7 +383,9 @@
             <p>193318, г. Санкт-Петербург, ул. Ворошилова, 2, <br><span>+7(812) 627-15-16</span></p>
           </div>
           <div class="bottom-line__column bottom-line__column--right">
-            <div class="block"><a href="mailto:info@zaoks.ru">info@zaoks.ru</a></div>
+            <div class="block"><a href="mailto:info@zaoks.ru">info@zaoks.ru</a>
+              <div class="socials"><a class="socials__item socials__item--vk" src="#"><img src="/img/vk.svg"></a><a class="socials__item socials__item--fb" src="#"><img src="/img/facebook.svg"></a><a class="socials__item socials__item--inst" src="#"><img src="/img/instagram.svg"></a></div>
+            </div>
           </div>
         </div>
       </div>

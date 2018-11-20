@@ -6,12 +6,11 @@ html
   title Гибка металла
   link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic', rel='stylesheet')
   link(rel='stylesheet', href='css/libs.min.css') 
+  link(rel='stylesheet', href="css/owl.carousel.min.css")
+  link(rel='stylesheet', href="css/owl.theme.default.min.css")
   link(rel='stylesheet', href='css/styles.css')
-  script(src="js/libs.min.js")
-  script(src="js/main.js")
   body.body--parallax
-    .loader
-      .loader__inner
+    include ../includes/preloader.pug
     include ../includes/main-header.pug
     div.inner-page
       include ../includes/catalog.pug
@@ -129,8 +128,43 @@ html
                         |От 200 руб./п.м.
                         br
                         |Точная стоимость, рассчитывается на основе предоставленного чертежа, а также зависит от количества, радиуса и толщины стенки.
+        section.main__articles
+          h2.title Примеры выполненных работ
+          .owl-carousel
+            //-img(src="img/carousel/1.jpg")
+            //-img(src="img/carousel/3.jpg")
+            //-img(src="img/carousel/5.jpg")
+            //-img(src="img/carousel/7.jpg")
+            //-img(src="img/carousel/9.jpg")
+            //-img(src="img/carousel/10.jpg")
+            img(src="img/carousel/2.jpg")
+            img(src="img/carousel/4.jpg")
+            img(src="img/carousel/6.jpg")
+            img(src="img/carousel/8.jpg")
+            //-img(src="img/carousel/wide.jpg")
+            //-img(src="img/carousel/11.jpg")
+            //-img(src="img/carousel/12.jpg")
+            img(src="img/carousel/13.jpg")
+            //-img(src="img/carousel/14.jpg")
+            //-img(src="img/carousel/15.jpg")
+
+
+
+
+
             
           
     include ../includes/popupform.pug
     footer.main-footer
       include ../includes/bottom-line.pug
+  include ../includes/scripts.pug
+  script.
+    $(document).ready(function(){
+      $(".owl-carousel").owlCarousel({
+        loop:true,
+        autoplay:true,
+        items:6,
+        margin:10,
+        dots:true
+      });
+    });
