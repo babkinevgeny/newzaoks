@@ -2739,7 +2739,8 @@ blockquote {
             flex-wrap: wrap; }
     .portfolio__btns li {
       margin-right: 20px;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      padding: 13px 10px; }
       .portfolio__btns li:last-child {
         margin-right: 0; }
   .portfolio__container .filtr-item {
