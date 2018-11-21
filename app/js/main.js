@@ -193,6 +193,14 @@ $(document).ready(function() {
       $('.header-article').slideUp();
     }
   });
+  
+  var filterizd = $('.portfolio__container').filterizr({
+     //options object
+  });
+  $('.portfolio__btns .btn').click(function() {
+    $('.portfolio__btns .btn--active').removeClass('btn--active');
+    $(this).addClass('btn--active');
+  });
 });
 
 function catalogLinks () {
