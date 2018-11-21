@@ -1,0 +1,7 @@
+section.main__articles
+  h2.title Примеры выполненных работ
+  #performed_works.owl-carousel
+    - let i = 1
+    while i < 26
+      img(src=`/img/carousel/${i}.jpg`)
+      - i++

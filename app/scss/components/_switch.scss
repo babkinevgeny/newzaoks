@@ -5,10 +5,11 @@
   outline: none;
   user-select: none;
   padding: 2px;
-  width: 60px;
-  height: 30px;
+  width: 40px;
+  height: 20px;
   background-color: $color-lightgray;
   border-radius: 60px;
+  box-sizing: border-box;
 
   &__bg,
   &__btn {
@@ -27,7 +28,8 @@
   }
 
   &__btn {
-    width: 28px;
+    width: 18px;
+    height: 18px;
     background-color: #fff;
     border-radius: 100%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -40,7 +42,7 @@
     }
 
     .switch__btn {
-      transform: translateX(30px);
+      transform: translateX(20px);
     }
   }
 }

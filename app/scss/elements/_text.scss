@@ -1,5 +1,5 @@
 .text{
-  font-size: 18px;
+  font-size: 14px;
   font-family: $font;
   line-height: 1.4;
   &--center{
@@ -7,6 +7,10 @@
   }
   &--left{
     text-align: left;
+    text-indent: 40px;
+  }
+  &--justify{
+    text-align: justify;
     text-indent: 40px;
   }
 }

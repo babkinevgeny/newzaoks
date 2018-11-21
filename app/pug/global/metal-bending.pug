@@ -1,0 +1,134 @@
+doctype
+html
+  meta(charset='UTF-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible', content='ie=edge')
+  title Гибка металла
+  link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic', rel='stylesheet')
+  link(rel='stylesheet', href='css/libs.min.css') 
+  link(rel='stylesheet', href='css/styles.css')
+  body.body--parallax
+    include ../includes/preloader.pug
+    include ../includes/main-header.pug
+    div.inner-page
+      include ../includes/catalog.pug
+      main.main
+        include ../includes/header-article.pug
+        h1.title.title--left Гибка металла
+        .main__top
+          .fotorama__wrapper
+            .fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")
+              img(src='https://beltica.ru/upload/iblock/942/9424066fa4690068a6947db0173d19d1.jpg')
+              img(src='http://www.skif-m.org/uploads/posts/2014-07/1406239471_133.jpg')
+              img(src='http://metallmig.ru/img/node-18745-gidroabraziv-rezka.jpg', alt='')
+              img(src='http://www.megasteels.ru/files/images/pages/pic_211_1416503159.jpg', alt='')
+              img(src='http://kz.all.biz/img/kz/service_catalog/229754.jpg', alt='')
+              img(src='http://www.tecsna.ru/images/detailed/1/plazma.jpg', alt='')
+          .main__info
+            p.text.text--justify Производственное подразделение Set Service Group предлагает выгодные условия по гибке листового проката, а также профильных и круглых труб.
+            p.text.text--justify 
+              b Гибка металла 
+              | - это технологический процесс, в ходе которого, металлической заготовке придаётся необходимая форма, требуемая чертежом. Гибка листового металла, даёт возможность не применять сварочные работы и создавать бесшовные соединения, что обеспечивает монолитность металлоконструкций и значительно повышает их антикоррозийную устойчивость. Гибка труб и профилей может производиться различными способами.
+            .infobuttons
+              .btn.btn--form Заказать услугу
+              .btn Скачать прайс-лист
+        section.main__articles.main__articles--with-btns
+          .main__buttons
+            div(class="active") Гибка листов
+            div Гибка профиля
+            div Вальцовка
+          article.main__article.main__article--active
+            p.text.text--justify Одна из распространённых технологий предполагает одновременное воздействие на металл растягивающих и сжимающих усилий. Второй способ называется гибкой с растяжением, в процессе него удаётся получить точные углы и радиусы изгибов. Эта технология предусматривает, что заготовка при гибке, будет подвержена добавочному растягивающему усилию. Листогибочные и трубогибочные работы - достаточно сложная технологическая задача, в процессе решения которой, нередко возникают различные трудности. Именно поэтому, ее проведение лучше всего поручить компаниям, в штате которых есть квалифицированные специалисты, имеющие соответствующий опыт проведения таких работ и которые оснащены современным технологическим оборудованием - TRUMPF TRUBEND 5130, AMADA HFT 100-3 - листогибочные прессы с ЧПУ управлением позволяют работать с листом до 8мм, а итальянский "3С" позволяет работать с трубами диаметром до 80 мм при уровне точности 0,01 мм.
+            p.text.text--justify Технические возможности по листовой гибке:
+            ul.list
+              li максимальная длина гиба – 3000 мм.
+              li максимальная толщина металла:Конструкционная сталь - до 8 мм; Нержавеющая сталь – до 4,0 мм; Алюминий – до 6,0 мм;
+              li максимальное усилие – 63 т.
+          article.main__article
+            p.text.text--justify Технические возможности по гибке профиля:
+            ul.list
+              li круглый профиль - диаметром до 57 мм с минимальным радиусом гиба до 240 мм,
+              li квадратный и прямоугольный профиль - шириной стенки до 80 мм с минимальным радиусом гиба до 320 мм.
+          article.main__article
+        section.main__articles
+          ul.dropdown
+            li.dropdown-item
+              .dropdown-title
+                .container(style="border-top: 1px solid #eceded;")
+                  .switch
+                    span.switch__bg
+                    span.switch__btn
+                  | Оборудование для гибки металла
+              .container(style="border-bottom: none")
+                .dropdown-item-content
+                  table.tools
+                    tr
+                      td
+                        strong Изображение
+                      td
+                        strong Модель
+                      td
+                        strong Год выпуска
+                      td
+                        strong Страна производитель
+                      td
+                        strong Технические характеристики
+                    tr
+                      td
+                        img(alt='пресс2671М', src='/img/machines/bending-machines/1.jpg')
+                      td
+                        b Пресс гидравлический ОКС-1671М с индивидуальным приводом
+                      td >1988
+                      td СССР
+                      td
+                        strong Максимальное усилие, кН (тс):
+                        |  400 (10)
+                        br
+                        strong Габаритные размеры пресса
+                        | : 
+                        br
+                        em Длина
+                        | : 1500 
+                        br
+                        em Ширина
+                        | : 640 
+                        br
+                        em Высота
+                        | : 940
+            li.dropdown-item
+              .dropdown-title
+                .container
+                  .switch
+                    span.switch__bg
+                    span.switch__btn
+                  | Расценки на гибку металла
+              .container(style='border-bottom:none')
+                .dropdown-item-content
+                  table.pricelist
+                    tr
+                      td(colspan="5") Листовой прокат
+                    tr
+                      td Количество гибов
+                      td до 100
+                      td 100-500
+                      td 500-1000
+                      td от 1000
+                    tr
+                      td Цена за 1 гиб
+                      td 50,00 руб.
+                      td 40,00 руб.
+                      td 20,00 руб.
+                      td договорная
+                    tr
+                      td(colspan="5") Трубный прокат
+                    tr
+                      td(colspan="5")
+                        |От 200 руб./п.м.
+                        br
+                        |Точная стоимость, рассчитывается на основе предоставленного чертежа, а также зависит от количества, радиуса и толщины стенки.
+        include ../includes/performed_works.pug                    
+    include ../includes/popupform.pug
+    footer.main-footer
+      include ../includes/bottom-line.pug
+  include ../includes/scripts.pug
+    

@@ -1,18 +1,18 @@
 header.main-header
   .main-header__inner
-    .main-header__column.main-header__column--left
-      .main-header__logo
-        a(href='https://zaoks.ru')     
+    .main-header__column.main-header__column--left     
       .hamburger
         span.hamburger__item
         span.hamburger__item
         span.hamburger__item
+      .main-header__logo
+        a(href='/index.html')
     .main-header__column.main-header__column--right
       ul.main-header__list
         li.main-header__item
           a(href='mailto:info@zaoks.ru') info@zaoks.ru
         li.main-header__item
           a(href='tel:+78126271516') 8 (812) 627 15 16
-        li.main-header__item.main-header__form
-          span Разместить заказ
+        li.main-header__item(title="Раздел в разработке")
+          span Личный кабинет
   include navigation.pug

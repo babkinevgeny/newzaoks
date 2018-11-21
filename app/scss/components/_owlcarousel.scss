@@ -1,0 +1,19 @@
+#performed_works{
+  .owl-dots{
+    text-align: center;
+    padding-top: 10px;
+  }
+  .owl-dot{
+    width: 10px;
+    height: 10px;
+    background: $color-gray;
+    border-radius: 50%;
+    margin: 0 5px;
+    &.active{
+      background: $color-blue;
+    }
+    &:focus{
+      outline:none;
+    }
+  }
+}

@@ -1,16 +1,43 @@
 .catalog{
-  width: 324px;
+  width: 320px;
+  height: calc(100% - 62px - 62px);
   background: #fff;
   font-family: $font;
   border-right: 1px solid $color-lightgray;
-  padding: 20px;
+  padding: 10px 40px 10px 20px ;
   box-sizing: border-box;
-
+  position: fixed;
+  left: -280px;
+  top: 62px;
+  z-index: 2;
+  cursor: pointer;
+  transition: transform .5s ease-in-out;
+  &:after{
+    content: '';
+    display: block;
+    height: 40px;
+    width: 40px;
+    background: #fff;
+    border-top: 1px solid $color-lightgray;
+    border-right: 1px solid $color-lightgray;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    right: -20px;
+    transform: rotate(45deg);
+  }
+  &:hover{
+    transform: translateX(280px);
+    &:after{
+      display: none;
+    }
+  }
   &__list{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    padding-bottom: 20px;
+    //padding-bottom: 20px;
   }
   &__item {
     position: relative;
@@ -18,19 +45,7 @@
     .switch{
       position: absolute;
       right: 0;
-      top: 9px;
-      box-sizing: border-box;
-      width: 40px;
-      height: 20px;
-      &__btn{
-        width: 18px;
-        height: 18px;
-      }
-      &--checked{
-        .switch__btn{
-          transform: translateX(20px);
-        }
-      }
+      top: 8px;
     }
     &--active{
       .catalog__groupname{
@@ -39,7 +54,7 @@
     }
   }
   &__groupname{
-    padding: 8px 0;
+    padding: 7px 0;
     font-weight: 500;
     cursor: pointer;
     color: $color-gray;
@@ -53,6 +68,9 @@
       &:hover{
         color: darken($color-gray, 25%);
         transition: $animation;
+      }
+      &.active{
+        color: #000;
       }
     }
   }
@@ -87,6 +105,9 @@
       &:hover{
         color: darken($color-gray, 25%);
         transition: $animation;
+      }
+      &.active{
+        color: black;
       }
     }
   }

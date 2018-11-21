@@ -1,0 +1,64 @@
+.pricelist{
+	border-collapse: collapse;
+	width: 600px;
+  font-family: $font;
+	td{
+		padding: 10px;
+		border: 1px solid $color-lightgray;
+		text-align: center;
+	}
+	tr{
+		&:nth-child(even){
+			background: lighten($color-lightgray, 6%);
+		}
+		&:nth-child(odd){
+			background: lighten($color-lightgray, 4%);
+		}
+		&:hover{
+			background: $color-lightgray;
+			td{
+				border:1px solid darken($color-lightgray, 3%);
+			}
+		}
+		&:nth-child(1), &:nth-child(3){
+			&:hover{
+				background: lighten($color-lightgray, 4%);
+			}
+		}
+		&:nth-child(2){
+			&:hover{
+				background: lighten($color-lightgray, 6%);
+			}
+		}
+	}
+}
+
+.cars{
+	font-family: $font;
+	margin: 0 auto;
+	border-collapse: collapse;
+	width: 100%;
+	background: #fff;
+	.car-image{
+		background-image: url(../img/cars-sprite.png);
+		background-repeat: no-repeat;
+		width: 180px;
+		height: 105px;
+		margin: 0 auto;
+	}
+	$step: 0px;
+  @for $i from 2 to 11 {
+    tr:nth-child(#{$i}){
+      .car-image{
+        background-position: 0 $step;
+        $step: $step - 105px;
+      }
+    }
+  }
+	td, th{
+		border: 1px solid $color-lightgray;
+		text-align: center;
+		vertical-align: middle;
+		padding: 10px;
+	}
+}

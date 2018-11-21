@@ -1,3 +1,15 @@
+let loader = document.querySelector('.animate'),
+    offset = 0;
+
+const offsetMe = function() {
+  if(offset < 0) {offset = 600;}
+  loader.style.strokeDashoffset = offset;
+  offset= offset- 5;
+
+  requestAnimationFrame(offsetMe);
+}
+offsetMe();
+
 // left: 37, up: 38, right: 39, down: 40,
 // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
 var keys = {
@@ -46,6 +58,14 @@ $(document).ready(function() {
     mode: 'fade'
   });
 
+  $("#performed_works").owlCarousel({
+    loop:true,
+    autoplay:true,
+    items:6,
+    margin:10,
+    dots:true
+  });
+
   /*Показ меню при клике на гамбургер*/
   $('.hamburger').click(function() {
     if ($('.main-header .navigation').is(':visible')) {
@@ -64,7 +84,7 @@ $(document).ready(function() {
   });
 
   /*Открытие формы*/
-  $('.main-header__form').click(function() {
+  $('.infobuttons .btn--form').click(function() {
     if ($('.popupform').is(':visible')) {
       $('.popupform').fadeOut();
       enableScroll();
@@ -154,7 +174,37 @@ $(document).ready(function() {
       $(this).siblings('.worker').slideDown();
     }
   });
+
+  $('.main__buttons div').click(function() {
+    let btnIndex = $(this).index();
+ 		$('.main__buttons .active').removeClass('active');
+ 		$(this).addClass('active');
+ 		$('.main__article--active').removeClass('main__article--active');
+ 		$('.main__article').eq(btnIndex).addClass('main__article--active');
+  });
+
+  catalogLinks();
+
+  $('.inner-page').scroll(function(){
+    let scrolled = $(this).scrollTop();
+    if (scrolled > 10) {
+      $('.header-article').slideDown();
+    } else {
+      $('.header-article').slideUp();
+    }
+  });
 });
+
+function catalogLinks () {
+  let title = $('title').text();
+  let catalog = $('.catalog__item a');
+  let activeLink = catalog.filter(function() {
+    return $(this).text() === title;
+  });
+  activeLink.addClass('active');
+  activeLink.parent().parent().css('display','block');
+  activeLink.parent().parent().siblings('.catalog__groupname').children('.switch').addClass('switch--checked');
+};
 
 //Валидация формы #mainForm
 $(function() {
@@ -214,3 +264,49 @@ function submitMainForm() {
     }
   });
 };
+
+$(window).on('load', function() {
+	$("#preloader").fadeOut();
+});
+
+// (function($){
+// 	$(function(){
+// 		// задаем стартовые переменные без определения и контекст их видимости
+// 		// (чтобы замыкания - обработчики событий их видели)
+// 		var b,
+// 			wH,
+// 			bTopI,
+// 			bBotI,
+// 			footTop;
+//
+// 		$(window).resize(function(){ // вешаем событие на ресайз окна браузера, чтобы стартовые переменные пересчитались при такой ситуации
+// 			// определяем переменные
+// 			b = $('.catalog'); // блок меню в jQuery-обертке
+// 			wH = window.innerHeight; // высота окна браузера
+// 			bTopI = b.offset().top, // начальное расстояние от начала страницы до верхней границы блока меню
+// 			bBotI = bTopI + b.outerHeight(), // начальное расстояние от начала страницы до нижней границы блока меню
+// 			footTop = $('.main-footer').offset().top; // начальное расстояние от начала страницы до блока подвала
+// 		}).resize() // эмулируем вызов события resize, чтобы определить переменные
+// 		.bind('scroll', function(){ // вешаем событие на скролл окна
+// 			var bTop = b.offset().top; // текущее расстояние от начала страницы до верхней границы блока меню
+// 			var bH = b.outerHeight(true); // внешняя высота блока меню включая отступы
+// 			var bBot = bTop + bH; // текущее расстояние от начала страницы до нижней границы блока меню
+// 			var wTop = window.pageYOffset; // текущее значение скролла по вертикали (верхняя граница окна)
+// 			var wBot = wTop + wH; // нижняя граница окна браузера
+//
+// 			var top; // определяем переменную сдвига блока меню от начала страницы
+// 			if (bBot < wBot && wBot < footTop) {
+// 				// если нижняя граница окна нижне нижней границы блока меню и не ниже блока подвала
+// 				top = wBot - bH; // задаём сдвиг "нижняя граница окна минус высота блока меню"
+// 			} else if (wBot > footTop) {
+// 				// если нижняя граница окна нижне блока подвала
+// 				top = footTop - bH - 2; // задаём сдвиг вплотную к подвалу минус корректировка в 2px (их даёт какое-то сочленение отступов, если нужно, можно заморочиться, найти его и брать динамически, но обычно это уже избыточно и ничего особо не даст)
+// 			} else if (wTop + bTopI < bTop) {
+// 				// если верхняя граница окна + начальное расстояние до блока меню меньше текущего расстояния
+// 				top = wTop + bTopI; // задаём сдвиг блока меню как верхняя граница окна + начальное расстояние до блока меню
+// 			}
+// 			b.css({top: top}); // задаём сдвиг блока меню
+//
+// 		}).scroll(); // эмулируем вызов события scroll для первоначальной отработки калькуляций
+// 	});
+// })(jQuery);

@@ -1,0 +1,101 @@
+doctype
+html
+  meta(charset='UTF-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible', content='ie=edge')
+  title Металлоконструкции
+  link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic', rel='stylesheet')
+  link(rel='stylesheet', href='/css/libs.min.css') 
+  link(rel='stylesheet', href='/css/styles.css')
+  body.body--parallax
+    include ../../includes/preloader.pug
+    include ../../includes/main-header.pug
+    div.inner-page
+      - var sidebar = 'products'
+      include ../../includes/catalog.pug
+      main.main
+        include ../../includes/header-article.pug
+        h1.title.title--left Металлоконструкции
+        .main__top
+          .fotorama__wrapper
+            .fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")
+              img(src='https://beltica.ru/upload/iblock/942/9424066fa4690068a6947db0173d19d1.jpg')
+              img(src='http://www.skif-m.org/uploads/posts/2014-07/1406239471_133.jpg')
+              img(src='http://metallmig.ru/img/node-18745-gidroabraziv-rezka.jpg', alt='')
+              img(src='http://www.megasteels.ru/files/images/pages/pic_211_1416503159.jpg', alt='')
+              img(src='http://kz.all.biz/img/kz/service_catalog/229754.jpg', alt='')
+              img(src='http://www.tecsna.ru/images/detailed/1/plazma.jpg', alt='')
+          .main__info
+            p.text.text--justify Set Service Group  осуществляет изготовление металлоконструкций в СПб как по образцам, так и по готовым чертежам, успешно решая даже нестандартные задачи, которые стоят перед клиентом. На этой странице вы можете оформить заказ на изготовление металлоконструкций в Санкт-Петербурге или Москве. 
+            .infobuttons
+              .btn.btn--form Заказать услугу
+              .btn Скачать прайс-лист
+        section.main__articles
+          article.main__article.main__article--active
+            p.text.text--justify 
+              b Мы производим
+            ul.list
+              li Опоры дорожных знаков для автомобильных дорог;
+              li Ангары из металлоконструкций;
+              li Работы по разработке каркасов зданий;
+              li Балки подкрановые сварные из листового проката;
+              li Балки из двутавров широкополочных;
+              li Балки сварные из листового проката;
+              li Двутавровые балки переменного сечения;
+              li Емкости, нестандартные конструкции из металла;
+              li Фермы из уголков горячекатанных;
+              li Фермы из замкнутого профиля прямоугольного сечения;
+              li Несущие (колонны, фермы, связи, прогоны, балки);
+              li Эстакады и галереи под транспортеры;
+              li Прогоны из гнутого швеллера;
+              li Металлоконструкции высотных сооружений;
+              li Фермы подстропильные;
+              li Ригели из швеллеров гнутые.
+            ul.dropdown
+              li.dropdown-item
+                .dropdown-title
+                  .container(style="border-top: 1px solid #eceded;")
+                    .switch.switch--checked
+                      span.switch__bg
+                      span.switch__btn
+                    | Расценки на производство металлоконструкций
+                .container(style='border-bottom:none')
+                  .dropdown-item-content
+                    table.pricelist
+                      tr
+                        td Тип металлоизделия
+                        td Стоимость за 1 тонну
+                      tr
+                        td Балки, фермы
+                        td От 26 000 руб*
+                      tr
+                        td Временные МК СВСиУ
+                        td От 24 000 руб*
+                      tr
+                        td Перильные ограждения
+                        td От 3 000 руб*
+                      tr
+                        td Закладные детали
+                        td От 16 000 руб*
+                      tr
+                        td Рамные опоры для дорожных знаков
+                        td От 22 000 руб*
+                      tr
+                        td МК быстровозводимых зданий
+                        td От 18 000 руб*
+                      tr
+                        td Эстакады
+                        td От 30 000 руб*
+                      tr
+                        td Подкрановые балки
+                        td От 36 000 руб*
+            p.text.text--justify *Итоговая стоимость изготовления металлоконструкций зависит от объема и сложности работ
+            p.text.text--justify На нашем предприятии установлено новейшее, современное оборудование, с помощью которого мы за короткие сроки изготавливаем то, что необходимо именно вам. Производство в Санкт Петербурге позволяет снизить стоимость изготовления.
+            p.text.text--justify Благодаря наличию необходимой техники, профессионализму работников нашей компании изготовление металлических конструкций производится качественно и быстро.
+        include ../../includes/performed_works.pug
+    include ../../includes/popupform.pug
+    footer.main-footer
+      include ../../includes/bottom-line.pug
+  include ../../includes/scripts.pug
+
+        

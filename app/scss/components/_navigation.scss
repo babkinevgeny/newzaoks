@@ -32,6 +32,7 @@
     &--right{
     	.navigation__title:last-child a{
 			  color: $color-blue;
+        font-size: 20px;
 		  }
     }
     &--left{
@@ -61,6 +62,7 @@
     padding-left: 15px;
     border-left: 2px solid $color-blue;
     a{
+      font-size: 16px;
     	text-decoration: none;
     	color: $color-gray;
     	webkit-transition: all .3s ease-in-out;
@@ -79,18 +81,6 @@
     transition: all .3s ease-in-out;
     &:first-child{
       margin-top: 10px;
-    }
-    a{
-      color: $color-gray;
-      text-decoration: none;
-      webkit-transition: all .3s ease-in-out;
-      transition: all .3s ease-in-out;
-    }
-    &:hover{
-      transform: translateX(8px);
-      a{
-        color: $color-blue;
-      }
     }
   }
   .search{

@@ -41,7 +41,9 @@ gulp.task('scripts', function() {
       'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
       'app/libs/bxslider-4/dist/jquery.bxslider.min.js',
       'app/libs/jquery.validate/jquery.validate.min.js',
-      'app/libs/form/form.min.js'
+      'app/libs/form/form.min.js',
+      'app/libs/fotorama/fotorama.js',
+      'app/libs/owlcarousel/owl.carousel.min.js'
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
@@ -65,7 +67,7 @@ gulp.task('watch', ['browser-sync', 'css-libs', 'scripts', 'pug'], function() {
 });
 
 gulp.task('pug', function () {
-  return gulp.src('app/pug/global/*.pug')
+  return gulp.src('app/pug/global/**/*.pug')
   .pipe(pug({pretty: true}))
   .pipe(gulp.dest('app'))
 });
@@ -90,10 +92,7 @@ gulp.task('img', function() {
 
 gulp.task('build', ['clean', 'img', 'scss', 'scripts', 'pug'], function() {
 
-  let buildCss = gulp.src([
-      'app/css/styles.css',
-      'app/css/libs.min.css'
-    ])
+  let buildCss = gulp.src('app/css/*.css')
     .pipe(gulp.dest('dist/css'))
 
   let buildFonts = gulp.src('app/fonts/**/*')
@@ -101,6 +100,15 @@ gulp.task('build', ['clean', 'img', 'scss', 'scripts', 'pug'], function() {
 
   let buildJs = gulp.src('app/js/**/*')
     .pipe(gulp.dest('dist/js'))
+
+  let buildHtmlAbout = gulp.src('app/about/*.html')
+    .pipe(gulp.dest('dist/about'));
+
+  let buildHtmlProducts = gulp.src('app/products/*.html')
+    .pipe(gulp.dest('dist/products'));
+
+  let buildHtmlMechanicalWorks = gulp.src('app/mechanical-works/*.html')
+    .pipe(gulp.dest('dist/mechanical-works'));
 
   let buildHtml = gulp.src('app/*.html')
     .pipe(gulp.dest('dist'));

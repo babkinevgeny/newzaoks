@@ -1,0 +1,66 @@
+doctype
+html
+  meta(charset='UTF-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible', content='ie=edge')
+  title Шлифовальные работы
+  link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic', rel='stylesheet')
+  link(rel='stylesheet', href='/css/libs.min.css') 
+  link(rel='stylesheet', href='/css/styles.css')
+  body.body--parallax
+    include ../../includes/preloader.pug
+    include ../../includes/main-header.pug
+    div.inner-page
+      include ../../includes/catalog.pug
+      main.main
+        include ../../includes/header-article.pug
+        h1.title.title--left Шлифовальные работы
+        .main__top
+          .fotorama__wrapper
+            .fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")
+              img(src='https://beltica.ru/upload/iblock/942/9424066fa4690068a6947db0173d19d1.jpg')
+              img(src='http://www.skif-m.org/uploads/posts/2014-07/1406239471_133.jpg')
+              img(src='http://metallmig.ru/img/node-18745-gidroabraziv-rezka.jpg', alt='')
+              img(src='http://www.megasteels.ru/files/images/pages/pic_211_1416503159.jpg', alt='')
+              img(src='http://kz.all.biz/img/kz/service_catalog/229754.jpg', alt='')
+              img(src='http://www.tecsna.ru/images/detailed/1/plazma.jpg', alt='')
+          .main__info
+            p.text.text--justify Set Service Group предлагает услугу шлифовальных работ в Санкт-Петербурге. Современное оборудование и опытные специалисты обеспечат качественное выполнение любого заказа.
+            p.text.text--justify 
+              b Шлифование 
+              | (наружное, плоское, внутреннее шлифование, полировка) - это финишная обработка деталей конструкции до придания её поверхности гладкости под действием абразивных средств. Шлифовка производится для обеспечения требований к шероховатости поверхности изделия, это важно не только для эстетического вида, но и для увеличения КПД различных электротехнических приборов в различных средах в том числе и в вакууме. 
+            p.text.text--justify В зависимости от обрабатываемых поверхностей и методов обработки применяют различные виды шлифования. Наша компания выполняет следующие работы по шлифовке металла:
+            .infobuttons
+              .btn.btn--form Заказать услугу
+              .btn Скачать прайс-лист
+        section.main__articles.main__articles--with-btns
+          .main__buttons
+            div(class="active") Круглая шлифовка
+            div Плоская шлифовка
+            div Зубошлифование/Шлицешлифование
+          article.main__article.main__article--active
+            ul.list
+              li 
+                b Круглая наружная шлифовка 
+                | - применяется при шлифовании наружных цилиндрических или конических поверхностей. Принцип таков: шлифовальный круг вращается вокруг своей оси при одновременном вращении заготовка. Так же имеется два вида подачи поперечная (приближение к заготовке) и продольная (осевая) чтобы прошлифовать поверхность по всей длине.
+              li 
+                b Круглая внутренняя шлифовка 
+                | - используется для шлифовки внутренних цилиндрических или конических поверхностей. В целом данный метод аналогичен наружному. Кардинальное отличие в том, что шлифовальный круг находится внутри обрабатываемой заготовки.
+          article.main__article
+            p.text
+              b Плоская шлифовка 
+              | - применяется для обработки плоскостей. Процесс заключается в том, что плоская заготовка, зажимается на столе шлифовального станка с помощью станочных приспособлений или магнитного стола и круг начинает свою работу. Это оптимальный вариант для обработки плоских поверхностей различных форм и размеров. При том что заготовка остается неподвижной.
+          article.main__article
+            p.text
+              b Зубошлифование 
+              | - применяется при обработке зубчатых колес, шестерен различных видов. Процесс происходит при помощи спрофилированного шлифовального круга, под определённые модули зубьев. Вращающийся круг совершает возвратно-поступательные движения при попеременном вращении зубчатого колеса на столе.
+            p.text
+              b Шлицешлифование 
+              | - применяется при обработке шлицевых соединений всех профилей для достижения нужного профиля. Процесс схож с шлифованием зубчатых колес. Разница заключается в том, что для шлифовки шлицов могут быть использованы одновременно 2 или 3 шлифовальных круга.
+        include ../../includes/performed_works.pug
+    include ../../includes/popupform.pug
+    footer.main-footer
+      include ../../includes/bottom-line.pug
+  include ../../includes/scripts.pug
+
+        

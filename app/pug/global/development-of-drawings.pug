@@ -1,0 +1,44 @@
+doctype
+html
+  meta(charset='UTF-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible', content='ie=edge')
+  title Разработка чертежей и 3D-моделей
+  link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic', rel='stylesheet')
+  link(rel='stylesheet', href='css/libs.min.css') 
+  link(rel='stylesheet', href='css/styles.css')
+  body.body--parallax
+    include ../includes/preloader.pug
+    include ../includes/main-header.pug
+    div.inner-page
+      include ../includes/catalog.pug
+      main.main
+        include ../includes/header-article.pug
+        h1.title.title--left Разработка чертежей и 3D-моделей
+        .main__top
+          .fotorama__wrapper
+            .fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")
+              img(src='https://beltica.ru/upload/iblock/942/9424066fa4690068a6947db0173d19d1.jpg')
+              img(src='http://www.skif-m.org/uploads/posts/2014-07/1406239471_133.jpg')
+              img(src='http://metallmig.ru/img/node-18745-gidroabraziv-rezka.jpg', alt='')
+              img(src='http://www.megasteels.ru/files/images/pages/pic_211_1416503159.jpg', alt='')
+              img(src='http://kz.all.biz/img/kz/service_catalog/229754.jpg', alt='')
+              img(src='http://www.tecsna.ru/images/detailed/1/plazma.jpg', alt='')
+          .main__info
+            p.text.text--justify Конструкторский отдел Set Service Group выполняет разработку чертежей и эскизов различных деталей машин и механизмов, а также металлических конструкций. Мы берем на себя полную подготовку КМД. Все работы производятся в соответствии с ГОСТами и ЕСКД. 
+            .infobuttons
+              .btn.btn--form Заказать услугу
+              .btn Скачать прайс-лист
+        section.main__articles
+          article.main__article.main__article--active
+            p.text.text--justify Виды услуг входящих в состав работ:
+            ul.list
+              li Изготовление рабочих чертежей по эскизам;
+              li Выезд конструктора, для снятия размеров с образца;
+              li 3D-сканирование;
+              li Создание и при необходимости доработка полноценной 3д модели;
+              li Векторизация чертежей.
+    include ../includes/popupform.pug
+    footer.main-footer
+      include ../includes/bottom-line.pug
+  include ../includes/scripts.pug
