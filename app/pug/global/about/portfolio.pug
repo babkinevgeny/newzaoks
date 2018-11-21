@@ -9,61 +9,76 @@ html
       p.text.text--center Здесь должен быть текст о том, как много всего мы можем произвести
       ul.portfolio__btns
         li.btn.btn--active(data-filter="all") Все работы
-        li.btn(data-filter="1") Первая категория
-        li.btn(data-filter="2") Вторая категория
-        li.btn(data-filter="3") Третья категория
-        li.btn(data-filter="4") Четвертая категория
+        li.btn(data-filter="turning_automat") Токарный автомат
+        li.btn(data-filter="turning_works") Токарные работы
+        li.btn(data-filter="turning_works_with_cnc") Токарные работы с ЧПУ
+        li.btn(data-filter="milling_works") Фрезерные работы
+        li.btn(data-filter="milling_works_with_cnc") Фрезерные работы с ЧПУ
+        li.btn(data-filter="gear_cutting_works") Зубонарезные работы
+        li.btn(data-filter="turnung_milling_works_with_cnc") Токарно-фрезерные работы с ЧПУ
+        li.btn(data-filter="electric_erosion") Электроэрозия
+        li.btn(data-filter="metal_bending") Гибка металла
+        li.btn(data-filter="laser_cutting") Лазерная резка
+        li.btn(data-filter="welding_works") Сварочные работы
+        li.btn(data-filter="grinding_works") Шлифовальные работы
+        li.btn(data-filter="carousel_worls_with_cnc") Карусельная обработка с ЧПУ
+        li.btn(data-filter="boring_works") Координатно-расточные работы
+        li.btn(data-filter="hydroabrasive_cutting") Гидрообразивная резка
+        li.btn(data-filter="chrome_plating") Хромирование
+        li.btn(data-filter="rolling") Вальцовка
+        li.btn(data-filter="assembly_works") Слесарно-сборочные работы
+        li.btn(data-filter="serial_production") Серийное производство
       .portfolio__container
-        .filtr-item(data-category="1", data-sort="value")
-          img(src="/img/carousel/1.jpg")
-        .filtr-item(data-category="1", data-sort="value")
-          img(src="/img/carousel/2.jpg")
-        .filtr-item(data-category="1", data-sort="value")
-          img(src="/img/carousel/3.jpg")
-        .filtr-item(data-category="1", data-sort="value")
-          img(src="/img/carousel/4.jpg")
-        .filtr-item(data-category="1", data-sort="value")
-          img(src="/img/carousel/5.jpg")
-        .filtr-item(data-category="1", data-sort="value")
-          img(src="/img/carousel/6.jpg")
-        .filtr-item(data-category="2", data-sort="value")
-          img(src="/img/carousel/7.jpg")
-        .filtr-item(data-category="2", data-sort="value")
-          img(src="/img/carousel/8.jpg")
-        .filtr-item(data-category="2", data-sort="value")
-          img(src="/img/carousel/9.jpg")
-        .filtr-item(data-category="2", data-sort="value")
-          img(src="/img/carousel/10.jpg")
-        .filtr-item(data-category="2", data-sort="value")
-          img(src="/img/carousel/11.jpg")
-        .filtr-item(data-category="2", data-sort="value")
-          img(src="/img/carousel/12.jpg")
-        .filtr-item(data-category="3", data-sort="value")
-          img(src="/img/carousel/13.jpg")
-        .filtr-item(data-category="3", data-sort="value")
-          img(src="/img/carousel/14.jpg")
-        .filtr-item(data-category="3", data-sort="value")
-          img(src="/img/carousel/15.jpg")
-        .filtr-item(data-category="3", data-sort="value")
-          img(src="/img/carousel/16.jpg")
-        .filtr-item(data-category="3", data-sort="value")
-          img(src="/img/carousel/17.jpg")
-        .filtr-item(data-category="3", data-sort="value")
-          img(src="/img/carousel/18.jpg")
-        .filtr-item(data-category="4", data-sort="value")
-          img(src="/img/carousel/19.jpg")
-        .filtr-item(data-category="4", data-sort="value")
-          img(src="/img/carousel/20.jpg")
-        .filtr-item(data-category="4", data-sort="value")
-          img(src="/img/carousel/21.jpg")
-        .filtr-item(data-category="4", data-sort="value")
-          img(src="/img/carousel/22.jpg")
-        .filtr-item(data-category="4", data-sort="value")
-          img(src="/img/carousel/23.jpg")
-        .filtr-item(data-category="4", data-sort="value")
-          img(src="/img/carousel/24.jpg")
-        .filtr-item(data-category="4", data-sort="value")
-          img(src="/img/carousel/25.jpg")
+        .filtr-item(data-category="rolling, turning_works, milling_works, assembly_works, welding_works", data-sort="value")
+          img(src="/img/carousel/бак.jpg")
+        .filtr-item(data-category="welding_works, turning_works, milling_works", data-sort="value")
+          img(src="/img/carousel/вакуумированная камера.jpg")
+        .filtr-item(data-category="turning_works, grinding_works, chrome_plating", data-sort="value")
+          img(src="/img/carousel/вал.jpg")
+        .filtr-item(data-category="hydroabrasive_cutting", data-sort="value")
+          img(src="/img/carousel/гидроабразивная резка.jpg")
+        .filtr-item(data-category="turning_works, gear_cutting_works", data-sort="value")
+          img(src="/img/carousel/зубчатое колесо.jpg")   
+        .filtr-item(data-category="turnung_milling_works_with_cnc", data-sort="value")
+          img(src="/img/carousel/кожух.jpg")  
+        .filtr-item(data-category="milling_works_with_cnc, serial_production", data-sort="value")
+          img(src="/img/carousel/корпус.jpg")   
+        .filtr-item(data-category="milling_works, serial_production", data-sort="value")
+          img(src="/img/carousel/кронштейн.jpg") 
+        .filtr-item(data-category="carousel_worls_with_cnc, milling_works, boring_works", data-sort="value")
+          img(src="/img/carousel/матрица.jpg")   
+        .filtr-item(data-category="turnung_milling_works_with_cnc", data-sort="value")
+          img(src="/img/carousel/основание.jpg")  
+        .filtr-item(data-category="turning_automat, serial_production", data-sort="value")
+          img(src="/img/carousel/ось.jpg")   
+        .filtr-item(data-category="turning_works, grinding_works", data-sort="value")
+          img(src="/img/carousel/пресс-форма.jpg") 
+        .filtr-item(data-category="turning_automat, serial_production", data-sort="value")
+          img(src="/img/carousel/стопорная ось.jpg")   
+        .filtr-item(data-category="metal_bending, laser_cutting, welding_works", data-sort="value")
+          img(src="/img/carousel/терминал платежный.jpg")  
+        .filtr-item(data-category="turning_works, milling_works", data-sort="value")
+          img(src="/img/carousel/токарка, фрезеровка.jpg")   
+        .filtr-item(data-category="turnung_milling_works_with_cnc, electric_erosion", data-sort="value")
+          img(src="/img/carousel/токарно-фрезрное чпу, электроэрозия.jpg") 
+        .filtr-item(data-category="turning_works", data-sort="value")
+          img(src="/img/carousel/Токарные работы.jpg")   
+        .filtr-item(data-category="turning_automat", data-sort="value")
+          img(src="/img/carousel/токарный автомат.jpg")  
+        .filtr-item(data-category="turning_automat", data-sort="value")
+          img(src="/img/carousel/токарный автомат111.jpg")   
+        .filtr-item(data-category="turnung_milling_works_with_cnc, serial_production", data-sort="value")
+          img(src="/img/carousel/фитинг.jpg") 
+        .filtr-item(data-category="turnung_milling_works_with_cnc, serial_production", data-sort="value")
+          img(src="/img/carousel/фитинг1.jpg")   
+        .filtr-item(data-category="turnung_milling_works_with_cnc, serial_production", data-sort="value")
+          img(src="/img/carousel/шайба съемная.jpg")  
+        .filtr-item(data-category="turning_works, milling_works, gear_cutting_works", data-sort="value")
+          img(src="/img/carousel/шестерня косозубая.jpg")   
+        .filtr-item(data-category="turning_works_with_cnc, serial_production", data-sort="value")
+          img(src="/img/carousel/штифт.jpg") 
+        .filtr-item(data-category="turning_automat, serial_production", data-sort="value")
+          img(src="/img/carousel/штуцер.jpg")   
     include ../../includes/popupform.pug
     include ../../includes/main-footer.pug
 include ../../includes/scripts.pug  
