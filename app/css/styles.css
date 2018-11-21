@@ -2650,14 +2650,20 @@ blockquote {
     .socials__item img {
       width: 22px;
       height: 22px;
-      -webkit-border-radius: 5px;
-              border-radius: 5px;
       filter: grayscale(100%);
       -webkit-filter: grayscale(100%);
       opacity: .5;
       -webkit-transition: all .3s ease-in-out;
       -o-transition: all .3s ease-in-out;
       transition: all .3s ease-in-out; }
+    .socials__item--inst {
+      position: relative; }
+      .socials__item--inst img {
+        position: absolute;
+        width: 23px;
+        height: 23px;
+        top: 3px;
+        left: 0; }
     .socials__item:hover img {
       -webkit-filter: none;
               filter: none;
@@ -2694,3 +2700,19 @@ blockquote {
   stroke-dashoffset: 600;
   stroke-width: 1px;
   stroke: #06abdd; }
+
+#performed_works .owl-dots {
+  text-align: center;
+  padding-top: 10px; }
+
+#performed_works .owl-dot {
+  width: 10px;
+  height: 10px;
+  background: #8a8a8a;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  margin: 0 5px; }
+  #performed_works .owl-dot.active {
+    background: #06abdd; }
+  #performed_works .owl-dot:focus {
+    outline: none; }

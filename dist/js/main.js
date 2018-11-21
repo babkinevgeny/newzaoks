@@ -58,6 +58,14 @@ $(document).ready(function() {
     mode: 'fade'
   });
 
+  $("#performed_works").owlCarousel({
+    loop:true,
+    autoplay:true,
+    items:6,
+    margin:10,
+    dots:true
+  });
+
   /*Показ меню при клике на гамбургер*/
   $('.hamburger').click(function() {
     if ($('.main-header .navigation').is(':visible')) {
