@@ -777,14 +777,23 @@ blockquote {
             box-sizing: border-box;
     position: absolute;
     top: 50%;
-    left: 50%;
+    margin-top: -95px;
+    left: 55%;
     z-index: 6;
-    width: 960px;
     right: auto;
     bottom: auto;
     padding-left: 30px;
-    padding-right: 30px;
-    margin: 25px 0 0 -580px; }
+    padding-right: 30px; }
+    .main-slider .bxslider__text .big {
+      font-size: 36px;
+      line-height: 36px;
+      margin-bottom: 0; }
+    .main-slider .bxslider__text span.blue {
+      color: #06abdd; }
+    .main-slider .bxslider__text span.smaller {
+      font-size: 29px; }
+    .main-slider .bxslider__text span.uppercase {
+      text-transform: uppercase; }
 
 .main-slider .bx-wrapper {
   border: none;

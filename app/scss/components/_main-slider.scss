@@ -14,14 +14,33 @@
       box-sizing: border-box;
       position: absolute;
       top: 50%;
-      left: 50%;
+      margin-top: -95px;
+      left: 55%;
       z-index: 6;
-      width: 960px;
       right: auto;
       bottom: auto;
       padding-left: 30px;
       padding-right: 30px;
-      margin: 25px 0 0 -580px;
+      .big{
+        font-size: 36px;
+        line-height: 36px;
+        margin-bottom: 0;
+      }
+      span.blue{
+        color: $color-blue;
+      }
+      span.smaller{
+        font-size: 29px;
+      }
+      span.uppercase{
+        text-transform: uppercase;
+      }
+      // span.px-38{
+      //   font-size: 38px;
+      // }
+      // span.px-40{
+      //   font-size: 40px;
+      // }
     }
   }
   .bx-wrapper{
