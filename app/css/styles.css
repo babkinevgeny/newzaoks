@@ -2759,3 +2759,42 @@ blockquote {
             box-sizing: border-box; }
     .portfolio__item img {
       width: 100%; }
+
+.menu-line {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Open Sans", Arial, sans-serif;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #eceded; }
+  .menu-line__item {
+    min-width: 155px;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+    -webkit-align-items: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+    .menu-line__item a {
+      text-decoration: none;
+      color: #a4a4a4;
+      padding: 20px;
+      -webkit-transition: all .3s ease-out;
+      -o-transition: all .3s ease-out;
+      transition: all .3s ease-out; }
+      .menu-line__item a:hover {
+        color: #717171; }
+      .menu-line__item a.active {
+        border-bottom: 1px solid #06abdd;
+        color: #575757; }
