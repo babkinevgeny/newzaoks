@@ -193,6 +193,31 @@ $(document).ready(function() {
       $('.header-article').slideUp();
     }
   });
+
+  // var filterizd = $('.portfolio__container').filterizr({
+  //   filterOutCss: {
+  //       opacity: 0,
+  //       //transform: 'scale(0.5)'
+  //    },
+  //    filterInCss: {
+  //       opacity: 0,
+  //       //transform: 'scale(1)'
+  //    }
+  // });
+  $('.portfolio__btns .btn').click(function() {
+    $('.portfolio__btns .btn--active').removeClass('btn--active');
+    $(this).addClass('btn--active');
+  });
+
+  let $grid = $('.portfolio__grid').isotope({
+    // options
+    itemSelector: '.portfolio__item',
+    layoutMode: 'fitRows'
+  });
+  $('.portfolio__btns').on( 'click', 'li.btn', function() {
+    let filterValue = $(this).attr('data-filter');
+    $grid.isotope({ filter: filterValue });
+  });
 });
 
 function catalogLinks () {
