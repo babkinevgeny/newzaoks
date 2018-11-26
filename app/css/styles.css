@@ -784,6 +784,8 @@ blockquote {
     bottom: auto;
     padding-left: 30px;
     padding-right: 30px; }
+    .main-slider .bxslider__text .white {
+      color: white; }
     .main-slider .bxslider__text .big {
       font-size: 36px;
       line-height: 36px;
@@ -794,6 +796,8 @@ blockquote {
       font-size: 29px; }
     .main-slider .bxslider__text span.uppercase {
       text-transform: uppercase; }
+    .main-slider .bxslider__text span.px-24 {
+      font-size: 24px; }
 
 .main-slider .bx-wrapper {
   border: none;
