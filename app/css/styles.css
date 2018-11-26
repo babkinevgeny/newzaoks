@@ -2716,3 +2716,108 @@ blockquote {
     background: #06abdd; }
   #performed_works .owl-dot:focus {
     outline: none; }
+
+.logistic {
+  height: 400px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url("../img/section-parallax.jpg");
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5)), url("../img/section-parallax.jpg");
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.5)), url("../img/section-parallax.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5)), url("../img/section-parallax.jpg");
+  padding: 80px 0; }
+  .logistic * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  .logistic .container {
+    max-width: 1340px;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .logistic .title {
+    text-transform: uppercase;
+    color: white;
+    font-size: 48px;
+    text-align: left;
+    line-height: 48px;
+    margin-bottom: 20px; }
+
+.log-services {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+  .log-services__item {
+    font-family: "Open Sans", Arial, sans-serif;
+    color: white;
+    text-transform: uppercase;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 300px;
+    margin-bottom: 20px; }
+    .log-services__item:last-child {
+      margin-bottom: 0; }
+    .log-services__item:nth-child(2) .log-services__icon {
+      background: url("../img/pickup-truck.svg") center no-repeat;
+      -webkit-background-size: 30px 30px;
+              background-size: 30px 30px; }
+    .log-services__item:nth-child(3) .log-services__icon {
+      background: url("../img/subway.svg") center no-repeat;
+      -webkit-background-size: 30px 30px;
+              background-size: 30px 30px; }
+    .log-services__item:nth-child(4) .log-services__icon {
+      background: url("../img/aeroplane.svg") center no-repeat;
+      -webkit-background-size: 30px 30px;
+              background-size: 30px 30px; }
+    .log-services__item:nth-child(5) .log-services__icon {
+      background: url("../img/ship.svg") center no-repeat;
+      -webkit-background-size: 30px 30px;
+              background-size: 30px 30px; }
+    .log-services__item:nth-child(4) .log-services__icon {
+      background: url("../img/aeroplane.svg") center no-repeat;
+      -webkit-background-size: 30px 30px;
+              background-size: 30px 30px; }
+  .log-services__icon {
+    width: 50px;
+    height: 50px;
+    border: 1px solid white; }
+  .log-services__title {
+    height: 50px;
+    width: 240px;
+    border: 1px solid white;
+    text-align: left;
+    line-height: 50px;
+    padding: 0 20px; }
+
+.log-descriptions {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+  .log-descriptions .text {
+    color: white; }
+  .log-descriptions__text {
+    max-width: 800px;
+    padding: 20px;
+    color: white;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    text-align: justify;
+    background: rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    margin-top: 29px; }
+  .log-descriptions .btn {
+    float: right;
+    background: rgba(0, 0, 0, 0.5);
+    color: white; }
