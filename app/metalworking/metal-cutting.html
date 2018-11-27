@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Резка металла</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="/css/libs.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body class="body--parallax">
+    <div id="preloader">
+      <div class="svg-wrapper">
+        <svg height="150" width="150" xmlns="http://www.w3.org/2000/svg">
+          <rect class="animate" height="150" width="150"></rect>
+        </svg>
+      </div>
+    </div>
+    <header class="main-header">
+      <div class="main-header__inner">
+        <div class="main-header__column main-header__column--left">    
+          <div class="hamburger"><span class="hamburger__item"></span><span class="hamburger__item"></span><span class="hamburger__item"></span></div>
+          <div class="main-header__logo"><a href="/index.html"></a></div>
+        </div>
+        <div class="main-header__column main-header__column--right">
+          <ul class="main-header__list">
+            <li class="main-header__item"><a href="mailto:info@zaoks.ru">info@zaoks.ru</a></li>
+            <li class="main-header__item"><a href="tel:+78126271516">8 (812) 627 15 16</a></li>
+            <li class="main-header__item" title="Раздел в разработке"><span>Личный кабинет</span></li>
+          </ul>
+        </div>
+      </div>
+      <nav class="navigation">
+        <div class="navigation__btn"></div>
+        <ul class="navigation__list">
+          <form class="search">
+            <input type="text" placeholder="Поиск по сайту">
+          </form>
+          <div class="navigation__column navigation__column--left">
+            <li class="navigation__title">О нас
+              <ul class="navigation__underlist">
+                <li class="navigation__undertitle"><a href="/about/about.html">О компании</a></li>
+                <li class="navigation__undertitle"><a href="/about/technical-opportunities.html">Технические возможности</a></li>
+                <li class="navigation__undertitle"><a href="/about/clients.html">Наши клиенты</a></li>
+                <li class="navigation__undertitle"><a href="/about/portfolio.html">Портфолио</a></li>
+                <li class="navigation__undertitle"><a href="/about/vacancies.html">Вакансии</a></li>
+              </ul>
+            </li>
+            <li class="navigation__title"><a href="/logistic.html">Логистика</a></li>
+            <li class="navigation__title"><a href="/contacts.html">Контакты</a></li>
+          </div>
+          <div class="navigation__column navigation__column--center">
+            <li class="navigation__title">Металлообработка</li>
+            <li class="navigation__title">
+              <ul class="navigation__underlist">
+                <li class="navigation__undertitle"><a href="/metalworking/milling-works.html">Фрезерные работы</a></li>
+                <li class="navigation__undertitle"><a href="/metalworking/milling-works-with-cnc.html">Фрезерные работы ЧПУ</a></li>
+                <li class="navigation__undertitle"><a href="/metalworking/turning-works.html">Токарные работы</a></li>
+                <li class="navigation__undertitle"><a href="/metalworking/turning-works-with-cnc.html">Токарные работы ЧПУ</a></li>
+                <li class="navigation__undertitle"><a href="/metalworking/boring-works.html">Координатно-расточные работы</a></li>
+                <li class="navigation__undertitle"><a href="/metalworking/grinding-works.html">Шлифовальные работы</a></li>
+              </ul>
+            </li>
+            <li class="navigation__title"><a href="/metalworking/metal-cutting.html">Резка металла</a></li>
+            <li class="navigation__title"><a href="/metalworking/metal-bending.html">Гибка металла</a></li>
+            <li class="navigation__title"><a href="/metalworking/thermal-works.html">Термическая обработка</a></li>
+            <li class="navigation__title"><a href="/metalworking/welding.html">Сварочные работы</a></li>
+            <li class="navigation__title"><a href="/metalworking/assembly-work.html">Слесарно-сборочные работы</a></li>
+            <li class="navigation__title"><a href="/metalworking/coating.html">Нанесение покрытий</a></li>
+            <li class="navigation__title"> <a href="/metalworking/laboratory-tests.html">Лабораторные испытания</a></li>
+            <li class="navigation__title"><a href="/metalworking/development-of-drawings.html">Раработка чертежей и 3D-моделей</a></li>
+          </div>
+          <div class="navigation__column navigation__column--right">
+            <li class="navigation__title">Металлоизделия
+              <ul class="navigation__underlist">
+                <li class="navigation__undertitle"><a href="/metal-products/shafts.html">Валы, штоки, оси</a></li>
+                <li class="navigation__undertitle"><a href="/metal-products/couplings.html">Муфты, Фланцы</a></li>
+                <li class="navigation__undertitle"><a href="/metal-products/bodies.html">Корпуса</a></li>
+                <li class="navigation__undertitle"><a href="/metal-products/wheels-and-gears.html">Колеса зубчатые, шестерни</a></li>
+                <li class="navigation__undertitle"><a href="/metal-products/brackets.html">Кронштейны</a></li>
+                <li class="navigation__undertitle"><a href="/metal-products/foundation-bolts.html">Фундаментные болты</a></li>
+                <li class="navigation__undertitle"><a href="/metal-products/press-forms-stamps-matrices.html">Пресс-формы, штампы, матрицы</a></li>
+              </ul>
+            </li>
+            <li class="navigation__title">Металлоконструкции
+              <ul class="navigation__underlist">
+                <li class="navigation__undertitle"><a href="/metal-structures/pipeline-supports.html">Опоры трубопроводов</a></li>
+                <li class="navigation__undertitle"><a href="/metal-structures/service-areas.html">Площадки обслуживания</a></li>
+                <li class="navigation__undertitle"><a href="/metal-structures/welded-crane-girders.html">Балки подкрановые сварные</a></li>
+                <li class="navigation__undertitle"><a href="/metal-structures/technological-tanks.html">Технологические емкости</a></li>
+                <li class="navigation__undertitle"><a href="/metal-structures/technological-pipelines.html">Технологические трубопроводы</a></li>
+                <li class="navigation__undertitle"><a href="/metal-structures/building-metal-structures.html">Строительные металлоконструкции</a></li>
+                <li class="navigation__undertitle"><a href="/metal-structures/social-metal-structures.html">Социальные металлоконсрукции</a></li>
+              </ul>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </header>
+    <div class="inner-page">
+      <aside class="catalog">
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <div class="catalog__groupname">Механическая обработка
+              <div class="switch"><span class="switch__bg"></span><span class="switch__btn"></span></div>
+            </div>
+            <ul class="catalog__links">
+              <li><a href="/mechanical-works/milling-works.html">Фрезерные работы</a></li>
+              <li><a href="/mechanical-works/milling-works-with-cnc.html">Фрезерные работы с ЧПУ</a></li>
+              <li><a href="/mechanical-works/turning-works.html">Токарные работы</a></li>
+              <li><a href="/mechanical-works/turning-works-with-cnc.html">Токарные работы с ЧПУ</a></li>
+              <li><a href="/mechanical-works/boring-works.html">Координатно-расточные работы</a></li>
+              <li><a href="/mechanical-works/grinding-works.html">Шлифовальные работы</a></li>
+            </ul>
+          </li>
+          <li class="catalog__item">
+            <div class="catalog__groupname"><a href="/metal-cutting.html">Резка металла</a></div>
+          </li>
+          <li class="catalog__item">
+            <div class="catalog__groupname"><a href="/metal-bending.html">Гибка металла</a></div>
+          </li>
+          <li class="catalog__item">
+            <div class="catalog__groupname"><a href="/thermal-works.html">Термическая обработка</a></div>
+          </li>
+          <li class="catalog__item">
+            <div class="catalog__groupname"><a href="/welding.html">Сварочные работы</a></div>
+          </li>
+          <li class="catalog__item">
+            <div class="catalog__groupname"><a href="/assembly-work.html">Слесарно-сборочные работы</a></div>
+          </li>
+          <li class="catalog__item">
+            <div class="catalog__groupname"><a href="/coating.html">Нанесение покрытий</a></div>
+          </li>
+          <li class="catalog__item">
+            <div class="catalog__groupname"><a href="/development-of-drawings.html">Разработка чертежей и 3D-моделей</a></div>
+          </li>
+          <li class="catalog__item">
+            <div class="catalog__groupname"><a href="/laboratory-tests.html">Лабораторные испытания</a></div>
+          </li>
+        </ul>
+      </aside>
+      <main class="main">
+        <header class="header-article">
+          <ul class="header-article__list">
+            <li class="header-article__item"><a onclick="javascript:history.back(); return false;" title="Назад"></a></li>
+            <li class="header-article__item"><a href="/docs/Производственные возможности.doc" download title="Скачать производственные возможности одним файлом"></a></li>
+            <li class="header-article__item" title="Просмотреть что-то"></li>
+            <li class="header-article__item" title="Написать специалисту"></li>
+            <li class="header-article__item" title="Позвонить специалисту"></li>
+          </ul>
+        </header>
+        <h1 class="title title--left">Резка металла</h1>
+        <div class="main__top">
+          <div class="fotorama__wrapper">
+            <div class="fotorama" data-allowfullscreen="true" data-loop="true" data-autoplay="false"><img src="https://beltica.ru/upload/iblock/942/9424066fa4690068a6947db0173d19d1.jpg"><img src="http://www.skif-m.org/uploads/posts/2014-07/1406239471_133.jpg"><img src="http://metallmig.ru/img/node-18745-gidroabraziv-rezka.jpg" alt=""><img src="http://www.megasteels.ru/files/images/pages/pic_211_1416503159.jpg" alt=""><img src="http://kz.all.biz/img/kz/service_catalog/229754.jpg" alt=""><img src="http://www.tecsna.ru/images/detailed/1/plazma.jpg" alt=""></div>
+          </div>
+          <div class="main__info">
+            <p class="text text--justify">При внешней простоте операции резка является одним из наиболее сложных этапов точной обработки металла, который может выполняться исключительно профессионалами, причем на специальном оборудовании.</p>
+            <p class="text text--justify">Мы используем в технологическом процессе высокоточное оборудование, преимущественно с ЧПУ. За счет применения программируемых металлообрабатывающих станков повышается производительность и точность изготовления изделий, включая детали сложной геометрической формы. Потери материала в виде отходов и брака сведены до минимума.</p>
+            <div class="infobuttons">
+              <div class="btn btn--form">Заказать услугу</div>
+              <div class="btn">Скачать прайс-лист</div>
+            </div>
+          </div>
+        </div>
+        <section class="main__articles main__articles--with-btns">
+          <div class="main__buttons">
+            <div class="active">Лазерная резка</div>
+            <div>Гидрообразивная резка</div>
+            <div>Плазменная резка</div>
+          </div>
+          <article class="main__article main__article--active">
+            <p class="text text--justify"><b>Лазерная резка</b> – это способ резки металла, отличающийся высочайшей точностью и максимально аккуратным краем среза на выходе. Так как обрабатываемая поверхность не подвергается механическому воздействию, она защищена от любого рода деформаций. Лазерная резка незаменима для обработки изделий из хрупких материалов. <b>Резка металла лазером</b> выполняется с высокой точностью, с минимумом отходов и допуском реза.</p>
+            <p class="text text--justify"><b>Преимущества технологии лазерной резки</b>:</p>
+            <ul class="list">
+              <li>Универсальность. Обрабатываются почти все металлы: сталь любой марки, алюминиевые сплавы.</li>
+              <li>Бережное воздействие. Уникальность технологии и в том, что заготовка не обязательно должна проводить ток. Отсутствует непосредственное механическое давление на поверхность, благодаря чему обработке подвергается не только металл, но и другие, в том числе тонкие и хрупкие материалы.</li>
+              <li>Простота применения. Для автоматического раскроя необходим лишь чертеж готового изделия, подготовленный в одной из специальных инженерных программ. Далее проект переносится в компьютерную систему станка.</li>
+              <li>Оптимизация производства. Работу можно настроить в практически автоматическом режиме. Это уменьшает трудозатраты и другие расходы при непревзойденном качестве изготавливаемых изделий. Технология сводит объемы отходов к минимуму, благодаря автоматическому выбору раскладки для раскроя. Детали можно компактно разместить на одном листе.</li>
+              <li>Декоративное оформление. Посредством лучевого воздействия создаются гравировка, узоры и прочие изображения.</li>
+            </ul>
+            <p class="text text--justify">Таким образом, методика идеальна при потребности в высокой скорости и точности изготавливаемых деталей, так как они не нуждаются в дополнительной обработке.</p>
+            <p class="text text--justify">Сегодня можно с уверенностью сказать, что лазерные режущие станки совершили революцию в металлообработке, сделав процедуру изготовления сложных конструкций из металла более быстрой, качественной и доступной. Наша компания имеет в распоряжении немецкие лазерные установки <b>Trumpf Trumatic L4030</b> и <b>Trumpf Trumatic L5030</b>. Технические характеристики этих лазерных установок можно посмотреть ниже.</p>
+            <p class="text text--justify">Для проведения работ по лазерной резке металла вы всегда можете обратиться в <b>Set Service Group</b>, позвонив по телефону <b>8 (812) 627-15-16</b> или обратиться с вопросом <b>заполнив форму для связи.</b></p>
+            <ul class="dropdown">
+              <li class="dropdown-item">
+                <div class="dropdown-title">
+                  <div class="container" style="border-top: 1px solid #eceded;">
+                    <div class="switch"><span class="switch__bg"></span><span class="switch__btn"></span></div>Оборудование для лазерной резки
+                  </div>
+                </div>
+                <div class="container" style="border-bottom: none">
+                  <div class="dropdown-item-content">
+                    <table class="tools">
+                      <tr>
+                        <td><b>Изображение</b></td>
+                        <td><b>Модель</b></td>
+                        <td><b>Год выпуска</b></td>
+                        <td><b>Страна производитель</b></td>
+                        <td><b>Технические характеристики</b></td>
+                      </tr>
+                      <tr>
+                        <td><img alt="Trumpf-L4030" src="/img/machines/cutting-machines/laser/1.jpg"></td>
+                        <td><b>Установка лазерной резки Trumpf Trumatic L4030</b></td>
+                        <td>2008</td>
+                        <td>Германия</td>
+                        <td><b>Тип лазера</b>: TLF 2400Turbo <br><b>Мощность лазера</b>: 2400 Вт <br><b>Система ЧПУ</b>: Siemens Sinumerik 840 D <br><b>Точность позиционирования</b>: 0,1мм <br><b>Максимальный вес детали</b>: 1250 кг <br><b>Максимальная толщина листа</b>:<br><em>Конструкционная сталь</em> - 15 мм<br><em>Нержавеющая сталь</em> - 8 мм<br><em>Алюминиевые сплавы</em> - 5 мм</td>
+                      </tr>
+                      <tr>
+                        <td><img alt="Trumpf-L5030" src="/img/machines/cutting-machines/laser/2.jpg"></td>
+                        <td><b>Установка лазерной резки Trumpf Trumatic L5030</b></td>
+                        <td>2010</td>
+                        <td>Австрия</td>
+                        <td><b>Тип лазера</b>: TLF 2500<br><b>Мощность лазера</b>: 5000 Вт <br><b>Система ЧПУ</b>: Siemens Sinumerik 840 D <br><b>Точность позиционирования</b>: 0,1мм <br><b>Максимальный вес детали</b>: 1110 кг <br><b>Максимальная толщина листа</b>:<br><em>Конструкционная сталь</em> - 25 мм <br><em>Нержавеющая сталь</em> - 20 мм <br><em>Алюминиевые сплавы</em> - 15 мм <br><em>Титановые сплавы</em> - 12 мм</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </li>
+              <li class="dropdown-item">
+                <div class="dropdown-title">
+                  <div class="container">
+                    <div class="switch"><span class="switch__bg"></span><span class="switch__btn"></span></div>Расценки на лазерную резку
+                  </div>
+                </div>
+                <div class="container" style="border-bottom:none">
+                  <div class="dropdown-item-content">
+                    <table class="pricelist">
+                      <tr>
+                        <td colspan="2">Конструкционная сталь</td>
+                        <td colspan="2">Нержавеющая сталь</td>
+                        <td colspan="2">Алюминий и сплавы</td>
+                        <td colspan="2">Титан</td>
+                        <td colspan="2">Латунь</td>
+                      </tr>
+                      <tr>
+                        <td>Толщина, мм</td>
+                        <td>Цена за п.м., руб.</td>
+                        <td>Толщина, мм</td>
+                        <td>Цена за п.м., руб.</td>
+                        <td>Толщина, мм</td>
+                        <td>Цена за п.м., руб.</td>
+                        <td>Толщина, мм</td>
+                        <td>Цена за п.м., руб.</td>
+                        <td>Толщина, мм</td>
+                        <td>Цена за п.м., руб.</td>
+                      </tr>
+                      <tr>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>0,8</td>
+                        <td>12</td>
+                        <td>0,8</td>
+                        <td>10,8</td>
+                        <td>1</td>
+                        <td>60</td>
+                        <td>1</td>
+                        <td>38,4</td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>6,6</td>
+                        <td>1</td>
+                        <td>13,44</td>
+                        <td>1</td>
+                        <td>11,4</td>
+                        <td>1,5</td>
+                        <td>66</td>
+                        <td>1,5</td>
+                        <td>60</td>
+                      </tr>
+                      <tr>
+                        <td>1,5</td>
+                        <td>7,08</td>
+                        <td>1,5</td>
+                        <td>16,68</td>
+                        <td>1,5</td>
+                        <td>14,16</td>
+                        <td>2</td>
+                        <td>77,4</td>
+                        <td>2</td>
+                        <td>75,6</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>10,68</td>
+                        <td>2</td>
+                        <td>19,8</td>
+                        <td>2</td>
+                        <td>17,88</td>
+                        <td>3</td>
+                        <td>109,2</td>
+                        <td>3</td>
+                        <td>91</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>18,96</td>
+                        <td>3</td>
+                        <td>27,24</td>
+                        <td>3</td>
+                        <td>24,96</td>
+                        <td>4</td>
+                        <td>132</td>
+                        <td>4</td>
+                        <td>108</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>23,52</td>
+                        <td>4</td>
+                        <td>35,4</td>
+                        <td>4</td>
+                        <td>49,32</td>
+                        <td>5</td>
+                        <td>156</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>28,56</td>
+                        <td>5</td>
+                        <td>46,68</td>
+                        <td>5</td>
+                        <td>49,32</td>
+                        <td>6</td>
+                        <td>192</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td>35,4</td>
+                        <td>6</td>
+                        <td>56,04</td>
+                        <td>6</td>
+                        <td>63,84</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td>66,72</td>
+                        <td>8</td>
+                        <td>78,06</td>
+                        <td>8</td>
+                        <td>114,6</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>10</td>
+                        <td>74,16</td>
+                        <td>10</td>
+                        <td>116,16</td>
+                        <td>10</td>
+                        <td>202,68</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>12</td>
+                        <td>88,0</td>
+                        <td>12</td>
+                        <td>175,08</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>14</td>
+                        <td>91,8</td>
+                        <td>15</td>
+                        <td>277,08</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>16</td>
+                        <td>99,96</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>20</td>
+                        <td>150,0</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </article>
+          <article class="main__article">
+            <p class="text text--justify"><b>Гидроабразивная резка</b> - это такой вид обработки металла при котором струя воды под огромным давлением около 4200 атмосфер проходит через отверстие 0,2 мм , разгоняется до скорости 4000 км/ч и смешивается с гранатовым песком. Этого достаточно, чтобы при столкновении двух сред произошла резка высокой точности. Вода постоянно отводит тепло, и температура обрабатываемого материала остается в пределах 80 градусов. Такая гидроабразивная смесь разрезает все на своем пути будь-то камень, титан, стекло или металл, керамогранита, пластик.</p>
+            <p class="text text--justify">Инновационные технологии <b>гидрорезки</b> дают возможность вырезать элементы, со сложным контуром точно соответствии нарисованным эскизом из таких материалов как титан керамогранит, металл, камень, стекло, гранит. Небольшая температура реза при резки водой около +70°С исключает термическую деформацию изделия, заготовки и не оказывает температурного влияния на металл вблизи реза.<br>При обработке не выделяются вредные газы, горючие, взрывоопасные вещества. Зона термического влияния отсутствует, что крайне важно для обработки пластичных металлов. Например, на гидроабразивных машинах с успехом обрабатывается нержавеющая сталь AISI304, которую сложно резать другими способами.</p>
+            <p class="text text--justify">При технологии гидроабразивной резки, можно добиваться идеального качества поверхности детали с шероховатостью Ra1,4 мкм, такая деталь не требует дополнительной обработки и готова к применению.</p>
+            <p class="text text--justify">Преимущества технологии гидроабразивной резки:</p>
+            <ul class="list">
+              <li><b>Водорезка</b> практически незаменима при резке металлов: титана, высокопрочных сталей, меди, бронзы, латуни, алюминия.</li>
+              <li>В случае сложно контурной резки такого хрупкого материала как камень, гидрорезка является единственно возможной технологией раскроя гранита, мрамора, керамики, стекла, текстолита и натурального камня, керамогранита, камня, стекла.</li>
+              <li>Гидроабразивная резка (водорезка) пластика, резины, полиуретана, поролона, пластмассы большой толщины, также является уникальной, так как позволяет избежать подгорания и потемнения кромки материала.</li>
+            </ul>
+            <p class="text text--justify">В арсенале нашей компании уникальный 5-осевой станок <b>CMS Tecnocut Milestone</b>, позволяющий производить трёхмерную резку по различным материалам: металл, твёрдые сплавы, пластик, камень, стекло, композитные материалы. Подробные технические характеристики станка можно посмотреть ниже.</p>
+            <p class="text text--justify">Вы можете заказать проведение работ по гидроабразивной резке, позвонив по телефону <b>8 (812) 627-15-16</b> или обратиться с вопросом <b>заполнив форму для связи.</b></p>
+            <ul class="dropdown">
+              <li class="dropdown-item">
+                <div class="dropdown-title">
+                  <div class="container" style="border-top: 1px solid #eceded;">
+                    <div class="switch"><span class="switch__bg"></span><span class="switch__btn"></span></div>Оборудование для гидрообразивной резки
+                  </div>
+                </div>
+                <div class="container" style="border-bottom: none">
+                  <div class="dropdown-item-content">
+                    <table class="tools">
+                      <tr>
+                        <td><b>Изображение</b></td>
+                        <td><b>Модель</b></td>
+                        <td><b>Год выпуска</b></td>
+                        <td><b>Страна производитель</b></td>
+                        <td><b>Технические характеристики</b></td>
+                      </tr>
+                      <tr>
+                        <td><img alt="CMS Tecnocut Milestone" src="/img/machines/cutting-machines/waterjet/1.jpg"></td>
+                        <td><b>Установка гидроабразивной резки CMS Tecnocut Milestone</b></td>
+                        <td>2012</td>
+                        <td>Италия</td>
+                        <td><b>Рабочее поле</b>: 4600х2050мм<br><b>Ход по оси Х</b>: 4000мм<br><b>Ход по оси Y</b>: 1700мм<br><b>Ход по оси Z</b>: 250мм<br><b>Ось B</b>: +- 60°<br><b>Ось C</b>: 600°<br><b>Диапазон толщин</b>: от 5 до 170 мм<br><b>Линейная точность</b>: 0,0038 мм/м</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </li>
+              <li class="dropdown-item">
+                <div class="dropdown-title">
+                  <div class="container">
+                    <div class="switch"><span class="switch__bg"></span><span class="switch__btn"></span></div>Расценки на гидрообразивную резку
+                  </div>
+                </div>
+                <div class="container" style="border-bottom:none">
+                  <div class="dropdown-item-content">
+                    <table class="pricelist">
+                      <tr>
+                        <td rowspan="3">Толщина</td>
+                        <td colspan="3">Цена, руб./м.п.</td>
+                      </tr>
+                      <tr>
+                        <td colspan="3">Чёрная / Нержавеющая сталь	</td>
+                      </tr>
+                      <tr>
+                        <td>Лучшее RZ20÷RZ30</td>
+                        <td>Норма RZ40÷50</td>
+                        <td>Черновое RZ≥70</td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>495</td>
+                        <td>300</td>
+                        <td>240</td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td>792</td>
+                        <td>480</td>
+                        <td>384</td>
+                      </tr>
+                      <tr>
+                        <td>10</td>
+                        <td>990</td>
+                        <td>600</td>
+                        <td>480</td>
+                      </tr>
+                      <tr>
+                        <td>12</td>
+                        <td>1177</td>
+                        <td>720</td>
+                        <td>576</td>
+                      </tr>
+                      <tr>
+                        <td>16</td>
+                        <td>1562</td>
+                        <td>960</td>
+                        <td>768</td>
+                      </tr>
+                      <tr>
+                        <td>18</td>
+                        <td>1749</td>
+                        <td>1080</td>
+                        <td>864</td>
+                      </tr>
+                      <tr>
+                        <td>20</td>
+                        <td>1936</td>
+                        <td>1200</td>
+                        <td>948</td>
+                      </tr>
+                      <tr>
+                        <td>25</td>
+                        <td>2420</td>
+                        <td>1500</td>
+                        <td>1176</td>
+                      </tr>
+                      <tr>
+                        <td>30</td>
+                        <td>2904</td>
+                        <td>1800</td>
+                        <td>1404</td>
+                      </tr>
+                      <tr>
+                        <td>40</td>
+                        <td>3872</td>
+                        <td>2400</td>
+                        <td>1872</td>
+                      </tr>
+                      <tr>
+                        <td>50</td>
+                        <td>4840</td>
+                        <td>3000</td>
+                        <td>2340</td>
+                      </tr>
+                      <tr>
+                        <td>60</td>
+                        <td>5797</td>
+                        <td>3600</td>
+                        <td>2808</td>
+                      </tr>
+                      <tr>
+                        <td>70</td>
+                        <td>6754</td>
+                        <td>4200</td>
+                        <td>3276</td>
+                      </tr>
+                      <tr>
+                        <td>80</td>
+                        <td>7711</td>
+                        <td>4800</td>
+                        <td>3744</td>
+                      </tr>
+                      <tr>
+                        <td>90</td>
+                        <td>8668</td>
+                        <td>5400</td>
+                        <td>4212</td>
+                      </tr>
+                      <tr>
+                        <td>100</td>
+                        <td>9625</td>
+                        <td>6000</td>
+                        <td>4668</td>
+                      </tr>
+                    </table>
+                    <table class="pricelist">
+                      <tr>
+                        <td rowspan="3">Толщина</td>
+                        <td colspan="3">Цена, руб./м.п.</td>
+                      </tr>
+                      <tr>
+                        <td colspan="3">Алюминий</td>
+                      </tr>
+                      <tr>
+                        <td>Лучшее RZ20÷RZ30</td>
+                        <td>Норма RZ40÷50</td>
+                        <td>Черновое RZ≥70</td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>204</td>
+                        <td>144</td>
+                        <td>108</td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td>324</td>
+                        <td>228</td>
+                        <td>156</td>
+                      </tr>
+                      <tr>
+                        <td>10</td>
+                        <td>396</td>
+                        <td>276</td>
+                        <td>192</td>
+                      </tr>
+                      <tr>
+                        <td>12</td>
+                        <td>468</td>
+                        <td>324</td>
+                        <td>228</td>
+                      </tr>
+                      <tr>
+                        <td>16</td>
+                        <td>612</td>
+                        <td>432</td>
+                        <td>288</td>
+                      </tr>
+                      <tr>
+                        <td>18</td>
+                        <td>684</td>
+                        <td>480</td>
+                        <td>312</td>
+                      </tr>
+                      <tr>
+                        <td>20</td>
+                        <td>756</td>
+                        <td>528</td>
+                        <td>336</td>
+                      </tr>
+                      <tr>
+                        <td>25</td>
+                        <td>936</td>
+                        <td>660</td>
+                        <td>420</td>
+                      </tr>
+                      <tr>
+                        <td>30</td>
+                        <td>1116</td>
+                        <td>792</td>
+                        <td>504</td>
+                      </tr>
+                      <tr>
+                        <td>40</td>
+                        <td>1488</td>
+                        <td>1056</td>
+                        <td>672</td>
+                      </tr>
+                      <tr>
+                        <td>50</td>
+                        <td>1860</td>
+                        <td>1320</td>
+                        <td>840</td>
+                      </tr>
+                      <tr>
+                        <td>60</td>
+                        <td>2220</td>
+                        <td>1584</td>
+                        <td>996</td>
+                      </tr>
+                      <tr>
+                        <td>70</td>
+                        <td>2580</td>
+                        <td>1848</td>
+                        <td>1152</td>
+                      </tr>
+                      <tr>
+                        <td>80</td>
+                        <td>2940</td>
+                        <td>2112</td>
+                        <td>1308</td>
+                      </tr>
+                      <tr>
+                        <td>90</td>
+                        <td>3300</td>
+                        <td>2376</td>
+                        <td>1464</td>
+                      </tr>
+                      <tr>
+                        <td>100</td>
+                        <td>3660</td>
+                        <td>2628</td>
+                        <td>1620</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </article>
+          <article class="main__article">
+            <p class="text text--justify"><b>Плазменная резка</b> – один из лучших способов раскроя листового проката. Этот метод резки заключается в воздействии струи плазмы (преобразованной струи газа, поэтому плазменную резку часто называют газоплазменной) температурой от 5 000 до 30 0000С, от чего металл плавится по линии реза.</p>
+            <p class="text text--justify">Особенность плазменной резки — отсутствие каких-либо побочных эффектов на металле после обработки. После воздействия лазером у титана могут остаться внедренные растворы на швах. А механическая обработка и вовсе ограничена — нельзя нарезать листы фигурно. После соприкосновения с материалом плазма не оставляет следы (наплывы, царапины и углубления). Сам процесс резки одного элемента может занять всего 5 минут! Плазменная резка работает при помощи ЧПУ, потому человеческий фактор исключается — вы получите изделие в точности, как заказывали.</p>
+            <p class="text text--justify">Преимущества технологии плазменной  резки:</p>
+            <ul class="list">
+              <li>Высокий КПД процесса.</li>
+              <li>Идеальная линия среза. После такой резки не остается наплывов, грата кромки или перекаливания, что избавляет заказчика от необходимости дополнительно обрабатывать полученный материал. Благодаря минимальной зоне нагрева, <b>плазменно-дуговая резка</b> практически исключает термические деформации даже тонколистового металла.</li>
+              <li>Высокая скорость работы при сравнении с методами ацетиленкислородного, лазерного и другими способами разделения.</li>
+              <li>Универсальность. Плазменной резке может подвергаться чугун, сталь, титан, медь, алюминий и другие металлы без потерь в качестве раскроя. При этом не имеет значения качество поверхности материала – ни ржавчина, ни краска не станут помехой.</li>
+              <li>Возможность резки изделий толщиной до 30 мм.</li>
+              <li>Экологически безопасна за счет отсутствия взрывоопасных газов.</li>
+              <li>Низкая стоимость.</li>
+            </ul>
+            <p class="text text--justify">В зависимости от типа газообразующей смеси меняется количество выделяемой тепловой энергии, при этом становится возможным резать различные металлы и сплавы в широком диапазоне толщин.</p>
+            <ul class="list">
+              <li>Легированные и углеродистые стали.</li>
+              <li>Нержавеющие стали.</li>
+              <li>Низкоуглеродистые металлы.</li>
+              <li>Высокоуглеродистые стали.</li>
+              <li>Резка алюминия и его сплавов.</li>
+              <li>Резка меди и латуни.</li>
+            </ul>
+            <p class="text text--justify"><b>Услуги по лазерной резке металл</b>а наша компания выполняет на американской плазменной установке <b>HyPerformance HPR 260 XD</b>. Технические параметры этого устройства можно посмотреть ниже.</p>
+            <p class="text text--justify">Вы всегда можете обратиться в Set Service Group за консультацией по<b> услугам плазменной резки в Санкт-Петербурге</b>, позвонив по телефону <b>8 (812) 627-15-16</b> или обратиться с вопросом <b>заполнив форму для связи.</b></p>
+            <ul class="dropdown">
+              <li class="dropdown-item">
+                <div class="dropdown-title">
+                  <div class="container" style="border-top: 1px solid #eceded;">
+                    <div class="switch"><span class="switch__bg"></span><span class="switch__btn"></span></div>Оборудование для плазменной резки
+                  </div>
+                </div>
+                <div class="container" style="border-bottom: none">
+                  <div class="dropdown-item-content">
+                    <table class="tools">
+                      <tr>
+                        <td><b>Изображение</b></td>
+                        <td><b>Модель</b></td>
+                        <td><b>Год выпуска</b></td>
+                        <td><b>Страна производитель</b></td>
+                        <td><b>Технические характеристики</b></td>
+                      </tr>
+                      <tr>
+                        <td><img alt="hyper260" src="/img/machines/cutting-machines/plazma/1.jpg"></td>
+                        <td><b>Система плазменной резки HyPerformance HPR 260 XD</b></td>
+                        <td>2014</td>
+                        <td>США</td>
+                        <td><b>Макс. толщина реза (мм)</b>: 64<br><b>Толщина резки<br>низкоуглеродистой стали
+                            :</b><br><em>Без образования окалины</em>: 32 мм<br><em>Промышленный прожиг</em>: 38 мм<br><em>Максимальная толщина резки</em>: 64 мм<br><b>Толщина резки<br>нержавеющей стали :</b><br><em>Промышленный прожиг</em>: 32 мм<br><em>Максимальная толщина резки</em>: 50 мм<br><b>Толщина резки алюминия</b>:<br><em>Промышленный прожиг</em>: 25 мм<br><em>Максимальная толщина резки</em>: 50 мм</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </li>
+              <li class="dropdown-item">
+                <div class="dropdown-title">
+                  <div class="container">
+                    <div class="switch"><span class="switch__bg"></span><span class="switch__btn"></span></div>Расценки на плазменную резку
+                  </div>
+                </div>
+                <div class="container" style="border-bottom:none">
+                  <div class="dropdown-item-content">
+                    <table class="pricelist">
+                      <tr>
+                        <td>Толщина, мм</td>
+                        <td>Цена, руб</td>
+                        <td>Толщина, мм</td>
+                        <td>Цена, руб</td>
+                        <td>Толщина, мм</td>
+                        <td>Цена, руб</td>
+                        <td>Толщина, мм</td>
+                        <td>Цена, руб</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>28,8</td>
+                        <td>16</td>
+                        <td>150</td>
+                        <td>34</td>
+                        <td>300</td>
+                        <td>90</td>
+                        <td>628,8</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>37,2</td>
+                        <td>18</td>
+                        <td>169,2</td>
+                        <td>36</td>
+                        <td>319,2</td>
+                        <td>100</td>
+                        <td>686,4</td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>46,8</td>
+                        <td>20</td>
+                        <td>187,2</td>
+                        <td>40</td>
+                        <td>337,2</td>
+                        <td>110</td>
+                        <td>756</td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td>56,4</td>
+                        <td>22</td>
+                        <td>206,4</td>
+                        <td>45</td>
+                        <td>374,4</td>
+                        <td>120</td>
+                        <td>726</td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td>75,6</td>
+                        <td>24</td>
+                        <td>225,6</td>
+                        <td>50</td>
+                        <td>421,2</td>
+                        <td>125</td>
+                        <td>792</td>
+                      </tr>
+                      <tr>
+                        <td>10</td>
+                        <td>93,6</td>
+                        <td>26</td>
+                        <td>234</td>
+                        <td>55</td>
+                        <td>468</td>
+                        <td>130</td>
+                        <td>825,6</td>
+                      </tr>
+                      <tr>
+                        <td>12</td>
+                        <td>112,8</td>
+                        <td>28</td>
+                        <td>243,6</td>
+                        <td>60</td>
+                        <td>514,8</td>
+                        <td>140</td>
+                        <td>858</td>
+                      </tr>
+                      <tr>
+                        <td>14</td>
+                        <td>132</td>
+                        <td>30</td>
+                        <td>262,8</td>
+                        <td>70</td>
+                        <td>561,6</td>
+                        <td>150</td>
+                        <td>924</td>
+                      </tr>
+                      <tr>
+                        <td>15</td>
+                        <td>140,4</td>
+                        <td>32</td>
+                        <td>280,8</td>
+                        <td>80</td>
+                        <td>607,2</td>
+                        <td>160</td>
+                        <td>990</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </article>
+        </section>
+        <section class="main__articles">
+          <h2 class="title">Примеры выполненных работ</h2>
+          <div class="owl-carousel" id="performed_works"><img src="/img/carousel/1.jpg"><img src="/img/carousel/2.jpg"><img src="/img/carousel/3.jpg"><img src="/img/carousel/4.jpg"><img src="/img/carousel/5.jpg"><img src="/img/carousel/6.jpg"><img src="/img/carousel/7.jpg"><img src="/img/carousel/8.jpg"><img src="/img/carousel/9.jpg"><img src="/img/carousel/10.jpg"><img src="/img/carousel/11.jpg"><img src="/img/carousel/12.jpg"><img src="/img/carousel/13.jpg"><img src="/img/carousel/14.jpg"><img src="/img/carousel/15.jpg"><img src="/img/carousel/16.jpg"><img src="/img/carousel/17.jpg"><img src="/img/carousel/18.jpg"><img src="/img/carousel/19.jpg"><img src="/img/carousel/20.jpg"><img src="/img/carousel/21.jpg"><img src="/img/carousel/22.jpg"><img src="/img/carousel/23.jpg"><img src="/img/carousel/24.jpg"><img src="/img/carousel/25.jpg">
+          </div>
+        </section>
+      </main>
+    </div>
+    <section class="popupform">
+      <div class="popupform__btn"></div>
+      <form class="main-form" id="mainForm" action="/mail.php" enctype="multipart/form-data" method="post">
+        <p class="text">Чтобы экономить ваше время мы создали систему электронной подачи заказов. Заполните форму и наш специалист свяжется с вами в ближайшее время.</p>
+        <input class="input" type="text" name="organization" placeholder="Ваше имя или название организации">
+        <input class="input" type="text" name="email" placeholder="Ваш e-mail">
+        <input class="input" type="text" name="tel" placeholder="Ваш телефон">
+        <textarea class="textarea" name="message" id="" rows="6" placeholder="Текст сообщения"></textarea>
+        <label class="label--file" for="file">Загрузить файлы</label>
+        <input id="file" type="file" name="file">
+        <div class="confidential">Нажимая кнопку «Отправить заявку», Вы соглашаетесь на <a href="/confidentiality.html">обработку персональных данных</a></div>
+        <input class="submit" type="submit" value="Отправить заявку">
+      </form>
+    </section>
+    <footer class="main-footer">
+      <div class="bottom-line">
+        <div class="bottom-line__inner">
+          <div class="bottom-line__column bottom-line__column--left"><img src="/img/logo-vertical.png" alt="Логотип" width="50">
+            <p>Полный цикл металлообработки <br>© Set Service Group 2016 - 2018</p>
+          </div>
+          <div class="bottom-line__column bottom-line__column--center">
+            <p>193318, г. Санкт-Петербург, ул. Ворошилова, 2, <br><span>+7(812) 627-15-16</span></p>
+          </div>
+          <div class="bottom-line__column bottom-line__column--right">
+            <div class="block"><a href="mailto:info@zaoks.ru">info@zaoks.ru</a>
+              <div class="socials"><a class="socials__item socials__item--vk" src="#"><img src="/img/vk.svg"></a><a class="socials__item socials__item--fb" src="#"><img src="/img/facebook.svg"></a><a class="socials__item socials__item--inst" src="#"><img src="/img/instagram.svg"></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="/js/libs.min.js"></script>
+  <script src="/js/main.js"></script>
+</html>
