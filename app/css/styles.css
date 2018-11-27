@@ -2830,12 +2830,12 @@ blockquote {
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 14px;
     text-align: justify;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
     margin-bottom: 20px;
     margin-top: 29px; }
   .log-descriptions .btn {
     float: right;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
     color: white; }
 
 .portfolio {
