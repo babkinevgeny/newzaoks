@@ -1,0 +1,29 @@
+.menu-line{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  font-family: $font;
+  justify-content: center;
+  border: 1px solid $color-lightgray;
+  &__item{
+    min-width: 155px;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    a{
+      text-decoration: none;
+      color: lighten($color-gray, 10%);
+      padding: 20px;
+      transition: all .3s ease-out;
+      &:hover{
+        color: darken($color-gray, 10%)
+      }
+      &.active{
+        border-bottom: 1px solid $color-blue;
+        color: darken($color-gray, 20%);
+      }
+    }
+  }
+}
