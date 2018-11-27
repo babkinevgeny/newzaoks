@@ -183,6 +183,8 @@ body {
     color: #a4a4a4; }
   .input::-moz-placeholder {
     color: #a4a4a4; }
+  .input:-ms-input-placeholder {
+    color: #a4a4a4; }
   .input::-ms-input-placeholder {
     color: #a4a4a4; }
   .input::placeholder {
@@ -207,6 +209,8 @@ body {
   .textarea::-webkit-input-placeholder {
     color: #a4a4a4; }
   .textarea::-moz-placeholder {
+    color: #a4a4a4; }
+  .textarea:-ms-input-placeholder {
     color: #a4a4a4; }
   .textarea::-ms-input-placeholder {
     color: #a4a4a4; }
@@ -273,6 +277,8 @@ body {
   .submit::-webkit-input-placeholder {
     color: #a4a4a4; }
   .submit::-moz-placeholder {
+    color: #a4a4a4; }
+  .submit:-ms-input-placeholder {
     color: #a4a4a4; }
   .submit::-ms-input-placeholder {
     color: #a4a4a4; }
@@ -595,6 +601,8 @@ blockquote {
       color: #8a8a8a; }
     .main-header .search input::-moz-placeholder {
       color: #8a8a8a; }
+    .main-header .search input:-ms-input-placeholder {
+      color: #8a8a8a; }
     .main-header .search input::-ms-input-placeholder {
       color: #8a8a8a; }
     .main-header .search input::placeholder {
@@ -752,6 +760,8 @@ blockquote {
       .navigation .search input::-webkit-input-placeholder {
         color: #cacaca; }
       .navigation .search input::-moz-placeholder {
+        color: #cacaca; }
+      .navigation .search input:-ms-input-placeholder {
         color: #cacaca; }
       .navigation .search input::-ms-input-placeholder {
         color: #cacaca; }
@@ -1071,6 +1081,8 @@ blockquote {
     color: #8a8a8a; }
   .navigation__list li .search input::-moz-placeholder {
     color: #8a8a8a; }
+  .navigation__list li .search input:-ms-input-placeholder {
+    color: #8a8a8a; }
   .navigation__list li .search input::-ms-input-placeholder {
     color: #8a8a8a; }
   .navigation__list li .search input::placeholder {
@@ -1310,6 +1322,9 @@ blockquote {
       color: #d2d4d4; }
     .form-footer input::-moz-placeholder,
     .form-footer textarea::-moz-placeholder {
+      color: #d2d4d4; }
+    .form-footer input:-ms-input-placeholder,
+    .form-footer textarea:-ms-input-placeholder {
       color: #d2d4d4; }
     .form-footer input::-ms-input-placeholder,
     .form-footer textarea::-ms-input-placeholder {
@@ -2491,7 +2506,7 @@ blockquote {
     .main__article .list {
       font-size: 14px;
       margin-top: 14px;
-      margin-bottom: 0; }
+      margin-bottom: 14px; }
     .main__article--active {
       display: block; }
   .main__buttons {
