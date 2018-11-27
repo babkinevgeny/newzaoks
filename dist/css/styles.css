@@ -2491,7 +2491,7 @@ blockquote {
     .main__article .list {
       font-size: 14px;
       margin-top: 14px;
-      margin-bottom: 0; }
+      margin-bottom: 14px; }
     .main__article--active {
       display: block; }
   .main__buttons {
