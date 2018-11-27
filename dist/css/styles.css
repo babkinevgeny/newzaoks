@@ -2830,12 +2830,20 @@ blockquote {
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 14px;
     text-align: justify;
+<<<<<<< HEAD
     background: rgba(0, 0, 0, 0.6);
+=======
+    background: rgba(0, 0, 0, 0.5);
+>>>>>>> 80334b9025e27cd741e38333ec88a52986d18d14
     margin-bottom: 20px;
     margin-top: 29px; }
   .log-descriptions .btn {
     float: right;
+<<<<<<< HEAD
     background: rgba(0, 0, 0, 0.6);
+=======
+    background: rgba(0, 0, 0, 0.5);
+>>>>>>> 80334b9025e27cd741e38333ec88a52986d18d14
     color: white; }
 
 .portfolio {
