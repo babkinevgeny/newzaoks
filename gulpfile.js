@@ -43,7 +43,8 @@ gulp.task('scripts', function() {
       'app/libs/jquery.validate/jquery.validate.min.js',
       'app/libs/form/form.min.js',
       'app/libs/fotorama/fotorama.js',
-      'app/libs/owlcarousel/owl.carousel.min.js'
+      'app/libs/owlcarousel/owl.carousel.min.js',
+      'app/libs/isotope/isotope.min.js'
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
