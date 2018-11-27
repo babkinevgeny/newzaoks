@@ -115,6 +115,10 @@
     div:nth-last-child(4):first-child ~ div {
       width: 25%;
     }
+    div:nth-last-child(5):first-child,
+    div:nth-last-child(5):first-child ~ div {
+      width: 20%;
+    }
     div{
       display: block;
       float: left;

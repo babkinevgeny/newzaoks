@@ -678,9 +678,6 @@ blockquote {
     width: 303px;
     margin: 0 15px;
     position: relative; }
-    .navigation__column--right .navigation__title:last-child a {
-      color: #06abdd;
-      font-size: 20px; }
     .navigation__column--left {
       width: 300px; }
   .navigation__list {
@@ -2509,6 +2506,9 @@ blockquote {
     .main__buttons div:nth-last-child(4):first-child,
     .main__buttons div:nth-last-child(4):first-child ~ div {
       width: 25%; }
+    .main__buttons div:nth-last-child(5):first-child,
+    .main__buttons div:nth-last-child(5):first-child ~ div {
+      width: 20%; }
     .main__buttons div {
       display: block;
       float: left;

@@ -1,0 +1,50 @@
+doctype
+html
+  -let title = 'Социальные металлоконструкции'
+  include ../../includes/head.pug
+  body.body--parallax
+    include ../../includes/preloader.pug
+    include ../../includes/main-header.pug
+    div.inner-page
+      include ../../includes/catalog.pug
+      main.main
+        include ../../includes/header-article.pug
+        h1.title.title--left Социальные металлоконструкции
+        .main__top
+          .fotorama__wrapper
+            .fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")
+              img(src='https://beltica.ru/upload/iblock/942/9424066fa4690068a6947db0173d19d1.jpg')
+              img(src='http://www.skif-m.org/uploads/posts/2014-07/1406239471_133.jpg')
+              img(src='http://metallmig.ru/img/node-18745-gidroabraziv-rezka.jpg', alt='')
+              img(src='http://www.megasteels.ru/files/images/pages/pic_211_1416503159.jpg', alt='')
+              img(src='http://kz.all.biz/img/kz/service_catalog/229754.jpg', alt='')
+              img(src='http://www.tecsna.ru/images/detailed/1/plazma.jpg', alt='')
+          .main__info
+            p.text.text--justify Здесь текст Здесь текстЗдесь текстЗдесь текстЗдесь текстЗдесь текстЗдесь текстЗдесь текстЗдесь текстЗдесь текстЗдесь текстЗдесь текстЗдесь текстЗдесь текстЗдесь текст
+            .infobuttons
+              .btn.btn--form Заказать услугу
+              .btn Скачать прайс-лист
+        section.main__articles.main__articles--with-btns
+          .main__buttons
+            div(class="active") Газонные ограждения, металлические заборы
+            div Лестничные ограждения
+            div Пандусы, поручни
+            div Велопарковки
+            div Металлические навесы
+          article.main__article.main__article--active
+            p.text Газонные ограждения и мет заборы
+          article.main__article
+            p.text Лестничные ограждения
+          article.main__article
+            p.text Пандусы поручни
+          article.main__article
+            p.text Велопарковки
+          article.main__article
+            p.text Мет навесы
+        include ../../includes/performed_works.pug
+    include ../../includes/popupform.pug
+    footer.main-footer
+      include ../../includes/bottom-line.pug
+  include ../../includes/scripts.pug
+
+        
