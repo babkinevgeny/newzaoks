@@ -44,7 +44,7 @@
 		position: relative;
 		overflow:hidden;
 		$step: 0px;
-		@for $i from 1 to 14 {
+		@for $i from 1 to 20 {
 			&:nth-child(#{$i}){
 				background-position: 0 $step;
 				$step: $step - 267px;
@@ -54,8 +54,18 @@
 				}
 			}
 		}
-		&:nth-child(14),
-		&:nth-child(15){
+		&:hover{
+			.partners__title{
+				opacity:1;
+				transform: translateY(180px);
+				-webkit-transition: all 0.3s ease;
+				-moz-transition: all 0.3s ease;
+				-o-transition: all 0.3s ease;
+				-ms-transition: all 0.3s ease;
+				transition: all 0.3s ease;
+			}
+		}
+		&--empty{
 			position: relative;
 			background: $color-lightgray;
 			&:before{
@@ -84,18 +94,6 @@
 				}
 			}
 		}
-		&:hover{
-			.partners__title{
-				opacity:1;
-				transform: translateY(180px);
-				-webkit-transition: all 0.3s ease;
-				-moz-transition: all 0.3s ease;
-				-o-transition: all 0.3s ease;
-				-ms-transition: all 0.3s ease;
-				transition: all 0.3s ease;
-			}
-		}
-
 	}
 	&__title{
 		opacity:0;
