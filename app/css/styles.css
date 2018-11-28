@@ -2639,17 +2639,9 @@ blockquote {
               background-size: 25px 25px;
       margin-left: auto; }
     .header-article__item:nth-child(3) {
-      background: url("../img/eye.png") center no-repeat;
-      -webkit-background-size: 25px 25px;
-              background-size: 25px 25px; }
-    .header-article__item:nth-child(4) {
-      background: url("../img/envelope--blue.png") center no-repeat;
-      -webkit-background-size: 25px 25px;
-              background-size: 25px 25px; }
-    .header-article__item:nth-child(5) {
-      background: url("../img/phone--blue.png") center no-repeat;
-      -webkit-background-size: 25px 25px;
-              background-size: 25px 25px; }
+      background: url("../img/order--blue.png") center no-repeat;
+      -webkit-background-size: 35px 25px;
+              background-size: 35px 25px; }
     .header-article__item:last-child {
       margin-right: 0; }
     .header-article__item:hover {
