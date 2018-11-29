@@ -2487,6 +2487,8 @@ blockquote {
     .main .fotorama__wrapper {
       max-width: 400px;
       max-height: 275px; }
+    .main .fotorama .fotorama__stage {
+      max-height: 261px !important; }
   .main__info {
     position: relative; }
     .main__info .text {
