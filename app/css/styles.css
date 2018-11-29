@@ -2792,9 +2792,9 @@ blockquote {
   .logistic .title {
     text-transform: uppercase;
     color: white;
-    font-size: 48px;
+    font-size: 20px;
     text-align: left;
-    line-height: 48px;
+    line-height: 20px;
     margin-bottom: 20px; }
 
 .log-services {
@@ -2855,7 +2855,8 @@ blockquote {
     border: 1px solid white;
     text-align: left;
     line-height: 50px;
-    padding: 0 20px; }
+    padding: 0 20px;
+    font-size: 14px; }
 
 .log-descriptions {
   margin: 0;
@@ -2897,7 +2898,6 @@ blockquote {
     margin-left: 0;
     margin-right: auto; }
     .log-map__left .title {
-      font-size: 48px;
       text-transform: uppercase;
       margin: 0; }
   .log-map__right {
