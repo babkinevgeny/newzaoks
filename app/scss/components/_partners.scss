@@ -113,6 +113,27 @@
 	&__popups{
 		list-style-type: none;
 	}
+	&--logistic{
+		.partners{
+			&__item{
+				background: url(../img/logistic-partners-sprite.png) 0px 0px no-repeat;
+				$step: 0px;
+				@for $i from 1 to 4 {
+					&:nth-child(#{$i}){
+						background-position: 0 $step;
+						$step: $step - 267px;
+						&:hover{
+							background-position: 0 $step;
+							$step: $step - 267px;
+						}
+					}
+				}
+				&--empty{
+					background: $color-lightgray;
+				}
+			}
+		}
+	}
 }
 
 .navigation__list li .search {
