@@ -1,8 +1,7 @@
 nav.navigation
   .navigation__btn
   ul.navigation__list
-    form.search
-      input(type="text" placeholder="Поиск по сайту")
+    
     .navigation__column.navigation__column--left
       li.navigation__title О нас
         ul.navigation__underlist
@@ -14,12 +13,13 @@ nav.navigation
             a(href='/about/portfolio.html') Портфолио
           li.navigation__undertitle
             a(href='/about/vacancies.html') Вакансии
-      //- li.navigation__title
-      //-   a(href='/tenders.html') Закупки
       li.navigation__title
         a(href='/logistic.html') Логистика
       li.navigation__title
         a(href='/contacts.html') Контакты
+      form.search
+        input(type="text" placeholder="Поиск по сайту")
+      include socials.pug
     .navigation__column.navigation__column--center
       li.navigation__title Металлообработка
       li.navigation__title

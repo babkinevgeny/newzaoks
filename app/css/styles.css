@@ -683,6 +683,8 @@ blockquote {
     position: relative; }
     .navigation__column--left {
       width: 300px; }
+      .navigation__column--left .socials {
+        text-align: left; }
   .navigation__list {
     margin: auto;
     padding: 0;
@@ -698,8 +700,7 @@ blockquote {
         -ms-flex-direction: row;
             flex-direction: row;
     color: #06abdd;
-    position: relative;
-    padding-top: 60px; }
+    position: relative; }
   .navigation__underlist {
     list-style: none;
     margin: 0;
@@ -733,9 +734,8 @@ blockquote {
     .navigation__undertitle:first-child {
       margin-top: 10px; }
   .navigation .search {
-    position: absolute;
-    top: 0;
-    left: 15px; }
+    margin-top: 40px;
+    margin-bottom: 20px; }
     .navigation .search input {
       width: 300px;
       height: 42px;
@@ -2695,26 +2695,20 @@ blockquote {
   .socials__item {
     display: inline-block !important;
     margin: 0 5px;
-    width: 22px;
-    height: 22px;
+    width: 23px;
+    height: 23px;
     cursor: pointer; }
     .socials__item img {
-      width: 22px;
-      height: 22px;
+      width: 23px;
+      height: 23px;
       filter: grayscale(100%);
       -webkit-filter: grayscale(100%);
       opacity: .5;
       -webkit-transition: all .3s ease-in-out;
       -o-transition: all .3s ease-in-out;
-      transition: all .3s ease-in-out; }
-    .socials__item--inst {
-      position: relative; }
-      .socials__item--inst img {
-        position: absolute;
-        width: 23px;
-        height: 23px;
-        top: 3px;
-        left: 0; }
+      transition: all .3s ease-in-out;
+      -webkit-border-radius: 4px;
+              border-radius: 4px; }
     .socials__item:hover img {
       -webkit-filter: none;
               filter: none;
