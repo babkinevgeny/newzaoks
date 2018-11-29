@@ -340,6 +340,9 @@ label.error {
     text-align: justify;
     text-indent: 40px; }
 
+span.text--blue {
+  color: #06abdd; }
+
 .undertitle {
   font-size: 16px;
   font-family: "Open Sans", Arial, sans-serif;
@@ -680,6 +683,8 @@ blockquote {
     position: relative; }
     .navigation__column--left {
       width: 300px; }
+      .navigation__column--left .socials {
+        text-align: left; }
   .navigation__list {
     margin: auto;
     padding: 0;
@@ -695,8 +700,7 @@ blockquote {
         -ms-flex-direction: row;
             flex-direction: row;
     color: #06abdd;
-    position: relative;
-    padding-top: 60px; }
+    position: relative; }
   .navigation__underlist {
     list-style: none;
     margin: 0;
@@ -730,9 +734,8 @@ blockquote {
     .navigation__undertitle:first-child {
       margin-top: 10px; }
   .navigation .search {
-    position: absolute;
-    top: 0;
-    left: 15px; }
+    margin-top: 40px;
+    margin-bottom: 20px; }
     .navigation .search input {
       width: 300px;
       height: 42px;
@@ -1077,6 +1080,22 @@ blockquote {
     color: #8a8a8a; }
   .partners__popups {
     list-style-type: none; }
+  .partners--logistic .partners__item {
+    background: url(../img/logistic-partners-sprite.png) 0px 0px no-repeat; }
+    .partners--logistic .partners__item:nth-child(1) {
+      background-position: 0 0px; }
+      .partners--logistic .partners__item:nth-child(1):hover {
+        background-position: 0 -267px; }
+    .partners--logistic .partners__item:nth-child(2) {
+      background-position: 0 -534px; }
+      .partners--logistic .partners__item:nth-child(2):hover {
+        background-position: 0 -801px; }
+    .partners--logistic .partners__item:nth-child(3) {
+      background-position: 0 -1068px; }
+      .partners--logistic .partners__item:nth-child(3):hover {
+        background-position: 0 -1335px; }
+    .partners--logistic .partners__item--empty {
+      background: #eceded; }
 
 .navigation__list li .search input {
   -webkit-box-sizing: border-box;
@@ -2468,6 +2487,8 @@ blockquote {
     .main .fotorama__wrapper {
       max-width: 400px;
       max-height: 275px; }
+    .main .fotorama .fotorama__stage {
+      max-height: 261px !important; }
   .main__info {
     position: relative; }
     .main__info .text {
@@ -2676,26 +2697,20 @@ blockquote {
   .socials__item {
     display: inline-block !important;
     margin: 0 5px;
-    width: 22px;
-    height: 22px;
+    width: 23px;
+    height: 23px;
     cursor: pointer; }
     .socials__item img {
-      width: 22px;
-      height: 22px;
+      width: 23px;
+      height: 23px;
       filter: grayscale(100%);
       -webkit-filter: grayscale(100%);
       opacity: .5;
       -webkit-transition: all .3s ease-in-out;
       -o-transition: all .3s ease-in-out;
-      transition: all .3s ease-in-out; }
-    .socials__item--inst {
-      position: relative; }
-      .socials__item--inst img {
-        position: absolute;
-        width: 23px;
-        height: 23px;
-        top: 3px;
-        left: 0; }
+      transition: all .3s ease-in-out;
+      -webkit-border-radius: 4px;
+              border-radius: 4px; }
     .socials__item:hover img {
       -webkit-filter: none;
               filter: none;
@@ -2751,10 +2766,12 @@ blockquote {
 
 .logistic {
   height: 400px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url("../img/section-parallax.jpg");
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5)), url("../img/section-parallax.jpg");
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.5)), url("../img/section-parallax.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.5)), url("../img/section-parallax.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url("../img/section-parallax.jpg") center no-repeat;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5)), url("../img/section-parallax.jpg") center no-repeat;
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.5)), url("../img/section-parallax.jpg") center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5)), url("../img/section-parallax.jpg") center no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
   padding: 80px 0; }
   .logistic * {
     -webkit-box-sizing: border-box;
@@ -2775,9 +2792,9 @@ blockquote {
   .logistic .title {
     text-transform: uppercase;
     color: white;
-    font-size: 48px;
+    font-size: 20px;
     text-align: left;
-    line-height: 48px;
+    line-height: 20px;
     margin-bottom: 20px; }
 
 .log-services {
@@ -2798,7 +2815,8 @@ blockquote {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 300px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    cursor: pointer; }
     .log-services__item:last-child {
       margin-bottom: 0; }
     .log-services__item:nth-child(2) .log-services__icon {
@@ -2821,6 +2839,12 @@ blockquote {
       background: url("../img/aeroplane.svg") center no-repeat;
       -webkit-background-size: 30px 30px;
               background-size: 30px 30px; }
+    .log-services__item.active .log-services__icon {
+      background-color: #06abdd;
+      border: none; }
+    .log-services__item.active .log-services__title {
+      border-color: #06abdd;
+      color: #06abdd; }
   .log-services__icon {
     width: 50px;
     height: 50px;
@@ -2831,7 +2855,8 @@ blockquote {
     border: 1px solid white;
     text-align: left;
     line-height: 50px;
-    padding: 0 20px; }
+    padding: 0 20px;
+    font-size: 14px; }
 
 .log-descriptions {
   margin: 0;
@@ -2853,6 +2878,32 @@ blockquote {
     float: right;
     background: rgba(0, 0, 0, 0.6);
     color: white; }
+
+.log-map {
+  max-width: 1340px;
+  padding: 60px 20px;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  .log-map__left {
+    background: url("../img/map.png") -23px center no-repeat;
+    -webkit-background-size: 900px 500px;
+            background-size: 900px 500px;
+    width: 900px;
+    margin-left: 0;
+    margin-right: auto; }
+    .log-map__left .title {
+      text-transform: uppercase;
+      margin: 0; }
+  .log-map__right {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: 0; }
 
 .portfolio {
   max-width: 1340px;
