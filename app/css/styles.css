@@ -2817,6 +2817,10 @@ blockquote {
     width: 300px;
     margin-bottom: 20px;
     cursor: pointer; }
+    .log-services__item:hover .log-services__icon,
+    .log-services__item:hover .log-services__title {
+      border: 1px solid #b3b3b3;
+      color: gray; }
     .log-services__item:last-child {
       margin-bottom: 0; }
     .log-services__item:nth-child(2) .log-services__icon {
@@ -2862,6 +2866,10 @@ blockquote {
   margin: 0;
   padding: 0;
   list-style-type: none; }
+  .log-descriptions__item {
+    display: none; }
+    .log-descriptions__item.show {
+      display: block; }
   .log-descriptions .text {
     color: white; }
   .log-descriptions__text {
