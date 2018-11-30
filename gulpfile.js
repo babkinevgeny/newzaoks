@@ -77,24 +77,27 @@ gulp.task('clean', function() {
   return del.sync('dist');
 });
 
-gulp.task('img', function() {
-  return gulp.src('app/img/**/*')
-    .pipe(cache(imagemin({
+// gulp.task('img', function() {
+//   return gulp.src('app/img/**/*')
+//     .pipe(cache(imagemin({
+//
+//       interlaced: true,
+//       progressive: true,
+//       svgoPlugins: [{
+//         removeViewBox: false
+//       }],
+//       use: [pngquant()]
+//     })) /**/ )
+//     .pipe(gulp.dest('dist/img'));
+// });
 
-      interlaced: true,
-      progressive: true,
-      svgoPlugins: [{
-        removeViewBox: false
-      }],
-      use: [pngquant()]
-    })) /**/ )
-    .pipe(gulp.dest('dist/img'));
-});
-
-gulp.task('build', ['clean', 'img', 'scss', 'scripts', 'pug'], function() {
+gulp.task('build', ['clean', 'scss', 'scripts', 'pug'], function() {
 
   let buildCss = gulp.src('app/css/*.css')
     .pipe(gulp.dest('dist/css'))
+
+  let buildImg = gulp.src('app/img/**/*')
+    .pipe(gulp.dest('dist/img'))
 
   let buildFonts = gulp.src('app/fonts/**/*')
     .pipe(gulp.dest('dist/fonts'))
