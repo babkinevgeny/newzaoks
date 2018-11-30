@@ -1158,8 +1158,12 @@ blockquote {
     position: absolute;
     top: 40px;
     right: 10px; }
-  .popup img {
-    width: 250px; }
+    .popup__right .feedback {
+      width: 250px;
+      height: 353px;
+      background: url("../img/feedback.jpg") center no-repeat;
+      -webkit-background-size: cover;
+              background-size: cover; }
   .popup h1 {
     text-align: left;
     font-size: 24px;

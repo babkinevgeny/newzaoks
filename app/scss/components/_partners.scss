@@ -195,10 +195,14 @@
 		position: absolute;
 		top: 40px;
 		right: 10px;
+		.feedback{
+			width: 250px;
+			height: 353px;
+			background: url('../img/feedback.jpg') center no-repeat;
+			background-size: cover;
+		}
 	}
-	img{
-		width: 250px;
-	}
+
 	h1{
 	  	text-align: left;
 	  	font-size: 24px;
