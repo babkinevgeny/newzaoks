@@ -46,6 +46,9 @@
     & + .main__articles{
       margin-top: 0;
     }
+    .tools th {
+      border-top: 1px solid $color-lightgray;
+    }
     .dropdown-item-content{
       padding: 20px 0;
       table{

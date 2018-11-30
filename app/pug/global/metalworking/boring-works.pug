@@ -61,6 +61,28 @@ html
 							b 8 (812) 627-15-16
 							|  или 
 							b оставить заявку с помощью формы связи.
+				section.main__articles
+					ul.dropdown
+						li.dropdown-item
+							.dropdown-title
+								.container(style="border-top: 1px solid #eceded;")
+									.switch
+										span.switch__bg
+										span.switch__btn
+									| Оборудование для координатно-расточных работ
+							.container(style="border-bottom: none")
+								.dropdown-item-content
+									include ../../includes/machines/boring-machines
+						li.dropdown-item
+							.dropdown-title
+								.container
+									.switch
+										span.switch__bg
+										span.switch__btn
+									| Расценки на координатно-расточные работы
+							.container(style='border-bottom:none')
+								.dropdown-item-content
+									p.text Раздел дополняется
 				include ../../includes/performed_works.pug
 		include ../../includes/popupform.pug
 		footer.main-footer

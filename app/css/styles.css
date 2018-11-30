@@ -2505,6 +2505,8 @@ blockquote {
       margin-top: 60px; }
     .main__articles + .main__articles {
       margin-top: 0; }
+    .main__articles .tools th {
+      border-top: 1px solid #eceded; }
     .main__articles .dropdown-item-content {
       padding: 20px 0; }
       .main__articles .dropdown-item-content table {

@@ -64,6 +64,28 @@ html
 							|  или 
 							b оставить заявку с помощью формы связи
 							| . 
+				section.main__articles
+					ul.dropdown
+						li.dropdown-item
+							.dropdown-title
+								.container(style="border-top: 1px solid #eceded;")
+									.switch
+										span.switch__bg
+										span.switch__btn
+									| Оборудование для термической обработки
+							.container(style="border-bottom: none")
+								.dropdown-item-content
+									p.text Раздел дополняется
+						li.dropdown-item
+							.dropdown-title
+								.container
+									.switch
+										span.switch__bg
+										span.switch__btn
+									| Расценки на термическую обработку
+							.container(style='border-bottom:none')
+								.dropdown-item-content
+									p.text Раздел дополняется
 				include ../../includes/performed_works.pug
 		include ../../includes/popupform.pug
 		footer.main-footer

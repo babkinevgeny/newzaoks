@@ -61,6 +61,29 @@ html
 							|  или обратиться с вопросом 
 							b заполнив форму для связи
 							| .
+				section.main__articles
+					ul.dropdown
+						li.dropdown-item
+							.dropdown-title
+								.container(style="border-top: 1px solid #eceded;")
+									.switch
+										span.switch__bg
+										span.switch__btn
+									| Оборудование для разработки чертежей и 3D-моделей
+							.container(style="border-bottom: none")
+								.dropdown-item-content
+									p.text Раздел дополняется
+						li.dropdown-item
+							.dropdown-title
+								.container
+									.switch
+										span.switch__bg
+										span.switch__btn
+									| Расценки на разработки чертежей и 3D-моделей
+							.container(style='border-bottom:none')
+								.dropdown-item-content
+									p.text Раздел дополняется
+				include ../../includes/performed_works.pug
 		include ../../includes/popupform.pug
 		footer.main-footer
 			include ../../includes/bottom-line.pug
