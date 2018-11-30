@@ -1151,6 +1151,15 @@ blockquote {
     margin-bottom: 16px; }
     .popup .popup__link:hover {
       color: #8a8a8a; }
+  .popup__left {
+    width: 60%; }
+  .popup__right {
+    width: 35%;
+    position: absolute;
+    top: 40px;
+    right: 10px; }
+  .popup img {
+    width: 250px; }
   .popup h1 {
     text-align: left;
     font-size: 24px;

@@ -187,6 +187,18 @@
 	  		color: $color-gray;
 	  	}
 	}
+	&__left{
+		width: 60%;
+	}
+	&__right{
+		width: 35%;
+		position: absolute;
+		top: 40px;
+		right: 10px;
+	}
+	img{
+		width: 250px;
+	}
 	h1{
 	  	text-align: left;
 	  	font-size: 24px;
