@@ -155,4 +155,27 @@ gulp.task('deploy', function() {
 
 });
 
+gulp.task('deploySite', function() {
+
+  let conn = ftp.create({
+    host: 'zaoks.ru',
+    user: 'o92903x7_zaoks',
+    password: 'JsU2RT6*',
+    parallel: 10,
+    log: gutil.log
+  });
+
+  let globs = [
+    'dist/**'
+  ];
+
+  return gulp.src(globs, {
+      base: './dist',
+      buffer: false
+    })
+    .pipe(conn.newer('/'))
+    .pipe(conn.dest('/'));
+
+});
+
 gulp.task('default', ['watch']);
