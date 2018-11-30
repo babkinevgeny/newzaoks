@@ -2737,9 +2737,9 @@ blockquote {
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 150px;
-  background: url("../img/logo-vertical.png") center no-repeat, #edeef0;
-  -webkit-background-size: 110px 140px;
-          background-size: 110px 140px; }
+  background: url("../img/l2.png") center no-repeat;
+  -webkit-background-size: 80px 100px;
+          background-size: 80px 100px; }
 
 .animate {
   fill: transparent;
