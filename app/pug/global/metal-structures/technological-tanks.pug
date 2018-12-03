@@ -27,10 +27,16 @@ html
               .btn Скачать прайс-лист
         section.main__articles.main__articles--with-btns
           .main__buttons
-            div.active Баки
-            div Контейнеры
-            div Бункеры
-            div Резервуары
+            .outer.active
+              .inner Баки
+            .outer
+              .inner Контейнеры
+            .outer
+              .inner Бункеры
+            .outer
+              .inner Резервуары
+            .outer
+              .inner Грязевики
           article.main__article.main__article--active
             p.text.text--justify 
               b Баки
@@ -103,6 +109,8 @@ html
             p.text.text--justify 
               | Также для отдельных отраслей промышленности могут использоваться 
               b резервуары с индивидуальной конструкцией.
+          article.main__article
+            p.text.text--justify Раздел дополняется
         include ../../includes/performed_works.pug
     include ../../includes/popupform.pug
     footer.main-footer

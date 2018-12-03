@@ -2569,11 +2569,11 @@ blockquote {
     .main__buttons div:nth-last-child(5):first-child,
     .main__buttons div:nth-last-child(5):first-child ~ div {
       width: 20%; }
-    .main__buttons div {
+    .main__buttons .outer {
       display: block;
       float: left;
       height: 45px;
-      padding: 13px 20px;
+      padding: 0 20px;
       min-width: 1px;
       -webkit-box-sizing: border-box;
               box-sizing: border-box;
@@ -2591,13 +2591,21 @@ blockquote {
       line-height: 16px;
       -webkit-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
-      transition: all 0.3s ease; }
-      .main__buttons div:last-child {
+      transition: all 0.3s ease;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .main__buttons .outer .inner {
+        width: 100%;
+        margin: auto; }
+      .main__buttons .outer:last-child {
         border-right: 1px solid #eceded; }
-      .main__buttons div.active {
+      .main__buttons .outer.active {
         border-bottom-color: #06abdd;
         background: #fff; }
-      .main__buttons div:hover {
+      .main__buttons .outer:hover {
         background: #eceded; }
 
 .infobuttons {

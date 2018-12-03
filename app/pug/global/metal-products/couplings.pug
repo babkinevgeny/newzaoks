@@ -1,6 +1,6 @@
 doctype
 html
-  -let title = 'Муфты, фланцы'
+  -let title = 'Муфты'
   include ../../includes/head.pug
   body.body--parallax
     include ../../includes/preloader.pug
@@ -9,21 +9,18 @@ html
       include ../../includes/catalog.pug
       main.main
         include ../../includes/header-article.pug
-        h1.title.title--left Муфты, фланцы
+        h1.title.title--left Муфты
         .main__top
           .fotorama__wrapper
             .fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")
               img(src='../img/Металлоизделия/МуфтыФланцы1.jpg')
               img(src='../img/Металлоизделия/МуфтыФланцы2.jpg')
           .main__info
-            p.text.text--justify Set Service Group уже много лет предоставляет рынку металлообработки услуги по производству муфт и фланцев. Наши специалисты в кратчайшие сроки обработают вашу заявку и возьмут на себя работу с чертежами и налаживание серийного производства.
+            p.text.text--justify Set Service Group уже много лет предоставляет рынку металлообработки услуги по производству муфт. Наши специалисты в кратчайшие сроки обработают вашу заявку и возьмут на себя работу с чертежами и налаживание серийного производства.
             .infobuttons
               .btn.btn--form Заказать услугу
               .btn Скачать прайс-лист
-        section.main__articles.main__articles--with-btns
-          .main__buttons
-            div(class="active") Муфты
-            div Фланцы
+        section.main__articles
           article.main__article.main__article--active
             p.text.text--justify
               b Муфта 
@@ -57,7 +54,7 @@ html
               b 8 (812) 627-15-16
               |  или обратиться с вопросом 
               b заполнив форму для связи.
-          article.main__article
+          //-article.main__article
             p.text.text--justify
               b Фланец 
               | – это кольцевое изделие, использующееся для герметизации трубопроводов, в частности, для герметичного соединения между собой труб. Фланцы изготавливаются в соответствии с техническими требованиями самой системы трубопровода (давление, рабочая температура и т.д.). Для изготовления фланцев мы используем высокопрочные и качественные материалы (в основном нержавеющая сталь и сплавы стали).

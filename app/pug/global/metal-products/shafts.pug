@@ -23,9 +23,12 @@ html
               .btn Скачать прайс-лист
         section.main__articles.main__articles--with-btns
           .main__buttons
-            div(class="active") Валы
-            div Штоки
-            div Оси
+            .outer.active
+              .inner Валы
+            .outer
+              .inner Штоки
+            .outer
+              .inner Оси
           article.main__article.main__article--active
             p.text.text--justify
               b Валы

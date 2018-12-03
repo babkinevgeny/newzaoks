@@ -125,11 +125,11 @@
     div:nth-last-child(5):first-child ~ div {
       width: 20%;
     }
-    div{
+    .outer{
       display: block;
       float: left;
       height: 45px;
-      padding: 13px 20px;
+      padding: 0 20px;
       min-width: 1px;
       box-sizing: border-box;
       font-family: $font;
@@ -145,6 +145,13 @@
       cursor: pointer;
       line-height: 16px;
       transition: $animation;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      .inner{
+        width: 100%;
+        margin: auto;
+      }
       &:last-child{
         border-right: 1px solid $color-lightgray;
       }
