@@ -147,9 +147,11 @@ body {
   margin: 0 auto;
   margin-top: 20px; }
 
-.dropdown--technical .dropdown-item-content {
-  max-height: 423px;
-  overflow-y: scroll; }
+.dropdown--technical {
+  padding-top: 50px !important; }
+  .dropdown--technical .dropdown-item-content {
+    max-height: 423px;
+    overflow-y: scroll; }
 
 .transport {
   padding: 20px;
@@ -2667,6 +2669,18 @@ blockquote {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: none; }
+  .header-article--wide {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 20px;
+    width: 100%; }
+    .header-article--wide .header-article__list {
+      width: 100%;
+      max-width: 1340px;
+      margin: 0 auto; }
   .header-article__list {
     margin: 0;
     padding: 0;

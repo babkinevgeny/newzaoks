@@ -5,6 +5,8 @@ html
   body.body--parallax
     include ../../includes/preloader.pug
     include ../../includes/main-header.pug
+    -let headerTitleWide = true
+    include ../../includes/header-article
     ul.dropdown.dropdown--technical
       h1.title Технические возможности
       p.text.text--center
@@ -138,8 +140,6 @@ html
         .container(style='border-bottom:none')
           .dropdown-item-content
             include ../../includes/machines/other
-      a.btn(href='docs/Производственные возможности.doc', download='') Скачать одним файлом
-
     include ../../includes/popupform.pug
     include ../../includes/main-footer.pug
 include ../../includes/scripts.pug
