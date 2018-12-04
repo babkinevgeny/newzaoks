@@ -291,7 +291,7 @@ function submitMainForm() {
   $("#mainForm").ajaxSubmit({
     type: "POST",
     data: $("#mainForm").serialize(),
-    url: "./mail.php",
+    url: "/mail.php",
     success: function() {
       alert('Письмо отправлено');
     },
