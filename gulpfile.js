@@ -129,6 +129,9 @@ gulp.task('build', ['clean', 'scss', 'scripts', 'pug'], function() {
   let buildMailPhp = gulp.src('app/mail.php')
     .pipe(gulp.dest('dist'));
 
+  let buildHtaccess = gulp.src('.htaccess')
+    .pipe(gulp.dest('dist'));
+
 });
 
 gulp.task('clear', function(callback) {
