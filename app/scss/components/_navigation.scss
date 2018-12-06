@@ -29,14 +29,20 @@
     width: 303px;
     margin: 0 15px;
     position: relative;
-    &--right{
-
-    }
-    &--left{
+    &--first{
     	width: 300px;
       .socials{
         text-align: left;
       }
+    }
+    &--second{
+
+    }
+    &--third{
+
+    }
+    &--fourth{
+      
     }
   }
   &__list{

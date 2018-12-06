@@ -683,9 +683,9 @@ blockquote {
     width: 303px;
     margin: 0 15px;
     position: relative; }
-    .navigation__column--left {
+    .navigation__column--first {
       width: 300px; }
-      .navigation__column--left .socials {
+      .navigation__column--first .socials {
         text-align: left; }
   .navigation__list {
     margin: auto;
