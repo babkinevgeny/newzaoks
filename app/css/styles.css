@@ -716,7 +716,6 @@ blockquote {
       font-size: 16px;
       text-decoration: none;
       color: #8a8a8a;
-      webkit-transition: all .3s ease-in-out;
       -webkit-transition: all .3s ease-in-out;
       -o-transition: all .3s ease-in-out;
       transition: all .3s ease-in-out;
@@ -1266,51 +1265,31 @@ blockquote {
         width: 100%; } }
     .main-footer .navigation__btn {
       display: none; }
-    .main-footer .navigation__column {
-      max-width: 210px;
-      margin-left: 0;
-      margin-right: 30px; }
-      @media screen and (max-width: 992px) {
-        .main-footer .navigation__column {
-          margin-right: 0;
-          max-width: none;
-          width: 48%; } }
-      .main-footer .navigation__column:last-child {
-        margin-right: 0; }
-      .main-footer .navigation__column--center {
-        max-width: 342px; }
-        @media screen and (max-width: 992px) {
-          .main-footer .navigation__column--center {
-            max-width: none;
-            width: 48%; } }
-        .main-footer .navigation__column--center .navigation__title:first-child .navigation__underlist {
-          margin-top: 22px; }
-    .main-footer .navigation__list {
+    .main-footer .navigation__underlist {
       margin: 0; }
       @media screen and (max-width: 992px) {
-        .main-footer .navigation__list {
+        .main-footer .navigation__underlist {
           -webkit-box-pack: justify;
           -webkit-justify-content: space-between;
               -ms-flex-pack: justify;
                   justify-content: space-between;
           margin-bottom: 30px;
           width: 100%; } }
-    .main-footer .navigation__title {
-      border-left: none;
-      font-size: 20px;
-      margin-bottom: 16px;
-      padding-left: 0;
-      color: #8a8a8a; }
-      .main-footer .navigation__title--blue a {
-        color: #8a8a8a; }
     .main-footer .navigation__undertitle {
       font-size: 16px;
       line-height: 16px;
       margin-bottom: 15px; }
       .main-footer .navigation__undertitle a {
-        color: #8a8a8a; }
-      .main-footer .navigation__undertitle:first-child {
-        margin-top: 10px; }
+        color: #8a8a8a;
+        text-decoration: none;
+        -webkit-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+        display: inline-block; }
+        .main-footer .navigation__undertitle a:hover {
+          -webkit-transform: translateX(13px);
+              -ms-transform: translateX(13px);
+                  transform: translateX(13px); }
 
 .form-footer {
   margin-left: auto;
