@@ -1,0 +1,164 @@
+.logistic{
+  height: 400px;
+  background: linear-gradient(rgba(0,0,0, .5)), url('../img/section-parallax.jpg') center no-repeat;
+  background-size: cover;
+  padding: 80px 0;
+  & *{
+    box-sizing: border-box;
+  }
+  .container{
+    max-width: 1340px;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;
+  }
+  .title{
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+}
+.log-services{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  &__item{
+    font-family: $font;
+    color: white;
+    text-transform: uppercase;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-bottom: 20px;
+    &:hover{
+      .log-services__icon,
+      .log-services__title{
+        border: 1px solid darken(white, 30%);
+        color: darken(white, 50%);
+      }
+    }
+    cursor: pointer;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    &:nth-child(2){
+      .log-services__icon{
+        background: url('../img/pickup-truck.svg') center no-repeat;
+        background-size: 30px 30px;
+      }
+    }
+    &:nth-child(3){
+      .log-services__icon{
+        background: url('../img/subway.svg') center no-repeat;
+        background-size: 30px 30px;
+      }
+    }
+    &:nth-child(4){
+      .log-services__icon{
+        background: url('../img/aeroplane.svg') center no-repeat;
+        background-size: 30px 30px;
+      }
+    }
+    &:nth-child(5){
+      .log-services__icon{
+        background: url('../img/ship.svg') center no-repeat;
+        background-size: 30px 30px;
+      }
+    }
+    &:nth-child(4){
+      .log-services__icon{
+        background: url('../img/aeroplane.svg') center no-repeat;
+        background-size: 30px 30px;
+      }
+    }
+    &.active{
+      .log-services__icon{
+        background-color: $color-blue;
+        border: none;
+      }
+      .log-services__title{
+        border-color: $color-blue;
+        color: $color-blue;
+      }
+    }
+  }
+  &__icon{
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+  }
+  &__title{
+    height: 50px;
+    width: 240px;
+    border: 1px solid white;
+    text-align: left;
+    line-height: 50px;
+    padding: 0 20px;
+    font-size: 14px;
+  }
+}
+
+.log-descriptions{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  &__item{
+    display: none;
+    &.show{
+      display: block;
+    }
+  }
+  .text{
+    color: white;
+  }
+  &__text{
+    max-width: 800px;
+    padding: 20px;
+    color: white;
+    font-family: $font;
+    font-size: 14px;
+    text-align: justify;
+    background: rgba(0,0,0, .6);
+    margin-bottom: 20px;
+    margin-top: 29px;
+  }
+  .btn{
+    float: right;
+    background: rgba(0,0,0, .6);
+    color: white
+  }
+}
+
+.log-map{
+  max-width: 1340px;
+  padding: 60px 20px;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  box-sizing: border-box;
+  &__left{
+    background: url('../img/map.png') -23px center no-repeat;
+    background-size: 900px 500px;
+    width: 900px;
+    margin-left: 0;
+    margin-right: auto;
+    .title{
+      text-transform: uppercase;
+      margin: 0;
+    }
+  }
+  &__right{
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+}

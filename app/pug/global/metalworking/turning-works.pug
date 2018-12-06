@@ -13,12 +13,8 @@ html
 				.main__top
 					.fotorama__wrapper
 						.fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")
-							img(src='https://beltica.ru/upload/iblock/942/9424066fa4690068a6947db0173d19d1.jpg')
-							img(src='http://www.skif-m.org/uploads/posts/2014-07/1406239471_133.jpg')
-							img(src='http://metallmig.ru/img/node-18745-gidroabraziv-rezka.jpg', alt='')
-							img(src='http://www.megasteels.ru/files/images/pages/pic_211_1416503159.jpg', alt='')
-							img(src='http://kz.all.biz/img/kz/service_catalog/229754.jpg', alt='')
-							img(src='http://www.tecsna.ru/images/detailed/1/plazma.jpg', alt='')
+							img(src='../img/metalworking/ТокарныеРаботы1.jpg')
+							img(src='../img/metalworking/ТокарныеРаботы2.jpg')
 					.main__info
 						p.text.text--justify Set Service Group располагает необходимым оборудованием для проведения любых токарных работ. Наши менеджеры оперативно помогут Вам подобрать оптимальные условия для реализации вашего заказа.
 						p.text.text--justify Современные токарные станки с высокой точностью срезают необходимые слои с заготовки в определенном порядке, пока деталь не приобретет требуемую форму и размеры. Наши специалисты на токарном оборудовании выполняют самые разнообразные услуги токарной обработки для создания деталей вращения.
@@ -27,8 +23,10 @@ html
 							.btn Скачать прайс-лист
 				section.main__articles.main__articles--with-btns
 					.main__buttons
-						div(class="active") Токарно-винторезная обработка
-						div Токарно-карусельная обработка
+						.outer.active
+							.inner Токарно-винторезная обработка
+						.outer
+							.inner Токарно-карусельная обработка
 					article.main__article.main__article--active
 						p.text.text--justify
 							| Одним из самых традиционных методов токарной обработки является 
@@ -45,9 +43,8 @@ html
 							| , выполненные качественно и в срок. Связаться с нашими менеджерами можно по телефону 
 							b 8 (812) 627-15-16
 							|  или 
-							b оставить заявку с помощью формы связи.
-							
-				article.main__article
+							b оставить заявку с помощью формы связи.		
+					article.main__article
 						p.text.text--justify
 							b Карусельная обработка металла
 							|  нужна для изготовления заготовок по чертежам, запасных или нерабочих деталей с большим диаметром для оборудования зарубежных и российских компаний.
@@ -65,6 +62,28 @@ html
 							|  или 
 							b оставить заявку с помощью формы связи
 							| .
+				section.main__articles
+					ul.dropdown
+						li.dropdown-item
+							.dropdown-title
+								.container(style="border-top: 1px solid #eceded;")
+									.switch
+										span.switch__bg
+										span.switch__btn
+									| Оборудование для токарных работ
+							.container(style="border-bottom: none")
+								.dropdown-item-content
+									include ../../includes/machines/turning-machines
+						li.dropdown-item
+							.dropdown-title
+								.container
+									.switch
+										span.switch__bg
+										span.switch__btn
+									| Расценки на токарные работы
+							.container(style='border-bottom:none')
+								.dropdown-item-content
+									p.text Раздел дополняется
 				include ../../includes/performed_works.pug
 		include ../../includes/popupform.pug
 		footer.main-footer

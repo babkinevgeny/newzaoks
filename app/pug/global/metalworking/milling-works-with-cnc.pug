@@ -13,12 +13,9 @@ html
 				.main__top
 					.fotorama__wrapper
 						.fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")
-							img(src='https://beltica.ru/upload/iblock/942/9424066fa4690068a6947db0173d19d1.jpg')
-							img(src='http://www.skif-m.org/uploads/posts/2014-07/1406239471_133.jpg')
-							img(src='http://metallmig.ru/img/node-18745-gidroabraziv-rezka.jpg', alt='')
-							img(src='http://www.megasteels.ru/files/images/pages/pic_211_1416503159.jpg', alt='')
-							img(src='http://kz.all.biz/img/kz/service_catalog/229754.jpg', alt='')
-							img(src='http://www.tecsna.ru/images/detailed/1/plazma.jpg', alt='')
+							img(src='../img/metalworking/ФрезерныеРаботыЧПУ1.jpg')
+							img(src='../img/metalworking/ФрезерныеРаботыЧПУ2.jpg')
+							img(src='../img/metalworking/ФрезерныеРаботыЧПУ3.jpg')
 					.main__info
 						p.text.text--justify Set Service Group располагает всем необходимым оборудованием для проведения фрезерных работ на станках с ЧПУ любой сложности. Наши менеджеры оперативно помогут Вам подобрать оптимальные условия для реализации вашего заказа. 
 						.infobuttons
@@ -54,6 +51,28 @@ html
 							|  или 
 							b оставить заявку с помощью формы связи
 							| .
+					section.main__articles
+						ul.dropdown
+							li.dropdown-item
+								.dropdown-title
+									.container(style="border-top: 1px solid #eceded;")
+										.switch
+											span.switch__bg
+											span.switch__btn
+										| Оборудование для фрезерных работ с ЧПУ
+								.container(style="border-bottom: none")
+									.dropdown-item-content
+										include ../../includes/machines/milling-machines-with-cnc
+							li.dropdown-item
+								.dropdown-title
+									.container
+										.switch
+											span.switch__bg
+											span.switch__btn
+										| Расценки на фрезерные работы с ЧПУ
+								.container(style='border-bottom:none')
+									.dropdown-item-content
+										p.text Раздел дополняется
 					include ../../includes/performed_works.pug
 		include ../../includes/popupform.pug
 		footer.main-footer

@@ -84,7 +84,7 @@ $(document).ready(function() {
   });
 
   /*Открытие формы*/
-  $('.infobuttons .btn--form').click(function() {
+  $('.infobuttons .btn--form, li.header-article__item.btn-form').click(function() {
     if ($('.popupform').is(':visible')) {
       $('.popupform').fadeOut();
       enableScroll();
@@ -218,6 +218,17 @@ $(document).ready(function() {
     let filterValue = $(this).attr('data-filter');
     $grid.isotope({ filter: filterValue });
   });
+
+
+  $('.log-services__item').click(function() {
+    let listBtns = $('.log-services__item');
+    let listTexts = $('.log-descriptions__item');
+    let index = listBtns.index($(this));
+    listBtns.removeClass('active');
+    $(this).addClass('active');
+    listTexts.removeClass('show');
+    listTexts.eq(index).addClass('show');
+  });
 });
 
 function catalogLinks () {
@@ -280,7 +291,7 @@ function submitMainForm() {
   $("#mainForm").ajaxSubmit({
     type: "POST",
     data: $("#mainForm").serialize(),
-    url: "./mail.php",
+    url: "/mail.php",
     success: function() {
       alert('Письмо отправлено');
     },

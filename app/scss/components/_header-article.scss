@@ -9,6 +9,18 @@
   z-index: 1;
   box-sizing: border-box;
   display: none;
+  &--wide{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    padding: 0 20px;
+    width: 100%;
+    .header-article__list{
+      width: 100%;
+      max-width: 1340px;
+      margin: 0 auto;
+    }
+  }
   &__list{
     margin: 0;
     padding: 0;
@@ -42,16 +54,8 @@
       margin-left: auto;
     }
     &:nth-child(3){
-      background: url('../img/eye.png') center no-repeat;
-      background-size: 25px 25px;
-    }
-    &:nth-child(4){
-      background: url('../img/envelope--blue.png') center no-repeat;
-      background-size: 25px 25px;
-    }
-    &:nth-child(5){
-      background: url('../img/phone--blue.png') center no-repeat;
-      background-size: 25px 25px;
+      background: url('../img/order--blue.png') center no-repeat;
+      background-size: 35px 25px;
     }
     &:last-child{
       margin-right: 0;

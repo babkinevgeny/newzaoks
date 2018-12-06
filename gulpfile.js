@@ -77,24 +77,27 @@ gulp.task('clean', function() {
   return del.sync('dist');
 });
 
-gulp.task('img', function() {
-  return gulp.src('app/img/**/*')
-    .pipe(cache(imagemin({
+// gulp.task('img', function() {
+//   return gulp.src('app/img/**/*')
+//     .pipe(cache(imagemin({
+//
+//       interlaced: true,
+//       progressive: true,
+//       svgoPlugins: [{
+//         removeViewBox: false
+//       }],
+//       use: [pngquant()]
+//     })) /**/ )
+//     .pipe(gulp.dest('dist/img'));
+// });
 
-      interlaced: true,
-      progressive: true,
-      svgoPlugins: [{
-        removeViewBox: false
-      }],
-      use: [pngquant()]
-    })) /**/ )
-    .pipe(gulp.dest('dist/img'));
-});
-
-gulp.task('build', ['clean', 'img', 'scss', 'scripts', 'pug'], function() {
+gulp.task('build', ['clean', 'scss', 'scripts', 'pug'], function() {
 
   let buildCss = gulp.src('app/css/*.css')
     .pipe(gulp.dest('dist/css'))
+
+  let buildImg = gulp.src('app/img/**/*')
+    .pipe(gulp.dest('dist/img'))
 
   let buildFonts = gulp.src('app/fonts/**/*')
     .pipe(gulp.dest('dist/fonts'))
@@ -105,11 +108,14 @@ gulp.task('build', ['clean', 'img', 'scss', 'scripts', 'pug'], function() {
   let buildHtmlAbout = gulp.src('app/about/*.html')
     .pipe(gulp.dest('dist/about'));
 
-  let buildHtmlProducts = gulp.src('app/products/*.html')
-    .pipe(gulp.dest('dist/products'));
+  let buildHtmlMetalProducts = gulp.src('app/metal-products/*.html')
+    .pipe(gulp.dest('dist/metal-products'));
 
-  let buildHtmlMechanicalWorks = gulp.src('app/mechanical-works/*.html')
-    .pipe(gulp.dest('dist/mechanical-works'));
+  let buildHtmlMetalStructures = gulp.src('app/metal-structures/*.html')
+    .pipe(gulp.dest('dist/metal-structures'));
+
+  let buildHtmlMetalworking = gulp.src('app/metalworking/*.html')
+    .pipe(gulp.dest('dist/metalworking'));
 
   let buildHtml = gulp.src('app/*.html')
     .pipe(gulp.dest('dist'));
@@ -121,6 +127,9 @@ gulp.task('build', ['clean', 'img', 'scss', 'scripts', 'pug'], function() {
     .pipe(gulp.dest('dist/mail'));
 
   let buildMailPhp = gulp.src('app/mail.php')
+    .pipe(gulp.dest('dist'));
+
+  let buildHtaccess = gulp.src('.htaccess')
     .pipe(gulp.dest('dist'));
 
 });
@@ -135,6 +144,29 @@ gulp.task('deploy', function() {
     host: 'o92903x7.beget.tech',
     user: 'o92903x7_admin',
     password: 'iCU3m&IS',
+    parallel: 10,
+    log: gutil.log
+  });
+
+  let globs = [
+    'dist/**'
+  ];
+
+  return gulp.src(globs, {
+      base: './dist',
+      buffer: false
+    })
+    .pipe(conn.newer('/'))
+    .pipe(conn.dest('/'));
+
+});
+
+gulp.task('deploySite', function() {
+
+  let conn = ftp.create({
+    host: 'zaoks.ru',
+    user: 'o92903x7_zaoks',
+    password: 'JsU2RT6*',
     parallel: 10,
     log: gutil.log
   });

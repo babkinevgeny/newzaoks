@@ -22,6 +22,9 @@
       max-width: 400px;
       max-height: 275px;
     }
+    .fotorama__stage{
+      max-height: 261px !important;
+    }
   }
   &__info{
     position: relative;
@@ -42,6 +45,9 @@
     }
     & + .main__articles{
       margin-top: 0;
+    }
+    .tools th {
+      border-top: 1px solid $color-lightgray;
     }
     .dropdown-item-content{
       padding: 20px 0;
@@ -119,11 +125,11 @@
     div:nth-last-child(5):first-child ~ div {
       width: 20%;
     }
-    div{
+    .outer{
       display: block;
       float: left;
       height: 45px;
-      padding: 13px 20px;
+      padding: 0 20px;
       min-width: 1px;
       box-sizing: border-box;
       font-family: $font;
@@ -139,6 +145,13 @@
       cursor: pointer;
       line-height: 16px;
       transition: $animation;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      .inner{
+        width: 100%;
+        margin: auto;
+      }
       &:last-child{
         border-right: 1px solid $color-lightgray;
       }

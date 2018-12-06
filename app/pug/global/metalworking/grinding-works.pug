@@ -13,12 +13,8 @@ html
 				.main__top
 					.fotorama__wrapper
 						.fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")
-							img(src='https://beltica.ru/upload/iblock/942/9424066fa4690068a6947db0173d19d1.jpg')
-							img(src='http://www.skif-m.org/uploads/posts/2014-07/1406239471_133.jpg')
-							img(src='http://metallmig.ru/img/node-18745-gidroabraziv-rezka.jpg', alt='')
-							img(src='http://www.megasteels.ru/files/images/pages/pic_211_1416503159.jpg', alt='')
-							img(src='http://kz.all.biz/img/kz/service_catalog/229754.jpg', alt='')
-							img(src='http://www.tecsna.ru/images/detailed/1/plazma.jpg', alt='')
+							img(src='../img/metalworking/ШлифовальныеРаботы1.jpg')
+							img(src='../img/metalworking/ШлифовальныеРаботы2.jpg')
 					.main__info
 						p.text.text--justify Set Service Group предлагает услугу шлифовальных работ в Санкт-Петербурге. Современное оборудование и опытные специалисты обеспечат качественное выполнение любого заказа.
 						p.text.text--justify 
@@ -30,9 +26,12 @@ html
 							.btn Скачать прайс-лист
 				section.main__articles.main__articles--with-btns
 					.main__buttons
-						div(class="active") Круглая шлифовка
-						div Плоская шлифовка
-						div Зубошлифование/Шлицешлифование
+						.outer.active
+							.inner Круглая шлифовка
+						.outer
+							.inner Плоская шлифовка
+						.outer
+							.inner Зубошлифование/Шлицешлифование
 					article.main__article.main__article--active
 						p.text.text--justify
 							b Круглая шлифовка
@@ -111,6 +110,28 @@ html
 							|  или 
 							b оставить заявку с помощью формы связи
 							| .
+				section.main__articles
+					ul.dropdown
+						li.dropdown-item
+							.dropdown-title
+								.container(style="border-top: 1px solid #eceded;")
+									.switch
+										span.switch__bg
+										span.switch__btn
+									| Оборудование для шлифования металла
+							.container(style="border-bottom: none")
+								.dropdown-item-content
+									include ../../includes/machines/grinding-machines
+						li.dropdown-item
+							.dropdown-title
+								.container
+									.switch
+										span.switch__bg
+										span.switch__btn
+									| Расценки на шлифование металла
+							.container(style='border-bottom:none')
+								.dropdown-item-content
+									p.text Раздел дополняется
 				include ../../includes/performed_works.pug
 		include ../../includes/popupform.pug
 		footer.main-footer

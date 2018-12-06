@@ -13,12 +13,8 @@ html
 				.main__top
 					.fotorama__wrapper
 						.fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")
-							img(src='https://beltica.ru/upload/iblock/942/9424066fa4690068a6947db0173d19d1.jpg')
-							img(src='http://www.skif-m.org/uploads/posts/2014-07/1406239471_133.jpg')
-							img(src='http://metallmig.ru/img/node-18745-gidroabraziv-rezka.jpg', alt='')
-							img(src='http://www.megasteels.ru/files/images/pages/pic_211_1416503159.jpg', alt='')
-							img(src='http://kz.all.biz/img/kz/service_catalog/229754.jpg', alt='')
-							img(src='http://www.tecsna.ru/images/detailed/1/plazma.jpg', alt='')
+							img(src='../img/metalworking/СлесарноСборочные1.jpg')
+							img(src='../img/metalworking/СлесарноСборочные2.jpg')
 					.main__info
 						p.text.text--justify Помимо отдельных операций металлообработки наша компания предлагает изготовление изделий и конструкций целиком.  Очень часто мы производим изделия и конструкции с применением не только металла, а также стекла, дерева, пластика и других материалов. Финальной стадией производства металлоконструкций является сборка. Специалисты нашей компании всегда готовы помочь вам рассчитать и реализовать проект в области слесарно-сборочных работ.
 						.infobuttons
@@ -27,8 +23,8 @@ html
 				section.main__articles
 					article.main__article.main__article--active
 						p.text.text--justify Независимо от уровня технологического оснащения производства, обойтись без квалифицированных работников и ручного труда невозможно. В комплекс услуг нашего предприятия входят
-							b слесарные работы по металлу
-							| различного уровня сложности. Профессиональный подход и опыт мастеров нашего предприятия позволят выполнить все необходимые технологические этапы, обеспечив достойно высокий уровень продукции.
+							b  слесарные работы по металлу
+							|  различного уровня сложности. Профессиональный подход и опыт мастеров нашего предприятия позволят выполнить все необходимые технологические этапы, обеспечив достойно высокий уровень продукции.
 						p.text.text--justify Комплексное 
 							b слесарное обслуживание 
 							| включает обширный перечень работ, в которые входит:
@@ -61,6 +57,28 @@ html
 							b 8 (812) 627-15-16 
 							| или 
 							b заполнив форму связи.
+				section.main__articles
+					ul.dropdown
+						li.dropdown-item
+							.dropdown-title
+								.container(style="border-top: 1px solid #eceded;")
+									.switch
+										span.switch__bg
+										span.switch__btn
+									| Оборудование для слесарно-сборочных работ
+							.container(style="border-bottom: none")
+								.dropdown-item-content
+									p.text Раздел дополняется
+						li.dropdown-item
+							.dropdown-title
+								.container
+									.switch
+										span.switch__bg
+										span.switch__btn
+									| Расценки на слесарно-сборочные работы
+							.container(style='border-bottom:none')
+								.dropdown-item-content
+									p.text Раздел дополняется
 				include ../../includes/performed_works.pug    
 		include ../../includes/popupform.pug
 		footer.main-footer

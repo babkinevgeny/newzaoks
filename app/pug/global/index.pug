@@ -1,6 +1,7 @@
 doctype
 html
   -let title = 'Zaoks'
+  -let add_link_for_clients = true
   include ../includes/head.pug
   body.body--parallax
     include ../includes/preloader.pug
@@ -13,7 +14,7 @@ html
       blockquote
         p
           span Мы – это команда специалистов в различных видах металлообработки, объединенные одной большой идеей развития производственного сектора России и качественного увеличения номенклатуры товаров, произведенных на территории России.
-        a(href='./about.html') Подробнее
+        a(href='about/about.html') Подробнее
     include ../includes/services.pug
     include ../includes/products.pug
     include ../includes/partners.pug
