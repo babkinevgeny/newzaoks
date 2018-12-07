@@ -1161,10 +1161,7 @@ blockquote {
     right: 10px; }
     .popup__right .feedback {
       width: 250px;
-      height: 353px;
-      background: url("../img/feedback.jpg") center no-repeat;
-      -webkit-background-size: cover;
-              background-size: cover; }
+      height: 353px; }
   .popup h1 {
     text-align: left;
     font-size: 24px;
