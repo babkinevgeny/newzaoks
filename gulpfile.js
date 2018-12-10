@@ -1,8 +1,6 @@
 let gulp = require('gulp'),
   scss = require('gulp-sass'),
   browserSync = require('browser-sync'),
-  concat = require('gulp-concat'),
-  uglify = require('gulp-uglifyjs'),
   cssnano = require('gulp-cssnano'),
   rename = require('gulp-rename'),
   del = require('del'),
@@ -35,22 +33,6 @@ gulp.task('browser-sync', function() {
   });
 });
 
-gulp.task('scripts', function() {
-  return gulp.src([
-      'app/libs/jquery/dist/jquery.min.js',
-      'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
-      'app/libs/bxslider-4/dist/jquery.bxslider.min.js',
-      'app/libs/jquery.validate/jquery.validate.min.js',
-      'app/libs/form/form.min.js',
-      'app/libs/fotorama/fotorama.js',
-      'app/libs/owlcarousel/owl.carousel.min.js',
-      'app/libs/isotope/isotope.min.js'
-    ])
-    .pipe(concat('libs.min.js'))
-    .pipe(uglify())
-    .pipe(gulp.dest('app/js'));
-});
-
 gulp.task('css-libs', ['scss'], function() {
   return gulp.src('app/css/libs.css')
     .pipe(cssnano())
@@ -60,7 +42,7 @@ gulp.task('css-libs', ['scss'], function() {
     .pipe(gulp.dest('app/css'));
 });
 
-gulp.task('watch', ['browser-sync', 'css-libs', 'scripts', 'pug'], function() {
+gulp.task('watch', ['browser-sync', 'css-libs', 'pug'], function() {
   gulp.watch('app/scss/**/*.scss', ['scss']);
   gulp.watch('app/**/*.pug', ['pug']);
   gulp.watch('app/*.html', browserSync.reload);
@@ -91,7 +73,7 @@ gulp.task('clean', function() {
 //     .pipe(gulp.dest('dist/img'));
 // });
 
-gulp.task('build', ['clean', 'scss', 'scripts', 'pug'], function() {
+gulp.task('build', ['clean', 'scss', 'pug'], function() {
 
   let buildCss = gulp.src('app/css/*.css')
     .pipe(gulp.dest('dist/css'))
@@ -131,7 +113,6 @@ gulp.task('build', ['clean', 'scss', 'scripts', 'pug'], function() {
 
   let buildHtaccess = gulp.src('.htaccess')
     .pipe(gulp.dest('dist'));
-
 });
 
 gulp.task('clear', function(callback) {
