@@ -43,23 +43,23 @@ html
     section.team
       h3.team__header Контакты ООО "Комплект Сервис"
       ul.team__list
-            li.team__item.team__item--addres
-              h3.team__title Адрес
-              .team__text
-                | 193318, Россия, г. Санкт-Петербург,
-                br
-                |  ул. Ворошилова, 2
-            li.team__item
-              h3.team__title Телефон
-              .team__text 8(812)627-15-16
-              .team__text 8(812)326-00-10
-            li.team__item.team__item--email
-              h3.team__title.team__title Почта
-              a.team__text(href='mailto:es.zaoks@gmail.com') info@zaoks.ru
-              span  - для заказов
-              br
-              a.team__text(href='mailto:post@zaoks.com') post@zaoks.ru
-              span  - для поставщиков
+        li.team__item.team__item--addres
+          h3.team__title Адрес
+          .team__text
+            | 193318, Россия, г. Санкт-Петербург,
+            br
+            |  ул. Ворошилова, 2
+        li.team__item
+          h3.team__title Телефон
+          .team__text 8(812)627-15-16
+          .team__text 8(812)326-00-10
+        li.team__item.team__item--email
+          h3.team__title.team__title Почта
+          a.team__text(href='mailto:es.zaoks@gmail.com') info@zaoks.ru
+          span  - для заказов
+          br
+          a.team__text(href='mailto:post@zaoks.com') post@zaoks.ru
+          span  - для поставщиков
       ul.dropdown
         li.dropdown-item
               .dropdown-title
@@ -125,15 +125,16 @@ html
                       .team__tel +7(812)627-15-16 (доб. 108)
                       a.team__email(href='mailto:yd.zaoks@yandex.ru') yd.zaoks@yandex.ru
     section.map(style='border-top: none')
-                        #map-move-spb
-                        #map-move-msc
-                        .contacts-move.contacts-move-spb
-                          .btn-content-close
-                          .contacts-content
-                          .contacts-btns-big
-                            button.btn.btn-contacts.btn-contacts-spb Санкт-Петербург
-                            button.btn.btn-contacts.btn-contacts-msc Москва
+      #map-move-spb
+      #map-move-msc
+      .contacts-move.contacts-move-spb
+        .btn-content-close
+        .contacts-content
+        .contacts-btns-big
+          button.btn.btn-contacts.btn-contacts-spb Санкт-Петербург
+          button.btn.btn-contacts.btn-contacts-msc Москва
     include ../includes/popupform.pug
     include ../includes/main-footer.pug
-  include ../includes/scripts.pug
+  script(src="/js/common.js")
+  script(src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU")
   script(src='js/contacts.js')
