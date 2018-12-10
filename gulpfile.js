@@ -87,6 +87,9 @@ gulp.task('build', ['clean', 'scss', 'pug'], function() {
   let buildJs = gulp.src('app/js/**/*')
     .pipe(gulp.dest('dist/js'))
 
+  let buildLibs = gulp.src('app/libs/**/*')
+    .pipe(gulp.dest('dist/libs'))
+
   let buildHtmlAbout = gulp.src('app/about/*.html')
     .pipe(gulp.dest('dist/about'));
 
