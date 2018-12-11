@@ -8,6 +8,9 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="/css/libs.min.css">
     <link rel="stylesheet" href="/css/styles.css">
+    <script src="/libs/jquery/jquery.min.js"></script>
+    <script src="/libs/jquery.validate/jquery.validate.min.js"></script>
+    <script src="/libs/form/form.min.js"></script>
   </head>
   <body class="body--parallax">
     <div id="preloader">
@@ -108,14 +111,40 @@
         </ul>
       </nav>
     </header>
-    <section>
+    <section class="menu-line menu-line--areas">
+      <div class="menu-line__item active">
+        <div class="menu-line__btn">Площадка 1</div>
+      </div>
+      <div class="menu-line__item">
+        <div class="menu-line__btn">Площадка 2</div>
+      </div>
+      <div class="menu-line__item">
+        <div class="menu-line__btn">Площадка 3</div>
+      </div>
+      <div class="menu-line__item">
+        <div class="menu-line__btn">Площадка 4</div>
+      </div>
+      <div class="menu-line__item">
+        <div class="menu-line__btn">Площадка 5</div>
+      </div>
+      <div class="menu-line__item">
+        <div class="menu-line__btn">Площадка 6</div>
+      </div>
+    </section>
+    <section class="prod-areas">
       <div class="container">
         <h1 class="title">Производственные площадки</h1>
         <p class="text text--center">
-           В распоряжении нашей компании имеется 5 производственных площадок, <br>каждая из которых предназначена для решения задач в определенной производственной сфере</p>
-        <p class="text" style="max-width: 1340px; margin: 20px auto 60px auto;"><b>Мелко- и среднегабаритная мехобработка, серийное производство.</b><br><br>1) Санкт-Петербург, Кингисеппское ш., д. 53; г. Луга, ул. Большая Заречная 1а<br>Парк: гидроабразивная резка и токарно-фрезерные станки с ЧПУ.<br><br><b>Крупногабаритная и сверхгабаритная мехобработка.</b><br><br>2) Санкт-Петербург, Чугунная, д. 14; пос. Понтонный ул. Заводская д 10<br>Парк: Токарно-карусельная обработка, крупногабаритные расточные станки<br><br>3) Санкт-Петербург, дорога на Петрославянку, д. 5, лит. АЕ (территория завода «ОРМА»)<br>Парк: Токарно-карусельная обработка, крупногабаритные координатно-расточные станки<br><br><b>Слесарно-сборочный цех</b><br><br>4) Санкт-Петербург, ул. Салова, д. 37<br>Парк: сварные посты, лазерная и плазменная резка, гильотинный и гибочный участок</p>
+           В распоряжении нашей компании имеется 6 производственных площадок, <br>каждая из которых предназначена для решения задач в определенной производственной сфере</p>
       </div>
+      <div class="areas" id="areas0"></div>
+      <div class="areas" id="areas1"></div>
+      <div class="areas" id="areas2"></div>
+      <div class="areas" id="areas3"></div>
+      <div class="areas" id="areas4"></div>
+      <div class="areas" id="areas5"></div>
     </section>
+    <section></section>
     <section class="popupform">
       <div class="popupform__btn"></div>
       <form class="main-form" id="mainForm" action="/mail.php" enctype="multipart/form-data" method="post">
@@ -177,5 +206,39 @@
     </footer>
   </body>
 </html>
-<script src="/js/libs.min.js"></script>
-<script src="/js/main.js"></script>
+<script src="/js/common.js"></script>
+<script src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&amp;lang=ru-RU"></script>
+<script>
+  $(document).ready(function (){
+    ymaps.ready(initMaps);
+  
+    function initMaps () {
+      const coordinates = [[59.721700, 30.0600805], [58.742987, 29.872054], [59.972232, 30.351972], [59.790082, 30.629443], [59.806664, 30.510987], [59.894012, 30.381813]];
+      let maps = [];
+      for (let i = 0; i < 6; i++) {
+        maps[i] = new ymaps.Map(`areas${i}`, {
+          center: coordinates[i],
+          zoom:16
+        });
+        maps[i].controls.add('zoomControl', { left: 15, top: 15 });
+        let placemark = new ymaps.Placemark(coordinates[i], {
+        }, {
+          iconImageHref: '../img/map-marker.png',
+          iconImageSize: [201, 160],
+          iconImageOffset: [-60, -160]
+        });
+  
+        maps[i].geoObjects.add(placemark);
+      }
+    }
+  
+    $(".menu-line__item").click(function() {
+      $(".menu-line__item").removeClass('active');
+      $(this).addClass('active');
+      let indexOfThis = $(this).index('.menu-line__item');
+      $('.areas').css('display','none');
+      $('.areas').eq(indexOfThis).css('display','block');
+    });
+  
+  });
+</script>

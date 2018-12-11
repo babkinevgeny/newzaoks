@@ -5,14 +5,34 @@ html
   body.body--parallax
     include ../../includes/preloader.pug
     include ../../includes/main-header.pug
-    section
+    section.menu-line.menu-line--areas
+      .menu-line__item.active
+          .menu-line__btn Площадка 1
+      .menu-line__item
+          .menu-line__btn Площадка 2
+      .menu-line__item
+          .menu-line__btn Площадка 3
+      .menu-line__item
+          .menu-line__btn Площадка 4
+      .menu-line__item
+          .menu-line__btn Площадка 5
+      .menu-line__item
+          .menu-line__btn Площадка 6
+    section.prod-areas
       .container
         h1.title Производственные площадки
         p.text.text--center 
-          | В распоряжении нашей компании имеется 5 производственных площадок, 
+          | В распоряжении нашей компании имеется 6 производственных площадок, 
           br
           | каждая из которых предназначена для решения задач в определенной производственной сфере
-        p.text(style="max-width: 1340px; margin: 20px auto 60px auto;")
+      .areas#areas0
+      .areas#areas1
+      .areas#areas2
+      .areas#areas3
+      .areas#areas4
+      .areas#areas5
+
+        //- p.text(style="max-width: 1340px; margin: 20px auto 60px auto;")
           b Мелко- и среднегабаритная мехобработка, серийное производство.
           br
           br
@@ -40,6 +60,43 @@ html
           | 4) Санкт-Петербург, ул. Салова, д. 37
           br
           | Парк: сварные посты, лазерная и плазменная резка, гильотинный и гибочный участок
+    section
     include ../../includes/popupform.pug
     include ../../includes/main-footer.pug
-include ../../includes/scripts.pug  
+script(src="/js/common.js")
+script(src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU")
+script.
+  $(document).ready(function (){
+    ymaps.ready(initMaps);
+
+    function initMaps () {
+      const coordinates = [[59.721700, 30.0600805], [58.742987, 29.872054], [59.972232, 30.351972], [59.790082, 30.629443], [59.806664, 30.510987], [59.894012, 30.381813]];
+      let maps = [];
+      for (let i = 0; i < 6; i++) {
+        maps[i] = new ymaps.Map(`areas${i}`, {
+          center: coordinates[i],
+          zoom:16
+        });
+        maps[i].controls.add('zoomControl', { left: 15, top: 15 });
+        let placemark = new ymaps.Placemark(coordinates[i], {
+        }, {
+          iconImageHref: '../img/map-marker.png',
+          iconImageSize: [201, 160],
+          iconImageOffset: [-60, -160]
+        });
+
+        maps[i].geoObjects.add(placemark);
+      }
+    }
+
+    $(".menu-line__item").click(function() {
+      $(".menu-line__item").removeClass('active');
+      $(this).addClass('active');
+      let indexOfThis = $(this).index('.menu-line__item');
+      $('.areas').css('display','none');
+      $('.areas').eq(indexOfThis).css('display','block');
+    });
+
+  });
+
+  
