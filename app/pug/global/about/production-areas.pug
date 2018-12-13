@@ -92,6 +92,8 @@ script.
           controls: ['zoomControl']
         });
 
+      myMap.behaviors.disable('scrollZoom'); 
+
       let MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
         '<div>$[properties.iconContent]</div>'
       );
