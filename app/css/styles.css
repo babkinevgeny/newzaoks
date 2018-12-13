@@ -347,6 +347,12 @@ label.error {
 span.text--blue {
   color: #06abdd; }
 
+.arial {
+  font-family: Arial, sans-serif; }
+
+.gray {
+  color: #8a8a8a; }
+
 .undertitle {
   font-size: 16px;
   font-family: "Open Sans", Arial, sans-serif;
