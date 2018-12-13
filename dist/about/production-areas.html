@@ -8,6 +8,9 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="/css/libs.min.css">
     <link rel="stylesheet" href="/css/styles.css">
+    <script src="/libs/jquery/jquery.min.js"></script>
+    <script src="/libs/jquery.validate/jquery.validate.min.js"></script>
+    <script src="/libs/form/form.min.js"></script>
   </head>
   <body class="body--parallax">
     <div id="preloader">
@@ -108,14 +111,15 @@
         </ul>
       </nav>
     </header>
-    <section>
+    <section class="prod-areas">
       <div class="container">
         <h1 class="title">Производственные площадки</h1>
         <p class="text text--center">
-           В распоряжении нашей компании имеется 5 производственных площадок, <br>каждая из которых предназначена для решения задач в определенной производственной сфере</p>
-        <p class="text" style="max-width: 1340px; margin: 20px auto 60px auto;"><b>Мелко- и среднегабаритная мехобработка, серийное производство.</b><br><br>1) Санкт-Петербург, Кингисеппское ш., д. 53; г. Луга, ул. Большая Заречная 1а<br>Парк: гидроабразивная резка и токарно-фрезерные станки с ЧПУ.<br><br><b>Крупногабаритная и сверхгабаритная мехобработка.</b><br><br>2) Санкт-Петербург, Чугунная, д. 14; пос. Понтонный ул. Заводская д 10<br>Парк: Токарно-карусельная обработка, крупногабаритные расточные станки<br><br>3) Санкт-Петербург, дорога на Петрославянку, д. 5, лит. АЕ (территория завода «ОРМА»)<br>Парк: Токарно-карусельная обработка, крупногабаритные координатно-расточные станки<br><br><b>Слесарно-сборочный цех</b><br><br>4) Санкт-Петербург, ул. Салова, д. 37<br>Парк: сварные посты, лазерная и плазменная резка, гильотинный и гибочный участок</p>
+           В распоряжении нашей компании имеется 6 производственных площадок, <br>каждая из которых предназначена для решения задач в определенной производственной сфере</p>
       </div>
+      <div class="areas" id="areas0"></div>
     </section>
+    <section></section>
     <section class="popupform">
       <div class="popupform__btn"></div>
       <form class="main-form" id="mainForm" action="/mail.php" enctype="multipart/form-data" method="post">
@@ -177,5 +181,81 @@
     </footer>
   </body>
 </html>
-<script src="/js/libs.min.js"></script>
-<script src="/js/main.js"></script>
+<script src="/js/common.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=02428436-3bf8-41c8-a1df-083df11b9f44&amp;lang=ru_RU"></script>
+<script>
+  $(document).ready(function (){
+    ymaps.ready(initMaps);
+  
+    function initMaps () {
+      //- const coordinates = [[59.721700, 30.0600805], [58.742987, 29.872054], [59.972232, 30.351972], [59.790082, 30.629443], [59.806664, 30.510987], [59.894012, 30.381813]];
+      //- let maps = [];
+      //- for (let i = 0; i < 6; i++) {
+      //-   maps[i] = new ymaps.Map(`areas${i}`, {
+      //-     center: coordinates[i],
+      //-     zoom:16
+      //-   });
+      //-   maps[i].controls.add('zoomControl', { left: 15, top: 15 });
+      //-   let placemark = new ymaps.Placemark(coordinates[i], {
+      //-   }, {
+      //-     iconImageHref: '../img/map-marker.png',
+      //-     iconImageSize: [201, 160],
+      //-     iconImageOffset: [-60, -160]
+      //-   });
+  
+      //-   maps[i].geoObjects.add(placemark);
+      let myMap = new ymaps.Map('areas0', {
+          center: [59.875223, 30.290999],
+          zoom:10,
+          controls: ['zoomControl']
+        });
+  
+      let MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+        '<div>$[properties.iconContent]</div>'
+      );
+  
+      let iconProperties = {
+        iconLayout: 'default#imageWithContent',
+        iconImageHref: '../img/map-marker.png',
+        iconImageSize: [75, 60],
+        iconImageOffset: [-17, -61],
+        iconContentLayout: MyIconContentLayout
+      };
+  
+      myMap.geoObjects
+        .add(new ymaps.Placemark([59.721700, 30.0600805], {
+          balloonContentHeader: 'Мелко- и среднегабаритная мехобработка, серийное производство.',
+          balloonContent: 'Санкт-Петербург, Кингисеппское ш., д. 53',
+        }, iconProperties))
+        .add(new ymaps.Placemark([59.972232, 30.351972], {
+          balloonContentHeader: 'Крупногабаритная и сверхгабаритная мехобработка',
+          balloonContent: 'Санкт-Петербург, Чугунная, д. 14',
+        }, iconProperties))
+        .add(new ymaps.Placemark([59.790082, 30.629443], {
+          balloonContentHeader: 'Крупногабаритная и сверхгабаритная мехобработка',
+          balloonContent: 'пос. Понтонный ул. Заводская д 10',
+        }, iconProperties))
+        .add(new ymaps.Placemark([59.806664, 30.510987], {
+          balloonContentHeader: 'Крупногабаритная и сверхгабаритная мехобработка',
+          balloonContent: 'Санкт-Петербург, дорога на Петрославянку, д. 5, лит. АЕ (территория завода «ОРМА»)',
+        }, iconProperties))
+        .add(new ymaps.Placemark([59.894012, 30.381813], {
+          balloonContentHeader: 'Слесарно-сборочный цех',
+          balloonContent: 'Санкт-Петербург, ул. Салова, д. 37',
+        }, iconProperties))
+        .add(new ymaps.Placemark([59.922579, 30.441586], {
+          balloonContentHeader: 'Главный офис Set Service Group',
+          balloonContent: 'Санкт-Петербург, ул. Ворошилова, д. 2 (БЦ Охта)',
+        }, iconProperties))
+    }
+  
+    //- $(".menu-line__item").click(function() {
+    //-   $(".menu-line__item").removeClass('active');
+    //-   $(this).addClass('active');
+    //-   let indexOfThis = $(this).index('.menu-line__item');
+    //-   $('.areas').css('display','none');
+    //-   $('.areas').eq(indexOfThis).css('display','block');
+    //- });
+  
+  });
+</script>

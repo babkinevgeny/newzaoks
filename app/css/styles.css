@@ -160,9 +160,6 @@ body {
           box-sizing: border-box;
   margin: 0 auto; }
 
-.prod-areas {
-  padding-top: 65px; }
-
 .flex {
   display: -webkit-flex;
   display: -ms-flex;
@@ -3008,7 +3005,7 @@ blockquote {
     z-index: 1; }
 
 .areas {
-  height: 500px;
+  height: 700px;
   display: none; }
   .areas#areas0 {
     display: block; }

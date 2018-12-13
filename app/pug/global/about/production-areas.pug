@@ -5,19 +5,19 @@ html
   body.body--parallax
     include ../../includes/preloader.pug
     include ../../includes/main-header.pug
-    section.menu-line.menu-line--areas
-      .menu-line__item.active
-          .menu-line__btn Площадка 1
-      .menu-line__item
-          .menu-line__btn Площадка 2
-      .menu-line__item
-          .menu-line__btn Площадка 3
-      .menu-line__item
-          .menu-line__btn Площадка 4
-      .menu-line__item
-          .menu-line__btn Площадка 5
-      .menu-line__item
-          .menu-line__btn Площадка 6
+    //- section.menu-line.menu-line--areas
+    //-   .menu-line__item.active
+    //-       .menu-line__btn Площадка 1
+    //-   .menu-line__item
+    //-       .menu-line__btn Площадка 2
+    //-   .menu-line__item
+    //-       .menu-line__btn Площадка 3
+    //-   .menu-line__item
+    //-       .menu-line__btn Площадка 4
+    //-   .menu-line__item
+    //-       .menu-line__btn Площадка 5
+    //-   .menu-line__item
+    //-       .menu-line__btn Площадка 6
     section.prod-areas
       .container
         h1.title Производственные площадки
@@ -26,11 +26,11 @@ html
           br
           | каждая из которых предназначена для решения задач в определенной производственной сфере
       .areas#areas0
-      .areas#areas1
-      .areas#areas2
-      .areas#areas3
-      .areas#areas4
-      .areas#areas5
+      //- .areas#areas1
+      //- .areas#areas2
+      //- .areas#areas3
+      //- .areas#areas4
+      //- .areas#areas5
 
         //- p.text(style="max-width: 1340px; margin: 20px auto 60px auto;")
           b Мелко- и среднегабаритная мехобработка, серийное производство.
@@ -64,38 +64,80 @@ html
     include ../../includes/popupform.pug
     include ../../includes/main-footer.pug
 script(src="/js/common.js")
-script(src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU")
+script(src="https://api-maps.yandex.ru/2.1/?apikey=02428436-3bf8-41c8-a1df-083df11b9f44&lang=ru_RU")
 script.
   $(document).ready(function (){
     ymaps.ready(initMaps);
 
     function initMaps () {
-      const coordinates = [[59.721700, 30.0600805], [58.742987, 29.872054], [59.972232, 30.351972], [59.790082, 30.629443], [59.806664, 30.510987], [59.894012, 30.381813]];
-      let maps = [];
-      for (let i = 0; i < 6; i++) {
-        maps[i] = new ymaps.Map(`areas${i}`, {
-          center: coordinates[i],
-          zoom:16
-        });
-        maps[i].controls.add('zoomControl', { left: 15, top: 15 });
-        let placemark = new ymaps.Placemark(coordinates[i], {
-        }, {
-          iconImageHref: '../img/map-marker.png',
-          iconImageSize: [201, 160],
-          iconImageOffset: [-60, -160]
+      //- const coordinates = [[59.721700, 30.0600805], [58.742987, 29.872054], [59.972232, 30.351972], [59.790082, 30.629443], [59.806664, 30.510987], [59.894012, 30.381813]];
+      //- let maps = [];
+      //- for (let i = 0; i < 6; i++) {
+      //-   maps[i] = new ymaps.Map(`areas${i}`, {
+      //-     center: coordinates[i],
+      //-     zoom:16
+      //-   });
+      //-   maps[i].controls.add('zoomControl', { left: 15, top: 15 });
+      //-   let placemark = new ymaps.Placemark(coordinates[i], {
+      //-   }, {
+      //-     iconImageHref: '../img/map-marker.png',
+      //-     iconImageSize: [201, 160],
+      //-     iconImageOffset: [-60, -160]
+      //-   });
+
+      //-   maps[i].geoObjects.add(placemark);
+      let myMap = new ymaps.Map('areas0', {
+          center: [59.875223, 30.290999],
+          zoom:10,
+          controls: ['zoomControl']
         });
 
-        maps[i].geoObjects.add(placemark);
-      }
+      let MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+        '<div>$[properties.iconContent]</div>'
+      );
+
+      let iconProperties = {
+        iconLayout: 'default#imageWithContent',
+        iconImageHref: '../img/map-marker.png',
+        iconImageSize: [75, 60],
+        iconImageOffset: [-17, -61],
+        iconContentLayout: MyIconContentLayout
+      };
+
+      myMap.geoObjects
+        .add(new ymaps.Placemark([59.721700, 30.0600805], {
+          balloonContentHeader: 'Мелко- и среднегабаритная мехобработка, серийное производство.',
+          balloonContent: 'Санкт-Петербург, Кингисеппское ш., д. 53',
+        }, iconProperties))
+        .add(new ymaps.Placemark([59.972232, 30.351972], {
+          balloonContentHeader: 'Крупногабаритная и сверхгабаритная мехобработка',
+          balloonContent: 'Санкт-Петербург, Чугунная, д. 14',
+        }, iconProperties))
+        .add(new ymaps.Placemark([59.790082, 30.629443], {
+          balloonContentHeader: 'Крупногабаритная и сверхгабаритная мехобработка',
+          balloonContent: 'пос. Понтонный ул. Заводская д 10',
+        }, iconProperties))
+        .add(new ymaps.Placemark([59.806664, 30.510987], {
+          balloonContentHeader: 'Крупногабаритная и сверхгабаритная мехобработка',
+          balloonContent: 'Санкт-Петербург, дорога на Петрославянку, д. 5, лит. АЕ (территория завода «ОРМА»)',
+        }, iconProperties))
+        .add(new ymaps.Placemark([59.894012, 30.381813], {
+          balloonContentHeader: 'Слесарно-сборочный цех',
+          balloonContent: 'Санкт-Петербург, ул. Салова, д. 37',
+        }, iconProperties))
+        .add(new ymaps.Placemark([59.922579, 30.441586], {
+          balloonContentHeader: 'Главный офис Set Service Group',
+          balloonContent: 'Санкт-Петербург, ул. Ворошилова, д. 2 (БЦ Охта)',
+        }, iconProperties))
     }
 
-    $(".menu-line__item").click(function() {
-      $(".menu-line__item").removeClass('active');
-      $(this).addClass('active');
-      let indexOfThis = $(this).index('.menu-line__item');
-      $('.areas').css('display','none');
-      $('.areas').eq(indexOfThis).css('display','block');
-    });
+    //- $(".menu-line__item").click(function() {
+    //-   $(".menu-line__item").removeClass('active');
+    //-   $(this).addClass('active');
+    //-   let indexOfThis = $(this).index('.menu-line__item');
+    //-   $('.areas').css('display','none');
+    //-   $('.areas').eq(indexOfThis).css('display','block');
+    //- });
 
   });
 
