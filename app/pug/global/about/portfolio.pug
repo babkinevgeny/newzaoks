@@ -17,20 +17,22 @@ html
         li.btn(data-filter=".milling_works") Фрезерные работы
         li.btn(data-filter=".milling_works_with_cnc") Фрезерные работы с ЧПУ
         li.btn(data-filter=".gear_cutting_works") Зубонарезные работы
+        li.btn(data-filter=".painting") Покраска
         li.btn(data-filter=".turnung_milling_works_with_cnc") Токарно-фрезерные работы с ЧПУ
         li.btn(data-filter=".electric_erosion") Электроэрозия
         li.btn(data-filter=".metal_bending") Гибка металла
         li.btn(data-filter=".laser_cutting") Лазерная резка
         li.btn(data-filter=".welding_works") Сварочные работы
+        li.btn(data-filter=".boring_works") Координатно-расточные работы
         li.btn(data-filter=".grinding_works") Шлифовальные работы
         li.btn(data-filter=".carousel_worls_with_cnc") Карусельная обработка с ЧПУ
-        li.btn(data-filter=".boring_works") Координатно-расточные работы
         li.btn(data-filter=".hydroabrasive_cutting") Гидрообразивная резка
         li.btn(data-filter=".chrome_plating") Хромирование
         li.btn(data-filter=".rolling") Вальцовка
+        li.btn(data-filter=".metal-structures") Металлоконструкции
         li.btn(data-filter=".assembly_works") Слесарно-сборочные работы
         li.btn(data-filter=".serial_production") Серийное производство
-      .portfolio__grid 
+      .portfolio__grid
         .portfolio__item.turning_automat.serial_production
           img(src="/img/carousel/стопорная ось.jpg")
         .portfolio__item.turning_automat.serial_production
@@ -38,9 +40,10 @@ html
         .portfolio__item.turnung_milling_works_with_cnc
           img(src="/img/carousel/кожух.jpg")  
         .portfolio__item.milling_works_with_cnc.serial_production
-          img(src="/img/carousel/корпус.jpg")   
+          img(src="/img/carousel/корпус1.jpg")   
         .portfolio__item.milling_works.serial_production
-          img(src="/img/carousel/кронштейн.jpg") 
+          img(src="/img/carousel/кронштейн.jpg")
+
         .portfolio__item.turning_works
           img(src="/img/carousel/Токарные работы.jpg")
         .portfolio__item.turnung_milling_works_with_cnc.serial_production
@@ -51,6 +54,7 @@ html
           img(src="/img/carousel/штуцер.jpg") 
         .portfolio__item.turning_works
           img(src="/img/carousel/токарные работы3.jpg")
+
         .portfolio__item.turning_works
           img(src="/img/carousel/токарные работы4.jpg")
         .portfolio__item.milling_works.serial_production
@@ -60,17 +64,58 @@ html
         .portfolio__item.turning_works.gear_cutting_works
           img(src="/img/carousel/ток-зуб.jpg")
         .portfolio__item.milling_works_with_cnc
-          img(src="/img/carousel/фрез чпу.jpg")     
-      
-                  
+          img(src="/img/carousel/фрез чпу.jpg")
+
+        .portfolio__item.turning_works.gear_cutting_works
+          img(src="/img/carousel/вал-шестерня1.jpg")
+        .portfolio__item.turning_works.gear_cutting_works
+          img(src="/img/carousel/вал-шестерня2.jpg")
+        .portfolio__item.turning_works-with-cnc
+          img(src="/img/carousel/втулка1.jpg")
+        .portfolio__item.milling_works_with_cnc
+          img(src="/img/carousel/держатель1.jpg")  
+        .portfolio__item.milling_works_with_cnc
+          img(src="/img/carousel/держатель2.jpg") 
+
+        .portfolio__item.laser_cutting.bending_works.welding_works
+          img(src="/img/carousel/корпус3.jpg")
+        .portfolio__item.turning_works_with_cnc
+          img(src="/img/carousel/оправа.jpg")
+        .portfolio__item.hydroabrasive_cutting.milling_works_with_cnc
+          img(src="/img/carousel/основание2.jpg")
+        .portfolio__item.hydroabrasive_cutting.milling_works_with_cnc
+          img(src="/img/carousel/основание3.jpg")
+        .portfolio__item.hydroabrasive_cutting.milling_works_with_cnc
+          img(src="/img/carousel/основание4.jpg")
+
+        .portfolio__item.turning_works
+          img(src="/img/carousel/стержень.jpg")
+        .portfolio__item.milling_works_with_cnc
+          img(src="/img/carousel/стяжка.jpg")
+        .portfolio__item.milling_works_with_cnc
+          img(src="/img/carousel/упор.jpg")
+        .portfolio__item.hydroabrasive_cutting.milling_works_with_cnc
+          img(src="/img/carousel/фиксатор.jpg")
+        .portfolio__item.turning_works_with_cnc
+          img(src="/img/carousel/фланец.jpg")
+           
         .portfolio__item.turning_works_with_cnc.serial_production
           img(src="/img/carousel/штифт.jpg") 
         .portfolio__item.turning_works.grinding_works.chrome_plating
           img(src="/img/carousel/вал.jpg")
-        .portfolio__item.turnung_milling_works_with_cnc.serial_production
-          img(src="/img/carousel/токарно-фрез ЧПУ.jpg")
         .portfolio__item.milling_works.laser_cutting.welding_works
           img(src="/img/carousel/фрез-лаз-свар.jpg")
+        .portfolio__item.laser_cutting.bending_works
+          img(src="/img/carousel/корпус2.jpg")
+        .portfolio__item.turning_automat
+          img(src="/img/carousel/крепление-оттяжки.jpg")
+
+        .portfolio__item.carousel_worls_with_cnc.boring_works
+          img(src="/img/carousel/плита-выставочная.jpg")
+        .portfolio__item.turnung_milling_works_with_cnc.serial_production
+          img(src="/img/carousel/полуось.jpg")
+        .portfolio__item.rolling.welding_works.milling_works_with_cnc
+          img(src="/img/carousel/нонейм.jpg")
             
   
         .portfolio__item.turning_works.gear_cutting_works
@@ -78,7 +123,7 @@ html
         .portfolio__item.carousel_worls_with_cnc.milling_works.boring_works
           img(src="/img/carousel/матрица.jpg")   
         .portfolio__item.turnung_milling_works_with_cnc
-          img(src="/img/carousel/основание.jpg")        
+          img(src="/img/carousel/основание1.jpg")        
         .portfolio__item.turnung_milling_works_with_cnc.serial_production
           img(src="/img/carousel/фитинг.jpg") 
         .portfolio__item.turnung_milling_works_with_cnc.serial_production
@@ -102,7 +147,9 @@ html
         .portfolio__item.turning_automat
           img(src="/img/carousel/токарный автомат.jpg")  
         .portfolio__item.turning_automat
-          img(src="/img/carousel/токарный автомат111.jpg")     
+          img(src="/img/carousel/токарный автомат111.jpg")
+        .portfolio__item.welding_works.metal_bending.metal-structures.painting
+          img(src="/img/carousel/аппарель.jpg")
         .portfolio__item.hydroabrasive_cutting
           img(src="/img/carousel/гидроабразивная резка.jpg") 
     include ../../includes/popupform.pug
