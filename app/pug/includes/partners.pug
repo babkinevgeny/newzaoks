@@ -49,15 +49,15 @@ section.partners
       li.partners__item
         .partners__title Tunnel Tech
       li.partners__item
-        .partners__title smth
+        .partners__title ЗиК
       li.partners__item
-        .partners__title smth
+        .partners__title ООО «ПО «Новатор»
       li.partners__item
-        .partners__title smth
+        .partners__title ООО «Инвайро»
       li.partners__item
-        .partners__title smth
+        .partners__title ООО «Адсорбционная техника»
       li.partners__item
-        .partners__title smth
+        .partners__title ООО «Синтез Технолоджи»
       li.partners__item.partners__item--empty
         .partners__title Здесь может быть ваша компания
         a.partners__link(href='#')
@@ -212,6 +212,52 @@ section.partners
           h1 Tunnel Tech
           a.popup__link(href='http://tunneltech.eu/') www.tunneltech.eu
           p Компания Tunnel Tech занимается разработкой и производством аэротруб и ветровых тоннелей различной степени мощности, а также разрабатывает программное обеспечение для управления ими.
+          include ../includes/hashtags
+      li
+        section.popup
+          .popup__btn
+          h1 ЗиК
+          //- a.popup__link(href='http://tunneltech.eu/') www.tunneltech.eu
+          //- p Компания Tunnel Tech занимается разработкой и производством аэротруб и ветровых тоннелей различной степени мощности, а также разрабатывает программное обеспечение для управления ими.
+          include ../includes/hashtags
+      li
+        section.popup
+          .popup__btn
+          h1 ООО «ПО «Новатор»
+          a.popup__link(href='http://www.spbnovator.ru/') www.spbnovator.ru
+          .popup__left
+            p ПО «Новатор» специализируется на разработке и производстве аппаратов воздушного охлаждения (АВО), с упором на модернизацию и повышения их эффективности.
+          .popup__right
+            img.feedback(src="/img/feedbacks/Новатор.jpg")
+          include ../includes/hashtags
+      li
+        section.popup
+          .popup__btn
+          h1 ООО «Инвайро»
+          a.popup__link(href='https://enviro.su/') www.enviro.su
+          .popup__left
+            p ООО «Инвайро» занимается обезвреживанием и уничтожением отходов различной степени опасности, а также рекультивацией отходов в тепло или энергию
+          .popup__right
+            img.feedback(src="/img/feedbacks/Инвайро.jpg")
+          include ../includes/hashtags
+      li
+        section.popup
+          .popup__btn
+          h1 ООО «Адсорбционная техника»
+          .popup__left
+            p(style="color:white") ООО «Инвайро» занимается обезвреживанием и уничтожением отходов различной степени опасности, а также рекультивацией отходов в тепло или энергию
+          .popup__right
+            img.feedback(src="/img/feedbacks/А-техника.jpg")
+          include ../includes/hashtags
+      li
+        section.popup
+          .popup__btn
+          h1 ООО «Синтез Технолоджи»
+          a.popup__link(href='http://syntechno.ru/') www.syntechno.ru
+          .popup__left
+            p ООО «Инвайро» занимается обезвреживанием и уничтожением отходов различной степени опасности, а также рекультивацией отходов в тепло или энергию
+          .popup__right
+            img.feedback(src="/img/feedbacks/Синтез Технолоджи.jpg")
           include ../includes/hashtags
   if add_link_for_clients
     a.partners__btn(href='/about/clients.html') Подробнее
