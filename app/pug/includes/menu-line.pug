@@ -2,22 +2,13 @@ section.menu-line
   if (title === 'Портфолио')
     .menu-line__item.active
         a.menu-line__btn(href="#") Портфолио
-    .menu-line__item
-      a.menu-line__btn(href="clients.html") Наши клиенты
-  if (title === 'Клиенты')
+  else
     .menu-line__item
       a.menu-line__btn(href="portfolio.html") Портфолио
+  if (title === 'Клиенты')
     .menu-line__item.active
       a.menu-line__btn(href="#") Наши клиенты
-  if (title === 'Контакты')
+  else
     .menu-line__item
-      a.menu-line__btn(href="about/production-areas.html") Производственные площадки
-    .menu-line__item.active
-      a.menu-line__btn(href="#") Контакты
-  if (title === 'Производственные площадки')
-    .menu-line__item.active
-      a.menu-line__btn(href="#") Производственные площадки
-    .menu-line__item
-      a.menu-line__btn(href="../contacts.html") Контакты
-
+      a.menu-line__btn(href="clients.html") Наши клиенты
     

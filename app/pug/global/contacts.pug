@@ -5,170 +5,136 @@ html
   body.body--parallax
     include ../includes/preloader.pug
     include ../includes/main-header.pug
-    include ../includes/menu-line
-    section.contacts
-      h1.title Контакты
-      p.text.text--center
-        b.arial 
-          | SET SERVICE | 
-          span.gray GROUP
-        |  – Центр металлообработки в Санкт-Петербурге, основанный в 2015г.
+    section.contacts.form
+      .container
+        .form-row
+          .form-block
+            .form-text Поддержка для клиентов
+            a.form-link(href='tel:+78126271516') +7 (812) 627-15-16
+          .form-block
+            .form-text
+            .form-text Электронная почта
+            a.form-link(href='mailto:info@zaoks.ru') info@zaoks.ru
+        .form-text
+          | Задайте ваш вопрос или кратко опишите ситуацию.
+          br
+          |         Мы очень быстро свяжемся с вами :)
         br
-        |  для налаживания производственных связей в рамках программы по развитию производственного потенциала России.
+        .form-text
+          br
+          | Мы работаем ежедневно с понедельника по пятницу
+          br
+          |         Часы работы: с 9:00 до 18:00
+        form#article-form(enctype='multipart/form-data', action='/mail.php', method='post')
+          .form-row
+            .form-block
+              .article-form-field
+                input(type='text', name='organization', placeholder='Ваше имя или название организации*')
+              .article-form-field
+                input(type='text', name='email', placeholder='Ваш E-mail*')
+              .article-form-field
+                input(type='text', name='tel', placeholder='Ваш телефон*')
+            .form-block
+              .article-form-field
+                textarea(name='message', cols='30', placeholder='Текст заявки*')
+              label.btn-file(for='input-file') Загрузить файл
+              input#input-file(type='file', name='file')
+          input.btn-text(type='submit', value='Отправить заявку', name='submit')
+    section.team
+      h3.team__header Контакты ООО "Комплект Сервис"
+      ul.team__list
+        li.team__item.team__item--addres
+          h3.team__title Адрес
+          .team__text
+            | 193318, Россия, г. Санкт-Петербург,
+            br
+            |  ул. Ворошилова, 2
+        li.team__item
+          h3.team__title Телефон
+          .team__text 8(812)627-15-16
+          .team__text 8(812)326-00-10
+        li.team__item.team__item--email
+          h3.team__title.team__title Почта
+          a.team__text(href='mailto:es.zaoks@gmail.com') info@zaoks.ru
+          span  - для заказов
+          br
+          a.team__text(href='mailto:post@zaoks.com') post@zaoks.ru
+          span  - для поставщиков
       ul.dropdown
         li.dropdown-item
-          .dropdown-title
-            .container(style='border-top:1px solid #eceded;')
-              .switch.switch--checked
-                span.switch__bg
-                span.switch__btn
-              | Центральный офис
-          .container(style="border-bottom: 1px solid #eceded;")
-            .dropdown-item-content(style="padding: 20px 0")
-              ul.areas-list
-                li
-                  .column--left
-                    img(src="../img/map-office.jpg", alt="")
-                  .column--right
-                    span.addr г. Санкт-Петербург, ул. Ворошилова, д. 2 (БЦ Охта)
-                    span.tel 8 (812) 627-15-16
-                    span.park Административно-хозяйственная деятельность
-                    span.time 9:00 - 18:00
-        li.dropdown-item
-          .dropdown-title
-            .container
-              .switch
-                span.switch__bg
-                span.switch__btn
-              | Производственные площадки
-          .container(style='border-bottom:none')
-            .dropdown-item-content
-              h3.title Мелко- и среднегабаритная мехобработка, серийное производство
-              ul.areas-list
-                li
-                  .column--left
-                    img(src="../img/map-king.jpg", alt="")
-                  .column--right
-                    span.addr г. Санкт-Петербург, Кингисеппское ш., д. 53
-                    span.tel 8 (812) 627-15-16
-                    span.park Парк: гидроабразивная резка и токарно-фрезерные станки с ЧПУ.
-                    span.time 9:00 - 18:00
-                    a.pdf Скачать одним файлом
-                li
-                  .column--left
-                    img(src="../img/map-luga.jpg", alt="")
-                  .column--right
-                    span.addr г. Луга, ул. Большая Заречная 1а
-                    span.tel 8 (812) 627-15-16
-                    span.park Парк: гидроабразивная резка и токарно-фрезерные станки с ЧПУ.
-                    span.time 9:00 - 18:00
-                    a.pdf Скачать одним файлом
-              h3.title Крупногабаритная и сверхгабаритная мехобработка
-              ul.areas-list
-                li
-                  .column--left
-                    img(src="../img/map-chug.jpg", alt="")
-                  .column--right
-                    span.addr г. Санкт-Петербург, Чугунная, д. 14
-                    span.tel 8 (812) 627-15-16
-                    span.park Парк: токарно-карусельная обработка, крупногабаритные координатно-расточные станки.
-                    span.time 9:00 - 18:00
-                    a.pdf Скачать одним файлом
-                li
-                  .column--left
-                    img(src="../img/map-ponton.jpg", alt="")
-                  .column--right
-                    span.addr пос. Понтонный ул. Заводская, д. 10
-                    span.tel 8 (812) 627-15-16
-                    span.park Парк: токарно-карусельная обработка, крупногабаритные координатно-расточные станки.
-                    span.time 9:00 - 18:00
-                    a.pdf Скачать одним файлом
-                li
-                  .column--left
-                    img(src="../img/map-petro.jpg", alt="")
-                  .column--right
-                    span.addr г. Санкт-Петербург, дорога на Петрославянку, д. 5, лит. АЕ (территория завода «ОРМА»)
-                    span.tel 8 (812) 627-15-16
-                    span.park Парк: токарно-карусельная обработка, крупногабаритные координатно-расточные станки.
-                    span.time 9:00 - 18:00
-                    a.pdf Скачать одним файлом
-              h3.title Слесарно-сборочный цех
-              ul.areas-list
-                li
-                  .column--left
-                    img(src="../img/map-sal.jpg", alt="")
-                  .column--right
-                    span.addr г. Санкт-Петербург, ул. Салова, д. 37
-                    span.tel 8 (812) 627-15-16
-                    span.park Парк: сварные посты, лазерная и плазменная резка, гильотинный и гибочный участок
-                    span.time 9:00 - 18:00
-                    a.pdf Скачать одним файлом
-        //- li.dropdown-item
-          .dropdown-title
-            .container
-              .switch
-                span.switch__bg
-                span.switch__btn
-              | Телефонный справочник организации
-          .container(style='border-bottom:none')
-            .dropdown-item-content
-              ul.team__list
-                li.team__item
-                  h3.team__title Канцелярия
-                  .team__name Амелина Мария Алексеевна
-                  .team__tel +7(812)627-15-16 (доб. 104)
-                  a.team__email(href='mailto:ma.zaoks@gmail.com') ma.zaoks@gmail.com
-                li.team__item
-                  h3.team__title Отдел кадров
-                  .team__name Михедова Татьяна
-                  .team__tel +7(812)309-17-40 (доб. 105)
-                  a.team__email(href='mailto:staff.105@clevanta.ru') staff.105@clevanta.ru
-                li.team__item
-                  h3.team__title Главный бухгалтер
-                  .team__name Кирпичева Елена
-                  .team__tel +7(812)309-17-40
-                  a.team__email(href='mailto:report.101@clevanta.ru') report.101@clevanta.ru
-              ul.team__list
-                li.team__item
-                  h3.team__title Начальник производственного отдела
-                  .team__name Лобанов Вячеслав Викторович
-                  .team__tel +7(911)929-03-54
-                  a.team__email(href='mailto:9290354@gmail.com') 9290354@gmail.com
-                li.team__item
-                  h3.team__title Начальник коммерческого отдела
-                  .team__name Кляузов Евгений Сергеевич
-                  .team__tel +7(812)627-15-16 (доб. 101)
-                  a.team__email(href='mailto:9290355@gmail.com') 9290355@gmail.com
-                li.team__item
-                  h3.team__title Отдел технического контроля
-                  .team__name Трубачев Станислав Михайлович
-                  .team__tel +7(812)627-15-16 (доб. 105)
-                  a.team__email(href='mailto:s89811318300@gmail.com') s89811318300@gmail.com
-              ul.team__list
-                li.team__item
-                  h3.team__title Отдел технического контроля
-                  .team__name Колосов Алексей Алексеевич
-                  .team__tel +7(812)627-15-16 (доб. 106)
-                  a.team__email(href='mailto:aa.zaoks@gmail.com') aa.zaoks@gmail.com
-                li.team__item
-                  h3.team__title Отдел закупок и логистики
-                  .team__name Дмитриева Алеся Сергеевна
-                  .team__tel +7(812)627-15-16 (доб. 103)
-                  a.team__email(href='mailto:av.zaoks@gmail.com') av.zaoks@gmail.com
-                li.team__item
-                  h3.team__title Проектный отдел
-                  .team__name Морозов Роман Владимирович
-                  .team__tel +7(812)627-15-16 (доб. 102)
-                  a.team__email(href='mailto:rv.zaoks@gmail.com') rv.zaoks@gmail.com
-              ul.team__list
-                li.team__item
-                  h3.team__title Аналитический отдел
-                  .team__name Добров Юрий Александрович
-                  .team__tel +7(812)627-15-16 (доб. 108)
-                  a.team__email(href='mailto:yd.zaoks@yandex.ru') yd.zaoks@yandex.ru
+              .dropdown-title
+                .container(style='border-top: 1px solid #eceded;')
+                  .switch
+                    span.switch__bg
+                    span.switch__btn
+                  | Телефонный справочник организации
+              .container(style='border-bottom:none')
+                .dropdown-item-content
+                  ul.team__list
+                    li.team__item
+                      h3.team__title Канцелярия
+                      .team__name Амелина Мария Алексеевна
+                      .team__tel +7(812)627-15-16 (доб. 104)
+                      a.team__email(href='mailto:ma.zaoks@gmail.com') ma.zaoks@gmail.com
+                    li.team__item
+                      h3.team__title Отдел кадров
+                      .team__name Михедова Татьяна
+                      .team__tel +7(812)309-17-40 (доб. 105)
+                      a.team__email(href='mailto:staff.105@clevanta.ru') staff.105@clevanta.ru
+                    li.team__item
+                      h3.team__title Главный бухгалтер
+                      .team__name Кирпичева Елена
+                      .team__tel +7(812)309-17-40
+                      a.team__email(href='mailto:report.101@clevanta.ru') report.101@clevanta.ru
+                  ul.team__list
+                    li.team__item
+                      h3.team__title Начальник производственного отдела
+                      .team__name Лобанов Вячеслав Викторович
+                      .team__tel +7(911)929-03-54
+                      a.team__email(href='mailto:9290354@gmail.com') 9290354@gmail.com
+                    li.team__item
+                      h3.team__title Начальник коммерческого отдела
+                      .team__name Кляузов Евгений Сергеевич
+                      .team__tel +7(812)627-15-16 (доб. 101)
+                      a.team__email(href='mailto:9290355@gmail.com') 9290355@gmail.com
+                    li.team__item
+                      h3.team__title Отдел технического контроля
+                      .team__name Трубачев Станислав Михайлович
+                      .team__tel +7(812)627-15-16 (доб. 105)
+                      a.team__email(href='mailto:s89811318300@gmail.com') s89811318300@gmail.com
+                  ul.team__list
+                    li.team__item
+                      h3.team__title Отдел технического контроля
+                      .team__name Колосов Алексей Алексеевич
+                      .team__tel +7(812)627-15-16 (доб. 106)
+                      a.team__email(href='mailto:aa.zaoks@gmail.com') aa.zaoks@gmail.com
+                    li.team__item
+                      h3.team__title Отдел закупок и логистики
+                      .team__name Дмитриева Алеся Сергеевна
+                      .team__tel +7(812)627-15-16 (доб. 103)
+                      a.team__email(href='mailto:av.zaoks@gmail.com') av.zaoks@gmail.com
+                    li.team__item
+                      h3.team__title Проектный отдел
+                      .team__name Морозов Роман Владимирович
+                      .team__tel +7(812)627-15-16 (доб. 102)
+                      a.team__email(href='mailto:rv.zaoks@gmail.com') rv.zaoks@gmail.com
+                  ul.team__list
+                    li.team__item
+                      h3.team__title Аналитический отдел
+                      .team__name Добров Юрий Александрович
+                      .team__tel +7(812)627-15-16 (доб. 108)
+                      a.team__email(href='mailto:yd.zaoks@yandex.ru') yd.zaoks@yandex.ru
+    section.map(style='border-top: none')
+      #map-move-spb
+      #map-move-msc
+      .contacts-move.contacts-move-spb
+        .btn-content-close
+        .contacts-content
+        .contacts-btns-big
+          button.btn.btn-contacts.btn-contacts-spb Санкт-Петербург
+          button.btn.btn-contacts.btn-contacts-msc Москва
     include ../includes/popupform.pug
     include ../includes/main-footer.pug
   script(src="/js/common.js")
-  script(src="/js/dropdown.js")
-  //-script(src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU")
-  //-script(src='js/contacts.js')
+  script(src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU")
+  script(src='js/contacts.js')

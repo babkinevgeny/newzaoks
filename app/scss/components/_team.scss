@@ -1,6 +1,5 @@
 .team{
 	padding: 20px 0;
-	min-height: calc(100vh - 62px - 66px - 539px - 40px);
 	.dropdown{
 		margin-top: 0;
 	}
@@ -18,11 +17,11 @@
 		display: flex;
 		justify-content: space-between;
 		padding-top: 50px;
-		margin: 10px 0 20px 0;
+		margin-bottom: 35px;
 	}
 	&__item{
-		width: 30%;
-		min-height: 180px;
+		width: 360px;
+		height: 163px;
 		box-sizing: border-box;
 		border: 1px solid #e0e0e0;
 		text-align: center;
@@ -72,19 +71,12 @@
 				background: url(../img/placeholder.png) center center no-repeat, $color-gray;
 			}
 		}
-		&--prod{
-			&:before{
-				background: url(../img/gear--white.svg) center center no-repeat, $color-gray;
-				background-size: 40px 40px;
-			}
-		}
 	}
 	&__title{
 		margin: 20px 0 20px 0;
 		font-family: $font;
 		color: $color-blue;
 		line-height: 16px;
-		font-size: 16px;
 	}
 	&__name,
 	&__tel,
