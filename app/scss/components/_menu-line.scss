@@ -12,18 +12,25 @@
     display: flex;
     align-items: baseline;
     justify-content: space-around;
-    a{
-      text-decoration: none;
-      color: lighten($color-gray, 10%);
-      padding: 20px;
-      transition: all .3s ease-out;
-      &:hover{
-        color: darken($color-gray, 10%)
-      }
-      &.active{
-        border-bottom: 1px solid $color-blue;
-        color: darken($color-gray, 20%);
-      }
+    &.active{
+      border-bottom: 1px solid $color-blue;
+      color: darken($color-gray, 20%);
     }
+  }
+  &__btn{
+    text-decoration: none;
+    color: lighten($color-gray, 10%);
+    padding: 20px;
+    transition: all .3s ease-out;
+    cursor: pointer;
+    &:hover{
+      color: darken($color-gray, 10%)
+    }
+  }
+  &--areas{
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    z-index: 1;
   }
 }

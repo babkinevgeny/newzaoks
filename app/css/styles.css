@@ -3011,15 +3011,27 @@ blockquote {
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
             justify-content: space-around; }
-    .menu-line__item a {
-      text-decoration: none;
-      color: #a4a4a4;
-      padding: 20px;
-      -webkit-transition: all .3s ease-out;
-      -o-transition: all .3s ease-out;
-      transition: all .3s ease-out; }
-      .menu-line__item a:hover {
-        color: #717171; }
-      .menu-line__item a.active {
-        border-bottom: 1px solid #06abdd;
-        color: #575757; }
+    .menu-line__item.active {
+      border-bottom: 1px solid #06abdd;
+      color: #575757; }
+  .menu-line__btn {
+    text-decoration: none;
+    color: #a4a4a4;
+    padding: 20px;
+    -webkit-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    cursor: pointer; }
+    .menu-line__btn:hover {
+      color: #717171; }
+  .menu-line--areas {
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    z-index: 1; }
+
+.areas {
+  height: 700px;
+  display: none; }
+  .areas#areas0 {
+    display: block; }
