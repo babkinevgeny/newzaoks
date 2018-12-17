@@ -44,7 +44,7 @@
 		position: relative;
 		overflow:hidden;
 		$step: 0px;
-		@for $i from 1 to 25 {
+		@for $i from 1 to 20 {
 			&:nth-child(#{$i}){
 				background-position: 0 $step;
 				$step: $step - 267px;
