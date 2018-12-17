@@ -1,12 +1,14 @@
 section.menu-line
-  .menu-line__item
-    if (title === 'Портфолио')
-      a.active(href="#") Портфолио
-    else
-      a(href="portfolio.html") Портфолио
-  .menu-line__item
-    if (title === 'Клиенты')
-      a.active(href="#") Наши клиенты
-    else
-      a(href="clients.html") Наши клиенты
+  if (title === 'Портфолио')
+    .menu-line__item.active
+        a.menu-line__btn(href="#") Портфолио
+  else
+    .menu-line__item
+      a.menu-line__btn(href="portfolio.html") Портфолио
+  if (title === 'Клиенты')
+    .menu-line__item.active
+      a.menu-line__btn(href="#") Наши клиенты
+  else
+    .menu-line__item
+      a.menu-line__btn(href="clients.html") Наши клиенты
     
