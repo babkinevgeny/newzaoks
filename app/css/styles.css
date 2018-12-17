@@ -304,12 +304,12 @@ body {
     content: 'PDF';
     display: inline-block;
     position: absolute;
-    left: -46px;
+    left: -41px;
     top: 1px;
-    padding: 3px 7px;
+    padding: 3px 3px;
     -webkit-border-radius: 2px;
             border-radius: 2px;
-    background-color: #06abdd;
+    background-color: #e74c3c;
     color: #fff;
     font-size: 12px;
     line-height: 12px;
@@ -322,7 +322,7 @@ body {
   .pdf:hover {
     color: #666666; }
     .pdf:hover::before {
-      background: #07bef6; }
+      background: #ea6153; }
 
 .title {
   font-size: 20px;
@@ -1897,7 +1897,7 @@ blockquote {
       font-family: "Open Sans", Arial, sans-serif; }
 
 .contacts {
-  padding: 20px 0; }
+  padding: 0; }
   .contacts .dropdown-item:first-child .text:first-child {
     margin-bottom: 40px; }
 
