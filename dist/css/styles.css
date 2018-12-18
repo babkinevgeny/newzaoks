@@ -1076,6 +1076,26 @@ blockquote {
       background-position: 0 -9612px; }
       .partners__item:nth-child(19):hover {
         background-position: 0 -9879px; }
+    .partners__item:nth-child(20) {
+      background-position: 0 -10146px; }
+      .partners__item:nth-child(20):hover {
+        background-position: 0 -10413px; }
+    .partners__item:nth-child(21) {
+      background-position: 0 -10680px; }
+      .partners__item:nth-child(21):hover {
+        background-position: 0 -10947px; }
+    .partners__item:nth-child(22) {
+      background-position: 0 -11214px; }
+      .partners__item:nth-child(22):hover {
+        background-position: 0 -11481px; }
+    .partners__item:nth-child(23) {
+      background-position: 0 -11748px; }
+      .partners__item:nth-child(23):hover {
+        background-position: 0 -12015px; }
+    .partners__item:nth-child(24) {
+      background-position: 0 -12282px; }
+      .partners__item:nth-child(24):hover {
+        background-position: 0 -12549px; }
     .partners__item:hover .partners__title {
       opacity: 1;
       -webkit-transform: translateY(180px);
