@@ -1646,7 +1646,7 @@ blockquote {
           box-sizing: border-box;
   border-collapse: collapse; }
   .document tr {
-    border: 1px solid #ddd;
+    border: 1px solid #eceded;
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
     .document tr:first-child {
@@ -1661,13 +1661,13 @@ blockquote {
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
     .document td span {
-      font-size: 16px;
+      font-size: 14px;
       font-family: "Open Sans", Arial, sans-serif;
       color: #8a8a8a;
       font-weight: normal;
       margin-left: 20px; }
   .document__title {
-    font-size: 20px;
+    font-size: 16px;
     font-family: #8a8a8a;
     color: #06abdd;
     font-family: "Open Sans", Arial, sans-serif;

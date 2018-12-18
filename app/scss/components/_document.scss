@@ -3,7 +3,7 @@
 	box-sizing: border-box;
 	border-collapse: collapse;
 	tr{
-		border: 1px solid #ddd;
+		border: 1px solid $color-lightgray;
 		box-sizing: border-box;
 		&:first-child{
 			border-top: none;
@@ -19,7 +19,7 @@
 		min-height: 56px;
 		box-sizing: border-box;
 		span{
-			font-size: 16px;
+			font-size: 14px;
 			font-family: $font;
 			color: $color-gray;
 			font-weight: normal;
@@ -27,7 +27,7 @@
 		}
 	}
 	&__title{
-		font-size: 20px;
+		font-size: 16px;
 		font-family: $color-gray;
 		color: $color-blue;
     font-family: $font;
