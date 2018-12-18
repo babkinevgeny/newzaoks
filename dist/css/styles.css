@@ -1766,7 +1766,7 @@ blockquote {
     min-height: 180px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #eceded;
     text-align: center;
     background: #eceded;
     padding: 15px 0 10px 0;
@@ -1835,7 +1835,8 @@ blockquote {
     background: -webkit-linear-gradient(#f9f9f9, #fff);
     background: -o-linear-gradient(#f9f9f9, #fff);
     background: linear-gradient(#f9f9f9, #fff);
-    min-width: 360px; }
+    min-width: 360px;
+    border-bottom: none; }
     .vacancies.team .team__item:before {
       display: none; }
   .vacancies.team .team__item--active {
@@ -1843,7 +1844,7 @@ blockquote {
     .vacancies.team .team__item--active:after {
       content: '';
       display: block;
-      width: 358px;
+      width: 100%;
       height: 1px;
       background: #fff;
       position: absolute;
@@ -1892,12 +1893,11 @@ blockquote {
     margin: 0 auto;
     min-height: 1200px;
     max-width: 1340px;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #eceded;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     padding: 20px;
-    background: #fff;
-    display: none; }
+    background: #fff; }
     .vacancies__info_item:nth-child(2), .vacancies__info_item:nth-child(3) {
       display: none; }
     .vacancies__info p {
