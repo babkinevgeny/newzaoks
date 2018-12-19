@@ -287,7 +287,7 @@ body {
   .submit:focus {
     border-color: #06abdd; }
 
-.pdf {
+.file {
   position: relative;
   font-family: "Open Sans", Arial, sans-serif;
   text-decoration: none;
@@ -295,18 +295,25 @@ body {
   font-size: 14px;
   text-align: left;
   cursor: pointer;
-  margin: 10px;
   color: black;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
-  .pdf::before {
-    content: 'PDF';
+  .file::before {
     display: inline-block;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     position: absolute;
-    left: -41px;
-    top: 1px;
-    padding: 3px 3px;
+    left: 50%;
+    top: 50%;
+    width: 30px;
+    height: 17px;
+    margin-top: -webkit-calc(-17px/2);
+    margin-top: calc(-17px/2);
+    margin-left: -webkit-calc(-30px/2);
+    margin-left: calc(-30px/2);
+    text-align: center;
+    padding-top: 3px;
     -webkit-border-radius: 2px;
             border-radius: 2px;
     background-color: #e74c3c;
@@ -319,10 +326,14 @@ body {
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out; }
-  .pdf:hover {
+  .file:hover {
     color: #666666; }
-    .pdf:hover::before {
-      background: #ea6153; }
+    .file:hover::before {
+      background: #ed7669; }
+  .file--pdf::before {
+    content: 'PDF'; }
+  .file--doc::before {
+    content: 'DOC'; }
 
 .title {
   font-size: 20px;
@@ -605,11 +616,11 @@ blockquote {
       -o-transition: all 0.3s ease;
       transition: all 0.3s ease; }
     .main-header__item:nth-child(1):before {
-      background: url(../img/envelope--blue.png) center right no-repeat;
+      background: url(../img/envelope--blue.svg) center right no-repeat;
       -webkit-background-size: 23px 23px;
       background-size: 23px 23px; }
     .main-header__item:nth-child(2):before {
-      background: url(../img/phone--blue.png) center right no-repeat;
+      background: url(../img/phone--blue.svg) center right no-repeat;
       -webkit-background-size: 18px 18px;
       background-size: 18px 18px; }
     .main-header__item:nth-child(3):before {
@@ -1679,11 +1690,17 @@ blockquote {
       display: inline-block;
       width: 32px;
       height: 32px;
-      margin-right: 20px; }
+      margin-right: 15px;
+      -webkit-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
       .document__links a:first-child {
-        background: url(../img/eye.png) center center no-repeat; }
+        background: url(../img/eye.svg) center center no-repeat;
+        -webkit-background-size: 25px 25px;
+                background-size: 25px 25px; }
+        .document__links a:first-child:hover {
+          opacity: .8; }
       .document__links a:last-child {
-        background: url(../img/download.png) center center no-repeat;
         margin-right: 0; }
 
 .advantages {
@@ -1776,7 +1793,9 @@ blockquote {
       display: block;
       width: 80px;
       height: 80px;
-      background: url(../img/phone--white.png) center center no-repeat, #8a8a8a;
+      background: url(../img/phone--white.svg) center center no-repeat, #8a8a8a;
+      -webkit-background-size: 35px 35px;
+              background-size: 35px 35px;
       position: absolute;
       top: -50px;
       left: 50%;
@@ -2447,9 +2466,6 @@ blockquote {
               background-size: 25px 25px;
       margin-right: 0; }
     .header-article__item:nth-child(2) {
-      background: url("../img/download.png") center no-repeat;
-      -webkit-background-size: 25px 25px;
-              background-size: 25px 25px;
       margin-left: auto; }
     .header-article__item:nth-child(3) {
       background: url("../img/order--blue.png") center no-repeat;
@@ -2816,7 +2832,7 @@ blockquote {
         display: block;
         width: 20px;
         height: 20px;
-        background: url(../img/call-answer.svg) center center no-repeat;
+        background: url(../img/phone--blue.svg) center center no-repeat;
         -webkit-background-size: contain;
                 background-size: contain;
         position: absolute;
@@ -2844,3 +2860,8 @@ blockquote {
         position: absolute;
         left: -35px;
         top: 2px; }
+    .areas-list .column--right .file {
+      margin: 8px; }
+      .areas-list .column--right .file::before {
+        left: -39px;
+        margin-left: 0; }

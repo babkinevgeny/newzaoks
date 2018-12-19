@@ -83,12 +83,12 @@
 			transition: all 0.3s ease;
 		}
 		&:nth-child(1):before{
-			background: url(../img/envelope--blue.png) center right no-repeat;
+			background: url(../img/envelope--blue.svg) center right no-repeat;
 			-webkit-background-size: 23px 23px;
 			background-size: 23px 23px;
 		}
 		&:nth-child(2):before{
-			background: url(../img/phone--blue.png) center right no-repeat;
+			background: url(../img/phone--blue.svg) center right no-repeat;
 			-webkit-background-size: 18px 18px;
 			background-size: 18px 18px;
 		}
