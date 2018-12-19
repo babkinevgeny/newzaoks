@@ -53,7 +53,7 @@
                     display: block;
                     width: 20px;
                     height: 20px;
-                    background: url(../img/call-answer.svg) center center no-repeat;
+                    background: url(../img/phone--blue.svg) center center no-repeat;
                     background-size: contain;
                     position: absolute;
                     left: -35px;
@@ -80,6 +80,13 @@
                     position: absolute;
                     left: -35px;
                     top: 2px;
+                }
+            }
+            .file{
+                margin: 8px;
+                &::before{
+                    left: -39px;
+                    margin-left: 0;
                 }
             }
         }

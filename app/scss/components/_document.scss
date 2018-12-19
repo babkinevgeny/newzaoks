@@ -40,12 +40,16 @@
 			display: inline-block;
 			width: 32px;
 			height: 32px;
-			margin-right: 20px;
+			margin-right: 15px;
+			transition: all 0.3s ease-in-out;
 			&:first-child{
-				background: url(../img/eye.png) center center no-repeat;
+				background: url(../img/eye.svg) center center no-repeat;
+				background-size: 25px 25px;
+				&:hover{
+					opacity: .8;
+				}
 			}
 			&:last-child{
-				background: url(../img/download.png) center center no-repeat;
 				margin-right: 0;
 			}
 		}
