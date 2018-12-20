@@ -160,17 +160,6 @@ body {
           box-sizing: border-box;
   margin: 0 auto; }
 
-.services .title:first-child,
-.products .title:first-child,
-.partners .title:first-child,
-.portfolio .title:first-child {
-  margin-top: 40px; }
-  .services .title:first-child + .undertitle,
-  .products .title:first-child + .undertitle,
-  .partners .title:first-child + .undertitle,
-  .portfolio .title:first-child + .undertitle {
-    margin-bottom: 40px; }
-
 .flex {
   display: -webkit-flex;
   display: -ms-flex;
@@ -357,13 +346,6 @@ body {
   .title--left {
     text-align: left; }
 
-.undertitle {
-  font-size: 16px;
-  font-family: "Open Sans", Arial, sans-serif;
-  text-align: center;
-  line-height: 20px;
-  color: #06abdd; }
-
 .label--file {
   width: 400px;
   cursor: pointer;
@@ -418,6 +400,13 @@ span.text--blue {
 
 .gray {
   color: #8a8a8a; }
+
+.undertitle {
+  font-size: 16px;
+  font-family: "Open Sans", Arial, sans-serif;
+  text-align: center;
+  line-height: 20px;
+  color: #06abdd; }
 
 blockquote {
   padding: 50px 30px;

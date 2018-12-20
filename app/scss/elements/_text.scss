@@ -29,3 +29,11 @@ span.text--blue{
 .gray{
   color: $color-gray;
 }
+
+.undertitle{
+  font-size: 16px;
+  font-family: $font;
+  text-align: center;
+  line-height: 20px;
+  color: $color-blue;
+}
