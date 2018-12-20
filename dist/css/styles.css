@@ -163,12 +163,16 @@ body {
 .services .title:first-child,
 .products .title:first-child,
 .partners .title:first-child,
-.portfolio .title:first-child {
+.portfolio .title:first-child,
+.contacts .title:first-child,
+.prod-areas .title:first-child {
   margin-top: 40px; }
-  .services .title:first-child .undertitle,
-  .products .title:first-child .undertitle,
-  .partners .title:first-child .undertitle,
-  .portfolio .title:first-child .undertitle {
+  .services .title:first-child + .undertitle,
+  .products .title:first-child + .undertitle,
+  .partners .title:first-child + .undertitle,
+  .portfolio .title:first-child + .undertitle,
+  .contacts .title:first-child + .undertitle,
+  .prod-areas .title:first-child + .undertitle {
     margin-bottom: 40px; }
 
 .flex {
@@ -414,7 +418,8 @@ span.text--blue {
   color: #06abdd; }
 
 .arial {
-  font-family: Arial, sans-serif; }
+  font-family: Arial, sans-serif;
+  color: black; }
 
 .gray {
   color: #8a8a8a; }

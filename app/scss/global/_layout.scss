@@ -169,10 +169,12 @@ body{
 .services,
 .products,
 .partners,
-.portfolio{
+.portfolio,
+.contacts,
+.prod-areas{
   .title:first-child{
     margin-top: 40px;
-    & .undertitle{
+    & + .undertitle{
       margin-bottom: 40px;
     }
   }
