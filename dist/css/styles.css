@@ -2881,3 +2881,38 @@ blockquote {
       .areas-list .column--right .file::before {
         left: -39px;
         margin-left: 0; }
+
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+  .breadcrumbs__item {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative; }
+    .breadcrumbs__item a {
+      text-decoration: none;
+      color: #8a8a8a;
+      font-family: "Open Sans", Arial, sans-serif;
+      font-size: 14px;
+      -webkit-transition: all .3s ease-out;
+      -o-transition: all .3s ease-out;
+      transition: all .3s ease-out; }
+      .breadcrumbs__item a.active {
+        color: #06abdd; }
+      .breadcrumbs__item a:hover {
+        opacity: .7; }
+    .breadcrumbs__item:after {
+      content: '';
+      display: block;
+      height: 6px;
+      width: 6px;
+      background: #8a8a8a;
+      position: absolute;
+      top: 50%;
+      margin-top: -2px;
+      right: -15px;
+      -webkit-border-radius: 50%;
+              border-radius: 50%; }
+    .breadcrumbs__item:last-child:after {
+      display: none; }

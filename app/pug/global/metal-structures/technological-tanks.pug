@@ -1,6 +1,7 @@
 doctype
 html
   -let title = 'Технологические емкости'
+  -let parent = 'Металлоконструкции'
   include ../../includes/head.pug
   body.body--parallax
     include ../../includes/preloader.pug
@@ -9,6 +10,7 @@ html
       include ../../includes/catalog.pug
       main.main
         include ../../includes/header-article.pug
+        include ../../includes/breadcrumbs.pug
         h1.title.title--left Технологические емкости
         .main__top
           .fotorama__wrapper

@@ -1,0 +1,40 @@
+.breadcrumbs{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	&__item{
+		display: inline-block;
+		margin-right: 20px;
+		position: relative;
+		a{
+			text-decoration: none;
+			color: $color-gray;
+			font-family: $font;
+			font-size: 14px;
+			transition: all .3s ease-out;
+			&.active{
+				color: $color-blue;
+			}
+			&:hover{
+				opacity: .7;
+			}
+		}
+		&:after{
+			content: '';
+			display: block;
+			height: 6px;
+			width: 6px;
+			background: $color-gray;
+			position: absolute;
+			top: 50%;
+			margin-top: -2px;
+			right: -15px;
+			border-radius: 50%;
+		}
+		&:last-child{
+			&:after{
+				display: none;
+			}
+		}
+	}
+}
