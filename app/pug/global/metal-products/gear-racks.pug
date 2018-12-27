@@ -1,0 +1,82 @@
+doctype
+html
+  -let title = 'Зубчатые рейки'
+  -let parent = 'Металлоизделия'
+  include ../../includes/head.pug
+  body.body--parallax
+    include ../../includes/preloader.pug
+    include ../../includes/main-header.pug
+    div.inner-page
+      include ../../includes/catalog.pug
+      main.main
+        include ../../includes/header-article.pug
+        include ../../includes/breadcrumbs.pug
+        h1.title.title--left Зубчатые рейки
+        .main__top
+          .fotorama__wrapper
+            .fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")
+              img(src="../img/metal-structures/СтроительныеМеталлоконструкции1.jpg")
+              img(src="../img/metal-structures/СтроительныеМеталлоконструкции2.jpg")
+              img(src="../img/metal-structures/СтроительныеМеталлоконструкции3.jpg")
+          .main__info
+            p.text.text--justify Производственное подразделение Set Service Group предоставляет услуги по производству зубчатых реек. Наши специалисты в кратчайшие сроки обработают вашу заявку и предложат качественные варианты реализации проекта.
+            .infobuttons
+              .btn.btn--form Заказать услугу
+              .btn Скачать прайс-лист
+        section.main__articles
+          article.main__article.main__article--active
+            p.text.text--justify
+              b Зубчато–реечная передача
+              |  служит для передачи крутящего момента и угловой скорости. Это один из видов механической передачи, при которой вращательное движение шестерни преобразуется в поступательное движение рейки или наоборот.
+            p.text.text--justify
+              b Преимущества зубчато–реечной передачи:
+            ul.list
+              li точность перемещения;
+              li высокое КПД;
+              li невысокая стоимость;
+              li простота в обслуживании.
+            p.text.text--justify
+              | Зубчато–реечная передача применяется в машиностроении, горнодобывающей промышленности, строительстве и в других промышленных отраслях.
+            p.text.text--justify Зубчатые рейки классифицируются по типам зубьев:
+            ul.list
+              li зубчатая рейка с прямыми зубьями;
+              li зубчатая рейка с косыми зубьями;
+              li зубчатая рейка с шевронными зубьями.
+            p.text.text--justify
+              | Основными параметрами при выборе типа зубьев зубчатой рейки являются необходимая скорость и точность перемещения зубьев.
+            p.text.text--justify
+              | Размерный параметр для зубчато-реечной передачи — шаг (расстояние) между зубьями рейки, который рассчитывается по метрической или по модульной системе.
+            p.text.text--justify
+              | При изготовлении реек основным материалом является инструментальная сталь, а также возможно применение закаленной и нержавеющей стали. В процессе производства зубчатые рейки могут подвергаться различным видам металлообработки.
+            p.text.text--justify
+              | По вашим чертежам и эскизам мы произведем реечные передачи со следующими исходными параметрами:
+            ul.list
+              li
+                | диаметр или ширина рейки: 
+                b до 400 мм;
+              li
+                | длина рейки: 
+                b до 3000 мм;
+              li
+                | модуль: 
+                b 1,0 – 30,0 мм;
+              li
+                | степени точности изготовляемых передач: 
+                b 6-я – 8-я.
+            p.text.text--justify  
+            p.text.text--justify
+              | Если вас интересует 
+              b производство зубчатых реек в Санкт-Петербурге
+              | , вы всегда можете обратиться в 
+              b Set Service Group
+              | , позвонив по телефону 
+              b 8 (812) 627-15-16
+              |  или обратиться с вопросом 
+              b заполнив форму для связи.
+        include ../../includes/performed_works.pug
+    include ../../includes/popupform.pug
+    footer.main-footer
+      include ../../includes/bottom-line.pug
+  include ../../includes/scripts-for-inner-pages.pug
+
+        
