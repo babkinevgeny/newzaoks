@@ -14,7 +14,7 @@
   transition: all .2s ease-in-out;
   overflow-x: hidden;
   &:hover{
-    width: 325px;
+    width: 331px;
     .switch,
     .catalog__name{
       display: inline-block;
@@ -34,6 +34,9 @@
       .catalog__groupname{
         color: #000;
       }
+    }
+    &:last-child{
+      border-bottom: none;
     }
   }
   &__groupname{
@@ -65,10 +68,10 @@
   &__icon{
     width: 20px;
     height: 20px;
-    background: url('../img/gear.svg') center center no-repeat;
+    background: url('../img/favicon.png') center center no-repeat;
     background-size: contain;
     flex-shrink: 0;
-    margin-right: 20px;
+    margin-right: 15px;
   }
   &__name{
     display: inline-block;
@@ -80,7 +83,7 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-    padding-left: 31px;
+    padding-left: 35px;
     padding-bottom: 5px;
     display: none;
     & > li {
@@ -96,7 +99,7 @@
       overflow: hidden;
       &:before{
         content: '';
-        display: block;
+        display: none;
         width: 4px;
         height: 4px;
         border-radius: 50%;

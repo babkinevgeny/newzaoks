@@ -2109,7 +2109,7 @@ blockquote {
   transition: all .2s ease-in-out;
   overflow-x: hidden; }
   .catalog:hover {
-    width: 325px; }
+    width: 331px; }
     .catalog:hover .switch,
     .catalog:hover .catalog__name {
       display: inline-block; }
@@ -2123,6 +2123,8 @@ blockquote {
     overflow: hidden; }
     .catalog__item--active .catalog__groupname {
       color: #000; }
+    .catalog__item:last-child {
+      border-bottom: none; }
   .catalog__groupname {
     padding: 7px 0;
     font-weight: 500;
@@ -2157,13 +2159,13 @@ blockquote {
   .catalog__icon {
     width: 20px;
     height: 20px;
-    background: url("../img/gear.svg") center center no-repeat;
+    background: url("../img/favicon.png") center center no-repeat;
     -webkit-background-size: contain;
             background-size: contain;
     -webkit-flex-shrink: 0;
         -ms-flex-negative: 0;
             flex-shrink: 0;
-    margin-right: 20px; }
+    margin-right: 15px; }
   .catalog__name {
     display: inline-block;
     margin-left: 0;
@@ -2173,7 +2175,7 @@ blockquote {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    padding-left: 31px;
+    padding-left: 35px;
     padding-bottom: 5px;
     display: none; }
     .catalog__links > li {
@@ -2188,7 +2190,7 @@ blockquote {
       overflow: hidden; }
       .catalog__links a:before {
         content: '';
-        display: block;
+        display: none;
         width: 4px;
         height: 4px;
         -webkit-border-radius: 50%;
