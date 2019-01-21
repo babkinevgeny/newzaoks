@@ -206,10 +206,29 @@
 
     &--center {
       display: flex;
-
       p {
-        margin: auto;
+        margin: 0 auto;
         text-align: center;
+      }
+      & > .flex{
+        flex-direction: column;
+        margin: auto;
+        & > .flex{
+          justify-content: space-around;
+          span{
+            margin-top: 2px;
+          }
+        }
+      }
+      .socials{
+        margin-right: 18px;
+        a{
+          background-size: 17px 17px;
+          margin-right: 5px;
+          &:last-child{
+            margin-right: 0;
+          }
+        }
       }
     }
 
