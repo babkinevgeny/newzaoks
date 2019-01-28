@@ -1219,6 +1219,42 @@ blockquote {
       background-position: 0 -1068px; }
       .partners--logistic .partners__item:nth-child(3):hover {
         background-position: 0 -1335px; }
+    .partners--logistic .partners__item:nth-child(4) {
+      background-position: 0 -1602px; }
+      .partners--logistic .partners__item:nth-child(4):hover {
+        background-position: 0 -1869px; }
+    .partners--logistic .partners__item:nth-child(5) {
+      background-position: 0 -2136px; }
+      .partners--logistic .partners__item:nth-child(5):hover {
+        background-position: 0 -2403px; }
+    .partners--logistic .partners__item:nth-child(6) {
+      background-position: 0 -2670px; }
+      .partners--logistic .partners__item:nth-child(6):hover {
+        background-position: 0 -2937px; }
+    .partners--logistic .partners__item:nth-child(7) {
+      background-position: 0 -3204px; }
+      .partners--logistic .partners__item:nth-child(7):hover {
+        background-position: 0 -3471px; }
+    .partners--logistic .partners__item:nth-child(8) {
+      background-position: 0 -3738px; }
+      .partners--logistic .partners__item:nth-child(8):hover {
+        background-position: 0 -4005px; }
+    .partners--logistic .partners__item:nth-child(9) {
+      background-position: 0 -4272px; }
+      .partners--logistic .partners__item:nth-child(9):hover {
+        background-position: 0 -4539px; }
+    .partners--logistic .partners__item:nth-child(10) {
+      background-position: 0 -4806px; }
+      .partners--logistic .partners__item:nth-child(10):hover {
+        background-position: 0 -5073px; }
+    .partners--logistic .partners__item:nth-child(11) {
+      background-position: 0 -5340px; }
+      .partners--logistic .partners__item:nth-child(11):hover {
+        background-position: 0 -5607px; }
+    .partners--logistic .partners__item:nth-child(12) {
+      background-position: 0 -5874px; }
+      .partners--logistic .partners__item:nth-child(12):hover {
+        background-position: 0 -6141px; }
     .partners--logistic .partners__item--empty {
       background: #eceded; }
 
