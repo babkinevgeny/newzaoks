@@ -2348,8 +2348,8 @@ blockquote {
   overflow-y: scroll; }
 
 .main {
-  width: -webkit-calc(100vw - 62px);
-  width: calc(100vw - 62px);
+  width: -webkit-calc(100vw - 82px);
+  width: calc(100vw - 82px);
   padding: 20px;
   margin-left: 62px;
   -webkit-box-sizing: border-box;
@@ -2521,8 +2521,8 @@ blockquote {
 
 .header-article {
   height: 50px;
-  width: -webkit-calc(100% - 80px);
-  width: calc(100% - 80px);
+  width: -webkit-calc(100% - 122px);
+  width: calc(100% - 122px);
   position: fixed;
   top: 62px;
   margin-left: 0px;
