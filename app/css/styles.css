@@ -1023,7 +1023,7 @@ blockquote {
     width: 262px;
     height: 262px;
     margin: 3px;
-    background: url(../img/partners-sprite.png) 0px 0px no-repeat;
+    background: url(../img/clients-sprite.png) 0px 0px no-repeat;
     border: none;
     position: relative;
     overflow: hidden; }
@@ -1206,7 +1206,7 @@ blockquote {
   .partners__popups {
     list-style-type: none; }
   .partners--logistic .partners__item {
-    background: url(../img/logistic-partners-sprite.png) 0px 0px no-repeat; }
+    background: url(../img/partners-sprite.png) 0px 0px no-repeat; }
     .partners--logistic .partners__item:nth-child(1) {
       background-position: 0 0px; }
       .partners--logistic .partners__item:nth-child(1):hover {

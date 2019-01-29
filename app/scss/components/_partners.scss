@@ -39,7 +39,7 @@
 		width: 262px;
 		height: 262px;
 	    margin: 3px;
-		background: url(../img/partners-sprite.png) 0px 0px no-repeat;
+		background: url(../img/clients-sprite.png) 0px 0px no-repeat;
 		border: none;
 		position: relative;
 		overflow:hidden;
@@ -116,7 +116,7 @@
 	&--logistic{
 		.partners{
 			&__item{
-				background: url(../img/logistic-partners-sprite.png) 0px 0px no-repeat;
+				background: url(../img/partners-sprite.png) 0px 0px no-repeat;
 				$step: 0px;
 				@for $i from 1 to 13 {
 					&:nth-child(#{$i}){
