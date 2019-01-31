@@ -34,9 +34,58 @@
       .socials{
         text-align: left;
       }
+      .presentation{
+        display: block;
+        width: 100%;
+        height: 210px;
+        background: url('../img/presentation.png') center 30px no-repeat;
+        background-size: 224px 176px;
+        position: relative;
+        font-size: 16px;
+        font-family: $font;
+        color: $color-gray;
+        text-decoration: none;
+        text-align: center;
+        transition: all .3s ease-in-out;
+        margin-top: 30px;
+        &:hover{
+          color: $color-blue;
+          span{
+            border-color: $color-blue;
+            &::after{
+              border-color: transparent transparent transparent $color-blue;
+            }
+          }
+        }
+        span{
+          display: block;
+          width: 50px;
+          height: 50px;
+          box-sizing: border-box;
+          border: 3px solid #E8ECED;
+          border-radius: 50%;
+          position: absolute;
+          top: 72px;
+          left: 50%;
+          margin-left: -25px;
+          transition: all .3s ease-in-out;
+          &::after{
+            content: '';
+            display: block;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 10px 0 10px 16px;
+            border-color: transparent transparent transparent #E8ECED;
+            transition: all .3s ease-in-out;
+            position: absolute;
+            left: 15px;
+            top: 12px;
+          }
+        }
+      }
     }
     &--second{
-
     }
     &--third{
 
