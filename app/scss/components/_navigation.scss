@@ -11,15 +11,32 @@
   font-family: $font;
   &__btn{
     position: absolute;
-    top:30px;
-    right: 30px;
-    width: 30px;
-    height: 30px;
-    background: url('../img/cancel--gray.svg') center no-repeat;
+    top:6px;
+    right:-16px;
+    width: 16px;
+    height: 16px;
     cursor: pointer;
     z-index: 1;
     -webkit-transition: -webkit-transform .5s ease-in-out;
     transition: transform .5s ease-in-out;
+    &::before, &::after{
+      content: '';
+      display: block;
+      width: 2px;
+      height: 16px;
+      position: absolute;
+      top: 0;
+      left: 7px;
+      background: $color-gray;
+    }
+    &::before{
+      transform: rotate(45deg);
+    }
+    &::after{
+      transform: rotate(-45deg);
+    }
+    //background: url('../img/cancel--gray.svg') center no-repeat;
+    
     &:hover{
       -webkit-transform: rotate(180deg);
       transform: rotate(180deg);
@@ -31,20 +48,17 @@
     position: relative;
     &--first{
     	width: 300px;
-      .socials{
-        text-align: left;
-      }
       .presentation{
         display: block;
         width: 100%;
         height: 210px;
         background: url('../img/presentation.png') center 30px no-repeat;
-        background-size: 224px 176px;
+        background-size: 200px 156px;
         position: relative;
         font-size: 16px;
         font-family: $font;
         color: $color-gray;
-        text-decoration: none;
+        text-decoration: underline;
         text-align: center;
         transition: all .3s ease-in-out;
         margin-top: 30px;
@@ -65,7 +79,7 @@
           border: 3px solid #E8ECED;
           border-radius: 50%;
           position: absolute;
-          top: 72px;
+          top: 63px;
           left: 50%;
           margin-left: -25px;
           transition: all .3s ease-in-out;
@@ -91,7 +105,12 @@
 
     }
     &--fourth{
-
+      position: relative;
+      .socials{
+        position: absolute;
+        right: 0;
+        bottom: -29px;
+      }
     }
   }
   &__list{

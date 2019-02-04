@@ -1,7 +1,6 @@
 nav.navigation
-  .navigation__btn
   ul.navigation__list
-    
+    .navigation__btn
     .navigation__column.navigation__column--first
       li.navigation__title О нас
         ul.navigation__underlist
@@ -19,7 +18,6 @@ nav.navigation
             a(href='/contacts.html') Контакты
       form.search
         input(type="text" placeholder="Поиск по сайту")
-      include socials.pug
       a.presentation(href="/docs/presentation.pdf")
         span
         div Посмотреть презентацию
@@ -116,5 +114,6 @@ nav.navigation
             a(href='/metal-structures/bridge-metal-structures.html') Мостовые металлоконструкции
           li.navigation__undertitle
             a(href='/metal-structures/flues-and-chimneys.html') Газоходы и дымоходы
+      include socials.pug
           
       
