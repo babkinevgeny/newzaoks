@@ -1,4 +1,4 @@
-.partners{
+.companies{
 	padding-bottom: 40px;
 	&__list{
 		max-width: 1340px;
@@ -113,12 +113,33 @@
 	&__popups{
 		list-style-type: none;
 	}
-	&--logistic{
-		.partners{
+	&--partners{
+		.companies{
 			&__item{
 				background: url(../img/partners-sprite.png) 0px 0px no-repeat;
 				$step: 0px;
-				@for $i from 1 to 13 {
+				@for $i from 1 to 14 {
+					&:nth-child(#{$i}){
+						background-position: 0 $step;
+						$step: $step - 267px;
+						&:hover{
+							background-position: 0 $step;
+							$step: $step - 267px;
+						}
+					}
+				}
+				&--empty{
+					background: $color-lightgray;
+				}
+			}
+		}
+	}
+	&--logistic{
+		.companies{
+			&__item{
+				background: url(../img/partners-sprite.png) 0px 0px no-repeat;
+				$step: -5340px;
+				@for $i from 1 to 4 {
 					&:nth-child(#{$i}){
 						background-position: 0 $step;
 						$step: $step - 267px;
