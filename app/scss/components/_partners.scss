@@ -55,7 +55,7 @@
 			}
 		}
 		&:hover{
-			.partners__title{
+			.companies__title{
 				opacity:1;
 				transform: translateY(180px);
 				-webkit-transition: all 0.3s ease;
@@ -240,27 +240,45 @@
 	}
 	&__btn{
 	    position: absolute;
-	    top: 10px;
-	    right: 10px;
-	    height: 40px;
-	    width: 40px;
-	    background: url('../img/cancel--gray.svg') center no-repeat;
-	    cursor: pointer;
-	    -webkit-transition: -webkit-transform 0.5s ease-in-out;
-	    transition: transform 0.5s ease-in-out;
-	    z-index:2;
-	    &:hover{
-	      transform: rotate(180deg);
-	    }
+		top: 20px;
+		right: 20px;
+		width: 20px;
+		height: 20px;
+		cursor: pointer;
+		z-index: 1;
+		-webkit-transition: -webkit-transform .5s ease-in-out;
+		transition: transform .5s ease-in-out;
+		&::before, &::after{
+			content: '';
+			display: block;
+			width: 2px;
+			height: 20px;
+			position: absolute;
+			top: 0;
+			left: 9px;
+			background: $color-gray;
+		}
+		&::before{
+			transform: rotate(45deg);
+		}
+		&::after{
+			transform: rotate(-45deg);
+		}
+		&:hover{
+			-webkit-transform: rotate(180deg);
+			transform: rotate(180deg);
+		}
   	}
 }
 
 
 .hashtag{
-
   max-width: 400px;
   box-sizing: border-box;
   text-align: left;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
   &__link{
     color: $color-blue;
     font-family: $font;

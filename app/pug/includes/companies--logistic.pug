@@ -1,16 +1,43 @@
+-
+  const companies = [
+    {
+      name: 'ООО «ПЭК»', 
+      site: 'www.new.pecom.ru', 
+      descr: '«ПЭК» – одна из лучших транспортных компаний России, которая занимается организацией грузоперевозок по территории РФ'
+    },
+    {
+      name: 'ООО «Делко»', 
+      site: 'www.del-ko.ru', 
+      descr: 'Автопарк Delko позволяет осуществлять любой тип перевозок, имея в наличии и рефрижераторные и тентованные полуприцепы ведущих производителей. На сегодняшний день в автопарке компании более 1500 единиц современной европейской техники.'
+    },
+    {
+      name: 'Taasko', 
+      site: '', 
+      descr: ''
+    }
+  ];
+
 section.companies.companies--logistic
   h2.title.title--uppercase Наши партнеры
   .undertitle (Широкий опыт работы с партнерами из различных отраслей позволяет нам решать задачи любой сложности)
   ul.companies__list
-    li.companies__item
-      .companies__title ООО «ПЭК»
-    li.companies__item
-      .companies__title ООО «Делко»
-    li.companies__item
-      .companies__title Taasko
-    li.companies__item.companies__item--empty
-      .companies__title Здесь может быть ваша компания
-      a.companies__link(href='#')
-    li.companies__item.companies__item--empty
-      .companies__title Здесь может быть ваша компания
-      a.companies__link(href='#')
+    each company in companies
+      li.companies__item
+        .companies__title= company.name
+    - let i = 0;
+    while ( (companies.length + i) % 5 )
+      li.companies__item.companies__item--empty
+        .companies__title Здесь может быть ваша компания
+        a.companies__link(href='#')
+      - i++
+  ul.companies__popups
+    each company in companies
+      li
+        section.popup
+          .popup__btn
+          h1 #{company.name}
+          a.popup__link(href='http://' + company.site, target='_blank') #{company.site}
+          .popup__left
+            p #{company.descr}
+          .popup__right
+          include hashtags.pug
