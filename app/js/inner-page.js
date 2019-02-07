@@ -17,7 +17,7 @@ $(document).ready(function() {
   });
 
   /*Показ всплывающей полоски*/
-  $('.inner-page').scroll(function(){
+  $(window).scroll(function(){
     let scrolled = $(this).scrollTop();
     if (scrolled > 10) {
       $('.header-article').slideDown();
