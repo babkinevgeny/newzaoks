@@ -48,6 +48,7 @@
     position: relative;
     &--first{
       width: 300px;
+      position: relative;
       .presentation{
         display: block;
         width: 100%;
@@ -56,7 +57,7 @@
         background-size: 200px 156px;
         position: absolute;
         left: 0;
-        bottom: 15px;
+        bottom: 55px;
         font-size: 16px;
         font-family: $font;
         color: $color-gray;
@@ -100,6 +101,11 @@
           }
         }
       }
+      .socials{
+        position: absolute;
+        right: left;
+        bottom: 10px;
+      }
     }
     &--second{
     }
@@ -107,12 +113,6 @@
 
     }
     &--fourth{
-      position: relative;
-      .socials{
-        position: absolute;
-        right: 0;
-        bottom: 10px;
-      }
     }
   }
   &__list{

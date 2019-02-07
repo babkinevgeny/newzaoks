@@ -772,7 +772,8 @@ blockquote {
     margin: 0 15px;
     position: relative; }
     .navigation__column--first {
-      width: 300px; }
+      width: 300px;
+      position: relative; }
       .navigation__column--first .presentation {
         display: block;
         width: 100%;
@@ -782,7 +783,7 @@ blockquote {
                 background-size: 200px 156px;
         position: absolute;
         left: 0;
-        bottom: 15px;
+        bottom: 55px;
         font-size: 16px;
         font-family: "Open Sans", Arial, sans-serif;
         color: #8a8a8a;
@@ -828,11 +829,9 @@ blockquote {
             position: absolute;
             left: 15px;
             top: 12px; }
-    .navigation__column--fourth {
-      position: relative; }
-      .navigation__column--fourth .socials {
+      .navigation__column--first .socials {
         position: absolute;
-        right: 0;
+        right: left;
         bottom: 10px; }
   .navigation__list {
     margin: auto;
