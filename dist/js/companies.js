@@ -1,9 +1,9 @@
 $(document).ready(function() {
   /*Открытие попапа при клике на блок партнера*/
-  $('.partners__item').click(function() {
-    let partnersIndex = $(this).index();
-    $('.partners__popups li .popup').fadeOut().delay(200);
-    $('.partners__popups li .popup').eq(partnersIndex).fadeIn();
+  $('.companies__item').click(function() {
+    let companiesIndex = $(this).index();
+    $('.companies__popups li .popup').fadeOut().delay(200);
+    $('.companies__popups li .popup').eq(companiesIndex).fadeIn();
   });
 
   /*Закрытие попапа при клике на кнопку закрытия*/
