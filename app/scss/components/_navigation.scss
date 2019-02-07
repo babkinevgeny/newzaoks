@@ -11,10 +11,10 @@
   font-family: $font;
   &__btn{
     position: absolute;
-    top:6px;
-    right:-16px;
-    width: 16px;
-    height: 16px;
+    top: 0px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
     cursor: pointer;
     z-index: 1;
     -webkit-transition: -webkit-transform .5s ease-in-out;
@@ -23,10 +23,10 @@
       content: '';
       display: block;
       width: 2px;
-      height: 16px;
+      height: 20px;
       position: absolute;
       top: 0;
-      left: 7px;
+      left: 9px;
       background: $color-gray;
     }
     &::before{
@@ -47,14 +47,17 @@
     margin: 0 15px;
     position: relative;
     &--first{
-    	width: 300px;
+      width: 300px;
+      position: relative;
       .presentation{
         display: block;
         width: 100%;
-        height: 210px;
+        height: 186px;
         background: url('../img/presentation.png') center 30px no-repeat;
         background-size: 200px 156px;
-        position: relative;
+        position: absolute;
+        left: 0;
+        bottom: 55px;
         font-size: 16px;
         font-family: $font;
         color: $color-gray;
@@ -98,6 +101,11 @@
           }
         }
       }
+      .socials{
+        position: absolute;
+        right: left;
+        bottom: 10px;
+      }
     }
     &--second{
     }
@@ -105,12 +113,6 @@
 
     }
     &--fourth{
-      position: relative;
-      .socials{
-        position: absolute;
-        right: 0;
-        bottom: -29px;
-      }
     }
   }
   &__list{
