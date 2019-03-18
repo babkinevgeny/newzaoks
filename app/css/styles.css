@@ -1333,6 +1333,10 @@ blockquote {
       background-position: 0 -6408px; }
       .companies--partners .companies__item:nth-child(13):hover {
         background-position: 0 -6675px; }
+    .companies--partners .companies__item:nth-child(14) {
+      background-position: 0 -6942px; }
+      .companies--partners .companies__item:nth-child(14):hover {
+        background-position: 0 -7209px; }
     .companies--partners .companies__item--empty {
       background: #eceded; }
   .companies--logistic .companies__item {
