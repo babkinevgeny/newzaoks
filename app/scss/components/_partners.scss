@@ -118,7 +118,7 @@
 			&__item{
 				background: url(../img/partners-sprite.png) 0px 0px no-repeat;
 				$step: 0px;
-				@for $i from 1 to 14 {
+				@for $i from 1 to 15 {
 					&:nth-child(#{$i}){
 						background-position: 0 $step;
 						$step: $step - 267px;
