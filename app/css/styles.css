@@ -919,6 +919,24 @@ blockquote {
     width: 1920px;
     height: 500px;
     position: relative; }
+    .main-slider .bxslider li:first-child .bxslider__text {
+      max-width: 800px;
+      background: rgba(54, 54, 54, 0.6);
+      left: 0;
+      right: 55%;
+      padding: 30px 0;
+      border-right: 6px solid #BFDF14; }
+      .main-slider .bxslider li:first-child .bxslider__text::after {
+        content: '';
+        display: block;
+        width: 55px;
+        height: 42px;
+        background: url("../img/sk.png") center no-repeat;
+        position: absolute;
+        bottom: -0px;
+        right: 0; }
+      .main-slider .bxslider li:first-child .bxslider__text p {
+        margin-top: 0; }
   .main-slider .bxslider__text {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -1333,6 +1351,10 @@ blockquote {
       background-position: 0 -6408px; }
       .companies--partners .companies__item:nth-child(13):hover {
         background-position: 0 -6675px; }
+    .companies--partners .companies__item:nth-child(14) {
+      background-position: 0 -6942px; }
+      .companies--partners .companies__item:nth-child(14):hover {
+        background-position: 0 -7209px; }
     .companies--partners .companies__item--empty {
       background: #eceded; }
   .companies--logistic .companies__item {
