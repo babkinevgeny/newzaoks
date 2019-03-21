@@ -6,9 +6,34 @@ section.main__articles
           img(src=`/img/carousel/metalstructures/${i}.jpg`)
       - }
     else if (parent === 'Металлоизделия')
-      - for (let i = 1; i < 16; i++) {
-          img(src=`/img/carousel/metalproducts/${i}.jpg`)
-      - }
+      if (title === 'Арматура технологических трубопроводов')
+        - for (let i = 1; i < 7; i++) {
+            img(src=`/img/carousel/metalproducts/process-piping-fittings/Арматура${i}.jpg`)
+        - }
+      if (title === 'Редукторы / Зубчатые передачи / Комплектующие')
+        - for (let i = 1; i < 7; i++) {
+            img(src=`/img/carousel/metalproducts/gearboxes/Редукторы${i}.jpg`)
+        - }
+      if (title === 'Гидравлическое оборудование / Гидроцилиндры / Комплектующие')
+        - for (let i = 1; i < 7; i++) {
+            img(src=`/img/carousel/metalproducts/hydraulic-equipment/Гидравлика${i}.jpg`)
+        - }
+      if (title === 'Пресс-формы, штампы, матрицы')
+        - for (let i = 1; i < 7; i++) {
+            img(src=`/img/carousel/metalproducts/press-molds/ПрессФормы${i}.jpg`)
+        - }
+      if (title === 'Экструзионные линии / Шнековые пары / Комплектующие')
+        - for (let i = 1; i < 7; i++) {
+            img(src=`/img/carousel/metalproducts/extrusion-lines/Экстру${i}.jpg`)
+        - }
+      if (title === 'Детали для машиностроения')
+        - for (let i = 1; i < 7; i++) {
+            img(src=`/img/carousel/metalproducts/engineering-parts/Детали${i}.jpg`)
+        - }
+      if (title === 'Прецизионные детали')
+        - for (let i = 1; i < 7; i++) {
+            img(src=`/img/carousel/metalproducts/prescision-parts/Прец${i}.jpg`)
+        - }
     else 
       - for (let i = 1; i < 26; i++) {
           img(src=`/img/carousel/${i}.jpg`)
