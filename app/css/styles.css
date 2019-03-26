@@ -663,7 +663,7 @@ blockquote {
       -o-transition: all 0.3s ease;
       transition: all 0.3s ease; }
   .main-header--hiding {
-    display: none; }
+    border-bottom: none; }
   .main-header .search input {
     padding: 5px;
     width: 0px;
@@ -702,10 +702,13 @@ blockquote {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column; }
+  .intro .title {
+    font-size: 72px;
+    margin-bottom: 100px; }
   .intro .counter {
     border-bottom: none;
-    margin: auto 0 0 0;
-    color: #06abdd; }
+    color: #06abdd;
+    margin-top: auto; }
     .intro .counter__value {
       font-size: 80px; }
   .intro .mouse {

@@ -35,10 +35,10 @@ let counter = () => {
 
 $(window).scroll(function() {
 
-  if ($(window).scrollTop() > 300) {
-    $('.main-header--hiding').slideDown();
+  if ($(window).scrollTop() > (window.innerHeight - 60)) {
+    $('.main-header').removeClass('main-header--hiding');
   } else{
-    $('.main-header--hiding').slideUp();
+    $('.main-header').addClass('main-header--hiding');
   }
 
 });
