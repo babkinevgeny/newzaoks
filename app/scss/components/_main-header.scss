@@ -119,6 +119,9 @@
 			transition: all 0.3s ease;
 		}
 	}
+	&--hiding{
+		display: none;
+	}
 	.search{
 		input{
 			padding: 5px;

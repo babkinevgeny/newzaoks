@@ -3,9 +3,10 @@ html
   -let title = 'Zaoks'
   -let add_link_for_clients = true
   include ../includes/head.pug
-  body.body--parallax
+  body(class=(title === 'Zaoks' ? 'body--no-top-padding body--parallax' : 'body--parallax'))
     include ../includes/preloader.pug
     include ../includes/main-header.pug
+    include ../includes/intro.pug
     include ../includes/main-slider.pug
     include ../includes/products.pug
     include ../includes/services.pug
@@ -19,7 +20,7 @@ html
         p
           span Мы – это команда специалистов в различных видах металлообработки, объединенные одной большой идеей развития производственного сектора России и качественного увеличения номенклатуры товаров, произведенных на территории России.
         a(href='about/about.html') Подробнее
-    include ../includes/counter.pug
+    //-include ../includes/counter.pug
     include ../includes/companies.pug
     include ../includes/popupform.pug
     include ../includes/main-footer.pug
