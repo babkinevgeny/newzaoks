@@ -14,7 +14,7 @@
     <script src="/libs/jquery.validate/jquery.validate.min.js"></script>
     <script src="/libs/form/form.min.js"></script>
   </head>
-  <body class="body--parallax">
+  <body class="body--no-top-padding body--parallax">
     <div id="preloader">
       <div class="svg-wrapper">
         <svg height="150" width="150" xmlns="http://www.w3.org/2000/svg">
@@ -22,7 +22,7 @@
         </svg>
       </div>
     </div>
-    <header class="main-header">
+    <header class="main-header main-header--hiding">
       <div class="main-header__inner">
         <div class="main-header__column main-header__column--left">    
           <div class="hamburger"><span class="hamburger__item"></span><span class="hamburger__item"></span><span class="hamburger__item"></span></div>
@@ -104,11 +104,41 @@
         </ul>
       </nav>
     </header>
+    <section class="intro">
+      <div class="intro__inner">
+        <section class="counter" id="counter">
+          <h1 class="title">Центр металлообработки</h1>
+          <ul class="counter__list">
+            <li class="counter__item">
+              <div class="counter__value" data-count="300">0</div>
+              <div class="counter__text">
+                 заказов <br>выполнено <br>за месяц</div>
+            </li>
+            <li class="counter__item">
+              <div class="counter__value" data-count="400">100</div>
+              <div class="counter__text">
+                 единиц <br>технологического <br>оборудования</div>
+            </li>
+            <li class="counter__item">
+              <div class="counter__value" data-count="1500">200</div>
+              <div class="counter__text">
+                 аккредитованных <br>поставщиков</div>
+            </li>
+          </ul>
+        </section>
+        <div class="mouse"><span class="mouse-dot"></span></div>
+      </div>
+    </section>
     <section class="main-slider">
       <ul class="bxslider">
         <li style="background: url('img/slider/0.jpg') center no-repeat">
           <div class="bxslider__text">
             <p class="text text--center big white"><span class="uppercase px-26">Региональный оператор</span><br><span class="px-24">"Центр коллективного пользования  <br>Технопарка <span style="color: #BFDF14">"Сколково"</span></span></p>
+          </div>
+        </li>
+        <li style="background: url('img/slider/ship.jpg') center no-repeat">
+          <div class="bxslider__text">
+            <p class="text text--center big white"><span class="uppercase px-26">Работаем по договорам</span><br><span class="px-26 blue">гособоронзаказа  <br>госконтракта </span><br><span class="px-24">со спецсчетами</span></p>
           </div>
         </li>
         <li style="background: url('img/slider/1.jpg') center no-repeat">
@@ -165,25 +195,6 @@
       <blockquote>
         <p><span>Мы – это команда специалистов в различных видах металлообработки, объединенные одной большой идеей развития производственного сектора России и качественного увеличения номенклатуры товаров, произведенных на территории России.</span></p><a href="about/about.html">Подробнее</a>
       </blockquote>
-    </section>
-    <section class="counter" id="counter">
-      <ul class="counter__list">
-        <li class="counter__item">
-          <div class="counter__value" data-count="300">0</div>
-          <div class="counter__text">
-             заказов <br>выполнено <br>за месяц</div>
-        </li>
-        <li class="counter__item">
-          <div class="counter__value" data-count="400">100</div>
-          <div class="counter__text">
-             единиц <br>технологического <br>оборудования</div>
-        </li>
-        <li class="counter__item">
-          <div class="counter__value" data-count="1500">200</div>
-          <div class="counter__text">
-             аккредитованных <br>поставщиков</div>
-        </li>
-      </ul>
     </section>
     <section class="companies companies--clients">
       <h2 class="title title--uppercase">Наши клиенты</h2>
