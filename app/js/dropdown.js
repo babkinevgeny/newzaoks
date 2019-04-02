@@ -5,18 +5,33 @@ $(document).ready(function() {
   }
   /*Открытие и закрытие выпадающего списка при клике*/
   $('.dropdown-title').click(function() {
-    if ($(this).siblings('.container').children('.dropdown-item-content').is(':visible')) {
-      $(this).children('.container').children('.switch').removeClass('switch--checked');
-      $(this).siblings('.container').children('.dropdown-item-content').slideUp();
-      $(this).siblings('.container').css('border-bottom', 'none');
+    let self = $(this);
+    if (self.parents('.dropdown').hasClass('dropdown--multi')) {
+      if (self.siblings('.container').children('.dropdown-item-content').is(':visible')) {
+        self.children('.container').children('.switch').removeClass('switch--checked');
+        self.siblings('.container').children('.dropdown-item-content').slideUp();
+        self.siblings('.container').css('border-bottom', 'none');
+      } else {
+        $('.dropdown-title + .container').css('border-bottom', 'none');
+        self.children('.container').children('.switch').addClass('switch--checked');
+        self.siblings('.container').children('.dropdown-item-content').slideDown();
+        self.siblings('.container').css('border-bottom', '1px solid #eceded');
+      }
     } else {
-      $('.dropdown-title .switch').removeClass('switch--checked');
-      $('.dropdown-title + .container').css('border-bottom', 'none');
-      $(this).children('.container').children('.switch').addClass('switch--checked');
-      $('.dropdown-title + .container > .dropdown-item-content').slideUp();
-      $(this).siblings('.container').children('.dropdown-item-content').slideDown();
-      $(this).siblings('.container').css('border-bottom', '1px solid #eceded');
+      if (self.siblings('.container').children('.dropdown-item-content').is(':visible')) {
+        self.children('.container').children('.switch').removeClass('switch--checked');
+        self.siblings('.container').children('.dropdown-item-content').slideUp();
+        self.siblings('.container').css('border-bottom', 'none');
+      } else {
+        $('.dropdown-title .switch').removeClass('switch--checked');
+        $('.dropdown-title + .container').css('border-bottom', 'none');
+        self.children('.container').children('.switch').addClass('switch--checked');
+        $('.dropdown-title + .container > .dropdown-item-content').slideUp();
+        self.siblings('.container').children('.dropdown-item-content').slideDown();
+        self.siblings('.container').css('border-bottom', '1px solid #eceded');
+      }
     }
+    
   });
 
   $('.switch--checked').parent().siblings('.catalog__links').css('display', 'block');
