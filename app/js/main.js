@@ -7,6 +7,24 @@ $(document).ready(function() {
   counter();
 });
 
+$(document).ready(function() {
+  $('.products .assortiment').bxSlider({
+    auto: false,
+    minSlides: 5,
+    wrapperClass: 'bx-wrapper bx-wrapper--products',
+    pager: false,
+  });
+  $('.bx-wrapper--products').prepend('<h2 class="title title--uppercase">Продукция</h2>');
+
+  $('.services .assortiment').bxSlider({
+    auto: false,
+    minSlides: 5,
+    wrapperClass: 'bx-wrapper bx-wrapper--services',
+    pager: false
+  });
+  $('.bx-wrapper--services').prepend('<h2 class="title title--uppercase">Услуги</h2>');
+});
+
 let counter = () => {
   $('.counter__value').each(function() {
     var $this = $(this),
