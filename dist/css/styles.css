@@ -600,6 +600,22 @@ blockquote {
       display: inline-block;
       width: 100%;
       height: 100%; }
+  .main-header__skolkovo {
+    height: 50px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .main-header__skolkovo a {
+      padding-top: 1px;
+      display: block;
+      height: 17px; }
+    .main-header__skolkovo img {
+      width: 22px; }
   .main-header__list {
     margin: 0;
     padding: 0;
@@ -708,6 +724,13 @@ blockquote {
     height: -webkit-calc(100% - 70px - 60px);
     height: calc(100% - 70px - 60px);
     padding: 0 20px; }
+  .intro__slider {
+    height: 50px; }
+  .intro .bx-wrapper {
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+    .intro .bx-wrapper .bx-viewport {
+      height: 50px !important; }
   .intro .title {
     font-size: 60px;
     margin-top: auto;
@@ -744,13 +767,15 @@ blockquote {
       color: #06abdd;
       font-size: 24px;
       display: block;
-      text-align: center;
-      margin-bottom: 20px; }
-    .intro .numbers__item span {
-      font-size: 14px;
-      font-family: "Open Sans", Arial, sans-serif;
-      font-weight: lighter;
-      color: #06abdd; }
+      text-align: center; }
+      .intro .numbers__item a span {
+        margin-top: 30px;
+        text-align: left;
+        display: block;
+        font-size: 14px;
+        font-family: "Open Sans", Arial, sans-serif;
+        font-weight: lighter;
+        color: #06abdd; }
 
 .hamburger {
   display: -webkit-flex;
