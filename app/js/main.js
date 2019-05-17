@@ -1,11 +1,11 @@
-$(document).ready(function() {
-  $('.bxslider').bxSlider({
-    adaptiveHeight: true,
-    auto: true,
-    mode: 'fade'
-  });
-  counter();
-});
+// $(document).ready(function() {
+//   $('.bxslider').bxSlider({
+//     adaptiveHeight: true,
+//     auto: true,
+//     mode: 'fade'
+//   });
+//   counter();
+// });
 
 $(document).ready(function() {
   $('.products .assortiment').bxSlider({
@@ -23,6 +23,14 @@ $(document).ready(function() {
     pager: false
   });
   $('.bx-wrapper--services').prepend('<h2 class="title title--uppercase">Услуги</h2>');
+
+  $('.intro__slider').bxSlider({
+    auto: true,
+    controls: false,
+    mode: 'fade',
+    minSlides: 1,
+    pager: false
+  });
 });
 
 let counter = () => {
