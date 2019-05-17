@@ -4,14 +4,23 @@ body{
   padding-top: 62px;
 }
 
+.body--no-top-padding{
+  padding-top: 0;
+}
+
 .services,
 .products{
-  padding-bottom: 26px;
+  //padding-bottom: 26px;
+  padding: 40px 0;
   .btn{
     margin: 0 auto;
     display: block;
     width: 157px;
   }
+}
+
+.services{
+  border-bottom: 1px solid $color-lightgray;
 }
 
 .info{
