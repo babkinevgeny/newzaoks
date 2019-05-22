@@ -22,7 +22,8 @@ body {
   border-bottom: 1px solid #eceded; }
   .info .text {
     max-width: 1100px;
-    margin: 40px auto; }
+    margin: 40px auto;
+    font-size: 16px; }
   .info blockquote {
     max-width: 1340px;
     margin: 0 auto 40px auto; }
@@ -440,7 +441,7 @@ blockquote {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
   blockquote p {
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 20px;
     font-weight: 400; }
     blockquote p:before {
