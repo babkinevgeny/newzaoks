@@ -8,21 +8,31 @@
 // });
 
 $(document).ready(function() {
-  $('.products .assortiment').bxSlider({
-    auto: false,
-    minSlides: 5,
-    wrapperClass: 'bx-wrapper bx-wrapper--products',
-    pager: false,
+  $('.products .assortiment, .services .assortiment').owlCarousel({
+    loop: true,
+    nav: true,
+    navText: [],
+    items: 5,
+    autoplay: true,
+    dots: false 
   });
-  $('.bx-wrapper--products').prepend('<h2 class="title title--uppercase">Продукция</h2>');
+  $('.products .assortiment .owl-stage-outer').prepend('<h2 class="title title--uppercase">Продукция</h2>');
+  $('.services .assortiment .owl-stage-outer').prepend('<h2 class="title title--uppercase">Услуги</h2>');
+  // $('.products .assortiment').bxSlider({
+  //   auto: false,
+  //   minSlides: 5,
+  //   wrapperClass: 'bx-wrapper bx-wrapper--products',
+  //   pager: false,
+  // });
+  // $('.bx-wrapper--products').prepend('<h2 class="title title--uppercase">Продукция</h2>');
 
-  $('.services .assortiment').bxSlider({
-    auto: false,
-    minSlides: 5,
-    wrapperClass: 'bx-wrapper bx-wrapper--services',
-    pager: false
-  });
-  $('.bx-wrapper--services').prepend('<h2 class="title title--uppercase">Услуги</h2>');
+  // $('.services .assortiment').bxSlider({
+  //   auto: false,
+  //   minSlides: 5,
+  //   wrapperClass: 'bx-wrapper bx-wrapper--services',
+  //   pager: false
+  // });
+  // $('.bx-wrapper--services').prepend('<h2 class="title title--uppercase">Услуги</h2>');
 
   $('.intro__slider').bxSlider({
     auto: true,
@@ -82,5 +92,5 @@ $(window).scroll(function() {
 
 $('.mouse').click(function () {
   var heightHeader = $('.intro').height();
-   $("body,html").animate({"scrollTop":heightHeader-60},700);
+  $("body,html").animate({"scrollTop":heightHeader},700);
 });

@@ -19,6 +19,11 @@ body{
   }
 }
 
+.products{
+  border-bottom: 1px solid $color-lightgray;
+  border-top: 1px solid $color-lightgray;
+}
+
 .services{
   border-bottom: 1px solid $color-lightgray;
 }
@@ -35,55 +40,51 @@ body{
     margin: 0 auto 40px auto;
   }
 }
-.services{
-  .assortiment{
-    $step: 0px;
-    @for $i from 1 to 6 {
-      &__item:nth-child(#{$i}){
-        .assortiment{
-          &__link{
-            .assortiment__icon{
-              background-position: 0 $step;
-              $step: $step - 80px;
-            }
-            &:hover{
-              .assortiment__icon{
-                background-position: 0 $step;
-                $step: $step - 80px;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
+// .services{
+//   .assortiment{
+//     $step: 0px;
+//     @for $i from 1 to 6 {
+//       &__item:nth-child(#{$i}){
+//         .assortiment{
+//           &__link{
+//             .assortiment__icon{
+//               background-position: 0 $step;
+//               $step: $step - 80px;
+//             }
+//             &:hover{
+//               .assortiment__icon{
+//                 background-position: 0 $step;
+//                 $step: $step - 80px;
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 
-.products{
-  border-top: 1px solid $color-lightgray;
-  border-bottom: 1px solid $color-lightgray;
-  .assortiment{
-    $step: -800px;
-    @for $i from 1 to 6 {
-      &__item:nth-child(#{$i}){
-        .assortiment{
-          &__link{
-            .assortiment__icon{
-              background-position: 0 $step;
-              $step: $step - 80px;
-            }
-            &:hover{
-              .assortiment__icon{
-                background-position: 0 $step;
-                $step: $step - 80px;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
+// .products{
+//   border-top: 1px solid $color-lightgray;
+//   border-bottom: 1px solid $color-lightgray;
+//   .assortiment{
+//     $step: -800px;
+//     @for $i from 1 to 6 {
+//       .owl-item:nth-child(#{$i}){
+//         .assortiment__icon{
+//           background-position: 0 $step;
+//           $step: $step - 80px;
+//         }
+//         &:hover{
+//           .assortiment__icon{
+//             background-position: 0 $step;
+//             $step: $step - 80px;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 
 .body--parallax{
   background: linear-gradient(rgba(255,255,255,0.93), rgba(255,255,255,0.93)), url('../img/body-parallax.jpg') top center repeat;
