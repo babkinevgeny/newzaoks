@@ -40,29 +40,43 @@ body{
     margin: 0 auto 40px auto;
   }
 }
-// .services{
-//   .assortiment{
-//     $step: 0px;
-//     @for $i from 1 to 6 {
-//       &__item:nth-child(#{$i}){
-//         .assortiment{
-//           &__link{
-//             .assortiment__icon{
-//               background-position: 0 $step;
-//               $step: $step - 80px;
-//             }
-//             &:hover{
-//               .assortiment__icon{
-//                 background-position: 0 $step;
-//                 $step: $step - 80px;
-//               }
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
+.products{
+  .assortiment{
+    $step: 0px;
+    @for $i from 1 to 13 {
+      &__item--#{$i}{
+        .assortiment{
+          &__link{
+            .assortiment__icon{
+              background: url(../img/products-sprite.png) no-repeat;
+              background-position: 0 $step;
+              $step: $step - 85px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.services{
+  .assortiment{
+    $step: 0px;
+    @for $i from 1 to 13 {
+      &__item--#{$i}{
+        .assortiment{
+          &__link{
+            .assortiment__icon{
+              background: url(../img/services-sprite.png) no-repeat;
+              background-position: 0 $step;
+              $step: $step - 85px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 // .products{
 //   border-top: 1px solid $color-lightgray;
