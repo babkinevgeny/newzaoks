@@ -44,10 +44,14 @@
     }
     &__column{
         &--left{            
-            margin-right: 55px;
+            //margin-right: 55px;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
             img{
                 max-width: 470px;
                 box-shadow: 0 0 10px rgba(0,0,0,0.1);
+                margin: 0 auto;
             }
             .file{
                 display: inline-block;

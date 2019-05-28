@@ -27,10 +27,12 @@ body {
   .info .text {
     max-width: 1100px;
     margin: 40px auto;
-    font-size: 16px; }
+    font-size: 18px; }
   .info blockquote {
     max-width: 1340px;
     margin: 0 auto 40px auto; }
+    .info blockquote p {
+      font-size: 18px; }
 
 .products .assortiment__item--1 .assortiment__link .assortiment__icon {
   background: url(../img/products-sprite.png) no-repeat;
@@ -80,6 +82,18 @@ body {
   background: url(../img/products-sprite.png) no-repeat;
   background-position: 0 -935px; }
 
+.products .assortiment__item--13 .assortiment__link .assortiment__icon {
+  background: url(../img/products-sprite.png) no-repeat;
+  background-position: 0 -1020px; }
+
+.products .assortiment__item--14 .assortiment__link .assortiment__icon {
+  background: url(../img/products-sprite.png) no-repeat;
+  background-position: 0 -1105px; }
+
+.products .assortiment__item--15 .assortiment__link .assortiment__icon {
+  background: url(../img/products-sprite.png) no-repeat;
+  background-position: 0 -1190px; }
+
 .services .assortiment__item--1 .assortiment__link .assortiment__icon {
   background: url(../img/services-sprite.png) no-repeat;
   background-position: 0 0px; }
@@ -127,6 +141,14 @@ body {
 .services .assortiment__item--12 .assortiment__link .assortiment__icon {
   background: url(../img/services-sprite.png) no-repeat;
   background-position: 0 -935px; }
+
+.services .assortiment__item--13 .assortiment__link .assortiment__icon {
+  background: url(../img/services-sprite.png) no-repeat;
+  background-position: 0 -1020px; }
+
+.services .assortiment__item--14 .assortiment__link .assortiment__icon {
+  background: url(../img/services-sprite.png) no-repeat;
+  background-position: 0 -1105px; }
 
 .body--parallax {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.93)), to(rgba(255, 255, 255, 0.93))), url("../img/body-parallax.jpg") top center repeat;
@@ -1223,7 +1245,7 @@ blockquote {
   .assortiment .owl-stage-outer {
     padding-top: 60px; }
   .assortiment .owl-nav {
-    width: 110px;
+    width: 90px;
     position: absolute;
     top: 10px;
     right: 0;
@@ -1240,21 +1262,17 @@ blockquote {
       z-index: 1;
       -webkit-box-shadow: none;
               box-shadow: none;
-      outline: none; }
+      outline: none;
+      width: 30px;
+      height: 30px; }
       .assortiment .owl-nav button.owl-prev {
-        background: url(../img/left-arrow.svg) center center no-repeat;
-        width: 37px;
-        height: 37px; }
+        background: url(../img/left-arrow.svg) center center no-repeat !important; }
         .assortiment .owl-nav button.owl-prev:hover {
-          opacity: .7;
-          background: url(../img/left-arrow.svg) center center no-repeat; }
+          opacity: .7; }
       .assortiment .owl-nav button.owl-next {
-        background: url(../img/right-arrow.svg) center center no-repeat;
-        width: 37px;
-        height: 37px; }
+        background: url(../img/right-arrow.svg) center center no-repeat !important; }
         .assortiment .owl-nav button.owl-next:hover {
-          opacity: .7;
-          background: url(../img/right-arrow.svg) center center no-repeat; }
+          opacity: .7; }
 
 .companies {
   padding-bottom: 40px; }
@@ -3458,11 +3476,21 @@ blockquote {
     display: -ms-flexbox;
     display: flex; }
   .skolkovo-operator__column--left {
-    margin-right: 55px; }
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%; }
     .skolkovo-operator__column--left img {
       max-width: 470px;
       -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-              box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+              box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin: 0 auto; }
     .skolkovo-operator__column--left .file {
       display: inline-block;
       margin: 20px auto;

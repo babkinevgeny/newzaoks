@@ -51,7 +51,7 @@
     padding-top: 60px;
   }
   .owl-nav{
-    width: 110px;
+    width: 90px;
     position: absolute;
     top: 10px;
     right: 0;
@@ -62,22 +62,18 @@
       z-index: 1;
       box-shadow: none;
       outline: none;
+      width: 30px;
+      height: 30px;
       &.owl-prev{
-        background: url(../img/left-arrow.svg) center center no-repeat;
-        width: 37px;
-        height: 37px;
+        background: url(../img/left-arrow.svg) center center no-repeat !important;
         &:hover{
           opacity: .7;
-          background: url(../img/left-arrow.svg) center center no-repeat;
         }
       }
       &.owl-next{
-        background: url(../img/right-arrow.svg) center center no-repeat;
-        width: 37px;
-        height: 37px;
+        background: url(../img/right-arrow.svg) center center no-repeat !important;
         &:hover{
           opacity: .7;
-          background: url(../img/right-arrow.svg) center center no-repeat;
         }
       }
     }
