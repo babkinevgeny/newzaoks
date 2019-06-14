@@ -671,6 +671,7 @@ blockquote {
       height: 100%; }
   .main-header__skolkovo {
     height: 50px;
+    margin-top: -33px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -684,7 +685,9 @@ blockquote {
       display: block;
       height: 17px; }
     .main-header__skolkovo img {
-      width: 22px; }
+      width: 54px;
+      -webkit-border-radius: 3px;
+              border-radius: 3px; }
   .main-header__list {
     margin: 0;
     padding: 0;

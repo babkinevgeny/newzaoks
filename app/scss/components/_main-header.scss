@@ -56,6 +56,7 @@
 	}
 	&__skolkovo{
 		height: 50px;
+		margin-top: -33px;
 		display: flex;
 		align-items: center;
 		a{
@@ -64,7 +65,8 @@
 			height: 17px;
 		}
 		img{
-			width: 22px;
+			width: 54px;
+			border-radius: 3px;
 		}
 	}
 	&__list{
