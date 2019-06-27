@@ -1,8 +1,10 @@
 doctype
 html
-	-let title = 'Фрезерные работы ЧПУ'
+	-let title = 'Фрезерная обработка изделий и деталей на станках с ЧПУ в Set Service Group'
+	-let heading = 'Фрезерные работы ЧПУ'
 	-let parent = 'Металлообработка'
 	-let keywords =	"Фрезерная обработка ЧПУ, Фрезерные работы ЧПУ по металлу, Фрезерная работы ЧПУ, Фрезерные работы на станках с ЧПУ"
+	-let description = 'Set Service Group проводит фрезерные работы на станках с ЧПУ. Обработка изделий из металла на высочайшем уровне. Принимаем заказы любого объема и сложности, гарантируем качество работ'
 	include ../../includes/head.pug
 	body.body--parallax
 		include ../../includes/preloader.pug
@@ -12,7 +14,7 @@ html
 			main.main
 				include ../../includes/header-article.pug
 				include ../../includes/breadcrumbs.pug
-				h1.title.title--left Фрезерные работы ЧПУ
+				h1.title.title--left #{heading}
 				.main__top
 					.fotorama__wrapper
 						.fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")

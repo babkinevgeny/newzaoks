@@ -1,8 +1,10 @@
 doctype
 html
-  -let title = 'Тележки колесные / на рельсах'
+  -let title = 'Производство передаточных тележек в Set Service Group'
+  -let heading = 'Тележки колесные / на рельсах'
   -let parent = 'Металлоконструкции'
   -let keywords = "Тележки колесные, Тележки на рельсах, Передаточные тележки, Передаточные тележки производство, Рельсовые тележки производство"
+  -let description = 'Изготовление передаточных, колесных, рельсовых тележек. Надежное производство от профессионалов.'
   include ../../includes/head.pug
   body.body--parallax
     include ../../includes/preloader.pug
@@ -12,7 +14,7 @@ html
       main.main
         include ../../includes/header-article.pug
         include ../../includes/breadcrumbs.pug
-        h1.title.title--left Тележки колесные / на рельсах
+        h1.title.title--left #{heading}
         .main__top
           .fotorama__wrapper
             .fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")

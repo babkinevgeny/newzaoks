@@ -1,8 +1,10 @@
 doctype
 html
-  -let title = 'Балки подкрановые сварные'
+  -let title = 'Производство подкрановых балок в Set Service Group'
+  -let heading = 'Балки подкрановые сварные'
   -let parent = 'Металлоконструкции'
   -let keywords = "Балки подкрановые сварные, Балки подкрановые сварные производство, Балки подкрановые сварные изготовление, Балки подкрановые сварные стальные, Балки подкрановые производство"
+  -let description = 'Изготовление составных и сварных подкрановых балок. Обработаем вашу заявку в кратчайшие сроки.'
   include ../../includes/head.pug
   body.body--parallax
     include ../../includes/preloader.pug
@@ -12,7 +14,7 @@ html
       main.main
         include ../../includes/header-article.pug
         include ../../includes/breadcrumbs.pug
-        h1.title.title--left Балки подкрановые сварные
+        h1.title.title--left #{heading}
         .main__top
           .fotorama__wrapper
             .fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")

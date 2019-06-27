@@ -1,8 +1,10 @@
 doctype
 html
-  -let title = 'Нестандартные металлоконструкции'
+  -let title = 'Производство нестандартных металлоконструкций в Set Service Group'
+  -let heading ='Нестандартные металлоконструкции'
   -let parent = 'Металлоконструкции'
   -let keywords = "Нестандартные металлоконструкции, Нестандартные металлоконструкции производство, Нестандартные металлоконструкции изготовление, сложные металлоконструкции на заказ, сложные металлоконструкции на заказ производство"
+  -let description = 'Изготовление любых сложных и нестандартных металлоконструкций по вашему чертежу или описанию проекта.'
   include ../../includes/head.pug
   body.body--parallax
     include ../../includes/preloader.pug
@@ -12,7 +14,7 @@ html
       main.main
         include ../../includes/header-article.pug
         include ../../includes/breadcrumbs.pug
-        h1.title.title--left Нестандартные металлоконструкции
+        h1.title.title--left #{heading}
         .main__top
           .fotorama__wrapper
             .fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")

@@ -81,6 +81,37 @@ body{
   }
 }
 
+.metalstructures{
+  .title{
+    font-size: 24px;
+  }
+  .text{
+    max-width: 1340px;
+    margin: 10px auto;
+    font-size: 16px;
+    &:last-child{
+      margin-bottom: 40px;
+    }
+  }
+  .assortiment{
+    $step: -85px * 6;
+    margin-bottom: 40px;
+    @for $i from 1 to 10 {
+      &__item--#{$i}{
+        .assortiment{
+          &__link{
+            .assortiment__icon{
+              background: url(../img/products-sprite.png) no-repeat;
+              background-position: 0 $step;
+              $step: $step - 85px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 // .products{
 //   border-top: 1px solid $color-lightgray;
 //   border-bottom: 1px solid $color-lightgray;
@@ -205,5 +236,11 @@ body{
     & + .undertitle{
       margin-bottom: 40px;
     }
+  }
+}
+
+.metalstructures{
+  .assortiment{
+    flex-wrap: wrap;
   }
 }

@@ -1,0 +1,77 @@
+doctype
+html
+  -let title = 'Производство металлоконструкций на заказ'
+  -let description = 'Изготовление металлоконструкций для предприятий и индивидуальных проектов'
+  -let keywords = 'производство металлоконструкций, металлоконструкции, set service, комплект сервис'
+  include ../includes/head.pug
+  body.body--parallax
+    include ../includes/preloader.pug
+    include ../includes/main-header.pug
+    section.metalstructures
+        h1.title Металлоконструкции
+        ul.assortiment
+            li.assortiment__item.assortiment__item--1
+                a.assortiment__link(href='/metal-structures/pipeline-supports.html')
+                    span.assortiment__icon
+                    span.assortiment__title 
+                        | Опоры 
+                        br
+                        | трубопроводов
+            li.assortiment__item.assortiment__item--2
+                a.assortiment__link(href='/metal-structures/service-areas.html')
+                    span.assortiment__icon
+                    span.assortiment__title 
+                        | Площадки 
+                        br
+                        | обслуживания
+            li.assortiment__item.assortiment__item--3
+                a.assortiment__link(href='/metal-structures/welded-crane-girders.html')
+                    span.assortiment__icon
+                    span.assortiment__title 
+                        | Балки подкрановые 
+                        br
+                        | сварные
+            li.assortiment__item.assortiment__item--4
+                a.assortiment__link(href='/metal-structures/technological-tanks.html')
+                    span.assortiment__icon
+                    span.assortiment__title 
+                        | Технологические 
+                        br
+                        | емкости
+            li.assortiment__item.assortiment__item--5
+                a.assortiment__link(href='/metal-structures/test-benches.html')
+                    span.assortiment__icon
+                    span.assortiment__title 
+                        | Стенды 
+                        br
+                        | для испытаний
+            li.assortiment__item.assortiment__item--6
+                a.assortiment__link(href='/metal-structures/wheeled-trolleys.html')
+                    span.assortiment__icon
+                    span.assortiment__title 
+                        | Тележки колесные / 
+                        br
+                        | на рельсах
+            li.assortiment__item.assortiment__item--7
+                a.assortiment__link(href='/metal-structures/bridge-metal-structures.html')
+                    span.assortiment__icon
+                    span.assortiment__title Мостовые металлоконструкции
+            li.assortiment__item.assortiment__item--8
+                a.assortiment__link(href='/metal-structures/non-standart-metal-structures.html')
+                    span.assortiment__icon
+                    span.assortiment__title Нестандартные металлоконструкции
+            li.assortiment__item.assortiment__item--9
+                a.assortiment__link(href='/metal-structures/building-metal-structures.html')
+                    span.assortiment__icon
+                    span.assortiment__title Стоительные металлоконструкции
+        p.text.text--justify Группа компаний Set Service Group изготавливает металлоконструкции любой сложности. Хотим напомнить, что качество производства отражается на качестве постройки. Если технология нарушена, то это неизбежно снизит срок эксплуатации здания (а при сейсмической активности это может привести к полному его разрушению). Продукция, изготовленная в Set Service Group всегда имеют надлежащее качество.
+        p.text.text--justify Производство любых металлоконструкций осуществляется на специализированном предприятии. Наш завод обеспечен самым современным оборудованием, мы используем передовые технологии. Мы предлагаем профессиональный монтаж зданий из нашей продукции.
+        p.text.text--justify 
+            | Если вас интересует производство металлоконструкций на заказ, вы всегда можете обратиться в Set Service Group, позвонив по телефону 
+            b 8 (812) 627-15-16 
+            | или обратиться с вопросом, заполнив форму для связи.
+
+    include ../includes/popupform.pug
+    include ../includes/main-footer.pug
+script(src="/js/common.js")
+

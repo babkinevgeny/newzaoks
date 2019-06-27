@@ -1,8 +1,10 @@
 doctype
 html
-	-let title = 'Гибка металла'
+	-let title = 'Услуги по гибке металла в Set Service Group'
+	-let heading = 'Гибка металла'
 	-let parent = 'Металлообработка'
 	-let keywords = "гибка металла, гибка листового металла, гибка тонколистового металла, гибка металла на заказ, услуги гибки металла"
+	-let description = 'Set Service Group предлагает свои услуги по гибке металла. Низкие цены, выполнение срочных заказов и гарантированное качество выполняемых работ.'
 	include ../../includes/head.pug
 	body.body--parallax
 		include ../../includes/preloader.pug
@@ -12,7 +14,7 @@ html
 			main.main
 				include ../../includes/header-article.pug
 				include ../../includes/breadcrumbs.pug
-				h1.title.title--left Гибка металла
+				h1.title.title--left #{heading}
 				.main__top
 					.fotorama__wrapper
 						.fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")

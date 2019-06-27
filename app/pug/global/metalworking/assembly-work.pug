@@ -1,8 +1,10 @@
 doctype
 html
-	-let title = 'Слесарно-сборочные работы'
+	-let title = 'Выполнение слесарно-сборочных работ в Set Service Group'
+	-let heading = 'Слесарно-сборочные работы'
 	-let parent = 'Металлообработка'
 	-let keywords = "выполнение слесарных работ, слесарно монтажные работы, слесарно сборочные работы, слесарные работы по металлу"
+	-let description = 'Сварочные, монтажные, слесарные работы любой сложности по всей России. Лучшая цена. Качество. Гарантия.'
 	include ../../includes/head.pug
 	body.body--parallax
 		include ../../includes/preloader.pug
@@ -12,7 +14,7 @@ html
 			main.main
 				include ../../includes/header-article.pug
 				include ../../includes/breadcrumbs.pug
-				h1.title.title--left Слесарно-сборочные работы
+				h1.title.title--left #{heading}
 				.main__top
 					.fotorama__wrapper
 						.fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")

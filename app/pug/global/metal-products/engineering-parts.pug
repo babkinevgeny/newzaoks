@@ -1,8 +1,10 @@
 doctype
 html
-  -let title = 'Детали для машиностроения'
+  -let title = 'Производство деталей для машиностроения в Set Service Group'
+  -let heading = 'Детали для машиностроения'
   -let parent = 'Продукция'
   -let keywords = "детали для машиностроения, детали для машиностроения производство, детали для машиностроения на заказ, детали для машиностроения по чертежу, детали для машиностроения изготовление"
+  -let description = 'Шестерни, валы, шкивы, оси, муфты, фланцы и многие другие детали для машиностроительной отрасли. Гарантированное качество.'
   include ../../includes/head.pug
   body.body--parallax
     include ../../includes/preloader.pug
@@ -12,7 +14,7 @@ html
       main.main
         include ../../includes/header-article.pug
         include ../../includes/breadcrumbs.pug
-        h1.title.title--left #{title}
+        h1.title.title--left #{heading}
         .main__top
           .fotorama__wrapper
             .fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")

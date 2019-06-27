@@ -1,8 +1,10 @@
 doctype
 html
-  -let title = 'Детали прецизионные'
+  -let title = 'Производство прецизионных деталей в Set Service Groupе'
+  -let heading = 'Детали прецизионные'
   -let parent = 'Продукция'
   -let keywords = "Прецезионные детали, Прецезионные детали производство, Прецезионные детали изготовление, Прецезионные детали на заказ, Прецезионные детали производство рф"
+  -let description = 'Компания Set Service Group будет полезна в любой ситуации, где требуется высокоточное прецизионное производство.'
   include ../../includes/head.pug
   body.body--parallax
     include ../../includes/preloader.pug
@@ -12,7 +14,7 @@ html
       main.main
         include ../../includes/header-article.pug
         include ../../includes/breadcrumbs.pug
-        h1.title.title--left #{title}
+        h1.title.title--left #{heading}
         .main__top
           .fotorama__wrapper
             .fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")

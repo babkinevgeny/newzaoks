@@ -1,8 +1,10 @@
 doctype
 html
-  -let title = 'Пресс-формы, штампы, матрицы, фильеры'
+  -let title = 'Производство пресс-форм, штампов, матриц, фильеров в Set Service Group'
+  -let heading = 'Пресс-формы, штампы, матрицы, фильеры'
   -let parent = 'Продукция'
   -let keywords = "пресс-формы, штампы, матрицы, матрицы производство, штампы изготовление"
+  -let description = 'Set Service Group занимается изготовлением пресс-форм, штампов, фильеров и матриц по всей России. Наша продукция отличается качеством и надежностью.'
   include ../../includes/head.pug
   body.body--parallax
     include ../../includes/preloader.pug
@@ -12,7 +14,7 @@ html
       main.main
         include ../../includes/header-article.pug
         include ../../includes/breadcrumbs.pug
-        h1.title.title--left #{title}
+        h1.title.title--left #{heading}
         .main__top
           .fotorama__wrapper
             .fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")

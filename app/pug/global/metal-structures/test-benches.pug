@@ -1,8 +1,10 @@
 doctype
 html
-  -let title = 'Стенды для испытаний'
+  -let title = 'Производство стендов для испытаний в Set Service Group'
+  -let heading ='Стенды для испытаний'
   -let parent = 'Металлоконструкции'
   -let keywords = "Стенды для испытаний двигателей, Стенды для испытания арматуры, Стенд для испытания абразивных кругов, Стенды для испытания торцевых уплотнений, Стенды комплексных испытаний"
+  -let description = 'Изготовление стендов для специальных, контрольных, приёмочных испытаний разнообразных объектов.'
   include ../../includes/head.pug
   body.body--parallax
     include ../../includes/preloader.pug
@@ -12,7 +14,7 @@ html
       main.main
         include ../../includes/header-article.pug
         include ../../includes/breadcrumbs.pug
-        h1.title.title--left Стенды для испытаний
+        h1.title.title--left #{heading}
         .main__top
           .fotorama__wrapper
             .fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")

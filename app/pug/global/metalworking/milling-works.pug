@@ -1,8 +1,10 @@
 doctype
 html
-	-let title = 'Фрезерные работы'
+	-let title = 'Фрезерная обработка изделий на современных станках в Set Service Group'
+	-let heading = 'Фрезерные работы'
 	-let parent = 'Металлообработка'
 	-let keywords = "работа на фрезерном станке, фрезерные работы, фрезерные работы на заказ, Фрезерные работы по металлу, фрезеровка металла"
+	-let description = 'Set Service Group проводит фрезерные работы на заказ по всей России. Обработка изделий из металла на высочайшем уровне. Принимаем заказы любого объема и сложности, гарантируем качество работ.'
 	include ../../includes/head.pug
 	body.body--parallax
 		include ../../includes/preloader.pug
@@ -12,7 +14,7 @@ html
 			main.main
 				include ../../includes/header-article.pug
 				include ../../includes/breadcrumbs.pug
-				h1.title.title--left Фрезерные работы
+				h1.title.title--left #{heading}
 				.main__top
 					.fotorama__wrapper
 						.fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")

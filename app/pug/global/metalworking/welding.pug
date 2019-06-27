@@ -1,8 +1,10 @@
 doctype
 html
-	-let title = 'Сварочные работы'
+	-let title = 'Услуги сварочных работ в компании Set Service Group'
+	-let heading = 'Сварочные работы'
 	-let parent = 'Металлообработка'
 	-let keywords = 'проведение сварочных работ, сварка конструкций, сварка металла, сварка металлоконструкций, сварочно монтажные работы, сварочные работы'
+	-let description = 'Set Service Group выполняет слесарные работы по металлу в короткие сроки и по доступным ценам. Гарантируем качество выполняемых работ.'
 	include ../../includes/head.pug
 	body.body--parallax
 		include ../../includes/preloader.pug
@@ -12,7 +14,7 @@ html
 			main.main
 				include ../../includes/header-article.pug
 				include ../../includes/breadcrumbs.pug
-				h1.title.title--left Сварочные работы
+				h1.title.title--left #{heading}
 				.main__top
 					.fotorama__wrapper
 						.fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")

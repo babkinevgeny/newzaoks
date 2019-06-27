@@ -1,8 +1,10 @@
 doctype
 html
-  -let title = 'Площадки обслуживания'
+  -let title = 'Производство площадок обслуживания в Set Service Group'
+  -let heading = 'Площадки обслуживания'
   -let parent = 'Металлоконструкции'
   -let keywords = "Площадки обслуживания строительство, Площадки обслуживания промышленность, Промышленные площадки обслуживания, Площадки обслуживания производство, Площадки обслуживания на заказ"
+  -let description = 'Производство передвижных и стационарных площадок для промышленной и строительной отраслей.'
   include ../../includes/head.pug
   body.body--parallax
     include ../../includes/preloader.pug
@@ -12,7 +14,7 @@ html
       main.main
         include ../../includes/header-article.pug
         include ../../includes/breadcrumbs.pug
-        h1.title.title--left Площадки обслуживания
+        h1.title.title--left #{heading}
         .main__top
           .fotorama__wrapper
             .fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")

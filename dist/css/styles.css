@@ -150,6 +150,46 @@ body {
   background: url(../img/services-sprite.png) no-repeat;
   background-position: 0 -1105px; }
 
+.metalstructures .title {
+  font-size: 24px; }
+
+.metalstructures .text {
+  max-width: 1340px;
+  margin: 10px auto;
+  font-size: 16px; }
+  .metalstructures .text:last-child {
+    margin-bottom: 40px; }
+
+.metalstructures .assortiment {
+  margin-bottom: 40px; }
+  .metalstructures .assortiment__item--1 .assortiment__link .assortiment__icon {
+    background: url(../img/products-sprite.png) no-repeat;
+    background-position: 0 -510px; }
+  .metalstructures .assortiment__item--2 .assortiment__link .assortiment__icon {
+    background: url(../img/products-sprite.png) no-repeat;
+    background-position: 0 -595px; }
+  .metalstructures .assortiment__item--3 .assortiment__link .assortiment__icon {
+    background: url(../img/products-sprite.png) no-repeat;
+    background-position: 0 -680px; }
+  .metalstructures .assortiment__item--4 .assortiment__link .assortiment__icon {
+    background: url(../img/products-sprite.png) no-repeat;
+    background-position: 0 -765px; }
+  .metalstructures .assortiment__item--5 .assortiment__link .assortiment__icon {
+    background: url(../img/products-sprite.png) no-repeat;
+    background-position: 0 -850px; }
+  .metalstructures .assortiment__item--6 .assortiment__link .assortiment__icon {
+    background: url(../img/products-sprite.png) no-repeat;
+    background-position: 0 -935px; }
+  .metalstructures .assortiment__item--7 .assortiment__link .assortiment__icon {
+    background: url(../img/products-sprite.png) no-repeat;
+    background-position: 0 -1020px; }
+  .metalstructures .assortiment__item--8 .assortiment__link .assortiment__icon {
+    background: url(../img/products-sprite.png) no-repeat;
+    background-position: 0 -1105px; }
+  .metalstructures .assortiment__item--9 .assortiment__link .assortiment__icon {
+    background: url(../img/products-sprite.png) no-repeat;
+    background-position: 0 -1190px; }
+
 .body--parallax {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.93)), to(rgba(255, 255, 255, 0.93))), url("../img/body-parallax.jpg") top center repeat;
   background: -webkit-linear-gradient(rgba(255, 255, 255, 0.93), rgba(255, 255, 255, 0.93)), url("../img/body-parallax.jpg") top center repeat;
@@ -249,6 +289,11 @@ body {
   .contacts .title:first-child + .undertitle,
   .prod-areas .title:first-child + .undertitle {
     margin-bottom: 40px; }
+
+.metalstructures .assortiment {
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
 
 .flex {
   display: -webkit-flex;
@@ -1024,6 +1069,9 @@ blockquote {
     margin-bottom: 15px;
     padding-left: 15px;
     border-left: 2px solid #06abdd; }
+    .navigation__title .title-link {
+      font-size: 20px;
+      color: #06abdd; }
     .navigation__title a {
       font-size: 16px;
       text-decoration: none;

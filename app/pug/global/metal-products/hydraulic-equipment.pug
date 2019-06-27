@@ -1,8 +1,10 @@
 doctype
 html
-  -let title = 'Гидравлическое оборудование / Гидроцилиндры / Комплектующие'
+  -let title = 'Гидравлическое оборудование и гидроцилиндры в Set Service Group'
+  -let heading = 'Гидравлическое оборудование / Гидроцилиндры / Комплектующие'
   -let parent = 'Продукция'
   -let keywords = "гидравлическое оборудование, гидроицилиндры, гидрокомпоненты, гидрооборудование, гидравлическое оборудование производство"
+  -let description = 'Производство гидравлического оборудования любой сложности. Гидроцилиндры и комплектующие.'
   include ../../includes/head.pug
   body.body--parallax
     include ../../includes/preloader.pug
@@ -12,7 +14,7 @@ html
       main.main
         include ../../includes/header-article.pug
         include ../../includes/breadcrumbs.pug
-        h1.title.title--left #{title}
+        h1.title.title--left #{heading}
         .main__top
           .fotorama__wrapper
             .fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")

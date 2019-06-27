@@ -30,7 +30,7 @@ $(document).ready(function() {
 });
 
 function catalogLinks () {
-  let title = $('title').text();
+  let title = $('h1.title').text();
   let catalog = $('.catalog__item a');
   let activeLink = catalog.filter(function() {
     return $(this).text() === title;

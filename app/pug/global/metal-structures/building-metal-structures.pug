@@ -1,8 +1,10 @@
 doctype
 html
-  -let title = 'Строительные металлоконструкции'
+  -let title = 'Производство строительных металлоконструкций в Set Service Group'
+  -let heading = 'Строительные металлоконструкции'
   -let parent = 'Металлоконструкции'
   -let keywords = "Строительные металлоконструкции, Строительные металлоконструкции производство, фермы из металлоконструкций, закладные детали, армокаркасы"
+  -let description = 'Изготовление закладных деталей, металлических ферм, несущих элементов и арматурных каркасов.'
   include ../../includes/head.pug
   body.body--parallax
     include ../../includes/preloader.pug
@@ -12,7 +14,7 @@ html
       main.main
         include ../../includes/header-article.pug
         include ../../includes/breadcrumbs.pug
-        h1.title.title--left Строительные металлоконструкции
+        h1.title.title--left #{heading}
         .main__top
           .fotorama__wrapper
             .fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")

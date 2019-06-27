@@ -1,8 +1,10 @@
 doctype
 html
-  -let title = 'Опоры трубопроводов'
+  -let title = 'Изготовление опор для трубопроводов в Set Service Group'
+  -let heading ='Опоры трубопроводов'
   -let parent = 'Металлоконструкции'
   -let keywords = "Опоры трубопроводов, Опоры трубопроводов производство, Опоры трубопроводов изготовление, подвижные опоры трубопроводов, скользящие опоры трубопроводов"
+  -let description = 'Set Service Group производит опоры трубопровода по существующим стандартам, а также по индивидуальным чертежам заказчика.'
   include ../../includes/head.pug
   body.body--parallax
     include ../../includes/preloader.pug
@@ -12,7 +14,7 @@ html
       main.main
         include ../../includes/header-article.pug
         include ../../includes/breadcrumbs.pug
-        h1.title.title--left Опоры трубопроводов
+        h1.title.title--left #{heading}
         .main__top
           .fotorama__wrapper
             .fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")

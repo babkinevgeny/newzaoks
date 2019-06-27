@@ -1,8 +1,10 @@
 doctype
 html
-	-let title = 'Термическая обработка'
+	-let title = 'Термическая обработка металлов и сплавов от Set Service Group'
+	-let heading = 'Термическая обработка'
 	-let parent = 'Металлообработка'
 	-let keywords = "термическая обработка, термическая обработка стали, термическая обработка металла, химико термическая обработка, термическая обработка деталей"
+	-let description = 'Set Service Group производит термообработку стали и различных по всей России. Гарантированное качество выполняемых работ и доступные цены.'
 	include ../../includes/head.pug
 	body.body--parallax
 		include ../../includes/preloader.pug
@@ -12,7 +14,7 @@ html
 			main.main
 				include ../../includes/header-article.pug
 				include ../../includes/breadcrumbs.pug
-				h1.title.title--left Термическая обработка
+				h1.title.title--left #{heading}
 				.main__top
 					.fotorama__wrapper
 						.fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")

@@ -1,8 +1,10 @@
 doctype
 html
-  -let title = 'Детали для промышленного оборудования'
+  -let title = 'Производство деталей для промышленного оборудования в Set Service Group'
+  -let heading = 'Детали для промышленного оборудования'
   -let parent = 'Продукция'
   -let keywords = "экструзионные линии, экструзионные линии производство, шнековые пары, шнековые пары производство, экструзионные линии комплектующие"
+  -let description = 'Экструзионные линии, шнековые пары и любые комплектующие. Качественное производство в короткие сроки.'
   include ../../includes/head.pug
   body.body--parallax
     include ../../includes/preloader.pug
@@ -12,7 +14,7 @@ html
       main.main
         include ../../includes/header-article.pug
         include ../../includes/breadcrumbs.pug
-        h1.title.title--left #{title}
+        h1.title.title--left #{heading}
         .main__top
           .fotorama__wrapper
             .fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")

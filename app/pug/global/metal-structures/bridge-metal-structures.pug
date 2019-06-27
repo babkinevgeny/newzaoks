@@ -1,8 +1,10 @@
 doctype
 html
-  -let title = 'Мостовые металлоконструкции'
+  -let title = 'Производство мостовых металлоконструкций в Set Service Group'
+  -let heading = 'Мостовые металлоконструкции'
   -let parent = 'Металлоконструкции'
   -let keywords = "Мостовые металлоконструкции, Мостовые металлоконструкции производство, Мостовые металлоконструкции изготовление, конструкции металлических мостов, производство эстакад"
+  -let description = 'Наше предприятие изготавливает стальные конструкции железнодорожных, автодорожных, городских, совмещенных и пешеходных мостов'
   include ../../includes/head.pug
   body.body--parallax
     include ../../includes/preloader.pug
@@ -12,7 +14,7 @@ html
       main.main
         include ../../includes/header-article.pug
         include ../../includes/breadcrumbs.pug
-        h1.title.title--left Мостовые металлоконструкции
+        h1.title.title--left #{heading}
         .main__top
           .fotorama__wrapper
             .fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")

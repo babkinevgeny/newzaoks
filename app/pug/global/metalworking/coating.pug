@@ -1,8 +1,10 @@
 doctype
 html
-	-let title = 'Нанесение покрытий'
+	-let title = 'Нанесение покрытий на металлические изделия в Set Service Group'
+	-let heading = 'Нанесение покрытий'
 	-let parent = 'Металлообработка'
 	-let keywords = "нанесение покрытий, нанесение покрытий по металлу, порошковая окраска, гальваническое цинкование, горячее цинкование"
+	-let description = 'Порошковая окраска, горячее цинкование, гальваническое цинкование, термодиффузионное цинкование. Нанесение покрытий на металлы.'
 	include ../../includes/head.pug
 	body.body--parallax
 		include ../../includes/preloader.pug
@@ -12,7 +14,7 @@ html
 			main.main
 				include ../../includes/header-article.pug
 				include ../../includes/breadcrumbs.pug
-				h1.title.title--left Нанесение покрытий
+				h1.title.title--left #{heading}
 				.main__top
 					.fotorama__wrapper
 						.fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")
