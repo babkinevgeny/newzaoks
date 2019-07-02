@@ -1,0 +1,98 @@
+doctype
+html
+  -let title = 'Металлообработка на заказ'
+  -let description = 'Широкий спектр услуг по металлообработке от профессионалов группы компанийSet Service Group'
+  -let keywords = 'металлообработка, услуги металлообработки, обработка металла'
+  include ../includes/head.pug
+  body.body--parallax
+    include ../includes/preloader.pug
+    include ../includes/main-header.pug
+    section.metalworking
+      h1.title Услуги
+      ul.assortiment
+        li.assortiment__item.assortiment__item--1
+          a.assortiment__link(href='/metalworking/milling-works.html')
+            span.assortiment__icon         
+            span.assortiment__title Фрезерные работы
+        li.assortiment__item.assortiment__item--2
+          a.assortiment__link(href='/metalworking/milling-works-with-cnc.html')
+            span.assortiment__icon         
+            span.assortiment__title Фрезерные работы ЧПУ
+        li.assortiment__item.assortiment__item--3
+          a.assortiment__link(href='/metalworking/turning-works.html')
+            span.assortiment__icon         
+            span.assortiment__title Токарные работы
+        li.assortiment__item.assortiment__item--4
+          a.assortiment__link(href='/metalworking/turning-works-with-cnc.html')
+            span.assortiment__icon         
+            span.assortiment__title Токарные работы ЧПУ
+        li.assortiment__item.assortiment__item--5
+          a.assortiment__link(href='/metalworking/boring-works.html')
+            span.assortiment__icon         
+            span.assortiment__title Координатно-расточные работы
+        li.assortiment__item.assortiment__item--6
+          a.assortiment__link(href='/metalworking/grinding-works.html')
+            span.assortiment__icon         
+            span.assortiment__title Шлифовальные работы
+        li.assortiment__item.assortiment__item--7
+          a.assortiment__link(href='/metalworking/metal-cutting.html')
+            span.assortiment__icon         
+            span.assortiment__title Резка металла
+        li.assortiment__item.assortiment__item--8
+          a.assortiment__link(href='/metalworking/metal-bending.html')
+            span.assortiment__icon         
+            span.assortiment__title Гибка металла
+        li.assortiment__item.assortiment__item--9
+          a.assortiment__link(href='/metalworking/thermal-works.html')
+            span.assortiment__icon         
+            span.assortiment__title Термическая обработка
+        li.assortiment__item.assortiment__item--10
+          a.assortiment__link(href='/metalworking/welding.html')
+            span.assortiment__icon         
+            span.assortiment__title Сварочные работы
+        li.assortiment__item.assortiment__item--11
+          a.assortiment__link(href='/metalworking/assembly-work.html')
+            span.assortiment__icon         
+            span.assortiment__title Слесарно-сборочные работы
+        li.assortiment__item.assortiment__item--12
+          a.assortiment__link(href='/metalworking/coating.html')
+            span.assortiment__icon         
+            span.assortiment__title Нанесение покрытий
+        li.assortiment__item.assortiment__item--13
+          a.assortiment__link(href='/metalworking/laboratory-tests.html')
+            span.assortiment__icon         
+            span.assortiment__title Лабораторные испытания
+        li.assortiment__item.assortiment__item--14
+          a.assortiment__link(href='/metalworking/development-of-drawings.html')
+            span.assortiment__icon         
+            span.assortiment__title Разработка чертежей и 3D-моделей
+      p.text.text--justify Set Service Group оказывает услуги по металлообработке на оптимальных условиях и по приемлемым ценам.
+      p.text.text--justify Мы выполняем обработку металла на заказ по опытным образцам, эскизам или чертежам заказчика. В случае производственной необходимости конструкторское бюро фирмы разрабатывает документацию для нужной детали.
+      p.text.text--justify Металлообработка помогает непрофильным предприятиям быстро и с небольшими затратами решать не свойственные им задачи. Также она дает возможность разгрузить производственные мощности металлообрабатывающих предприятий при возникновении необходимости срочного изготовления большого объема металлопродукции.
+      p.text.text--justify 
+        b Почему выбирают Set Service Group?
+      p.text.text--justify Опыт и превосходная подготовка специалистов фирмы, а также продуманная организация труда позволяют оказывать услуги в исключительно сжатые сроки.
+      p.text.text--justify Благодаря использованию современного металлообрабатывающего оборудования обеспечивается соответствие выпускаемых деталей чертежам заказчика и положениям действующих стандартов. Важную роль в обеспечении качества работ играет высокий уровень автоматизации и многоэтапный производственный контроль.
+      p.text.text--justify
+        b Set Service Group предоставляет:
+      ul.list
+        li Возможность производства детали по чертежу, эскизу или образцу.
+        li Быстрое изготовление.
+        li Возможность получения технических консультаций.
+        li Оперативность и простота оформления договора о сотрудничестве.
+        li Ускоренная доставка конечной продукции по указанному адресу
+        li Сопутствующие услуги.
+      p.text.text--justify 
+        | Если вас интересуют 
+        b услуги металлообработки
+        | , вы всегда можете обратиться в 
+        b Set Service Group
+        | , позвонив по телефону 
+        b 8 (812) 627-15-16 
+        | или обратиться с вопросом, 
+        b заполнив форму для связи.
+
+    include ../includes/popupform.pug
+    include ../includes/main-footer.pug
+script(src="/js/common.js")
+

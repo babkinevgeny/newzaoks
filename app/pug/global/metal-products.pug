@@ -1,0 +1,84 @@
+doctype
+html
+  -let title = 'Производство металлоизделий'
+  -let description = 'Изготовление продукции из металла любой сложности. Производство по чертежам, реализация проектов под ключ'
+  -let keywords = 'металлоизделия, производство металлоизделий, продукция из металла'
+  include ../includes/head.pug
+  body.body--parallax
+    include ../includes/preloader.pug
+    include ../includes/main-header.pug
+    section.metalproducts
+      h1.title Продукция
+      ul.assortiment
+        li.assortiment__item.assortiment__item--1
+          a.assortiment__link(href='/metal-products/gearboxes.html')
+            span.assortiment__icon  
+            span.assortiment__title 
+              | Редукторы / 
+              br
+              | Зубчатые передачи / 
+              br
+              | Комплектующие
+        li.assortiment__item.assortiment__item--2
+          a.assortiment__link(href='/metal-products/hydraulic-equipment.html')
+            span.assortiment__icon
+            span.assortiment__title Гидравлическое оборудование / Гидроцилиндры
+        li.assortiment__item.assortiment__item--3
+          a.assortiment__link(href='/metal-products/press-molds-stamps-matrices.html')
+            span.assortiment__icon
+            span.assortiment__title 
+              | Пресс-формы / штампы / 
+              br
+              | матрицы / фильеры
+        li.assortiment__item.assortiment__item--4
+          a.assortiment__link(href='/metal-products/extrusion-lines.html')
+            span.assortiment__icon
+            span.assortiment__title 
+              | Детали 
+              br 
+              | для промышленного 
+              br
+              | оборудования
+        li.assortiment__item.assortiment__item--5
+          a.assortiment__link(href='/metal-products/engineering-parts.html')
+            span.assortiment__icon
+            span.assortiment__title 
+              | Детали 
+              br
+              | для машиностроения
+        li.assortiment__item.assortiment__item--6
+          a.assortiment__link(href='/metal-products/precision-parts.html')
+            span.assortiment__icon
+            span.assortiment__title 
+              | Детали 
+              br
+              | прецизионные
+      p.text.text--justify 
+        b Set Service Group 
+        | – группа компаний, специализирующаяся на 
+        b изготовлении продукции из металла
+        | . Опытные специалисты и современное оборудование позволяют нам выполнять заказы любой сложности. Вы можете обратиться к нам для 
+        b серийного изготовления деталей
+        | , 
+        b разработки металлоизделия по чертежу 
+        | или для 
+        b полной разработки проекта под ключ.
+      p.text.text--justify Одним из подразделений компании является конструкторско-технологический отдел, обеспечивающий разработку различных видов изделий и их технологическое сопровождение. Разнообразие металлообрабатывающего оборудования позволяет выпускать широкую номенклатуру изделий и изготовление нестандартного оборудования. Сварочное производство предприятия сертифицировано для предприятий металлургической, химической и нефтехимической отраслей промышленности.
+      p.text.text--justify 
+        | Предприятие Set Service Group в кратчайшие сроки изготовит металлоизделия для самых разнообразных областей применения: с нашей помощью вы получите любые 
+        b электротехнические, строительные, производственные металлоизделия и металлоизделия для муниципальных целей, а также обустройства загородного дома и прилегающей территории.
+      p.text.text--justify С вами будут сотрудничать настоящие профессионалы в производстве. Если вас интересует производство металлоизделий, вы всегда можете обратиться в Set Service Group, позвонив по телефону 8 (812) 627-15-16 или обратиться с вопросом, заполнив форму для связи.
+
+      p.text.text--justify 
+        | С вами будут сотрудничать настоящие профессионалы в производстве. Если вас интересует 
+        b производство металлоизделий
+        | , вы всегда можете обратиться в 
+        b Set Service Group
+        | , позвонив по телефону 
+        b 8 (812) 627-15-16 
+        | или обратиться с вопросом, заполнив форму для связи.
+
+    include ../includes/popupform.pug
+    include ../includes/main-footer.pug
+script(src="/js/common.js")
+

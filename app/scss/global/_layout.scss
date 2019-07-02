@@ -51,7 +51,7 @@ body{
         .assortiment{
           &__link{
             .assortiment__icon{
-              background: url(../img/products-sprite.png) no-repeat;
+              background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
               background-position: 0 $step;
               $step: $step - 85px;
             }
@@ -81,11 +81,15 @@ body{
   }
 }
 
-.metalstructures{
+.metalstructures,
+.metalproducts,
+.metalworking{
+  padding: 50px 0;
   .title{
     font-size: 24px;
   }
-  .text{
+  .text,
+  .list{
     max-width: 1340px;
     margin: 10px auto;
     font-size: 16px;
@@ -93,6 +97,9 @@ body{
       margin-bottom: 40px;
     }
   }
+}
+
+.metalstructures{
   .assortiment{
     $step: -85px * 6;
     margin-bottom: 40px;
@@ -101,7 +108,7 @@ body{
         .assortiment{
           &__link{
             .assortiment__icon{
-              background: url(../img/products-sprite.png) no-repeat;
+              background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
               background-position: 0 $step;
               $step: $step - 85px;
             }
@@ -111,6 +118,51 @@ body{
     }
   }
 }
+
+.metalproducts{
+  .assortiment{
+    $step: 0;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    @for $i from 1 to 10 {
+      &__item--#{$i}{
+        .assortiment{
+          &__link{
+            .assortiment__icon{
+              background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
+              background-position: 0 $step;
+              $step: $step - 85px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.metalworking{
+  .assortiment{
+    flex-wrap: wrap;
+    $step: 0;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    @for $i from 1 to 15 {
+      &__item--#{$i}{
+        .assortiment{
+          &__link{
+            .assortiment__icon{
+              background: url(../img/services-sprite.png) no-repeat;
+              background-position: 0 $step;
+              $step: $step - 85px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
 
 // .products{
 //   border-top: 1px solid $color-lightgray;

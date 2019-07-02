@@ -35,63 +35,63 @@ body {
       font-size: 18px; }
 
 .products .assortiment__item--1 .assortiment__link .assortiment__icon {
-  background: url(../img/products-sprite.png) no-repeat;
+  background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
   background-position: 0 0px; }
 
 .products .assortiment__item--2 .assortiment__link .assortiment__icon {
-  background: url(../img/products-sprite.png) no-repeat;
+  background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
   background-position: 0 -85px; }
 
 .products .assortiment__item--3 .assortiment__link .assortiment__icon {
-  background: url(../img/products-sprite.png) no-repeat;
+  background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
   background-position: 0 -170px; }
 
 .products .assortiment__item--4 .assortiment__link .assortiment__icon {
-  background: url(../img/products-sprite.png) no-repeat;
+  background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
   background-position: 0 -255px; }
 
 .products .assortiment__item--5 .assortiment__link .assortiment__icon {
-  background: url(../img/products-sprite.png) no-repeat;
+  background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
   background-position: 0 -340px; }
 
 .products .assortiment__item--6 .assortiment__link .assortiment__icon {
-  background: url(../img/products-sprite.png) no-repeat;
+  background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
   background-position: 0 -425px; }
 
 .products .assortiment__item--7 .assortiment__link .assortiment__icon {
-  background: url(../img/products-sprite.png) no-repeat;
+  background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
   background-position: 0 -510px; }
 
 .products .assortiment__item--8 .assortiment__link .assortiment__icon {
-  background: url(../img/products-sprite.png) no-repeat;
+  background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
   background-position: 0 -595px; }
 
 .products .assortiment__item--9 .assortiment__link .assortiment__icon {
-  background: url(../img/products-sprite.png) no-repeat;
+  background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
   background-position: 0 -680px; }
 
 .products .assortiment__item--10 .assortiment__link .assortiment__icon {
-  background: url(../img/products-sprite.png) no-repeat;
+  background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
   background-position: 0 -765px; }
 
 .products .assortiment__item--11 .assortiment__link .assortiment__icon {
-  background: url(../img/products-sprite.png) no-repeat;
+  background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
   background-position: 0 -850px; }
 
 .products .assortiment__item--12 .assortiment__link .assortiment__icon {
-  background: url(../img/products-sprite.png) no-repeat;
+  background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
   background-position: 0 -935px; }
 
 .products .assortiment__item--13 .assortiment__link .assortiment__icon {
-  background: url(../img/products-sprite.png) no-repeat;
+  background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
   background-position: 0 -1020px; }
 
 .products .assortiment__item--14 .assortiment__link .assortiment__icon {
-  background: url(../img/products-sprite.png) no-repeat;
+  background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
   background-position: 0 -1105px; }
 
 .products .assortiment__item--15 .assortiment__link .assortiment__icon {
-  background: url(../img/products-sprite.png) no-repeat;
+  background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
   background-position: 0 -1190px; }
 
 .services .assortiment__item--1 .assortiment__link .assortiment__icon {
@@ -150,45 +150,140 @@ body {
   background: url(../img/services-sprite.png) no-repeat;
   background-position: 0 -1105px; }
 
-.metalstructures .title {
-  font-size: 24px; }
-
-.metalstructures .text {
-  max-width: 1340px;
-  margin: 10px auto;
-  font-size: 16px; }
-  .metalstructures .text:last-child {
-    margin-bottom: 40px; }
+.metalstructures,
+.metalproducts,
+.metalworking {
+  padding: 50px 0; }
+  .metalstructures .title,
+  .metalproducts .title,
+  .metalworking .title {
+    font-size: 24px; }
+  .metalstructures .text,
+  .metalstructures .list,
+  .metalproducts .text,
+  .metalproducts .list,
+  .metalworking .text,
+  .metalworking .list {
+    max-width: 1340px;
+    margin: 10px auto;
+    font-size: 16px; }
+    .metalstructures .text:last-child,
+    .metalstructures .list:last-child,
+    .metalproducts .text:last-child,
+    .metalproducts .list:last-child,
+    .metalworking .text:last-child,
+    .metalworking .list:last-child {
+      margin-bottom: 40px; }
 
 .metalstructures .assortiment {
   margin-bottom: 40px; }
   .metalstructures .assortiment__item--1 .assortiment__link .assortiment__icon {
-    background: url(../img/products-sprite.png) no-repeat;
+    background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
     background-position: 0 -510px; }
   .metalstructures .assortiment__item--2 .assortiment__link .assortiment__icon {
-    background: url(../img/products-sprite.png) no-repeat;
+    background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
     background-position: 0 -595px; }
   .metalstructures .assortiment__item--3 .assortiment__link .assortiment__icon {
-    background: url(../img/products-sprite.png) no-repeat;
+    background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
     background-position: 0 -680px; }
   .metalstructures .assortiment__item--4 .assortiment__link .assortiment__icon {
-    background: url(../img/products-sprite.png) no-repeat;
+    background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
     background-position: 0 -765px; }
   .metalstructures .assortiment__item--5 .assortiment__link .assortiment__icon {
-    background: url(../img/products-sprite.png) no-repeat;
+    background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
     background-position: 0 -850px; }
   .metalstructures .assortiment__item--6 .assortiment__link .assortiment__icon {
-    background: url(../img/products-sprite.png) no-repeat;
+    background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
     background-position: 0 -935px; }
   .metalstructures .assortiment__item--7 .assortiment__link .assortiment__icon {
-    background: url(../img/products-sprite.png) no-repeat;
+    background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
     background-position: 0 -1020px; }
   .metalstructures .assortiment__item--8 .assortiment__link .assortiment__icon {
-    background: url(../img/products-sprite.png) no-repeat;
+    background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
     background-position: 0 -1105px; }
   .metalstructures .assortiment__item--9 .assortiment__link .assortiment__icon {
-    background: url(../img/products-sprite.png) no-repeat;
+    background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
     background-position: 0 -1190px; }
+
+.metalproducts .assortiment {
+  margin-bottom: 40px;
+  margin-top: 40px; }
+  .metalproducts .assortiment__item--1 .assortiment__link .assortiment__icon {
+    background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
+    background-position: 0 0; }
+  .metalproducts .assortiment__item--2 .assortiment__link .assortiment__icon {
+    background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
+    background-position: 0 -85px; }
+  .metalproducts .assortiment__item--3 .assortiment__link .assortiment__icon {
+    background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
+    background-position: 0 -170px; }
+  .metalproducts .assortiment__item--4 .assortiment__link .assortiment__icon {
+    background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
+    background-position: 0 -255px; }
+  .metalproducts .assortiment__item--5 .assortiment__link .assortiment__icon {
+    background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
+    background-position: 0 -340px; }
+  .metalproducts .assortiment__item--6 .assortiment__link .assortiment__icon {
+    background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
+    background-position: 0 -425px; }
+  .metalproducts .assortiment__item--7 .assortiment__link .assortiment__icon {
+    background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
+    background-position: 0 -510px; }
+  .metalproducts .assortiment__item--8 .assortiment__link .assortiment__icon {
+    background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
+    background-position: 0 -595px; }
+  .metalproducts .assortiment__item--9 .assortiment__link .assortiment__icon {
+    background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
+    background-position: 0 -680px; }
+
+.metalworking .assortiment {
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-bottom: 40px;
+  margin-top: 40px; }
+  .metalworking .assortiment__item--1 .assortiment__link .assortiment__icon {
+    background: url(../img/services-sprite.png) no-repeat;
+    background-position: 0 0; }
+  .metalworking .assortiment__item--2 .assortiment__link .assortiment__icon {
+    background: url(../img/services-sprite.png) no-repeat;
+    background-position: 0 -85px; }
+  .metalworking .assortiment__item--3 .assortiment__link .assortiment__icon {
+    background: url(../img/services-sprite.png) no-repeat;
+    background-position: 0 -170px; }
+  .metalworking .assortiment__item--4 .assortiment__link .assortiment__icon {
+    background: url(../img/services-sprite.png) no-repeat;
+    background-position: 0 -255px; }
+  .metalworking .assortiment__item--5 .assortiment__link .assortiment__icon {
+    background: url(../img/services-sprite.png) no-repeat;
+    background-position: 0 -340px; }
+  .metalworking .assortiment__item--6 .assortiment__link .assortiment__icon {
+    background: url(../img/services-sprite.png) no-repeat;
+    background-position: 0 -425px; }
+  .metalworking .assortiment__item--7 .assortiment__link .assortiment__icon {
+    background: url(../img/services-sprite.png) no-repeat;
+    background-position: 0 -510px; }
+  .metalworking .assortiment__item--8 .assortiment__link .assortiment__icon {
+    background: url(../img/services-sprite.png) no-repeat;
+    background-position: 0 -595px; }
+  .metalworking .assortiment__item--9 .assortiment__link .assortiment__icon {
+    background: url(../img/services-sprite.png) no-repeat;
+    background-position: 0 -680px; }
+  .metalworking .assortiment__item--10 .assortiment__link .assortiment__icon {
+    background: url(../img/services-sprite.png) no-repeat;
+    background-position: 0 -765px; }
+  .metalworking .assortiment__item--11 .assortiment__link .assortiment__icon {
+    background: url(../img/services-sprite.png) no-repeat;
+    background-position: 0 -850px; }
+  .metalworking .assortiment__item--12 .assortiment__link .assortiment__icon {
+    background: url(../img/services-sprite.png) no-repeat;
+    background-position: 0 -935px; }
+  .metalworking .assortiment__item--13 .assortiment__link .assortiment__icon {
+    background: url(../img/services-sprite.png) no-repeat;
+    background-position: 0 -1020px; }
+  .metalworking .assortiment__item--14 .assortiment__link .assortiment__icon {
+    background: url(../img/services-sprite.png) no-repeat;
+    background-position: 0 -1105px; }
 
 .body--parallax {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.93)), to(rgba(255, 255, 255, 0.93))), url("../img/body-parallax.jpg") top center repeat;
@@ -838,8 +933,8 @@ blockquote {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
-    height: -webkit-calc(100% - 70px - 60px);
-    height: calc(100% - 70px - 60px);
+    height: -webkit-calc(100% - 70px - 60px - 62px);
+    height: calc(100% - 70px - 60px - 62px);
     padding: 0 20px; }
   .intro__slider {
     height: 50px; }
@@ -2882,7 +2977,7 @@ blockquote {
   left: 0;
   bottom: -6px; }
   .infobuttons .btn {
-    max-width: 200px;
+    max-width: 218px;
     margin-right: 20px;
     margin-bottom: 20px; }
     .infobuttons .btn:last-child {
