@@ -1,0 +1,74 @@
+.skolkovo-operator{
+    max-width: 1340px;
+    margin: 0 auto;
+    .title{
+        font-size: 40px;
+        position: relative;
+        margin-bottom: 70px;
+        &::after{
+            content: '';
+            display: block;
+            width: 70px;
+            height: 3px;
+            position: absolute;
+            left: 50%;
+            bottom: -32px;
+            margin-left: -35px;
+            background: $color-blue;
+        }
+    }
+    .title--smaller{
+        font-size: 28px;
+        & + .list{
+            list-style-position: outside;
+            text-indent: 0;
+            font-size: 18px;
+            color: $color-gray;
+            line-height: 32px;
+            margin-bottom: 50px;
+            li{
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .undertitle{
+       font-size: 24px;
+       line-height: 30px;
+       margin-bottom: 35px;
+    }
+    &__info{
+        margin: 0;
+        padding: 30px 0;
+        list-style: none;
+        display: flex;
+    }
+    &__column{
+        &--left{            
+            //margin-right: 55px;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            img{
+                max-width: 470px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+                margin: 0 auto;
+            }
+            .file{
+                display: inline-block;
+                margin: 20px auto;
+                padding-left: 45px;
+                text-decoration: none;
+                &::before{
+                    left: 15px;
+                }
+            }
+        }
+        &--right{
+            p.text,
+            ul.list{
+                font-size: 18px;
+                color: $color-gray;
+            }
+        }
+    }
+}

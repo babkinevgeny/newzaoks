@@ -2,9 +2,42 @@ section.main__articles
   h2.title Примеры выполненных работ
   #performed_works.owl-carousel
     if (parent === 'Металлоконструкции')
-      - for (let i = 1; i < 11; i++) {
-          img(src=`/img/carousel/metalstructures/${i}.jpg`)
-      - }
+      if (title === 'Балки подкрановые сварные')
+        - for (let i = 1; i < 7; i++) {
+            img(src=`/img/carousel/metalstructures/welded-crane-girders/Балки${i}.jpg`)
+        - }
+      if (title === 'Опоры трубопроводов')
+        - for (let i = 1; i < 7; i++) {
+            img(src=`/img/carousel/metalstructures/pipeline-supports/Опоры${i}.jpg`)
+        - }
+      if (title === 'Площадки обслуживания')
+        - for (let i = 1; i < 7; i++) {
+            img(src=`/img/carousel/metalstructures/service-areas/Площадки${i}.jpg`)
+        - }
+      if (title === 'Технологические емкости')
+        - for (let i = 1; i < 7; i++) {
+            img(src=`/img/carousel/metalstructures/technological-tanks/Емкости${i}.jpg`)
+        - }
+      if (title === 'Стенды для испытаний')
+        - for (let i = 1; i < 7; i++) {
+            img(src=`/img/carousel/metalstructures/test-benches/Стенды${i}.jpg`)
+        - }
+      if (title === 'Тележки колесные / на рельсах')
+        - for (let i = 1; i < 7; i++) {
+            img(src=`/img/carousel/metalstructures/wheeled-trolleys/Тележки${i}.jpg`)
+        - }
+      if (title === 'Мостовые металлоконструкции')
+        - for (let i = 1; i < 7; i++) {
+            img(src=`/img/carousel/metalstructures/bridge-metal-structures/Мостовые${i}.jpg`)
+        - }
+      if (title === 'Нестандартные металлоконструкции')
+        - for (let i = 1; i < 7; i++) {
+            img(src=`/img/carousel/metalstructures/non-standart-metal-structures/Нестандартные${i}.jpg`)
+        - }
+      if (title === 'Строительные металлоконструкции')
+        - for (let i = 1; i < 7; i++) {
+            img(src=`/img/carousel/metalstructures/building-metal-structures/Строительные${i}.jpg`)
+        - }
     else if (parent === 'Продукция')
       if (title === 'Арматура технологических трубопроводов')
         - for (let i = 1; i < 7; i++) {
@@ -18,8 +51,8 @@ section.main__articles
         - for (let i = 1; i < 7; i++) {
             img(src=`/img/carousel/metalproducts/hydraulic-equipment/Гидравлика${i}.jpg`)
         - }
-      if (title === 'Пресс-формы, штампы, матрицы')
-        - for (let i = 1; i < 7; i++) {
+      if (title === 'Пресс-формы, штампы, матрицы, фильеры')
+        - for (let i = 1; i < 9; i++) {
             img(src=`/img/carousel/metalproducts/press-molds/ПрессФормы${i}.jpg`)
         - }
       if (title === 'Детали для промышленного оборудования')

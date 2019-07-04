@@ -45,14 +45,29 @@
 	&__logo{
 		width: 200px;
 		height: 50px;
-	    background: url(../img/logo-horizontal-small.png) center no-repeat;
-	    background-size: 100% 13px;
-	    margin-right: 20px;
-	    a{
-	    	display: inline-block;
-	    	width:100%;
-	    	height:100%;
-	    }
+		background: url(../img/logo-horizontal-small.png) center no-repeat;
+		background-size: 100% 13px;
+		margin-right: 20px;
+		a{
+			display: inline-block;
+			width:100%;
+			height:100%;
+		}
+	}
+	&__skolkovo{
+		height: 50px;
+		margin-top: -33px;
+		display: flex;
+		align-items: center;
+		a{
+			padding-top: 1px;
+			display: block;
+			height: 17px;
+		}
+		img{
+			width: 54px;
+			border-radius: 3px;
+		}
 	}
 	&__list{
 		margin: 0;
@@ -118,6 +133,9 @@
 			-ms-transition: all 0.3s ease;
 			transition: all 0.3s ease;
 		}
+	}
+	&--hiding{
+		border-bottom: none;
 	}
 	.search{
 		input{

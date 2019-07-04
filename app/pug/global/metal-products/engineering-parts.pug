@@ -1,8 +1,10 @@
 doctype
 html
-  -let title = 'Детали для машиностроения'
+  -let title = 'Производство деталей для машиностроения в Set Service Group'
+  -let heading = 'Детали для машиностроения'
   -let parent = 'Продукция'
   -let keywords = "детали для машиностроения, детали для машиностроения производство, детали для машиностроения на заказ, детали для машиностроения по чертежу, детали для машиностроения изготовление"
+  -let description = 'Шестерни, валы, шкивы, оси, муфты, фланцы и многие другие детали для машиностроительной отрасли. Гарантированное качество.'
   include ../../includes/head.pug
   body.body--parallax
     include ../../includes/preloader.pug
@@ -12,7 +14,7 @@ html
       main.main
         include ../../includes/header-article.pug
         include ../../includes/breadcrumbs.pug
-        h1.title.title--left #{title}
+        h1.title.title--left #{heading}
         .main__top
           .fotorama__wrapper
             .fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")
@@ -20,8 +22,8 @@ html
           .main__info
             p.text.text--justify Производственное подразделение Set Service Group предоставляет услуги по производству деталей для машиностроения. Наши специалисты в кратчайшие сроки обработают вашу заявку и предложат качественные варианты реализации проекта.
             .infobuttons
-              .btn.btn--form Заказать услугу
-              .btn Скачать прайс-лист
+              .btn.btn--form Заказать производство
+              
         section.main__articles
           article.main__article.main__article--active
             p.text.text--justify Set Service Group предлагает производство деталей для строительных, машиностроительных отраслей. В нашем распоряжении - хорошо оснащенные цеха механообработки, участки сварки, и потому мы можем изготавливать разнообразные изделия. Принимаем заявки на крепеж и сборочные элементы, металлопрокат, детали металлоконструкций любой конфигурации. 

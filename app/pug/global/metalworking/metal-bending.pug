@@ -1,8 +1,10 @@
 doctype
 html
-	-let title = 'Гибка металла'
+	-let title = 'Услуги по гибке металла в Set Service Group'
+	-let heading = 'Гибка металла'
 	-let parent = 'Металлообработка'
 	-let keywords = "гибка металла, гибка листового металла, гибка тонколистового металла, гибка металла на заказ, услуги гибки металла"
+	-let description = 'Set Service Group предлагает свои услуги по гибке металла. Низкие цены, выполнение срочных заказов и гарантированное качество выполняемых работ.'
 	include ../../includes/head.pug
 	body.body--parallax
 		include ../../includes/preloader.pug
@@ -12,20 +14,17 @@ html
 			main.main
 				include ../../includes/header-article.pug
 				include ../../includes/breadcrumbs.pug
-				h1.title.title--left Гибка металла
+				h1.title.title--left #{heading}
 				.main__top
 					.fotorama__wrapper
 						.fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")
 							img(src='../img/metalworking/ГибкаМеталла1.jpg')
 							img(src='../img/metalworking/ГибкаМеталла2.jpg')
 					.main__info
-						p.text.text--justify Set Service Group предлагает услугу шлифовальных работ. Современное оборудование и опытные специалисты обеспечат качественное выполнение любого заказа.
-						p.text.text--justify 
-							b Шлифование
-							|  (наружное, плоское, внутреннее шлифование, полировка) - это финишная обработка деталей конструкции до придания её поверхности гладкости под действием абразивных средств. Шлифовка производится для обеспечения требований к шероховатости поверхности изделия, это важно не только для эстетического вида, но и для увеличения КПД различных электротехнических приборов в различных средах в том числе и в вакууме.
+						p.text.text--justify Set Service Group предлагает свои услуги по гибке металла. Современное оборудование и опытные специалисты обеспечат качественное выполнение любого заказа.
 						.infobuttons
 							.btn.btn--form Заказать услугу
-							.btn Скачать прайс-лист
+							
 				section.main__articles.main__articles--with-btns
 					.main__buttons
 						.outer.active

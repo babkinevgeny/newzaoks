@@ -1,8 +1,10 @@
 doctype
 html
-  -let title = 'Площадки обслуживания'
+  -let title = 'Производство площадок обслуживания в Set Service Group'
+  -let heading = 'Площадки обслуживания'
   -let parent = 'Металлоконструкции'
   -let keywords = "Площадки обслуживания строительство, Площадки обслуживания промышленность, Промышленные площадки обслуживания, Площадки обслуживания производство, Площадки обслуживания на заказ"
+  -let description = 'Производство передвижных и стационарных площадок для промышленной и строительной отраслей.'
   include ../../includes/head.pug
   body.body--parallax
     include ../../includes/preloader.pug
@@ -12,7 +14,7 @@ html
       main.main
         include ../../includes/header-article.pug
         include ../../includes/breadcrumbs.pug
-        h1.title.title--left Площадки обслуживания
+        h1.title.title--left #{heading}
         .main__top
           .fotorama__wrapper
             .fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")
@@ -23,8 +25,8 @@ html
               b Площадки обслуживания 
               | используются как на промышленных предприятиях, так и в иных сферах. Например, на строительных объектах площадки обслуживания помогают подняться рабочим на определенную высоту, а на тепловых трассах обеспечивают удобство перехода. Set Service Group занимается производством площадок обслуживания на заказ.
             .infobuttons
-              .btn.btn--form Заказать услугу
-              .btn Скачать прайс-лист
+              .btn.btn--form Заказать производство
+              
         section.main__articles
           article.main__article.main__article--active
             p.text.text--justify

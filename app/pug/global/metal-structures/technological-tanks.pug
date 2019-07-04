@@ -1,8 +1,10 @@
 doctype
 html
-  -let title = 'Технологические емкости'
+  -let title = 'Производство технологических емкостей в Set Service Group'
+  -let heading = 'Технологические емкости'
   -let parent = 'Металлоконструкции'
   -let keywords = "Технологические емкости, Технологические емкости производство, Технологические емкости изготовление, технологические баки, технологические контейнеры"
+  -let description = 'Изготовление баков, контейнеров, резервуаров, грязевиков, бункеров и других технологических емкостей.'
   include ../../includes/head.pug
   body.body--parallax
     include ../../includes/preloader.pug
@@ -12,7 +14,7 @@ html
       main.main
         include ../../includes/header-article.pug
         include ../../includes/breadcrumbs.pug
-        h1.title.title--left Технологические емкости
+        h1.title.title--left #{heading}
         .main__top
           .fotorama__wrapper
             .fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")
@@ -26,8 +28,8 @@ html
               b Set Service Group 
               | занимается производством емкостей на заказ.
             .infobuttons
-              .btn.btn--form Заказать услугу
-              .btn Скачать прайс-лист
+              .btn.btn--form Заказать производство
+              
         section.main__articles.main__articles--with-btns
           .main__buttons
             .outer.active

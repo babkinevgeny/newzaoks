@@ -1,8 +1,10 @@
 doctype
 html
-  -let title = 'Опоры трубопроводов'
+  -let title = 'Изготовление опор для трубопроводов в Set Service Group'
+  -let heading ='Опоры трубопроводов'
   -let parent = 'Металлоконструкции'
   -let keywords = "Опоры трубопроводов, Опоры трубопроводов производство, Опоры трубопроводов изготовление, подвижные опоры трубопроводов, скользящие опоры трубопроводов"
+  -let description = 'Set Service Group производит опоры трубопровода по существующим стандартам, а также по индивидуальным чертежам заказчика.'
   include ../../includes/head.pug
   body.body--parallax
     include ../../includes/preloader.pug
@@ -12,7 +14,7 @@ html
       main.main
         include ../../includes/header-article.pug
         include ../../includes/breadcrumbs.pug
-        h1.title.title--left Опоры трубопроводов
+        h1.title.title--left #{heading}
         .main__top
           .fotorama__wrapper
             .fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")
@@ -22,10 +24,10 @@ html
           .main__info
             p.text.text--justify 
               b Опоры трубопроводов 
-              | представляют собой металлоконструкции, которые переводя осевые, поперечные, вертикальные нагрузки, а также крутящиеся моменты на грунт или на несущие конструкции. Опоры трубопроводов используются при закладке трубопроводных магистралей различного назначения. Set Service Group занимается опор для трубопроводов на заказ.
+              | представляют собой металлоконструкции, которые переводя осевые, поперечные, вертикальные нагрузки, а также крутящиеся моменты на грунт или на несущие конструкции. Опоры трубопроводов используются при закладке трубопроводных магистралей различного назначения. Set Service Group занимается производством опор для трубопроводов любой сложности.
             .infobuttons
-              .btn.btn--form Заказать услугу
-              .btn Скачать прайс-лист
+              .btn.btn--form Заказать производство
+              
         section.main__articles
           article.main__article.main__article--active
             p.text.text--justify

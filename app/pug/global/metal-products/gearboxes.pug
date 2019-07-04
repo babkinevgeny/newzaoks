@@ -1,8 +1,10 @@
 doctype
 html
-  -let title = 'Редукторы / Зубчатые передачи / Комплектующие'
+  -let title = 'Производство редукторов, зубчатых передач и комплектующих в Set Service Group'
+  -let heading = 'Редукторы / Зубчатые передачи / Комплектующие'
   -let parent = 'Продукция'
   -let keywords = "производство редукторов, редукторы, зубчатые передачи, зубчатые передачи производство, редукторы промышленные"
+  -let description = 'Set Service Group занимается производством и модернизацией любой редукторной техники. Качественное оборудование и лучшие специалисты.'
   include ../../includes/head.pug
   body.body--parallax
     include ../../includes/preloader.pug
@@ -12,7 +14,7 @@ html
       main.main
         include ../../includes/header-article.pug
         include ../../includes/breadcrumbs.pug
-        h1.title.title--left #{title}
+        h1.title.title--left #{heading}
         .main__top
           .fotorama__wrapper
             .fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")
@@ -22,8 +24,8 @@ html
           .main__info
             p.text.text--justify Set Service Group занимается изготовлением промышленных редукторов, зубчатых передач и комплектующих по всей России. Наша продукция гарантированно отличается качеством и надежностью. Свяжитесь с нами, и ваша заявка будет обработана нашими менеджерами в самые короткие сроки.
             .infobuttons
-              .btn.btn--form Заказать услугу
-              .btn Скачать прайс-лист
+              .btn.btn--form Заказать производство
+              
         section.main__articles.main__articles--with-btns
           .main__buttons
             .outer.active

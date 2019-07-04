@@ -1,6 +1,7 @@
 doctype
 html
-  -let title = 'Портфолио'
+  -let title = 'Set Service Group – Центр металлообработки'
+  -let description = 'Примеры работ, выполненных компанией Set Service Group'
   include ../../includes/head.pug
   body.body--parallax
     include ../../includes/preloader.pug
@@ -32,6 +33,9 @@ html
         li.btn(data-filter=".metal-structures") Металлоконструкции
         li.btn(data-filter=".assembly_works") Слесарно-сборочные работы
         li.btn(data-filter=".serial_production") Серийное производство
+        li.btn(data-filter=".dimensional_parts") Габаритные детали
+        li.btn(data-filter=".precision_parts") Прецизионные детали
+
       .portfolio__grid
         .portfolio__item.turning_automat.serial_production
           img(src="/img/carousel/стопорная ось.jpg")
@@ -88,8 +92,6 @@ html
         .portfolio__item.hydroabrasive_cutting.milling_works_with_cnc
           img(src="/img/carousel/основание4.jpg")
 
-        .portfolio__item.turning_works
-          img(src="/img/carousel/стержень.jpg")
         .portfolio__item.milling_works_with_cnc
           img(src="/img/carousel/стяжка.jpg")
         .portfolio__item.milling_works_with_cnc
@@ -98,9 +100,9 @@ html
           img(src="/img/carousel/фиксатор.jpg")
         .portfolio__item.turning_works_with_cnc
           img(src="/img/carousel/фланец.jpg")
-
         .portfolio__item.turning_works_with_cnc
           img(src="/img/carousel/вал1.jpg")
+        
         .portfolio__item.turning_milling_works_with_cnc.serial_production
           img(src="/img/carousel/диск колесный.jpg")
         .portfolio__item.turning_works_with_cnc.serial_production
@@ -109,9 +111,9 @@ html
           img(src="/img/carousel/кронштейн1.jpg")
         .portfolio__item.turning_works
           img(src="/img/carousel/упор1.jpg")
-
         .portfolio__item.milling_works_with_cnc.serial_production
           img(src="/img/carousel/фиксатор1.jpg")
+
         .portfolio__item.turning_works_with_cnc.serial_production
           img(src="/img/carousel/фитинг2.jpg")
         .portfolio__item.turning_works
@@ -120,10 +122,10 @@ html
           img(src="/img/carousel/пресс-форма1.jpg")
         .portfolio__item.milling_works_with_cnc.serial_production
           img(src="/img/carousel/основание5.jpg")
-
-
+          
         .portfolio__item.turning_works_with_cnc.serial_production
-          img(src="/img/carousel/шток.jpg")  
+          img(src="/img/carousel/шток.jpg") 
+
         .portfolio__item.turning_works_with_cnc.serial_production
           img(src="/img/carousel/штифт.jpg") 
         .portfolio__item.turning_works.grinding_works.chrome_plating
@@ -210,6 +212,29 @@ html
           img(src="/img/carousel/токарные работы, шлифовальные работы.jpg")
         .portfolio__item.turning_works.grinding_works
           img(src="/img/carousel/токарные работы, шлифовальные работы2.jpg")
+
+        .portfolio__item.turning_works.grinding_works
+          img(src="/img/carousel/токарные работы, шлифовальные работы3.jpg")
+        .portfolio__item.turning_works.electric_erosion
+          img(src="/img/carousel/токарные работы, электроэррозия.jpg")
+        .portfolio__item.milling_works.dimensional_parts
+          img(src="/img/carousel/фрезерные работы4.jpg") 
+        .portfolio__item.turning_works_with_cnc.serial_production
+          img(src="/img/carousel/Токарные работы ЧПУ, серийное производство.jpg")
+        .portfolio__item.turning_works
+          img(src="/img/carousel/токарные работы7.jpg")
+
+        .portfolio__item.turning_works_with_cnc.serial_production
+          img(src="/img/carousel/серийное производство, токарные работы ЧПУ.jpg")
+        .portfolio__item.turning_works.gear_cutting_works
+          img(src="/img/carousel/зубонарезные работы, токарные работы (2).jpg")
+        .portfolio__item.turning_works.gear_cutting_works.dimensional_parts
+          img(src="/img/carousel/зубонарезные работы, Токарные работы, габаритные детали.jpg")
+        .portfolio__item.precision_parts
+          img(src="/img/carousel/Прецизионные детали.jpg")
+
+            
+        
 
         .portfolio__item.welding_works.metal_bending.metal-structures.painting
           img(src="/img/carousel/аппарель.jpg")

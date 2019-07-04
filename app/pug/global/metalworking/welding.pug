@@ -1,8 +1,10 @@
 doctype
 html
-	-let title = 'Сварочные работы'
+	-let title = 'Услуги сварочных работ в компании Set Service Group'
+	-let heading = 'Сварочные работы'
 	-let parent = 'Металлообработка'
 	-let keywords = 'проведение сварочных работ, сварка конструкций, сварка металла, сварка металлоконструкций, сварочно монтажные работы, сварочные работы'
+	-let description = 'Set Service Group выполняет слесарные работы по металлу в короткие сроки и по доступным ценам. Гарантируем качество выполняемых работ.'
 	include ../../includes/head.pug
 	body.body--parallax
 		include ../../includes/preloader.pug
@@ -12,7 +14,7 @@ html
 			main.main
 				include ../../includes/header-article.pug
 				include ../../includes/breadcrumbs.pug
-				h1.title.title--left Сварочные работы
+				h1.title.title--left #{heading}
 				.main__top
 					.fotorama__wrapper
 						.fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")
@@ -23,7 +25,7 @@ html
 						p.text.text--justify Set Service Group предлагает услуги по сварке металла любых размеров и форм. Сварочные работы широко распространены в таких сферах производства как машиностроение, коммунальное хозяйство, строительство и многих других прикладных сферах деятельности человека. Наши менеджеры оперативно помогут Вам подобрать оптимальные условия для реализации вашего заказа. 
 						.infobuttons
 							.btn.btn--form Заказать услугу
-							.btn Скачать прайс-лист
+							
 				section.main__articles
 					article.main__article.main__article--active
 						p.text.text--justify

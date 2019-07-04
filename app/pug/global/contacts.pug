@@ -1,6 +1,7 @@
 doctype
 html
-  -let title = 'Контакты'
+  -let title = 'Set Service Group – Центр металлообработки'
+  -let description = 'Контактные данные предприятия Set Service Group'
   include ../includes/head.pug
   body.body--parallax
     include ../includes/preloader.pug
@@ -15,7 +16,7 @@ html
         |  – Центр металлообработки, основанный в 2015г.
         br
         |  для налаживания производственных связей в рамках программы по развитию производственного потенциала России.
-      ul.dropdown
+      ul.dropdown.dropdown--multi
         li.dropdown-item
           .dropdown-title
             .container(style='border-top:1px solid #eceded;')
@@ -37,7 +38,7 @@ html
         li.dropdown-item
           .dropdown-title
             .container
-              .switch
+              .switch.switch--checked
                 span.switch__bg
                 span.switch__btn
               | Производственные площадки
@@ -83,15 +84,15 @@ html
                     span.park Парк: токарно-карусельная обработка, крупногабаритные координатно-расточные станки.
                     span.time 9:00 - 18:00
                     a.file.file--pdf Скачать одним файлом
-                li
-                  .column--left
-                    img(src="../img/map-petro.jpg", alt="")
-                  .column--right
-                    span.addr г. Санкт-Петербург, дорога на Петрославянку, д. 5, лит. АЕ (территория завода «ОРМА»)
-                    span.tel 8 (812) 627-15-16
-                    span.park Парк: токарно-карусельная обработка, крупногабаритные координатно-расточные станки.
-                    span.time 9:00 - 18:00
-                    a.file.file--pdf Скачать одним файлом
+                //- li
+                //-   .column--left
+                //-     img(src="../img/map-petro.jpg", alt="")
+                //-   .column--right
+                //-     span.addr г. Санкт-Петербург, дорога на Петрославянку, д. 5, лит. АЕ (территория завода «ОРМА»)
+                //-     span.tel 8 (812) 627-15-16
+                //-     span.park Парк: токарно-карусельная обработка, крупногабаритные координатно-расточные станки.
+                //-     span.time 9:00 - 18:00
+                //-     a.file.file--pdf Скачать одним файлом
               h3.title Слесарно-сборочный цех
               ul.areas-list
                 li

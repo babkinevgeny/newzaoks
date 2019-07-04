@@ -7,13 +7,14 @@
   display: -ms-flex;
   display: flex;
   &__item{
-    width: 20%;
-    height: 175px;
+    //width: 20%;
+    width: 268px !important;
+   // height: 230px;
   }
   &__link{
     text-decoration: none;
     display: block;
-    width: 100%;
+    //width: 100%;
     height: 100%;
     padding: 20px 0;
     box-sizing: border-box;
@@ -28,8 +29,6 @@
     width: 80px;
     height: 80px;
     margin: 0 auto 20px auto;
-    background: pink;
-    background: url(../img/assortiment-sprite.png) no-repeat;
   }
   &__title{
     font-size: 16px;
@@ -39,4 +38,85 @@
     display: block;
     text-align: center;
   }
+  .title{
+    display: inline-block;
+    margin: 0 !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-transform: none;
+    padding-top: 15px;
+  }
+  .owl-stage-outer{
+    padding-top: 60px;
+  }
+  .owl-nav{
+    width: 90px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    button{
+      z-index: 1;
+      box-shadow: none;
+      outline: none;
+      width: 30px;
+      height: 30px;
+      &.owl-prev{
+        background: url(../img/left-arrow.svg) center center no-repeat !important;
+        &:hover{
+          opacity: .7;
+        }
+      }
+      &.owl-next{
+        background: url(../img/right-arrow.svg) center center no-repeat !important;
+        &:hover{
+          opacity: .7;
+        }
+      }
+    }
+  }
 }
+
+// .bx-wrapper--products,
+// .bx-wrapper--services {
+//   max-width: 1340px !important;
+//   margin: 0 auto;
+//   box-shadow: none;
+//   padding: 60px 0 0 0;
+//   .title{
+//     display: inline-block;
+//     margin: 0 !important;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     text-transform: none;
+//   }
+//   .bx-controls-direction{
+//     width: 125px;
+//     position: absolute;
+//     top: 10px;
+//     right: 0;
+//     a{
+//       z-index: 1;
+//     }
+//     .owl-prev{
+//       background: url(../img/left-arrow.svg) center center no-repeat;
+//       width: 37px;
+//       height: 37px;
+//       &:hover{
+//         opacity: .7;
+//       }
+//     }
+//     .owl-next{
+//       background: url(../img/right-arrow.svg) center center no-repeat;
+//       width: 37px;
+//       height: 37px;
+//       &:hover{
+//         opacity: .7;
+//       }
+//     }
+//   }
+// }

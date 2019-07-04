@@ -1,13 +1,15 @@
 doctype
 html
-  -let title = 'Zaoks'
+  -let title = 'Set Service Group – Центр металлообработки'
   -let add_link_for_clients = true
   -let keywords = "металлообработка, механическая обработка металла, обработка металла, услуги по металлообработке, Set Service Group"
+  -let description = 'Наша группа компаний оказывает комплексные услуги по металлообработке и производству различного оборудования по всей России.'
   include ../includes/head.pug
-  body.body--parallax
+  body(class=(title === 'Zaoks' ? 'body--no-top-padding body--parallax' : 'body--parallax'))
     include ../includes/preloader.pug
     include ../includes/main-header.pug
-    include ../includes/main-slider.pug
+    include ../includes/intro.pug
+    //- include ../includes/main-slider.pug
     include ../includes/products.pug
     include ../includes/services.pug
     section.info
@@ -18,12 +20,18 @@ html
         | для реализации программы по развитию производственного потенциала России.
       blockquote
         p
-          span Мы – это команда специалистов в различных видах металлообработки, объединенные одной большой идеей развития производственного сектора России и качественного увеличения номенклатуры товаров, произведенных на территории России.
+          span 
+            | Мы – это команда специалистов в различных видах металлообработки, 
+            br
+            | объединенные одной большой идеей развития производственного сектора России 
+            br
+            | и качественного увеличения номенклатуры товаров, произведенных на территории России.
         a(href='about/about.html') Подробнее
-    include ../includes/counter.pug
+    //-include ../includes/counter.pug
     include ../includes/companies.pug
     include ../includes/popupform.pug
     include ../includes/main-footer.pug
+  script(src="/libs/owlcarousel/owl.carousel.min.js")
   script(src="/libs/bxslider-4/dist/jquery.bxslider.min.js")
   script(src="/js/common.js")
   script(src="/js/main.js")
