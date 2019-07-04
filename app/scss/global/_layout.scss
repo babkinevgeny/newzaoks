@@ -12,6 +12,15 @@ body{
 .products{
   //padding-bottom: 26px;
   padding: 40px 0;
+  .title{
+    a{
+      color: $color-blue;
+      text-decoration: none;
+      &:hover{
+        color: lighten($color-blue, 5%);
+      }
+    }
+  }
   .btn{
     margin: 0 auto;
     display: block;
@@ -294,5 +303,14 @@ body{
 .metalstructures{
   .assortiment{
     flex-wrap: wrap;
+  }
+}
+.phones{
+  padding: 20px 0;
+  .team{
+    &__list{
+      margin: 0 auto;
+
+    }
   }
 }

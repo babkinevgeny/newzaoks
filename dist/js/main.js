@@ -16,8 +16,8 @@ $(document).ready(function() {
     autoplay: true,
     dots: false 
   });
-  $('.products .assortiment .owl-stage-outer').prepend('<h2 class="title title--uppercase">Продукция</h2>');
-  $('.services .assortiment .owl-stage-outer').prepend('<h2 class="title title--uppercase">Услуги</h2>');
+  $('.products .assortiment .owl-stage-outer').prepend('<h2 class="title title--uppercase"><a href="metal-products.html">Продукция</a></h2>');
+  $('.services .assortiment .owl-stage-outer').prepend('<h2 class="title title--uppercase"><a href="metalworking.html">Услуги</a></h2>');
   // $('.products .assortiment').bxSlider({
   //   auto: false,
   //   minSlides: 5,
