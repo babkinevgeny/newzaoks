@@ -8,16 +8,17 @@
 // });
 
 $(document).ready(function() {
-  $('.products .assortiment, .services .assortiment').owlCarousel({
+  $('.products .assortiment, .services .assortiment, .metalstructures .assortiment').owlCarousel({
     loop: true,
     nav: true,
     navText: [],
     items: 5,
-    autoplay: true,
+    autoplay: false,
     dots: false 
   });
   $('.products .assortiment .owl-stage-outer').prepend('<h2 class="title title--uppercase"><a href="metal-products.html">Продукция</a></h2>');
   $('.services .assortiment .owl-stage-outer').prepend('<h2 class="title title--uppercase"><a href="metalworking.html">Услуги</a></h2>');
+  $('.metalstructures .assortiment .owl-stage-outer').prepend('<h2 class="title title--uppercase"><a href="metalstructures.html">Металлоконструкции</a></h2>');
   // $('.products .assortiment').bxSlider({
   //   auto: false,
   //   minSlides: 5,

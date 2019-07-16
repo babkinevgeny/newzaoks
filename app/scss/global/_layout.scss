@@ -9,7 +9,8 @@ body{
 }
 
 .services,
-.products{
+.products,
+.metalstructures{
   //padding-bottom: 26px;
   padding: 40px 0;
   .title{
@@ -34,6 +35,10 @@ body{
 }
 
 .services{
+  border-bottom: 1px solid $color-lightgray;
+}
+
+.metalstructures{
   border-bottom: 1px solid $color-lightgray;
 }
 
