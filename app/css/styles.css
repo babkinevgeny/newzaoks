@@ -7,17 +7,21 @@ body {
   padding-top: 0; }
 
 .services,
-.products {
+.products,
+.metal-structures {
   padding: 40px 0; }
   .services .title a,
-  .products .title a {
+  .products .title a,
+  .metal-structures .title a {
     color: #06abdd;
     text-decoration: none; }
     .services .title a:hover,
-    .products .title a:hover {
+    .products .title a:hover,
+    .metal-structures .title a:hover {
       color: #07bef6; }
   .services .btn,
-  .products .btn {
+  .products .btn,
+  .metal-structures .btn {
     margin: 0 auto;
     display: block;
     width: 157px; }
@@ -27,6 +31,9 @@ body {
   border-top: 1px solid #eceded; }
 
 .services {
+  border-bottom: 1px solid #eceded; }
+
+.metal-structures {
   border-bottom: 1px solid #eceded; }
 
 .info {
@@ -182,33 +189,43 @@ body {
     .metalworking .list:last-child {
       margin-bottom: 40px; }
 
-.metalstructures .assortiment {
+.metalstructures .assortiment,
+.metal-structures .assortiment {
   margin-bottom: 40px; }
-  .metalstructures .assortiment__item--1 .assortiment__link .assortiment__icon {
+  .metalstructures .assortiment__item--1 .assortiment__link .assortiment__icon,
+  .metal-structures .assortiment__item--1 .assortiment__link .assortiment__icon {
     background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
     background-position: 0 -510px; }
-  .metalstructures .assortiment__item--2 .assortiment__link .assortiment__icon {
+  .metalstructures .assortiment__item--2 .assortiment__link .assortiment__icon,
+  .metal-structures .assortiment__item--2 .assortiment__link .assortiment__icon {
     background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
     background-position: 0 -595px; }
-  .metalstructures .assortiment__item--3 .assortiment__link .assortiment__icon {
+  .metalstructures .assortiment__item--3 .assortiment__link .assortiment__icon,
+  .metal-structures .assortiment__item--3 .assortiment__link .assortiment__icon {
     background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
     background-position: 0 -680px; }
-  .metalstructures .assortiment__item--4 .assortiment__link .assortiment__icon {
+  .metalstructures .assortiment__item--4 .assortiment__link .assortiment__icon,
+  .metal-structures .assortiment__item--4 .assortiment__link .assortiment__icon {
     background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
     background-position: 0 -765px; }
-  .metalstructures .assortiment__item--5 .assortiment__link .assortiment__icon {
+  .metalstructures .assortiment__item--5 .assortiment__link .assortiment__icon,
+  .metal-structures .assortiment__item--5 .assortiment__link .assortiment__icon {
     background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
     background-position: 0 -850px; }
-  .metalstructures .assortiment__item--6 .assortiment__link .assortiment__icon {
+  .metalstructures .assortiment__item--6 .assortiment__link .assortiment__icon,
+  .metal-structures .assortiment__item--6 .assortiment__link .assortiment__icon {
     background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
     background-position: 0 -935px; }
-  .metalstructures .assortiment__item--7 .assortiment__link .assortiment__icon {
+  .metalstructures .assortiment__item--7 .assortiment__link .assortiment__icon,
+  .metal-structures .assortiment__item--7 .assortiment__link .assortiment__icon {
     background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
     background-position: 0 -1020px; }
-  .metalstructures .assortiment__item--8 .assortiment__link .assortiment__icon {
+  .metalstructures .assortiment__item--8 .assortiment__link .assortiment__icon,
+  .metal-structures .assortiment__item--8 .assortiment__link .assortiment__icon {
     background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
     background-position: 0 -1105px; }
-  .metalstructures .assortiment__item--9 .assortiment__link .assortiment__icon {
+  .metalstructures .assortiment__item--9 .assortiment__link .assortiment__icon,
+  .metal-structures .assortiment__item--9 .assortiment__link .assortiment__icon {
     background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
     background-position: 0 -1190px; }
 
@@ -824,6 +841,7 @@ blockquote {
   .main-header__skolkovo {
     height: 50px;
     margin-top: -33px;
+    margin-left: 20px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;

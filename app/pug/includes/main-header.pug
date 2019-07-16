@@ -7,15 +7,14 @@ header(class=(title === 'Zaoks' ? 'main-header main-header--hiding' : 'main-head
         span.hamburger__item
       .main-header__logo
         a(href='/index.html')
-      .main-header__skolkovo
-        a(href="http://sk.ru/news/")
-          img(src="/img/operator.png", alt="Сколково")
+      
     .main-header__column.main-header__column--right
       ul.main-header__list
         li.main-header__item
           a(href='mailto:info@zaoks.ru') info@zaoks.ru
         li.main-header__item
           a(href='tel:+78126271516') 8 (812) 627 15 16
-        li.main-header__item(title="Раздел в разработке")
-          span Личный кабинет
+      .main-header__skolkovo
+        a(href="http://sk.ru/news/")
+          img(src="/img/operator.png", alt="Сколково")
   include navigation.pug
