@@ -9,7 +9,8 @@ body{
 }
 
 .services,
-.products{
+.products,
+.metal-structures{
   //padding-bottom: 26px;
   padding: 40px 0;
   .title{
@@ -34,6 +35,10 @@ body{
 }
 
 .services{
+  border-bottom: 1px solid $color-lightgray;
+}
+
+.metal-structures{
   border-bottom: 1px solid $color-lightgray;
 }
 
@@ -108,7 +113,8 @@ body{
   }
 }
 
-.metalstructures{
+.metalstructures,
+.metal-structures{
   .assortiment{
     $step: -85px * 6;
     margin-bottom: 40px;
