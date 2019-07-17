@@ -996,11 +996,12 @@ blockquote {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    max-width: 1300px;
+    max-width: 1340px;
     width: 100%;
-    -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     list-style: none;
     margin: 0 auto; }
     .intro .numbers__item a {
