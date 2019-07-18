@@ -13,7 +13,13 @@ const offsetMe = function() {
 offsetMe();
 
 $(window).on('load', function() {
-	$("#preloader").fadeOut();
+  $("#preloader").fadeOut('slow', function() {
+    if ($('.portfolio').length) {
+      $('.btn--active').trigger('click');
+    }
+  });
+
+  
 });
 
 /*Preloader*/
