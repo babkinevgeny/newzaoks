@@ -167,7 +167,8 @@ body {
 .metalstructures,
 .metalproducts,
 .metalworking {
-  padding: 50px 0; }
+  padding: 50px 0;
+  position: relative; }
   .metalstructures .title,
   .metalproducts .title,
   .metalworking .title {
@@ -2915,6 +2916,13 @@ blockquote {
   -o-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
   overflow-x: hidden; }
+  .catalog--full-height {
+    height: -webkit-calc(100% + 2px);
+    height: calc(100% + 2px);
+    position: absolute;
+    border-top: 1px solid #eceded;
+    top: 0px;
+    padding-top: 50px; }
   .catalog:hover {
     width: 331px; }
     .catalog:hover .switch,
