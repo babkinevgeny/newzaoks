@@ -34,6 +34,15 @@ $(document).ready(function() {
   //   pager: false
   // });
   // $('.bx-wrapper--services').prepend('<h2 class="title title--uppercase">Услуги</h2>');
+  $('.companies--clients .companies__list').owlCarousel({
+    loop: true,
+    nav: true,
+    navText: [],
+    items: 1,
+    autoplay: false,
+    autoHeight: true,
+    dots: false 
+  });
 
   $('.intro__slider').bxSlider({
     auto: true,
