@@ -1,10 +1,10 @@
-aside.catalog
+aside(class=calatog_full_height ? 'catalog catalog--full-height' : 'catalog' )
   ul.catalog__list
     li.catalog__item
       .catalog__groupname
         .catalog__icon
         .catalog__name Продукция
-        .switch
+        .switch(class=(title === 'Производство металлоизделий') ? 'switch--checked' : '')
           span.switch__bg
           span.switch__btn
       ul.catalog__links
@@ -60,7 +60,7 @@ aside.catalog
       .catalog__groupname
         .catalog__icon
         .catalog__name Металлоконструкции
-        .switch
+        .switch(class=(title === 'Производство металлоконструкций') ? 'switch--checked' : '')
           span.switch__bg
           span.switch__btn
       ul.catalog__links
@@ -90,7 +90,7 @@ aside.catalog
       .catalog__groupname
         .catalog__icon
         .catalog__name Металлообработка
-        .switch
+        .switch(class=(title === 'Металлообработка на заказ') ? 'switch--checked' : '')
           span.switch__bg
           span.switch__btn
       ul.catalog__links
