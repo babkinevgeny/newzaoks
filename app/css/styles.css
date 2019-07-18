@@ -3352,6 +3352,8 @@ blockquote {
       padding: 13px 10px; }
       .portfolio__btns li:last-child {
         margin-right: 0; }
+  .portfolio__grid {
+    width: 100% !important; }
   .portfolio__item {
     width: 20%;
     padding: 10px;
@@ -3359,6 +3361,17 @@ blockquote {
             box-sizing: border-box; }
     .portfolio__item img {
       width: 100%; }
+  .portfolio .isotope-pager {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    padding: 30px 0 40px; }
+  .portfolio .pager {
+    display: inline-block;
+    margin-right: 20px; }
+    .portfolio .pager:last-child {
+      margin-right: 0; }
 
 .menu-line {
   display: -webkit-flex;
