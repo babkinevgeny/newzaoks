@@ -1,41 +1,103 @@
 section.companies.companies--clients
   h2.title.title--uppercase Наши клиенты
   .undertitle (Мы работаем с клиентами из самых разных отраслей промышленности)
-  ul.companies__list
-    li.companies__item
-      .companies__title АО «НПП «Промтрансавтоматика»
-    li.companies__item
-      .companies__title АО «Концерн «ЦНИИ «Электроприбор»
-    li.companies__item
-      .companies__title АО «ЛОМО»
-    li.companies__item
-      .companies__title АО «НПП «Радар ммс»
-    li.companies__item
-      .companies__title Санкт-Петербургский государственный университет
-    li.companies__item
-      .companies__title ООО «НТЦ «Гидротранс»
-    li.companies__item
-      .companies__title АО «Завод «Знамя труда»
-    li.companies__item
-      .companies__title ООО «Инжиниринг Геотехнических Систем»
-    li.companies__item
-      .companies__title Caterpillar
-    li.companies__item
-      .companies__title АО НТЦ «РОКАД»
-    li.companies__item
-      .companies__title ООО «МОП им. Калинина»
-    li.companies__item
-      .companies__title ООО «Интеллектуальное конструкторское бюро»
-    li.companies__item
-      .companies__title АО «ГМЗ «Химмаш»
-    if add_link_for_clients 
-      li.companies__item.companies__item--empty
-        .companies__title Здесь может быть ваша компания
-        a.companies__link(href='#')
-      li.companies__item.companies__item--empty
-        .companies__title Здесь может быть ваша компания
-        a.companies__link(href='#')
-    else 
+  if add_link_for_clients 
+    ul.companies__list.companies__list--slider.owl-carousel.owl-theme
+      div.companies__slide.companies__slide--1
+        li.companies__item
+          .companies__title АО «НПП «Промтрансавтоматика»
+        li.companies__item
+          .companies__title АО «Концерн «ЦНИИ «Электроприбор»
+        li.companies__item
+          .companies__title АО «ЛОМО»
+        li.companies__item
+          .companies__title АО «НПП «Радар ммс»
+        li.companies__item
+          .companies__title Санкт-Петербургский государственный университет
+        li.companies__item
+          .companies__title ООО «НТЦ «Гидротранс»
+        li.companies__item
+          .companies__title АО «Завод «Знамя труда»
+        li.companies__item
+          .companies__title ООО «Инжиниринг Геотехнических Систем»
+        li.companies__item
+          .companies__title Caterpillar
+        li.companies__item
+          .companies__title АО НТЦ «РОКАД»
+        li.companies__item
+          .companies__title ООО «МОП им. Калинина»
+        li.companies__item
+          .companies__title ООО «Интеллектуальное конструкторское бюро»
+        li.companies__item
+          .companies__title АО «ГМЗ «Химмаш»
+        li.companies__item
+          .companies__title АО «Нева металл посуда»
+        li.companies__item
+          .companies__title ООО «Главпромстрой»
+      div.companies__slide.companies__slide--2
+        li.companies__item
+          .companies__title ООО НПФ «РЕОМ»
+        li.companies__item
+          .companies__title OOO «ОМЗ-Термопресс»
+        li.companies__item
+          .companies__title ООО «Обсервер»
+        li.companies__item
+          .companies__title Tunnel Tech
+        li.companies__item
+          .companies__title Завод ПТО им. С.М.Кирова
+        li.companies__item
+          .companies__title ООО «ПО «Новатор»
+        li.companies__item
+          .companies__title ООО «Инвайро»
+        li.companies__item
+          .companies__title ООО «Адсорбционная техника»
+        li.companies__item
+          .companies__title ООО «Синтез Технолоджи»
+        li.companies__item
+          .companies__title ГК «Тира»
+        li.companies__item
+          .companies__title АО «Тихвинский вагоностроительный завод»
+        li.companies__item
+          .companies__title ООО «РОСНА Инжиниринг»
+        li.companies__item
+          .companies__title ООО «ПК «Ландскрона»
+        li.companies__item
+          .companies__title АО «Завод художественных красок «Невская палитра»
+        li.companies__item
+          .companies__title ООО «Лаборатория цифрового зрения»
+      div.companies__slide.companies__slide--3
+        li.companies__item
+          .companies__title АО «Завод «Красный Выборжец»
+        li.companies__item
+          .companies__title ООО «Оптотехника»
+  else
+    ul.companies__list.companies__list--flex
+      li.companies__item
+        .companies__title АО «НПП «Промтрансавтоматика»
+      li.companies__item
+        .companies__title АО «Концерн «ЦНИИ «Электроприбор»
+      li.companies__item
+        .companies__title АО «ЛОМО»
+      li.companies__item
+        .companies__title АО «НПП «Радар ммс»
+      li.companies__item
+        .companies__title Санкт-Петербургский государственный университет
+      li.companies__item
+        .companies__title ООО «НТЦ «Гидротранс»
+      li.companies__item
+        .companies__title АО «Завод «Знамя труда»
+      li.companies__item
+        .companies__title ООО «Инжиниринг Геотехнических Систем»
+      li.companies__item
+        .companies__title Caterpillar
+      li.companies__item
+        .companies__title АО НТЦ «РОКАД»
+      li.companies__item
+        .companies__title ООО «МОП им. Калинина»
+      li.companies__item
+        .companies__title ООО «Интеллектуальное конструкторское бюро»
+      li.companies__item
+        .companies__title АО «ГМЗ «Химмаш»
       li.companies__item
         .companies__title АО «Нева металл посуда»
       li.companies__item
@@ -207,182 +269,181 @@ section.companies.companies--clients
           p АО «ГМЗ «Химмаш» является инжиниринговой компанией, специализирующейся на предоставлении инжиниринговых услуг по строительству новых, модернизации существующих энергетических мощностей на промышленных предприятиях и объектах энергетики.
         .popup__right
         include hashtags.pug
-    if !add_link_for_clients
-      li
-        section.popup
-          .popup__btn
-          h1 АО «Нева металл посуда»
-          a.popup__link(href='https://nmp.ru') www.nmp.ru
-          .popup__left
-            p Компания АО «Нева металл посуда» занимается разработкой уникальной по своим потребительским свойствам и качеству посуды. Предприятие находится в Петербурге, в научно-промышленном центре, что дает возможность задействовать интеллектуально-технические ресурсы, порой недоступные на удаленных производствах.
-          .popup__right
-            img.feedback(src="/img/feedbacks/НМП.jpg")
-          include hashtags.pug
-      li
-        section.popup
-          .popup__btn
-          h1 ООО «Главпромстрой»
-          a.popup__link(href='http://glavpromstroi.com/') www.glavpromstroi.com
-          .popup__left
-            p ООО «Главпромстрой» - многопрофильная организация, успешно и стабильно работающая на рынке строительства с 1992 года, занимающаяся строительством, реконструкцией и капитальным ремонтом зданий и сооружений промышленного и коммунально-бытового назначения.
-          .popup__right
-          include hashtags.pug
-      li
-        section.popup
-          .popup__btn
-          h1 ООО НПФ «РЕОМ»
-          a.popup__link(href='http://npf-reom.ru/') www.npf-reom.ru
-          .popup__left
-            p НПФ «РЕОМ» разрабатывает, производит, модернизирует и поставляет климатические камеры для проведения испытаний в различных отраслях промышленности.
-          .popup__right
-          include hashtags.pug
-      li
-        section.popup
-          .popup__btn
-          h1 ООО «ОМЗ-Термопресс»
-          a.popup__link(href='http://www.omz-izhora.ru') www.omz-izhora.ru
-          .popup__left
-            p ПАО "ОМЗ" – одна из ведущих компаний тяжелого машиностроения, специализирующаяся на инжиниринге, а также на производстве спецсталей и предоставлении промышленных услуг.
-          .popup__right
-          include hashtags.pug
-      li
-        section.popup
-          .popup__btn
-          h1 ООО «Обсервер»
-          a.popup__link(href='https://o-mp.ru/') www.o-mp.ru
-          .popup__left
-            p Компания «Обсервер» занимается разработкой, производством и продвижением самых передовых устройств, для улучшения качества жизни инвалидов, создания безбарьерной среды и обеспечения «Равных возможностей для всех». 
-          .popup__right
-          include hashtags.pug
-      li
-        section.popup
-          .popup__btn
-          h1 Tunnel Tech
-          a.popup__link(href='http://tunneltech.eu/') www.tunneltech.eu
-          .popup__left
-            p Компания Tunnel Tech занимается разработкой и производством аэротруб и ветровых тоннелей различной степени мощности, а также разрабатывает программное обеспечение для управления ими.
-          .popup__right
-          include hashtags.pug
-      li
-        section.popup
-          .popup__btn
-          h1 Завод ПТО им. С.М.Кирова
-          a.popup__link(href='http://zpto.ru/') www.zpto.ru
-          .popup__left
-            p Завод ПТО им. С.М.Кирова - ведущее предприятие машиностроительной отрасли, традиционно обеспечивавшее металлургические заводы, атомные, гидро- и тепловые электростанции и другие предприятия народного хозяйства СССР высокопроизводительными грузоподъемными кранами тяжелых режимов работы. 
-          .popup__right
-          include hashtags.pug
-      li
-        section.popup
-          .popup__btn
-          h1 ООО «ПО «Новатор»
-          a.popup__link(href='http://www.spbnovator.ru/') www.spbnovator.ru
-          .popup__left
-            p ООО «ПО «Новатор» специализируется на разработке и производстве аппаратов воздушного охлаждения (АВО), с упором на модернизацию и повышения их эффективности.
-          .popup__right
-            img.feedback(src="/img/feedbacks/Новатор.jpg")
-          include hashtags.pug
-      li
-        section.popup
-          .popup__btn
-          h1 ООО «Инвайро»
-          a.popup__link(href='https://enviro.su/') www.enviro.su
-          .popup__left
-            p Компания ООО «Инвайро» занимается мусоропереработкой, гащоочисткой, уничтожением опасных отходов, обезвреживанием медицинских отходов, а также рекультивацией отходов в энергию и тепло.
-          .popup__right
-            img.feedback(src="/img/feedbacks/Инвайро.jpg")
-          include hashtags.pug
-      li
-        section.popup
-          .popup__btn
-          h1 ООО «Адсорбционная техника»
-          .popup__left
-            p ООО «Адсорбционная техника» осуществляем производство теплообменных устройств, оборудования для кондиционирования воздуха промышленного холодильного и морозильного оборудования, производство оборудования для фильтрования и очистки газов.
-          .popup__right
-            img.feedback(src="/img/feedbacks/А-техника.jpg")
-          include hashtags.pug
-      li
-        section.popup
-          .popup__btn
-          h1 ООО «Синтез Технолоджи»
-          a.popup__link(href='http://syntechno.ru/') www.syntechno.ru
-          .popup__left
-            p ООО «Синтез Технолоджи» занимается производством основных неорганических химических веществ, производством изделий технического назначения из драгоценных металлов, обработкой драгоценных, полудрагоценных, поделочных и синтетических камней.
-          .popup__right
-            img.feedback(src="/img/feedbacks/Синтез Технолоджи.jpg")
-          include hashtags.pug
-      li
-        section.popup
-          .popup__btn
-          h1 ГК «Тира»
-          a.popup__link(href='https://tira.ru/') www.tira.ru
-          .popup__left
-            p Группа промышленных компаний "Корпорация "ТИРА" объединяет предприятия, занимающиеся разработкой, производством, поставкой, внедрением и сопровождением мощной радиопередающей аппаратуры и комплексов для профессиональной радиосвязи военного и гражданского назначения, оборудования теле и радиовещательной продукции.
-          .popup__right
-          include hashtags.pug
-      li
-        section.popup
-          .popup__btn
-          h1 АО «Тихвинский вагоностроительный завод»
-          a.popup__link(href='http://www.tvsz.ru/') www.tvsz.ru
-          .popup__left
-            p Предприятие является одним из самых масштабных объектов транспортного машиностроения в Европе по объему инвестиций, производственным площадям и уровню технического оснащения.
-          .popup__right
-          include hashtags.pug
-      li
-        section.popup
-          .popup__btn
-          h1 ООО «РОСНА Инжиниринг»
-          a.popup__link(href='http://rosna.spb.ru/') www.rosna.spb.ru
-          .popup__left
-            p Компания занимается техническим и технологическим аудитом, поставкой и внедрением, техническим обслуживанием, ремонтом и модернизацией промышленного оборудования, а также производством собственного оборудования.
-          .popup__right
-          include hashtags.pug
-      li
-        section.popup
-          .popup__btn
-          h1 ООО «ПК «Ландскрона»
-          a.popup__link(href='http://www.vari.ru/') www.vari.ru
-          .popup__left
-            p Российская производственная компания, специализирующаяся на выпуске высококачественной алюминиевой посуды с антипригарным покрытием компании Whitford.
-          .popup__right
-          include hashtags.pug
-      li
-        section.popup
-          .popup__btn
-          h1 АО «Завод художественных красок «Невская палитра» 
-          a.popup__link(href='http://www.nevskayapalitra.ru/') www.nevskayapalitra.ru
-          .popup__left
-            p Завод художественных красок «Невская палитра» на протяжении 80 лет выпускает продукцию высшего качества для профессиональных художников и любителей творчества.
-          .popup__right
-          include hashtags.pug
-      li
-        section.popup
-          .popup__btn
-          h1 ООО «Лаборатория цифрового зрения»
-          a.popup__link(href='https://divisionlabs.com/') www.divisionlabs.com
-          .popup__left
-            p ООО «Лаборатория цифрового зрения» является российским производителем автоматических комплексов фотовидеофиксации (КФВФ) нарушений Правил дорожного движения под торговой маркой «Птолемей».
-          .popup__right
-          include hashtags.pug
-      li
-        section.popup
-          .popup__btn
-          h1 АО «Завод «Красный Выборжец»
-          a.popup__link(href='http://kv-spb.ru/') www.kv-spb.ru
-          .popup__left
-            p Одно из ведущих в России предприятий по обработке цветных металлов. Предприятие выпускает широкий ассортимент изделий из меди и сплавов на ее основе в виде листов и лент. 
-          .popup__right
-          include hashtags.pug
-      li
-        section.popup
-          .popup__btn
-          h1 ООО «Оптотехника»
-          a.popup__link(href='') 
-          .popup__left
-            p Предприятие занимается производством приборов, датчиков, аппаратуры и инструментов для измерения, контроля и испытаний, а также производством  оптических приборов, фото- и кинооборудования и разработкой программного обеспечения для них.
-          .popup__right
-          include hashtags.pug
+    li
+      section.popup
+        .popup__btn
+        h1 АО «Нева металл посуда»
+        a.popup__link(href='https://nmp.ru') www.nmp.ru
+        .popup__left
+          p Компания АО «Нева металл посуда» занимается разработкой уникальной по своим потребительским свойствам и качеству посуды. Предприятие находится в Петербурге, в научно-промышленном центре, что дает возможность задействовать интеллектуально-технические ресурсы, порой недоступные на удаленных производствах.
+        .popup__right
+          img.feedback(src="/img/feedbacks/НМП.jpg")
+        include hashtags.pug
+    li
+      section.popup
+        .popup__btn
+        h1 ООО «Главпромстрой»
+        a.popup__link(href='http://glavpromstroi.com/') www.glavpromstroi.com
+        .popup__left
+          p ООО «Главпромстрой» - многопрофильная организация, успешно и стабильно работающая на рынке строительства с 1992 года, занимающаяся строительством, реконструкцией и капитальным ремонтом зданий и сооружений промышленного и коммунально-бытового назначения.
+        .popup__right
+        include hashtags.pug
+    li
+      section.popup
+        .popup__btn
+        h1 ООО НПФ «РЕОМ»
+        a.popup__link(href='http://npf-reom.ru/') www.npf-reom.ru
+        .popup__left
+          p НПФ «РЕОМ» разрабатывает, производит, модернизирует и поставляет климатические камеры для проведения испытаний в различных отраслях промышленности.
+        .popup__right
+        include hashtags.pug
+    li
+      section.popup
+        .popup__btn
+        h1 ООО «ОМЗ-Термопресс»
+        a.popup__link(href='http://www.omz-izhora.ru') www.omz-izhora.ru
+        .popup__left
+          p ПАО "ОМЗ" – одна из ведущих компаний тяжелого машиностроения, специализирующаяся на инжиниринге, а также на производстве спецсталей и предоставлении промышленных услуг.
+        .popup__right
+        include hashtags.pug
+    li
+      section.popup
+        .popup__btn
+        h1 ООО «Обсервер»
+        a.popup__link(href='https://o-mp.ru/') www.o-mp.ru
+        .popup__left
+          p Компания «Обсервер» занимается разработкой, производством и продвижением самых передовых устройств, для улучшения качества жизни инвалидов, создания безбарьерной среды и обеспечения «Равных возможностей для всех». 
+        .popup__right
+        include hashtags.pug
+    li
+      section.popup
+        .popup__btn
+        h1 Tunnel Tech
+        a.popup__link(href='http://tunneltech.eu/') www.tunneltech.eu
+        .popup__left
+          p Компания Tunnel Tech занимается разработкой и производством аэротруб и ветровых тоннелей различной степени мощности, а также разрабатывает программное обеспечение для управления ими.
+        .popup__right
+        include hashtags.pug
+    li
+      section.popup
+        .popup__btn
+        h1 Завод ПТО им. С.М.Кирова
+        a.popup__link(href='http://zpto.ru/') www.zpto.ru
+        .popup__left
+          p Завод ПТО им. С.М.Кирова - ведущее предприятие машиностроительной отрасли, традиционно обеспечивавшее металлургические заводы, атомные, гидро- и тепловые электростанции и другие предприятия народного хозяйства СССР высокопроизводительными грузоподъемными кранами тяжелых режимов работы. 
+        .popup__right
+        include hashtags.pug
+    li
+      section.popup
+        .popup__btn
+        h1 ООО «ПО «Новатор»
+        a.popup__link(href='http://www.spbnovator.ru/') www.spbnovator.ru
+        .popup__left
+          p ООО «ПО «Новатор» специализируется на разработке и производстве аппаратов воздушного охлаждения (АВО), с упором на модернизацию и повышения их эффективности.
+        .popup__right
+          img.feedback(src="/img/feedbacks/Новатор.jpg")
+        include hashtags.pug
+    li
+      section.popup
+        .popup__btn
+        h1 ООО «Инвайро»
+        a.popup__link(href='https://enviro.su/') www.enviro.su
+        .popup__left
+          p Компания ООО «Инвайро» занимается мусоропереработкой, гащоочисткой, уничтожением опасных отходов, обезвреживанием медицинских отходов, а также рекультивацией отходов в энергию и тепло.
+        .popup__right
+          img.feedback(src="/img/feedbacks/Инвайро.jpg")
+        include hashtags.pug
+    li
+      section.popup
+        .popup__btn
+        h1 ООО «Адсорбционная техника»
+        .popup__left
+          p ООО «Адсорбционная техника» осуществляем производство теплообменных устройств, оборудования для кондиционирования воздуха промышленного холодильного и морозильного оборудования, производство оборудования для фильтрования и очистки газов.
+        .popup__right
+          img.feedback(src="/img/feedbacks/А-техника.jpg")
+        include hashtags.pug
+    li
+      section.popup
+        .popup__btn
+        h1 ООО «Синтез Технолоджи»
+        a.popup__link(href='http://syntechno.ru/') www.syntechno.ru
+        .popup__left
+          p ООО «Синтез Технолоджи» занимается производством основных неорганических химических веществ, производством изделий технического назначения из драгоценных металлов, обработкой драгоценных, полудрагоценных, поделочных и синтетических камней.
+        .popup__right
+          img.feedback(src="/img/feedbacks/Синтез Технолоджи.jpg")
+        include hashtags.pug
+    li
+      section.popup
+        .popup__btn
+        h1 ГК «Тира»
+        a.popup__link(href='https://tira.ru/') www.tira.ru
+        .popup__left
+          p Группа промышленных компаний "Корпорация "ТИРА" объединяет предприятия, занимающиеся разработкой, производством, поставкой, внедрением и сопровождением мощной радиопередающей аппаратуры и комплексов для профессиональной радиосвязи военного и гражданского назначения, оборудования теле и радиовещательной продукции.
+        .popup__right
+        include hashtags.pug
+    li
+      section.popup
+        .popup__btn
+        h1 АО «Тихвинский вагоностроительный завод»
+        a.popup__link(href='http://www.tvsz.ru/') www.tvsz.ru
+        .popup__left
+          p Предприятие является одним из самых масштабных объектов транспортного машиностроения в Европе по объему инвестиций, производственным площадям и уровню технического оснащения.
+        .popup__right
+        include hashtags.pug
+    li
+      section.popup
+        .popup__btn
+        h1 ООО «РОСНА Инжиниринг»
+        a.popup__link(href='http://rosna.spb.ru/') www.rosna.spb.ru
+        .popup__left
+          p Компания занимается техническим и технологическим аудитом, поставкой и внедрением, техническим обслуживанием, ремонтом и модернизацией промышленного оборудования, а также производством собственного оборудования.
+        .popup__right
+        include hashtags.pug
+    li
+      section.popup
+        .popup__btn
+        h1 ООО «ПК «Ландскрона»
+        a.popup__link(href='http://www.vari.ru/') www.vari.ru
+        .popup__left
+          p Российская производственная компания, специализирующаяся на выпуске высококачественной алюминиевой посуды с антипригарным покрытием компании Whitford.
+        .popup__right
+        include hashtags.pug
+    li
+      section.popup
+        .popup__btn
+        h1 АО «Завод художественных красок «Невская палитра» 
+        a.popup__link(href='http://www.nevskayapalitra.ru/') www.nevskayapalitra.ru
+        .popup__left
+          p Завод художественных красок «Невская палитра» на протяжении 80 лет выпускает продукцию высшего качества для профессиональных художников и любителей творчества.
+        .popup__right
+        include hashtags.pug
+    li
+      section.popup
+        .popup__btn
+        h1 ООО «Лаборатория цифрового зрения»
+        a.popup__link(href='https://divisionlabs.com/') www.divisionlabs.com
+        .popup__left
+          p ООО «Лаборатория цифрового зрения» является российским производителем автоматических комплексов фотовидеофиксации (КФВФ) нарушений Правил дорожного движения под торговой маркой «Птолемей».
+        .popup__right
+        include hashtags.pug
+    li
+      section.popup
+        .popup__btn
+        h1 АО «Завод «Красный Выборжец»
+        a.popup__link(href='http://kv-spb.ru/') www.kv-spb.ru
+        .popup__left
+          p Одно из ведущих в России предприятий по обработке цветных металлов. Предприятие выпускает широкий ассортимент изделий из меди и сплавов на ее основе в виде листов и лент. 
+        .popup__right
+        include hashtags.pug
+    li
+      section.popup
+        .popup__btn
+        h1 ООО «Оптотехника»
+        a.popup__link(href='') 
+        .popup__left
+          p Предприятие занимается производством приборов, датчиков, аппаратуры и инструментов для измерения, контроля и испытаний, а также производством  оптических приборов, фото- и кинооборудования и разработкой программного обеспечения для них.
+        .popup__right
+        include hashtags.pug
   if add_link_for_clients
     a.companies__btn(href='/about/our-clients.html') Подробнее
   else 
