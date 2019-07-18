@@ -1,5 +1,6 @@
 doctype
 html
+  -let calatog_full_height = true;
   -let title = 'Производство металлоконструкций'
   -let description = 'Изготовление металлоконструкций любой сложности. Производство и монтаж индивидуальных и серийных конструкций'
   -let keywords = ' металлоконструкции, производство металлоконструкций, изготовление металлоконструкций'
@@ -7,8 +8,10 @@ html
   body.body--parallax
     include ../includes/preloader.pug
     include ../includes/main-header.pug
+    
     section.metalstructures
-        //- h1.title Металлоконструкции
+        include ../includes/catalog.pug
+        h1.title Металлоконструкции
         ul.assortiment
             li.assortiment__item.assortiment__item--1
                 a.assortiment__link(href='/metal-structures/pipeline-supports.html')
@@ -93,4 +96,20 @@ html
     include ../includes/popupform.pug
     include ../includes/main-footer.pug
 script(src="/js/common.js")
+script.
+    $('.switch--checked').parent().siblings('.catalog__links').css('display', 'block');
 
+    $('.catalog__groupname').click(function() {
+        if( $(this).children('.switch').hasClass('switch--checked') ) {
+            $(this).siblings(".catalog__links").slideUp();
+            $(this).children('.switch').removeClass('switch--checked');
+            $(this).parent().removeClass('catalog__item--active');
+        } else {
+            $('.switch--checked').removeClass('switch--checked');
+            $('.catalog__links').slideUp();
+            $('.catalog__item--active').removeClass('catalog__item--active');
+            $(this).siblings('.catalog__links').slideDown();
+            $(this).children('.switch').addClass('switch--checked');
+            $(this).parent().addClass('catalog__item--active');
+        }
+    });
