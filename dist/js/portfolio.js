@@ -1,22 +1,11 @@
 $(document).ready(function() {
 
-  // let $grid = $('.portfolio__grid').isotope({
-  //   itemSelector: '.portfolio__item',
-  //   layoutMode: 'fitRows'
-  // });
-
-  // $('.portfolio__btns').on( 'click', 'li.btn', function() {
-  //   let filterValue = $(this).attr('data-filter');
-  //   $grid.isotope({ filter: filterValue });
-  // });
-
-
   function toggleBtn() {
     $(this).siblings('.btn--active').removeClass('btn--active');
     $(this).addClass('btn--active');
   };
 
-  $('.portfolio__btns .btn').click( toggleBtn);
+  $('.portfolio__btns .btn').click( toggleBtn );
 
 
   var itemSelector = '.portfolio__item'; 
