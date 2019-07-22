@@ -1651,6 +1651,26 @@ blockquote {
       background-position: 0 -16554px; }
       .companies__item:nth-child(32):hover {
         background-position: 0 -16821px; }
+    .companies__item:nth-child(33) {
+      background-position: 0 -17088px; }
+      .companies__item:nth-child(33):hover {
+        background-position: 0 -17355px; }
+    .companies__item:nth-child(34) {
+      background-position: 0 -17622px; }
+      .companies__item:nth-child(34):hover {
+        background-position: 0 -17889px; }
+    .companies__item:nth-child(35) {
+      background-position: 0 -18156px; }
+      .companies__item:nth-child(35):hover {
+        background-position: 0 -18423px; }
+    .companies__item:nth-child(36) {
+      background-position: 0 -18690px; }
+      .companies__item:nth-child(36):hover {
+        background-position: 0 -18957px; }
+    .companies__item:nth-child(37) {
+      background-position: 0 -19224px; }
+      .companies__item:nth-child(37):hover {
+        background-position: 0 -19491px; }
     .companies__item:hover .companies__title {
       opacity: 1;
       -webkit-transform: translateY(180px);
