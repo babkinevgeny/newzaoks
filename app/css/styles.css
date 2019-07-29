@@ -1452,6 +1452,26 @@ blockquote {
         .assortiment .owl-nav button.owl-next:hover {
           opacity: .7; }
 
+.companies--clients {
+  padding: 40px 0; }
+  .companies--clients .companies__list .owl-stage-outer .title {
+    display: inline-block;
+    margin: 0 !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-transform: none;
+    padding-top: 15px; }
+    .companies--clients .companies__list .owl-stage-outer .title a {
+      text-decoration: none;
+      display: block;
+      color: #06abdd;
+      height: 100%;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box; }
+      .companies--clients .companies__list .owl-stage-outer .title a:hover {
+        color: #07bef6; }
+
 .companies {
   padding-bottom: 40px; }
   .companies__list {
@@ -2427,6 +2447,9 @@ blockquote {
         -webkit-align-items: middle;
             -ms-flex-align: middle;
                 align-items: middle; } }
+
+.bottom-line {
+  background: #eceded; }
 
 .dropdown {
   margin: 0 auto 20px auto;

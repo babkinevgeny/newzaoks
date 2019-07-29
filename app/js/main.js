@@ -43,6 +43,8 @@ $(document).ready(function() {
     autoHeight: true,
     dots: false 
   });
+  $('.companies--clients .companies__list .owl-stage-outer').prepend('<h2 class="title title--uppercase"><a href="/about/our-clients.html">Наши клиенты</a></h2>');
+
 
   $('.intro__slider').bxSlider({
     auto: true,

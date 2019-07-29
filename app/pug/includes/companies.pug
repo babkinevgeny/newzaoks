@@ -1,6 +1,4 @@
 section.companies.companies--clients
-  h2.title.title--uppercase Наши клиенты
-  .undertitle (Мы работаем с клиентами из самых разных отраслей промышленности)
   if add_link_for_clients 
     ul.companies__list.companies__list--slider.owl-carousel.owl-theme
       div.companies__slide.companies__slide--1
@@ -91,6 +89,8 @@ section.companies.companies--clients
           .companies__title Здесь может быть ваша компания
           a.companies__link(href='#')
   else
+    h2.title.title--uppercase Наши клиенты
+    .undertitle (Мы работаем с клиентами из самых разных отраслей промышленности)
     ul.companies__list.companies__list--flex
       li.companies__item
         .companies__title АО «НПП «Промтрансавтоматика»
