@@ -19,10 +19,10 @@ $(document).ready(function() {
   });
   
   var responsiveIsotope = [
-		[1340, 15]
+		[1340, 20]
 	];
   
-  var itemsPerPageDefault = 15;
+  var itemsPerPageDefault = 20;
 	var itemsPerPage = defineItemsPerPage();
 	var currentNumberPages = 1;
 	var currentPage = 1;
