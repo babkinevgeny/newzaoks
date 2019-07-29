@@ -1452,6 +1452,26 @@ blockquote {
         .assortiment .owl-nav button.owl-next:hover {
           opacity: .7; }
 
+.companies--clients {
+  padding: 40px 0; }
+  .companies--clients .companies__list .owl-stage-outer .title {
+    display: inline-block;
+    margin: 0 !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-transform: none;
+    padding-top: 15px; }
+    .companies--clients .companies__list .owl-stage-outer .title a {
+      text-decoration: none;
+      display: block;
+      color: #06abdd;
+      height: 100%;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box; }
+      .companies--clients .companies__list .owl-stage-outer .title a:hover {
+        color: #07bef6; }
+
 .companies {
   padding-bottom: 40px; }
   .companies__list {
@@ -1651,6 +1671,26 @@ blockquote {
       background-position: 0 -16554px; }
       .companies__item:nth-child(32):hover {
         background-position: 0 -16821px; }
+    .companies__item:nth-child(33) {
+      background-position: 0 -17088px; }
+      .companies__item:nth-child(33):hover {
+        background-position: 0 -17355px; }
+    .companies__item:nth-child(34) {
+      background-position: 0 -17622px; }
+      .companies__item:nth-child(34):hover {
+        background-position: 0 -17889px; }
+    .companies__item:nth-child(35) {
+      background-position: 0 -18156px; }
+      .companies__item:nth-child(35):hover {
+        background-position: 0 -18423px; }
+    .companies__item:nth-child(36) {
+      background-position: 0 -18690px; }
+      .companies__item:nth-child(36):hover {
+        background-position: 0 -18957px; }
+    .companies__item:nth-child(37) {
+      background-position: 0 -19224px; }
+      .companies__item:nth-child(37):hover {
+        background-position: 0 -19491px; }
     .companies__item:hover .companies__title {
       opacity: 1;
       -webkit-transform: translateY(180px);
@@ -2407,6 +2447,9 @@ blockquote {
         -webkit-align-items: middle;
             -ms-flex-align: middle;
                 align-items: middle; } }
+
+.bottom-line {
+  background: #eceded; }
 
 .dropdown {
   margin: 0 auto 20px auto;

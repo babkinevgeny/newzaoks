@@ -80,6 +80,32 @@
   }
 }
 
+.companies--clients {
+  padding: 40px 0;
+  .companies__list .owl-stage-outer{
+    .title{
+      display: inline-block;
+      margin: 0 !important;
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-transform: none;
+      padding-top: 15px;
+      a{
+        text-decoration: none;
+        display: block;
+        color: $color-blue;
+        height: 100%;
+        box-sizing: border-box;
+        &:hover{
+          color: lighten($color-blue, 5%);
+        }
+      }
+    }
+  }
+}
+
+
 // .bx-wrapper--products,
 // .bx-wrapper--services {
 //   max-width: 1340px !important;
