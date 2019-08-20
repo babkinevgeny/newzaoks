@@ -7,6 +7,16 @@ $(document).ready(function() {
 
   $('.portfolio__btns .btn').click( toggleBtn );
 
+  $('.portfolio__item').click(function() {
+	  const currentSrc = $(this).children('img').attr('src');
+	  $('.modal').fadeIn().css('display', 'flex');
+	  $('.modal img').attr('src', currentSrc);
+  });
+
+  $('.modal').click(function() {
+	$('.modal').fadeOut();
+  });
+
 
   var itemSelector = '.portfolio__item'; 
 
@@ -19,10 +29,10 @@ $(document).ready(function() {
   });
   
   var responsiveIsotope = [
-		[1340, 20]
+		[1340, 24]
 	];
   
-  var itemsPerPageDefault = 20;
+  var itemsPerPageDefault = 24;
 	var itemsPerPage = defineItemsPerPage();
 	var currentNumberPages = 1;
 	var currentPage = 1;
@@ -98,6 +108,7 @@ $(document).ready(function() {
 			$isotopePager.html('');
 			
 			for( var i = 0; i < currentNumberPages; i++ ) {
+				if (currentNumberPages === 1) return;
 				var $pager = i === 0 ? $('<li class="pager btn btn--active" '+pageAtribute+'="'+(i+1)+'"></li>') : $('<li class="pager btn" '+pageAtribute+'="'+(i+1)+'"></li>');
 					$pager.html(i+1);
 					

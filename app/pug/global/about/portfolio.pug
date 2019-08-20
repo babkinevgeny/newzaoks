@@ -19,6 +19,9 @@ html
         li.btn(data-filter=".milling_works_with_cnc") Фрезерные работы с ЧПУ
         li.btn(data-filter=".gear_cutting_works") Зубонарезные работы
         li.btn(data-filter=".painting") Покраска
+        li.btn(data-filter=".chrome_plating") Хромирование
+        
+
         li.btn(data-filter=".turning_milling_works_with_cnc") Токарно-фрезерные работы с ЧПУ
         li.btn(data-filter=".electric_erosion") Электроэрозия
         li.btn(data-filter=".metal_bending") Гибка металла
@@ -26,10 +29,12 @@ html
         li.btn(data-filter=".welding_works") Сварочные работы
         li.btn(data-filter=".boring_works") Координатно-расточные работы
         li.btn(data-filter=".grinding_works") Шлифовальные работы
+        li.btn(data-filter=".rolling") Вальцовка
+
         li.btn(data-filter=".carousel_worls_with_cnc") Карусельная обработка с ЧПУ
         li.btn(data-filter=".hydroabrasive_cutting") Гидрообразивная резка
-        li.btn(data-filter=".chrome_plating") Хромирование
-        li.btn(data-filter=".rolling") Вальцовка
+        
+        
         li.btn(data-filter=".metal-structures") Металлоконструкции
         li.btn(data-filter=".assembly_works") Слесарно-сборочные работы
         li.btn(data-filter=".serial_production") Серийное производство
@@ -246,7 +251,10 @@ html
           img(src="/img/carousel/сварочные работы1.jpg")
         .portfolio__item.welding_works
           img(src="/img/carousel/сварочные работы2.jpg")
-          
+      .modal
+        //-span.close &times;
+        img.modal-content
+</div> 
 
     include ../../includes/popupform.pug
     include ../../includes/bottom-line.pug
