@@ -94,6 +94,7 @@
     padding-left: 35px;
     padding-bottom: 5px;
     display: none;
+    width: 290px;
     & > li {
       padding: 5px 0;
       line-height: 14px;
@@ -103,7 +104,7 @@
       text-decoration: none;
       font-size: 14px;
       position: relative;
-      white-space: nowrap;
+      white-space: pre-line;
       overflow: hidden;
       &:before{
         content: '';
