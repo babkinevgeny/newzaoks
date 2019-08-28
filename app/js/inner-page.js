@@ -2,8 +2,8 @@ $(document).ready(function() {
   $("#performed_works").owlCarousel({
     loop:true,
     autoplay:true,
-    items:6,
-    margin:10,
+    items: 6,
+    margin: 20,
     dots:true
   });
 

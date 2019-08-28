@@ -3307,6 +3307,14 @@ blockquote {
     .infobuttons .btn:last-child {
       margin-right: 0; }
 
+.owl-carousel {
+  max-width: -webkit-calc(203px*6 + 20px*5);
+  max-width: calc(203px*6 + 20px*5);
+  margin: 0 auto; }
+
+.owl-item {
+  max-width: 203px; }
+
 .loader {
   background: none repeat scroll 0 0 #fff;
   bottom: 0;
@@ -3462,14 +3470,15 @@ blockquote {
   padding-top: 10px; }
 
 #performed_works .owl-dot {
-  width: 10px;
-  height: 10px;
-  background: #8a8a8a;
+  width: 5px;
+  height: 5px;
+  border: 1px solid #8a8a8a;
+  background: white;
   -webkit-border-radius: 50%;
           border-radius: 50%;
   margin: 0 5px; }
   #performed_works .owl-dot.active {
-    background: #06abdd; }
+    background: #8a8a8a; }
   #performed_works .owl-dot:focus {
     outline: none; }
 
@@ -3702,12 +3711,64 @@ blockquote {
     height: 100%;
     /* Full height */
     overflow: auto;
-    cursor: pointer; }
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.7); }
   .portfolio .modal-content {
     margin: auto;
     display: block;
     width: 80%;
-    max-width: 700px; }
+    max-width: 700px;
+    position: relative; }
+    .portfolio .modal-content img {
+      width: 100%;
+      cursor: default; }
+  .portfolio .modal__btns {
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    left: 0;
+    width: 100%; }
+  .portfolio .modal__btn {
+    cursor: pointer;
+    border: none;
+    background: none;
+    outline: none;
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    position: absolute;
+    top: 0; }
+    .portfolio .modal__btn--prev {
+      background: url("../img/play-button.svg") no-repeat, rgba(255, 255, 255, 0.7);
+      -webkit-background-size: 20px 20px;
+              background-size: 20px 20px;
+      background-position: 12px 10px;
+      -webkit-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+              transform: rotate(180deg);
+      left: 10px; }
+      .portfolio .modal__btn--prev:hover {
+        background: url("../img/play-button.svg") no-repeat, rgba(255, 255, 255, 0.5);
+        -webkit-background-size: 20px 20px;
+                background-size: 20px 20px;
+        background-position: 12px 10px; }
+    .portfolio .modal__btn--next {
+      background: url("../img/play-button.svg") no-repeat, rgba(255, 255, 255, 0.7);
+      -webkit-background-size: 20px 20px;
+              background-size: 20px 20px;
+      background-position: 12px 10px;
+      right: 10px; }
+      .portfolio .modal__btn--next:hover {
+        background: url("../img/play-button.svg") no-repeat, rgba(255, 255, 255, 0.5);
+        -webkit-background-size: 20px 20px;
+                background-size: 20px 20px;
+        background-position: 12px 10px; }
+    .portfolio .modal__btn--disabled {
+      display: none; }
   .portfolio #caption {
     margin: auto;
     display: block;

@@ -7,15 +7,82 @@ $(document).ready(function() {
 
   $('.portfolio__btns .btn').click( toggleBtn );
 
+  
+
+  const checkIndex = (index) => {
+	const imgs = $('.portfolio__grid .portfolio__item:visible');
+	//console.log(index)
+	if (index === 0) {
+		if (imgs.length === 1) {
+			$('.modal__btn').addClass('modal__btn--disabled');
+			//console.log('im the only one')
+		} else {
+			$('.modal__btn--prev').addClass('modal__btn--disabled');
+			$('.modal__btn--next').removeClass('modal__btn--disabled');
+			//console.log('im the first one!')
+		}
+	} else if (index === imgs.length - 1) {
+	  $('.modal__btn--next').addClass('modal__btn--disabled');
+	  $('.modal__btn--prev').removeClass('modal__btn--disabled');
+	  //console.log('im the last one :(')
+	} else {
+		$('.modal__btn').removeClass('modal__btn--disabled');
+		//console.log('im just in the middle')
+	}
+  };
+
   $('.portfolio__item').click(function() {
-	  const currentSrc = $(this).children('img').attr('src');
-	  $('.modal').fadeIn().css('display', 'flex');
-	  $('.modal img').attr('src', currentSrc);
+	const currentSrc = $(this).children('img').attr('src');
+	$('.modal').fadeIn().css('display', 'flex');
+	$('.modal img').attr('src', currentSrc);
+	const imgs = $('.portfolio__grid .portfolio__item:visible');
+	checkIndex($('.portfolio__item:visible').index($(this)));
   });
 
   $('.modal').click(function() {
 	$('.modal').fadeOut();
   });
+
+  $('.modal-content').click(function(event) {
+	event.stopPropagation();
+  })
+
+  $('.modal__btn').click(function(event) {
+	event.stopPropagation();
+	const imgs = $('.portfolio__grid .portfolio__item:visible img');
+	const currentImg = $('.modal img').attr('src');
+	let srcList = [];
+	imgs.each(function() {
+		srcList.push($(this).attr('src'));
+	});
+	
+	for (let i = 0; i < srcList.length; i++) {
+		// if (srcList.length === 1) {
+		// 	checkIndex(i+1);
+		// }
+
+		if (srcList[i] === currentImg) {
+			if ($(this).hasClass('modal__btn--next')){
+				showImg(srcList[i+1]);
+				checkIndex(i+1);
+			} else {
+				showImg(srcList[i-1]);
+				checkIndex(i-1);
+			}
+			break;	
+		}
+	}
+	
+  });
+
+  const showImg = src => {
+	$('.modal img').fadeOut(200);
+	setTimeout(function(){
+        $('.modal img').attr('src', src).fadeIn();
+    },200);
+
+	//$('.modal img').attr('src', src).fadeIn('slow');
+  }
 
 
   var itemSelector = '.portfolio__item'; 

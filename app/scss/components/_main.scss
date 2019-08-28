@@ -202,3 +202,13 @@
     }
   }
 }
+
+.owl{
+  &-carousel{
+    max-width: calc(203px*6 + 20px*5);
+    margin: 0 auto;
+  }
+  &-item{
+    max-width: 203px;
+  }
+}

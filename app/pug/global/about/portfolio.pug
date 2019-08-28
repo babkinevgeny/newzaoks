@@ -252,8 +252,11 @@ html
         .portfolio__item.welding_works
           img(src="/img/carousel/сварочные работы2.jpg")
       .modal
-        //-span.close &times;
-        img.modal-content
+        .modal-content
+          img
+          .modal__btns
+            button.modal__btn.modal__btn--prev(type="button")
+            button.modal__btn.modal__btn--next(type="button")
 </div> 
 
     include ../../includes/popupform.pug
