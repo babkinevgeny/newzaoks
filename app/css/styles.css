@@ -3283,6 +3283,12 @@ blockquote {
         background: #fff; }
       .main__buttons .outer:hover {
         background: #eceded; }
+  .main .owl-carousel {
+    max-width: -webkit-calc(203px*6 + 20px*5);
+    max-width: calc(203px*6 + 20px*5);
+    margin: 0 auto; }
+  .main .owl-item {
+    max-width: 203px; }
 
 .infobuttons {
   display: -webkit-flex;
@@ -3306,14 +3312,6 @@ blockquote {
     margin-bottom: 20px; }
     .infobuttons .btn:last-child {
       margin-right: 0; }
-
-.owl-carousel {
-  max-width: -webkit-calc(203px*6 + 20px*5);
-  max-width: calc(203px*6 + 20px*5);
-  margin: 0 auto; }
-
-.owl-item {
-  max-width: 203px; }
 
 .loader {
   background: none repeat scroll 0 0 #fff;

@@ -164,6 +164,15 @@
       }
     }
   }
+  .owl{
+    &-carousel{
+      max-width: calc(203px*6 + 20px*5);
+      margin: 0 auto;
+    }
+    &-item{
+      max-width: 203px;
+    }
+  }
 }
 
 .infobuttons{
@@ -200,15 +209,5 @@
     &:last-child{
       margin-right: 0;
     }
-  }
-}
-
-.owl{
-  &-carousel{
-    max-width: calc(203px*6 + 20px*5);
-    margin: 0 auto;
-  }
-  &-item{
-    max-width: 203px;
   }
 }
