@@ -1,4 +1,5 @@
-.bottom-line
+-let conditional = parent === 'Продукция' || parent === 'Металлоконструкции' || parent === 'Металлообработка';
+div(class=conditional ? 'bottom-line bottom-line--over' : 'bottom-line')
   .bottom-line__inner
     .bottom-line__column.bottom-line__column--left
       img(src='/img/logo--s.png', alt='Логотип', width="50")

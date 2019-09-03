@@ -147,6 +147,9 @@
   min-height: 62px;
   box-sizing: border-box;
   border-top: 1px solid $color-blue;
+  &--over{
+    z-index: 3;
+  }
 
   &__inner {
     max-width: 1340px;
