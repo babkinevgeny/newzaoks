@@ -163,9 +163,13 @@ html
         +portfolio__item('аппарель.jpg', 'welding_works', 'metal_bending', 'metal-structures', 'painting')
         +portfolio__item('гидроабразивная резка.jpg', 'hydroabrasive_cutting')
 
-        +portfolio__item('сварочные работы.jpg"', 'welding_works')
+        +portfolio__item('сварочные работы.jpg', 'welding_works')
         +portfolio__item('сварочные работы1.jpg', 'welding_works')
         +portfolio__item('сварочные работы2.jpg', 'welding_works')
+
+        -for( let i = 1; i < 37; i++) {
+          +portfolio__item(`/newest/${i}.jpg`, '*')
+        -}
 
       .modal
         .modal-content
