@@ -7,10 +7,17 @@ $(document).ready(function() {
 
   $('.portfolio__btns .btn').click( toggleBtn );
 
+  const getActiveFilter = () => {
+	  return $('.portfolio__btns .btn--active').attr('data-filter');
+  }
+
   
 
   const checkIndex = (index) => {
-	const imgs = $('.portfolio__grid .portfolio__item:visible');
+	const activeFilter = getActiveFilter();
+	//console.log(activeFilter);
+	const imgs = $(`.portfolio__grid .portfolio__item${activeFilter}`);
+	console.log(imgs.length)
 	//console.log(index)
 	if (index === 0) {
 		if (imgs.length === 1) {
@@ -36,7 +43,8 @@ $(document).ready(function() {
 	$('.modal').fadeIn().css('display', 'flex');
 	$('.modal img').attr('src', currentSrc);
 	const imgs = $('.portfolio__grid .portfolio__item:visible');
-	checkIndex($('.portfolio__item:visible').index($(this)));
+	const activeFilter = getActiveFilter();
+	checkIndex($(`.portfolio__item${activeFilter}`).index($(this)));
   });
 
   $('.modal').click(function() {
@@ -48,8 +56,9 @@ $(document).ready(function() {
   })
 
   $('.modal__btn').click(function(event) {
+	const activeFilter = getActiveFilter();
 	event.stopPropagation();
-	const imgs = $('.portfolio__grid .portfolio__item:visible img');
+	const imgs = $(`.portfolio__grid .portfolio__item${activeFilter} img`);
 	const currentImg = $('.modal img').attr('src');
 	let srcList = [];
 	imgs.each(function() {
@@ -90,16 +99,16 @@ $(document).ready(function() {
 	var $container = $('.portfolio__grid').isotope({
 		itemSelector: itemSelector,
 		masonry: {
-		  columnWidth: itemSelector,
-		  isFitWidth: true
+			columnWidth: itemSelector,
+		  //isFitWidth: true
 		}
   });
   
   var responsiveIsotope = [
-		[1340, 24]
+		[991, 30]
 	];
   
-  var itemsPerPageDefault = 24;
+  var itemsPerPageDefault = 30;
 	var itemsPerPage = defineItemsPerPage();
 	var currentNumberPages = 1;
 	var currentPage = 1;
@@ -111,9 +120,11 @@ $(document).ready(function() {
 	function changeFilter(selector) {
     //let filterValue = $(this).attr('data-filter');
   //   $grid.isotope({ filter: filterValue });
-		$container.isotope({
-			filter: selector
-		});
+		$container.isotope(
+			{
+				filter: selector
+			}
+		)
 	}
 
 
@@ -180,15 +191,15 @@ $(document).ready(function() {
 					$pager.html(i+1);
 					
 					$pager.click(function(){
-            var page = $(this).eq(0).attr(pageAtribute);
-            goToPage(page);
-            toggleBtn.call( $(this) );
+						var page = $(this).eq(0).attr(pageAtribute);
+						goToPage(page);
+						toggleBtn.call( $(this) );
 					});
 
 				$pager.appendTo($isotopePager);
 			}
 
-			$container.after($isotopePager);
+			$('.portfolio__container').after($isotopePager);
 
 		}();
 

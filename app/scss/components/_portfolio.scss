@@ -3,7 +3,13 @@
   min-height: 975px;
   padding: 0 20px;
   margin: 0 auto;
+  position: relative;
+  &__container{
+    display: flex;
+    margin-bottom: 70px;
+  }
   &__btns{
+    width: 250px;
     list-style-type: none;
     font-family: $font;
     margin: 0;
@@ -12,13 +18,14 @@
     display: -ms-flex;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     li{
-      margin-right: 5px;
+      //margin-right: 5px;
       margin-bottom: 10px;
       padding: 5px 10px;
       border-radius: 2px;
       &:last-child{
-        margin-right: 0;
+        margin-bottom: 0;
       }
     }
   }
@@ -31,12 +38,12 @@
     margin-bottom: 20px !important;
   }
   &__grid{
-    width: 100% !important;
-    // min-height: 708px;
+    width: 991px !important;
+    min-height: 935px;
   }
 
   &__item{
-    width: calc(100% / 6);
+    width: calc(100% / 5);
     padding: 10px;
     box-sizing: border-box;
     cursor: pointer;
@@ -51,11 +58,15 @@
     }
   }
   .isotope-pager{
+    width: 100%;
     text-align: center;
     margin: 0;
     padding: 0;
     list-style-type: none;
     padding: 10px 0 20px;
+    position: absolute;
+    left: 0;
+    bottom: -60px;
   }
   .pager{
     display: inline-block;

@@ -3637,12 +3637,20 @@ blockquote {
   min-height: 975px;
   padding: 0 20px;
   margin: 0 auto;
+  position: relative;
   /* The Modal (background) */
   /* Modal Content (Image) */
   /* Caption of Modal Image (Image Text) - Same Width as the Image */
   /* The Close Button */
   /* 100% Image Width on Smaller Screens */ }
+  .portfolio__container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 70px; }
   .portfolio__btns {
+    width: 250px;
     list-style-type: none;
     font-family: "Open Sans", Arial, sans-serif;
     margin: 0;
@@ -3654,15 +3662,19 @@ blockquote {
     display: flex;
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
+            flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
     .portfolio__btns li {
-      margin-right: 5px;
       margin-bottom: 10px;
       padding: 5px 10px;
       -webkit-border-radius: 2px;
               border-radius: 2px; }
       .portfolio__btns li:last-child {
-        margin-right: 0; }
+        margin-bottom: 0; }
   .portfolio .title {
     margin-top: 20px !important;
     margin-bottom: 10px !important; }
@@ -3670,10 +3682,11 @@ blockquote {
     margin-top: 10px !important;
     margin-bottom: 20px !important; }
   .portfolio__grid {
-    width: 100% !important; }
+    width: 991px !important;
+    min-height: 935px; }
   .portfolio__item {
-    width: -webkit-calc(100% / 6);
-    width: calc(100% / 6);
+    width: -webkit-calc(100% / 5);
+    width: calc(100% / 5);
     padding: 10px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -3687,11 +3700,15 @@ blockquote {
       transition: all .2s ease-in-out;
       width: 100%; }
   .portfolio .isotope-pager {
+    width: 100%;
     text-align: center;
     margin: 0;
     padding: 0;
     list-style-type: none;
-    padding: 10px 0 20px; }
+    padding: 10px 0 20px;
+    position: absolute;
+    left: 0;
+    bottom: -60px; }
   .portfolio .pager {
     display: inline-block;
     margin-right: 20px;
