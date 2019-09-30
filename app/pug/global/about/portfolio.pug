@@ -13,7 +13,81 @@ html
       h1.title.title--uppercase Портфолио
       p.undertitle (Мы производим более 10000 различных наименований продукции)
       .portfolio__container
-        ul.portfolio__btns
+        aside.catalog
+          ul.catalog__list
+            li.catalog__item
+              .catalog__groupname
+                .catalog__icon
+                .catalog__name Виды работ
+                .switch.switch--checked
+                  span.switch__bg
+                  span.switch__btn
+              ul.catalog__links
+                li(data-filter="*") 
+                  a.active Все работы
+                li(data-filter=".turning_automat") 
+                  a Токарный автомат
+                li(data-filter=".turning_works") 
+                  a Токарные работы
+                li(data-filter=".turning_works_with_cnc") 
+                  a Токарные работы с ЧПУ
+                li(data-filter=".milling_works") 
+                  a Фрезерные работы
+                li(data-filter=".milling_works_with_cnc") 
+                  a Фрезерные работы с ЧПУ
+                li(data-filter=".gear_cutting_works") 
+                  a Зубонарезные работы
+                li(data-filter=".painting") 
+                  a Покраска
+                li(data-filter=".chrome_plating") 
+                  a Хромирование
+                li(data-filter=".turning_milling_works_with_cnc") 
+                  a Токарно-фрезерные работы с ЧПУ
+                li(data-filter=".electric_erosion") 
+                  a Электроэрозия
+                li(data-filter=".metal_bending") 
+                  a Гибка металла
+                li(data-filter=".laser_cutting") 
+                  a Лазерная резка
+                li(data-filter=".welding_works") 
+                  a Сварочные работы
+                li(data-filter=".boring_works") 
+                  a Координатно-расточные работы
+                li(data-filter=".grinding_works") 
+                  a Шлифовальные работы
+                li(data-filter=".rolling") 
+                  a Вальцовка
+                li(data-filter=".carousel_worls_with_cnc") 
+                  a Карусельная обработка с ЧПУ
+                li(data-filter=".hydroabrasive_cutting") 
+                  a Гидрообразивная резка
+                li(data-filter=".assembly_works") 
+                  a Слесарно-сборочные работы
+            li.catalog__item
+                .catalog__groupname
+                  .catalog__icon
+                  .catalog__name Виды изделий
+                  .switch
+                    span.switch__bg
+                    span.switch__btn
+                ul.catalog__links
+                  li(data-filter=".metal-structures") 
+                    a Металлоконструкции
+                  li(data-filter=".dimensional_parts") 
+                    a Габаритные детали
+                  li(data-filter=".precision_parts") 
+                    a Прецизионные детали
+            li.catalog__item
+                .catalog__groupname
+                  .catalog__icon
+                  .catalog__name Серийное производство
+                  .switch
+                    span.switch__bg
+                    span.switch__btn
+                ul.catalog__links
+                  li(data-filter=".serial_production") 
+                    a Серийное производство
+        //-ul.portfolio__btns
           li.btn.btn--active(data-filter="*") Все работы
           li.btn(data-filter=".turning_automat") Токарный автомат
           li.btn(data-filter=".turning_works") Токарные работы
@@ -23,8 +97,6 @@ html
           li.btn(data-filter=".gear_cutting_works") Зубонарезные работы
           li.btn(data-filter=".painting") Покраска
           li.btn(data-filter=".chrome_plating") Хромирование
-          
-
           li.btn(data-filter=".turning_milling_works_with_cnc") Токарно-фрезерные работы с ЧПУ
           li.btn(data-filter=".electric_erosion") Электроэрозия
           li.btn(data-filter=".metal_bending") Гибка металла
@@ -33,17 +105,16 @@ html
           li.btn(data-filter=".boring_works") Координатно-расточные работы
           li.btn(data-filter=".grinding_works") Шлифовальные работы
           li.btn(data-filter=".rolling") Вальцовка
-
           li.btn(data-filter=".carousel_worls_with_cnc") Карусельная обработка с ЧПУ
           li.btn(data-filter=".hydroabrasive_cutting") Гидрообразивная резка
-          
-          
-          li.btn(data-filter=".metal-structures") Металлоконструкции
           li.btn(data-filter=".assembly_works") Слесарно-сборочные работы
-          li.btn(data-filter=".serial_production") Серийное производство
+
+          li.btn(data-filter=".metal-structures") Металлоконструкции
           li.btn(data-filter=".dimensional_parts") Габаритные детали
           li.btn(data-filter=".precision_parts") Прецизионные детали
 
+          li.btn(data-filter=".serial_production") Серийное производство
+      
         .portfolio__grid
           +portfolio__item('стопорная ось.jpg', 'turning_automat', 'serial_production')
           +portfolio__item('ось.jpg', 'turning_automat', 'serial_production')
@@ -185,4 +256,5 @@ html
 script(src="/js/common.js")
 script(src="/libs/isotope/isotope.min.js")
 script(src="/js/portfolio.js")
+script(src="/js/dropdown.js")
 

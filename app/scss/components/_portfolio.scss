@@ -63,7 +63,7 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
-    padding: 10px 0 20px;
+    padding: 10px 0 10px;
     position: absolute;
     left: 0;
     bottom: -60px;
@@ -183,6 +183,54 @@
   @media only screen and (max-width: 700px){
     .modal-content {
       width: 100%;
+    }
+  }
+
+  .catalog{ 
+    width: 350px;
+    list-style-type: none;
+    font-family: $font;
+    margin: 0;
+    padding: 0 10px;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 70px;
+    margin-top: 10px;
+    border: none;
+    &__groupname{
+      padding: 7px 0;
+      font-weight: 500;
+      cursor: pointer;
+      color: $color-gray;
+      display: flex;
+      min-width: 20px;
+      height: 22px;
+      position: relative;
+      justify-content: space-between;
+      &:hover{
+        color: darken($color-gray, 25%);
+        transition: $animation;
+      }
+      a{
+        text-decoration: none;
+        color: $color-gray;
+        &:hover{
+          color: darken($color-gray, 25%);
+          transition: $animation;
+        }
+        &.active{
+          color: #000;
+        }
+      }
+    }
+    &__name{
+      display: inline-block;
     }
   }
 }

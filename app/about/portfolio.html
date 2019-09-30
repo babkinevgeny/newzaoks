@@ -122,32 +122,61 @@
       <h1 class="title title--uppercase">Портфолио</h1>
       <p class="undertitle">(Мы производим более 10000 различных наименований продукции)</p>
       <div class="portfolio__container">
-        <ul class="portfolio__btns">
-          <li class="btn btn--active" data-filter="*">Все работы</li>
-          <li class="btn" data-filter=".turning_automat">Токарный автомат</li>
-          <li class="btn" data-filter=".turning_works">Токарные работы</li>
-          <li class="btn" data-filter=".turning_works_with_cnc">Токарные работы с ЧПУ</li>
-          <li class="btn" data-filter=".milling_works">Фрезерные работы</li>
-          <li class="btn" data-filter=".milling_works_with_cnc">Фрезерные работы с ЧПУ</li>
-          <li class="btn" data-filter=".gear_cutting_works">Зубонарезные работы</li>
-          <li class="btn" data-filter=".painting">Покраска</li>
-          <li class="btn" data-filter=".chrome_plating">Хромирование</li>
-          <li class="btn" data-filter=".turning_milling_works_with_cnc">Токарно-фрезерные работы с ЧПУ</li>
-          <li class="btn" data-filter=".electric_erosion">Электроэрозия</li>
-          <li class="btn" data-filter=".metal_bending">Гибка металла</li>
-          <li class="btn" data-filter=".laser_cutting">Лазерная резка</li>
-          <li class="btn" data-filter=".welding_works">Сварочные работы</li>
-          <li class="btn" data-filter=".boring_works">Координатно-расточные работы</li>
-          <li class="btn" data-filter=".grinding_works">Шлифовальные работы</li>
-          <li class="btn" data-filter=".rolling">Вальцовка</li>
-          <li class="btn" data-filter=".carousel_worls_with_cnc">Карусельная обработка с ЧПУ</li>
-          <li class="btn" data-filter=".hydroabrasive_cutting">Гидрообразивная резка</li>
-          <li class="btn" data-filter=".metal-structures">Металлоконструкции</li>
-          <li class="btn" data-filter=".assembly_works">Слесарно-сборочные работы</li>
-          <li class="btn" data-filter=".serial_production">Серийное производство</li>
-          <li class="btn" data-filter=".dimensional_parts">Габаритные детали</li>
-          <li class="btn" data-filter=".precision_parts">Прецизионные детали</li>
-        </ul>
+        <aside class="catalog">
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <div class="catalog__groupname">
+                <div class="catalog__icon"></div>
+                <div class="catalog__name">Виды работ</div>
+                <div class="switch switch--checked"><span class="switch__bg"></span><span class="switch__btn"></span></div>
+              </div>
+              <ul class="catalog__links">
+                <li data-filter="*"> <a class="active">Все работы</a></li>
+                <li data-filter=".turning_automat"> <a>Токарный автомат</a></li>
+                <li data-filter=".turning_works"> <a>Токарные работы</a></li>
+                <li data-filter=".turning_works_with_cnc"> <a>Токарные работы с ЧПУ</a></li>
+                <li data-filter=".milling_works"> <a>Фрезерные работы</a></li>
+                <li data-filter=".milling_works_with_cnc"> <a>Фрезерные работы с ЧПУ</a></li>
+                <li data-filter=".gear_cutting_works"> <a>Зубонарезные работы</a></li>
+                <li data-filter=".painting"> <a>Покраска</a></li>
+                <li data-filter=".chrome_plating"> <a>Хромирование</a></li>
+                <li data-filter=".turning_milling_works_with_cnc"> <a>Токарно-фрезерные работы с ЧПУ</a></li>
+                <li data-filter=".electric_erosion"> <a>Электроэрозия</a></li>
+                <li data-filter=".metal_bending"> <a>Гибка металла</a></li>
+                <li data-filter=".laser_cutting"> <a>Лазерная резка</a></li>
+                <li data-filter=".welding_works"> <a>Сварочные работы</a></li>
+                <li data-filter=".boring_works"> <a>Координатно-расточные работы</a></li>
+                <li data-filter=".grinding_works"> <a>Шлифовальные работы</a></li>
+                <li data-filter=".rolling"> <a>Вальцовка</a></li>
+                <li data-filter=".carousel_worls_with_cnc"> <a>Карусельная обработка с ЧПУ</a></li>
+                <li data-filter=".hydroabrasive_cutting"> <a>Гидрообразивная резка</a></li>
+                <li data-filter=".assembly_works"> <a>Слесарно-сборочные работы</a></li>
+              </ul>
+            </li>
+            <li class="catalog__item">
+              <div class="catalog__groupname">
+                <div class="catalog__icon"></div>
+                <div class="catalog__name">Виды изделий</div>
+                <div class="switch"><span class="switch__bg"></span><span class="switch__btn"></span></div>
+              </div>
+              <ul class="catalog__links">
+                <li data-filter=".metal-structures"> <a>Металлоконструкции</a></li>
+                <li data-filter=".dimensional_parts"> <a>Габаритные детали</a></li>
+                <li data-filter=".precision_parts"> <a>Прецизионные детали</a></li>
+              </ul>
+            </li>
+            <li class="catalog__item">
+              <div class="catalog__groupname">
+                <div class="catalog__icon"></div>
+                <div class="catalog__name">Серийное производство</div>
+                <div class="switch"><span class="switch__bg"></span><span class="switch__btn"></span></div>
+              </div>
+              <ul class="catalog__links">
+                <li data-filter=".serial_production"> <a>Серийное производство</a></li>
+              </ul>
+            </li>
+          </ul>
+        </aside>
         <div class="portfolio__grid">
           <div class="portfolio__item turning_automat serial_production"><img src="/img/carousel/стопорная ось.jpg"/></div>
           <div class="portfolio__item turning_automat serial_production"><img src="/img/carousel/ось.jpg"/></div>
@@ -320,3 +349,4 @@
 <script src="/js/common.js"></script>
 <script src="/libs/isotope/isotope.min.js"></script>
 <script src="/js/portfolio.js"></script>
+<script src="/js/dropdown.js"></script>
