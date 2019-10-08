@@ -420,6 +420,13 @@ body {
   .phones .team__list {
     margin: 0 auto; }
 
+.full-height {
+  height: -webkit-calc(100vh - 62px * 2);
+  height: calc(100vh - 62px * 2); }
+  .full-height .title {
+    margin: 0;
+    padding: 20px 0; }
+
 .flex {
   display: -webkit-flex;
   display: -ms-flex;

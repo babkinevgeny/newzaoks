@@ -321,3 +321,11 @@ body{
     }
   }
 }
+
+.full-height{
+  height: calc(100vh - 62px * 2);
+  .title{
+    margin: 0;
+    padding: 20px 0;
+  }
+}

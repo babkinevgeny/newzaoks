@@ -420,6 +420,13 @@ body {
   .phones .team__list {
     margin: 0 auto; }
 
+.full-height {
+  height: -webkit-calc(100vh - 62px * 2);
+  height: calc(100vh - 62px * 2); }
+  .full-height .title {
+    margin: 0;
+    padding: 20px 0; }
+
 .flex {
   display: -webkit-flex;
   display: -ms-flex;
@@ -3705,7 +3712,7 @@ blockquote {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    padding: 10px 0 20px;
+    padding: 10px 0 10px;
     position: absolute;
     left: 0;
     bottom: -60px; }
@@ -3806,6 +3813,64 @@ blockquote {
   @media only screen and (max-width: 700px) {
     .portfolio .modal-content {
       width: 100%; } }
+  .portfolio .catalog {
+    width: 350px;
+    list-style-type: none;
+    font-family: "Open Sans", Arial, sans-serif;
+    margin: 0;
+    padding: 0 10px;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 70px;
+    margin-top: 10px;
+    border: none; }
+    .portfolio .catalog__groupname {
+      padding: 7px 0;
+      font-weight: 500;
+      cursor: pointer;
+      color: #8a8a8a;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      min-width: 20px;
+      height: 22px;
+      position: relative;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .portfolio .catalog__groupname:hover {
+        color: #4a4a4a;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease; }
+      .portfolio .catalog__groupname a {
+        text-decoration: none;
+        color: #8a8a8a; }
+        .portfolio .catalog__groupname a:hover {
+          color: #4a4a4a;
+          -webkit-transition: all 0.3s ease;
+          -o-transition: all 0.3s ease;
+          transition: all 0.3s ease; }
+        .portfolio .catalog__groupname a.active {
+          color: #000; }
+    .portfolio .catalog__name {
+      display: inline-block; }
 
 .menu-line {
   display: -webkit-flex;

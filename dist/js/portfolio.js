@@ -8,17 +8,14 @@ $(document).ready(function() {
   $('.portfolio__btns .btn').click( toggleBtn );
 
   const getActiveFilter = () => {
-	  return $('.portfolio__btns .btn--active').attr('data-filter');
+	  return $('.catalog li a.active').parent().attr('data-filter');
   }
 
   
 
   const checkIndex = (index) => {
 	const activeFilter = getActiveFilter();
-	//console.log(activeFilter);
 	const imgs = $(`.portfolio__grid .portfolio__item${activeFilter}`);
-	console.log(imgs.length)
-	//console.log(index)
 	if (index === 0) {
 		if (imgs.length === 1) {
 			$('.modal__btn').addClass('modal__btn--disabled');
@@ -209,13 +206,17 @@ $(document).ready(function() {
 	goToPage(1);
 
   //Adicionando Event de Click para as categorias
-  $('.portfolio__btns').on( 'click', 'li.btn', function() {
+  $('.catalog__links').on( 'click', 'li', function() {
 	//$('.filters a').click(function(){
 		var filter = $(this).attr(filterAtribute);
 		currentFilter = filter;
 
 		setPagination();
 		goToPage(1);
+
+		$('.catalog__links li a').removeClass('active');
+
+		$(this).children('a').addClass('active');
 
 
 	});
