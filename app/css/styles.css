@@ -3901,11 +3901,13 @@ blockquote {
     .portfolio .catalog__item {
       overflow: visible;
       border-bottom: 1px solid #eceded; }
-      .portfolio .catalog__item--without-title .catalog__links {
-        display: block;
-        padding: 0; }
-        .portfolio .catalog__item--without-title .catalog__links .check {
-          margin-left: 2.35em; }
+      .portfolio .catalog__item--without-title {
+        padding: 4px 0; }
+        .portfolio .catalog__item--without-title .catalog__links {
+          display: block;
+          padding: 0; }
+          .portfolio .catalog__item--without-title .catalog__links .check {
+            margin-left: 2.35em; }
     .portfolio .catalog__groupname {
       padding: 7px 0;
       font-weight: 500;
