@@ -44,6 +44,12 @@ $(document).ready(function() {
 	checkIndex($(`.portfolio__item${activeFilter}`).index($(this)));
   });
 
+//   $('.catalog__links li a').click(function() {
+// 	const activeFilter = getActiveFilter();
+// 	const imgs = $(`.portfolio__grid .portfolio__item${activeFilter}`);
+// 	console.log(imgs.length);
+//   })
+
   $('.modal').click(function() {
 	$('.modal').fadeOut();
   });
@@ -88,10 +94,24 @@ $(document).ready(function() {
     },200);
 
 	//$('.modal img').attr('src', src).fadeIn('slow');
-  }
+  };
 
+  	const showQuantity = (n) => {
+		const arr = n.toString().split('');
+		let head = 'Показано';
+		let tale = 'вариантов';
+		const arrLast = arr[arr.length - 1];
+		if (arrLast == 1) {
+			head = 'Показан'
+			tale = 'вариант'
+		} else if (arrLast == 2 || arrLast == 3 || arrLast == 4) {
+			tale = 'варианта'
+		}
+		$('.quantity-popup').remove();
+		$('.catalog__links li a.active').after(`<div class="quantity-popup">${head} ${n} ${tale}</div>`);
+	};
 
-  var itemSelector = '.portfolio__item'; 
+	var itemSelector = '.portfolio__item'; 
 
 	var $container = $('.portfolio__grid').isotope({
 		itemSelector: itemSelector,
@@ -99,13 +119,13 @@ $(document).ready(function() {
 			columnWidth: itemSelector,
 		  //isFitWidth: true
 		}
-  });
+	});
   
-  var responsiveIsotope = [
+	var responsiveIsotope = [
 		[991, 30]
 	];
   
-  var itemsPerPageDefault = 30;
+	var itemsPerPageDefault = 20;
 	var itemsPerPage = defineItemsPerPage();
 	var currentNumberPages = 1;
 	var currentPage = 1;
@@ -115,8 +135,6 @@ $(document).ready(function() {
 	var pagerClass = 'isotope-pager';
 
 	function changeFilter(selector) {
-    //let filterValue = $(this).attr('data-filter');
-  //   $grid.isotope({ filter: filterValue });
 		$container.isotope(
 			{
 				filter: selector
@@ -127,12 +145,11 @@ $(document).ready(function() {
 
 	function goToPage(n) {
 		currentPage = n;
-
 		var selector = itemSelector;
-      selector += ( currentFilter != '*' ) ? currentFilter : '';
-      selector += '['+pageAtribute+'="'+currentPage+'"]';
-
-    changeFilter(selector);
+		selector += ( currentFilter != '*' ) ? currentFilter : '';
+		selector += '['+pageAtribute+'="'+currentPage+'"]';
+		console.log(selector)
+		changeFilter(selector);
 	}
 
 	function defineItemsPerPage() {
@@ -143,9 +160,6 @@ $(document).ready(function() {
 				pages = responsiveIsotope[i][1];
 				break;
 			}
-
-			
-
 		}
 
 		return pages;
@@ -196,7 +210,7 @@ $(document).ready(function() {
 				$pager.appendTo($isotopePager);
 			}
 
-			$('.portfolio__container').after($isotopePager);
+			$('.portfolio__pager').append($isotopePager);
 
 		}();
 
@@ -204,33 +218,38 @@ $(document).ready(function() {
 
 	setPagination();
 	goToPage(1);
+	// const imgs = $(`.portfolio__grid .portfolio__item${getActiveFilter()}`);
+	// showQuantity(imgs.length);
 
-  //Adicionando Event de Click para as categorias
-  $('.catalog__links').on( 'click', 'li', function() {
-	//$('.filters a').click(function(){
+	$('.catalog__links').on( 'click', 'li', function() {
+
 		var filter = $(this).attr(filterAtribute);
-		currentFilter = filter;
+		var filters  = [];
+		$('.catalog__links li input:checked').each(function() {
+			filters.push($(this).parent().parent().attr(filterAtribute));
+		});
+		filters = filters.join('');
+		currentFilter = filters;
 
 		setPagination();
 		goToPage(1);
 
-		$('.catalog__links li a').removeClass('active');
+		// $('.catalog__links li a').removeClass('active');
 
-		$(this).children('a').addClass('active');
+		// $(this).children('a').addClass('active');
 
-
+		//const activeFilter = getActiveFilter();
+		// const imgs = $(`.portfolio__grid .portfolio__item${filters}`);
+		// showQuantity(imgs.length);
+		//$('.catalog__links input[type="checkbox"]:checked').attr('checked', false);
+		$(this).children('input[type="checkbox"]').attr('checked', true);
 	});
 
-	//Evento Responsivo
+
 	$(window).resize(function(){
 		itemsPerPage = defineItemsPerPage();
 		setPagination();
 		goToPage(1);
 	});
-
-
-
-
-  
   
 });

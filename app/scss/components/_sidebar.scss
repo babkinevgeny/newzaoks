@@ -98,6 +98,20 @@
     & > li {
       padding: 5px 0;
       line-height: 14px;
+      position: relative;
+      .quantity-popup{
+        position: absolute;
+        min-width: 185px;
+        text-align: center;
+        left: 80%;
+        top: 12px;
+        padding: 10px;
+        border: 1px solid $color-blue;
+        background: rgba(6,171,221, .5);
+        color: white;
+        border-radius: 5px;
+        z-index: 2;
+      }
     }
     a{
       color: $color-gray;
