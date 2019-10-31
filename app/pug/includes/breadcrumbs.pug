@@ -1,7 +1,14 @@
 ul.breadcrumbs
   li.breadcrumbs__item
     a(href="/index.html") Главная
-  li.breadcrumbs__item
-    a(href="#")= parent
+  if parent === 'Металлообработка'
+    li.breadcrumbs__item
+      a(href="../metalworking.html")= parent
+  if parent === 'Металлоконструкции'
+    li.breadcrumbs__item
+      a(href="../metalstructures.html")= parent
+  if parent === 'Услуги'
+    li.breadcrumbs__item
+      a(href="../metalworking.html")= parent
   li.breadcrumbs__item
     a.active(href="#")= title

@@ -103,6 +103,7 @@ $(window).scroll(function() {
 // });
 
 $('.mouse').click(function () {
-  var heightHeader = $('.intro').height();
+  var heightHeader =Math.round($('.intro').height() + 62);
+  console.log(heightHeader);
   $("body,html").animate({"scrollTop":heightHeader},700);
 });

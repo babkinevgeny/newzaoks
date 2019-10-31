@@ -2,7 +2,7 @@ doctype
 html
 	-let title = 'Резка всех видов металла в Set Service Group'
 	-let heading = 'Резка металла'
-	-let parent = 'Металлообработка'
+	-let parent = 'Услуги'
 	-let keywords = "резка металла, вода резка, водорезка, гидроабразивная резка, гидрорезка, услуги гидроабразивной резки"
 	-let description = 'Резка металла в компании Set Service Group. Резка и раскрой черных и цветных металлов по оптовым ценам. Плазменная, гидроабразивная и лазерная резка.'
 	include ../../includes/head.pug
@@ -17,10 +17,8 @@ html
 				h1.title.title--left #{heading}
 				.main__top
 					.fotorama__wrapper
-						.fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")
-							img(src='../img/metalworking/РезкаМеталла1.jpg')
-							img(src='../img/metalworking/РезкаМеталла2.jpg')
-							img(src='../img/metalworking/РезкаМеталла3.jpg')
+						.fotorama(data-loop="true" data-autoplay="false")
+							img(src='../img/for-pic-sprites/резка.jpg')
 					.main__info
 						p.text.text--justify При внешней простоте операции резка является одним из наиболее сложных этапов точной обработки металла, который может выполняться исключительно профессионалами, причем на специальном оборудовании.
 						p.text.text--justify Мы используем в технологическом процессе высокоточное оборудование, преимущественно с ЧПУ. За счет применения программируемых металлообрабатывающих станков повышается производительность и точность изготовления изделий, включая детали сложной геометрической формы. Потери материала в виде отходов и брака сведены до минимума.

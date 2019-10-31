@@ -2,7 +2,7 @@ doctype
 html
 	-let title = 'Выполнение слесарно-сборочных работ в Set Service Group'
 	-let heading = 'Слесарно-сборочные работы'
-	-let parent = 'Металлообработка'
+	-let parent = 'Услуги'
 	-let keywords = "выполнение слесарных работ, слесарно монтажные работы, слесарно сборочные работы, слесарные работы по металлу"
 	-let description = 'Сварочные, монтажные, слесарные работы любой сложности по всей России. Лучшая цена. Качество. Гарантия.'
 	include ../../includes/head.pug
@@ -17,9 +17,8 @@ html
 				h1.title.title--left #{heading}
 				.main__top
 					.fotorama__wrapper
-						.fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")
-							img(src='../img/metalworking/СлесарноСборочные1.jpg')
-							img(src='../img/metalworking/СлесарноСборочные2.jpg')
+						.fotorama(data-loop="true" data-autoplay="false")
+							img(src='../img/for-pic-sprites/слесарно-сборочные работы.jpg')
 					.main__info
 						p.text.text--justify Помимо отдельных операций металлообработки наша компания предлагает изготовление изделий и конструкций целиком. Финальной стадией производства металлоконструкций является сборка. Специалисты нашей компании всегда готовы помочь вам рассчитать и реализовать проект в области слесарно-сборочных работ.
 						.infobuttons

@@ -2,7 +2,7 @@ doctype
 html
 	-let title = 'Электроэрозия в Set Service Group'
 	-let heading = 'Электроэрозия'
-	-let parent = 'Металлообработка'
+	-let parent = 'Услуги'
 	-let keywords = "Электроэрозия, Электроэрозия на заказ, Электроэрозия по металлу"
 	-let description = 'Set Service Group предлагает услуги по обработке металла. Одной из специализаций нашего предприятия является электроэрозия.'
 	include ../../includes/head.pug
@@ -16,10 +16,9 @@ html
 				include ../../includes/breadcrumbs.pug
 				h1.title.title--left #{heading}
 				.main__top
-					//- .fotorama__wrapper
-					//- 	.fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")
-					//- 		img(src='../img/metalworking/ШлифовальныеРаботы1.jpg')
-					//- 		img(src='../img/metalworking/ШлифовальныеРаботы2.jpg')
+					.fotorama__wrapper
+						.fotorama(data-loop="true" data-autoplay="false")
+							img(src='../img/for-pic-sprites/электроэрозия.jpg')
 					.main__info
 						p.text.text--justify Страница в разработке
 						//- p.text.text--justify 

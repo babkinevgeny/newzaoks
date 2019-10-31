@@ -2,7 +2,7 @@ doctype
 html
 	-let title = 'Шлифовальные работы в Set Service Group'
 	-let heading = 'Шлифовальные работы'
-	-let parent = 'Металлообработка'
+	-let parent = 'Услуги'
 	-let keywords = "зубошлифование, шлифовальные работы, шлифовальные работы на заказ, шлифовальные работы по металлу, шлифование металла"
 	-let description = 'Set Service Group предлагает услуги по обработке металла. Одной из специализаций нашего предприятия являются шлифовальные работы. Мы осуществляем плоскую и круглую шлифовку по доступным ценам.'
 	include ../../includes/head.pug
@@ -17,9 +17,8 @@ html
 				h1.title.title--left #{heading}
 				.main__top
 					.fotorama__wrapper
-						.fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")
-							img(src='../img/metalworking/ШлифовальныеРаботы1.jpg')
-							img(src='../img/metalworking/ШлифовальныеРаботы2.jpg')
+						.fotorama(data-loop="true" data-autoplay="false")
+							img(src='../img/for-pic-sprites/шлифовальные работы.jpg')
 					.main__info
 						p.text.text--justify Set Service Group предлагает услугу шлифовальных работ. Современное оборудование и опытные специалисты обеспечат качественное выполнение любого заказа.
 						p.text.text--justify 

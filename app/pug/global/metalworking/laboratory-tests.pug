@@ -2,7 +2,7 @@ doctype
 html
 	-let title = 'Лабораторные испытания металлов и сплавов в Set Service Group'
 	-let heading = 'Лабораторные испытания'
-	-let parent = 'Металлообработка'
+	-let parent = 'Услуги'
 	-let keywords = "лабораторные испытания, лабораторные испытания металлов, лабораторные испытания сплавов, проведение лабораторных испытаний металл, лабораторные испытания металлы и сплавы"
 	-let description = 'Химический анализ металлов и сплавов. Механические испытание по выявлению физических свойств. Кратчайшие сроки.'
 	include ../../includes/head.pug
@@ -17,9 +17,8 @@ html
 				h1.title.title--left #{heading}
 				.main__top
 					.fotorama__wrapper
-						.fotorama(data-allowfullscreen='true', data-loop='true', data-autoplay='false')
-							img(src='../img/metalworking/ЛабИспытания1.jpg')
-							img(src='../img/metalworking/ЛабИспытания2.jpg')
+						.fotorama(data-loop='true', data-autoplay='false')
+							img(src='../img/for-pic-sprites/лабораторные испытания.jpg')
 					.main__info
 						p.text.text--justify
 							b Set Service Group

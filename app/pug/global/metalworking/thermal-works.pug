@@ -2,7 +2,7 @@ doctype
 html
 	-let title = 'Термическая обработка металлов и сплавов от Set Service Group'
 	-let heading = 'Термическая обработка'
-	-let parent = 'Металлообработка'
+	-let parent = 'Услуги'
 	-let keywords = "термическая обработка, термическая обработка стали, термическая обработка металла, химико термическая обработка, термическая обработка деталей"
 	-let description = 'Set Service Group производит термообработку стали и различных по всей России. Гарантированное качество выполняемых работ и доступные цены.'
 	include ../../includes/head.pug
@@ -17,10 +17,8 @@ html
 				h1.title.title--left #{heading}
 				.main__top
 					.fotorama__wrapper
-						.fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")
-							img(src='../img/metalworking/ТермическаяОбработка1.jpg')
-							img(src='../img/metalworking/ТермическаяОбработка2.jpg')
-							img(src='../img/metalworking/ТермическаяОбработка3.jpg')
+						.fotorama(data-loop="true" data-autoplay="false")
+							img(src='../img/for-pic-sprites/термообработка.jpg')
 					.main__info
 						p.text.text--justify Set Service Group имеет колоссальный опыт в термической обработке металла. Для стали термическая обработка имеет особое значение, поскольку именно от этого материала можно ожидать значительного улучшения свойств. Современное оборудование и опытные специалисты Set Service Group обеспечат качественное выполнение любого заказа.
 						.infobuttons
