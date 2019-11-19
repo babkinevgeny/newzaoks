@@ -27,23 +27,23 @@
 		cursor: pointer;
 	}
 	&__btn{
-		    box-sizing: border-box;
-		    font-family: $font;
-		    text-align: center;
-		    font-size: 13px;
-		    color: rgb(38, 38, 38);
-		    box-shadow: transparent 0px 0px 0px;
-		    font-weight: 600;
-		    padding: 12px 30px;
-		    border-width: 1px;
-		    border-style: solid;
-		    border-color: rgb(6, 171, 221);
-		    text-decoration: none;
-		 background: transparent;
-		 display: block;
-		 max-width: 135px;
-		 margin: 0 auto;
-		 &:hover{
+		box-sizing: border-box;
+		font-family: $font;
+		text-align: center;
+		font-size: 13px;
+		color: rgb(38, 38, 38);
+		box-shadow: transparent 0px 0px 0px;
+		font-weight: 600;
+		padding: 12px 30px;
+		border-width: 1px;
+		border-style: solid;
+		border-color: rgb(6, 171, 221);
+		text-decoration: none;
+		background: transparent;
+		display: block;
+		max-width: 135px;
+		margin: 0 auto;
+		&:hover{
 			border: 1px solid rgba(0,0,0,0);
     		color: #000;
     		background: $color-lightgray;
@@ -57,11 +57,13 @@
 		border: none;
 		position: relative;
 		overflow:hidden;
+		background-size: cover;
 		$step: 0px;
 		@for $i from 1 to 38 {
 			&:nth-child(#{$i}){
 				background-position: 0 $step;
 				$step: $step - 267px;
+				
 				&:hover{
 					background-position: 0 $step;
 					$step: $step - 267px;
@@ -173,6 +175,8 @@
 	}
 	&__popups{
 		list-style-type: none;
+		margin: 0;
+		padding: 0;
 	}
 	.owl-stage-outer{
 		padding-top: 60px;
@@ -206,23 +210,63 @@
 		}
 	}
 	&--partners{
+		min-height: calc(100vh - 60px - 45px - 62px - 40px);
+		display: flex;
 		.companies{
+			&__inner{
+				margin: auto;
+				width: 100%;
+				.title{
+					font-size: 16px;
+				}
+				.undertitle{
+					font-size: 16px;
+					margin-bottom: 10px;
+				}
+			}
+			&__list{
+				max-width: 1115px;
+				margin: 0 auto;
+			}
 			&__item{
-				background: url(../img/partners-sprite.png) 0px 0px no-repeat;
+				background: url(../img/partners/partners-sprite.jpg) 0px 0px no-repeat;
 				$step: 0px;
+				width: 217px;
+				height: 217px;
 				@for $i from 1 to 15 {
 					&:nth-child(#{$i}){
 						background-position: 0 $step;
-						$step: $step - 267px;
+						$step: $step - 222px;
 						&:hover{
 							background-position: 0 $step;
-							$step: $step - 267px;
+							$step: $step - 222px;
 						}
 					}
 				}
 				&--empty{
 					background: $color-lightgray;
 				}
+				&:hover{
+					.companies__title{
+						opacity:1;
+						transform: translateY(150px);
+						-webkit-transition: all 0.3s ease;
+						-moz-transition: all 0.3s ease;
+						-o-transition: all 0.3s ease;
+						-ms-transition: all 0.3s ease;
+						transition: all 0.3s ease;
+					}
+				}
+			}
+			&__title{
+				opacity:1;
+				transform: translateY(217px);
+				-webkit-transition: all 0.3s ease;
+				-moz-transition: all 0.3s ease;
+				-o-transition: all 0.3s ease;
+				-ms-transition: all 0.3s ease;
+				transition: all 0.3s ease;
+				font-size: 14px;
 			}
 		}
 	}
@@ -247,6 +291,59 @@
 			}
 		}
 	}
+	&--clients {
+		min-height: calc(100vh - 60px - 45px - 62px);
+		padding: 0px;
+		.companies{
+			&__inner{
+				margin: auto;
+				width: 100%;
+			}
+			&__list{
+				max-width: 1115px;
+			}
+			&__item{
+				width: 217px;
+				height: 217px;
+				background: url(../img/clients/clients-sprite-217.jpg) 0px 0px no-repeat;
+				$step: 0px;
+				@for $i from 1 to 38 {
+					&:nth-child(#{$i}){
+						background-position: 0 $step;
+						$step: $step - 222px;
+						&:hover{
+							background-position: 0 $step;
+							$step: $step - 222px;
+						}
+					}
+				}
+				&--empty{
+					background: $color-lightgray;
+				}
+				&:hover{
+					.companies__title{
+						opacity:1;
+						transform: translateY(150px);
+						-webkit-transition: all 0.3s ease;
+						-moz-transition: all 0.3s ease;
+						-o-transition: all 0.3s ease;
+						-ms-transition: all 0.3s ease;
+						transition: all 0.3s ease;
+					}
+				}
+			}
+			&__title{
+				opacity:1;
+				transform: translateY(217px);
+				-webkit-transition: all 0.3s ease;
+				-moz-transition: all 0.3s ease;
+				-o-transition: all 0.3s ease;
+				-ms-transition: all 0.3s ease;
+				transition: all 0.3s ease;
+				font-size: 14px;
+			}
+		}
+	}
 	// .isotope-pager{
 	// 	text-align: center;
 	// 	margin: 0;
@@ -266,17 +363,19 @@
 		margin: 0;
 		padding: 0;
 		list-style-type: none;
-		padding: 20px 0 20px;
-		
+		padding: 12px 0 12px;
 	  }
 	.pager{
-	display: inline-block;
-	margin-right: 20px;
-	padding: 5px 10px;
+		display: inline-block;
+		margin-right: 20px;
+		padding: 2px 7px;
+		width: 25px;
+		height: 25px;
 		&:last-child{
 			margin-right: 0;
 		}
 	}
+	
 }
 
 .navigation__list li .search {

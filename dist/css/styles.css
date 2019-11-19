@@ -1494,8 +1494,21 @@ blockquote {
       .assortiment--squares .assortiment__title span {
         margin: auto; }
 
-.companies--clients {
-  padding: 40px 0; }
+.companies--clients .title {
+  font-size: 16px;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #06abdd;
+  text-transform: uppercase;
+  display: block;
+  text-align: center; }
+
+.companies--clients .undertitle {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px; }
+
+.companies--clients .companies__list {
+  margin-top: 0; }
   .companies--clients .companies__list .owl-stage-outer .title {
     display: inline-block;
     margin: 0 !important;
@@ -1585,7 +1598,9 @@ blockquote {
     background: url(../img/clients-sprite.png) 0px 0px no-repeat;
     border: none;
     position: relative;
-    overflow: hidden; }
+    overflow: hidden;
+    -webkit-background-size: cover;
+            background-size: cover; }
     .companies__item:nth-child(1) {
       background-position: 0 0px; }
       .companies__item:nth-child(1):hover {
@@ -1963,7 +1978,9 @@ blockquote {
     transition: all 0.3s ease;
     color: #8a8a8a; }
   .companies__popups {
-    list-style-type: none; }
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
   .companies .owl-stage-outer {
     padding-top: 60px; }
   .companies .owl-nav {
@@ -1995,66 +2012,103 @@ blockquote {
         background: url(../img/right-arrow.svg) center center no-repeat !important; }
         .companies .owl-nav button.owl-next:hover {
           opacity: .7; }
-  .companies--partners .companies__item {
-    background: url(../img/partners-sprite.png) 0px 0px no-repeat; }
-    .companies--partners .companies__item:nth-child(1) {
-      background-position: 0 0px; }
-      .companies--partners .companies__item:nth-child(1):hover {
-        background-position: 0 -267px; }
-    .companies--partners .companies__item:nth-child(2) {
-      background-position: 0 -534px; }
-      .companies--partners .companies__item:nth-child(2):hover {
-        background-position: 0 -801px; }
-    .companies--partners .companies__item:nth-child(3) {
-      background-position: 0 -1068px; }
-      .companies--partners .companies__item:nth-child(3):hover {
-        background-position: 0 -1335px; }
-    .companies--partners .companies__item:nth-child(4) {
-      background-position: 0 -1602px; }
-      .companies--partners .companies__item:nth-child(4):hover {
-        background-position: 0 -1869px; }
-    .companies--partners .companies__item:nth-child(5) {
-      background-position: 0 -2136px; }
-      .companies--partners .companies__item:nth-child(5):hover {
-        background-position: 0 -2403px; }
-    .companies--partners .companies__item:nth-child(6) {
-      background-position: 0 -2670px; }
-      .companies--partners .companies__item:nth-child(6):hover {
-        background-position: 0 -2937px; }
-    .companies--partners .companies__item:nth-child(7) {
-      background-position: 0 -3204px; }
-      .companies--partners .companies__item:nth-child(7):hover {
-        background-position: 0 -3471px; }
-    .companies--partners .companies__item:nth-child(8) {
-      background-position: 0 -3738px; }
-      .companies--partners .companies__item:nth-child(8):hover {
-        background-position: 0 -4005px; }
-    .companies--partners .companies__item:nth-child(9) {
-      background-position: 0 -4272px; }
-      .companies--partners .companies__item:nth-child(9):hover {
-        background-position: 0 -4539px; }
-    .companies--partners .companies__item:nth-child(10) {
-      background-position: 0 -4806px; }
-      .companies--partners .companies__item:nth-child(10):hover {
-        background-position: 0 -5073px; }
-    .companies--partners .companies__item:nth-child(11) {
-      background-position: 0 -5340px; }
-      .companies--partners .companies__item:nth-child(11):hover {
-        background-position: 0 -5607px; }
-    .companies--partners .companies__item:nth-child(12) {
-      background-position: 0 -5874px; }
-      .companies--partners .companies__item:nth-child(12):hover {
-        background-position: 0 -6141px; }
-    .companies--partners .companies__item:nth-child(13) {
-      background-position: 0 -6408px; }
-      .companies--partners .companies__item:nth-child(13):hover {
-        background-position: 0 -6675px; }
-    .companies--partners .companies__item:nth-child(14) {
-      background-position: 0 -6942px; }
-      .companies--partners .companies__item:nth-child(14):hover {
-        background-position: 0 -7209px; }
-    .companies--partners .companies__item--empty {
-      background: #eceded; }
+  .companies--partners {
+    min-height: -webkit-calc(100vh - 60px - 45px - 62px - 40px);
+    min-height: calc(100vh - 60px - 45px - 62px - 40px);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .companies--partners .companies__inner {
+      margin: auto;
+      width: 100%; }
+      .companies--partners .companies__inner .title {
+        font-size: 16px; }
+      .companies--partners .companies__inner .undertitle {
+        font-size: 16px;
+        margin-bottom: 10px; }
+    .companies--partners .companies__list {
+      max-width: 1115px;
+      margin: 0 auto; }
+    .companies--partners .companies__item {
+      background: url(../img/partners/partners-sprite.jpg) 0px 0px no-repeat;
+      width: 217px;
+      height: 217px; }
+      .companies--partners .companies__item:nth-child(1) {
+        background-position: 0 0px; }
+        .companies--partners .companies__item:nth-child(1):hover {
+          background-position: 0 -222px; }
+      .companies--partners .companies__item:nth-child(2) {
+        background-position: 0 -444px; }
+        .companies--partners .companies__item:nth-child(2):hover {
+          background-position: 0 -666px; }
+      .companies--partners .companies__item:nth-child(3) {
+        background-position: 0 -888px; }
+        .companies--partners .companies__item:nth-child(3):hover {
+          background-position: 0 -1110px; }
+      .companies--partners .companies__item:nth-child(4) {
+        background-position: 0 -1332px; }
+        .companies--partners .companies__item:nth-child(4):hover {
+          background-position: 0 -1554px; }
+      .companies--partners .companies__item:nth-child(5) {
+        background-position: 0 -1776px; }
+        .companies--partners .companies__item:nth-child(5):hover {
+          background-position: 0 -1998px; }
+      .companies--partners .companies__item:nth-child(6) {
+        background-position: 0 -2220px; }
+        .companies--partners .companies__item:nth-child(6):hover {
+          background-position: 0 -2442px; }
+      .companies--partners .companies__item:nth-child(7) {
+        background-position: 0 -2664px; }
+        .companies--partners .companies__item:nth-child(7):hover {
+          background-position: 0 -2886px; }
+      .companies--partners .companies__item:nth-child(8) {
+        background-position: 0 -3108px; }
+        .companies--partners .companies__item:nth-child(8):hover {
+          background-position: 0 -3330px; }
+      .companies--partners .companies__item:nth-child(9) {
+        background-position: 0 -3552px; }
+        .companies--partners .companies__item:nth-child(9):hover {
+          background-position: 0 -3774px; }
+      .companies--partners .companies__item:nth-child(10) {
+        background-position: 0 -3996px; }
+        .companies--partners .companies__item:nth-child(10):hover {
+          background-position: 0 -4218px; }
+      .companies--partners .companies__item:nth-child(11) {
+        background-position: 0 -4440px; }
+        .companies--partners .companies__item:nth-child(11):hover {
+          background-position: 0 -4662px; }
+      .companies--partners .companies__item:nth-child(12) {
+        background-position: 0 -4884px; }
+        .companies--partners .companies__item:nth-child(12):hover {
+          background-position: 0 -5106px; }
+      .companies--partners .companies__item:nth-child(13) {
+        background-position: 0 -5328px; }
+        .companies--partners .companies__item:nth-child(13):hover {
+          background-position: 0 -5550px; }
+      .companies--partners .companies__item:nth-child(14) {
+        background-position: 0 -5772px; }
+        .companies--partners .companies__item:nth-child(14):hover {
+          background-position: 0 -5994px; }
+      .companies--partners .companies__item--empty {
+        background: #eceded; }
+      .companies--partners .companies__item:hover .companies__title {
+        opacity: 1;
+        -webkit-transform: translateY(150px);
+            -ms-transform: translateY(150px);
+                transform: translateY(150px);
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease; }
+    .companies--partners .companies__title {
+      opacity: 1;
+      -webkit-transform: translateY(217px);
+          -ms-transform: translateY(217px);
+              transform: translateY(217px);
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      font-size: 14px; }
   .companies--logistic .companies__item {
     background: url(../img/partners-sprite.png) 0px 0px no-repeat; }
     .companies--logistic .companies__item:nth-child(1) {
@@ -2071,16 +2125,198 @@ blockquote {
         background-position: 0 -6675px; }
     .companies--logistic .companies__item--empty {
       background: #eceded; }
+  .companies--clients {
+    min-height: -webkit-calc(100vh - 60px - 45px - 62px);
+    min-height: calc(100vh - 60px - 45px - 62px);
+    padding: 0px; }
+    .companies--clients .companies__inner {
+      margin: auto;
+      width: 100%; }
+    .companies--clients .companies__list {
+      max-width: 1115px; }
+    .companies--clients .companies__item {
+      width: 217px;
+      height: 217px;
+      background: url(../img/clients/clients-sprite-217.jpg) 0px 0px no-repeat; }
+      .companies--clients .companies__item:nth-child(1) {
+        background-position: 0 0px; }
+        .companies--clients .companies__item:nth-child(1):hover {
+          background-position: 0 -222px; }
+      .companies--clients .companies__item:nth-child(2) {
+        background-position: 0 -444px; }
+        .companies--clients .companies__item:nth-child(2):hover {
+          background-position: 0 -666px; }
+      .companies--clients .companies__item:nth-child(3) {
+        background-position: 0 -888px; }
+        .companies--clients .companies__item:nth-child(3):hover {
+          background-position: 0 -1110px; }
+      .companies--clients .companies__item:nth-child(4) {
+        background-position: 0 -1332px; }
+        .companies--clients .companies__item:nth-child(4):hover {
+          background-position: 0 -1554px; }
+      .companies--clients .companies__item:nth-child(5) {
+        background-position: 0 -1776px; }
+        .companies--clients .companies__item:nth-child(5):hover {
+          background-position: 0 -1998px; }
+      .companies--clients .companies__item:nth-child(6) {
+        background-position: 0 -2220px; }
+        .companies--clients .companies__item:nth-child(6):hover {
+          background-position: 0 -2442px; }
+      .companies--clients .companies__item:nth-child(7) {
+        background-position: 0 -2664px; }
+        .companies--clients .companies__item:nth-child(7):hover {
+          background-position: 0 -2886px; }
+      .companies--clients .companies__item:nth-child(8) {
+        background-position: 0 -3108px; }
+        .companies--clients .companies__item:nth-child(8):hover {
+          background-position: 0 -3330px; }
+      .companies--clients .companies__item:nth-child(9) {
+        background-position: 0 -3552px; }
+        .companies--clients .companies__item:nth-child(9):hover {
+          background-position: 0 -3774px; }
+      .companies--clients .companies__item:nth-child(10) {
+        background-position: 0 -3996px; }
+        .companies--clients .companies__item:nth-child(10):hover {
+          background-position: 0 -4218px; }
+      .companies--clients .companies__item:nth-child(11) {
+        background-position: 0 -4440px; }
+        .companies--clients .companies__item:nth-child(11):hover {
+          background-position: 0 -4662px; }
+      .companies--clients .companies__item:nth-child(12) {
+        background-position: 0 -4884px; }
+        .companies--clients .companies__item:nth-child(12):hover {
+          background-position: 0 -5106px; }
+      .companies--clients .companies__item:nth-child(13) {
+        background-position: 0 -5328px; }
+        .companies--clients .companies__item:nth-child(13):hover {
+          background-position: 0 -5550px; }
+      .companies--clients .companies__item:nth-child(14) {
+        background-position: 0 -5772px; }
+        .companies--clients .companies__item:nth-child(14):hover {
+          background-position: 0 -5994px; }
+      .companies--clients .companies__item:nth-child(15) {
+        background-position: 0 -6216px; }
+        .companies--clients .companies__item:nth-child(15):hover {
+          background-position: 0 -6438px; }
+      .companies--clients .companies__item:nth-child(16) {
+        background-position: 0 -6660px; }
+        .companies--clients .companies__item:nth-child(16):hover {
+          background-position: 0 -6882px; }
+      .companies--clients .companies__item:nth-child(17) {
+        background-position: 0 -7104px; }
+        .companies--clients .companies__item:nth-child(17):hover {
+          background-position: 0 -7326px; }
+      .companies--clients .companies__item:nth-child(18) {
+        background-position: 0 -7548px; }
+        .companies--clients .companies__item:nth-child(18):hover {
+          background-position: 0 -7770px; }
+      .companies--clients .companies__item:nth-child(19) {
+        background-position: 0 -7992px; }
+        .companies--clients .companies__item:nth-child(19):hover {
+          background-position: 0 -8214px; }
+      .companies--clients .companies__item:nth-child(20) {
+        background-position: 0 -8436px; }
+        .companies--clients .companies__item:nth-child(20):hover {
+          background-position: 0 -8658px; }
+      .companies--clients .companies__item:nth-child(21) {
+        background-position: 0 -8880px; }
+        .companies--clients .companies__item:nth-child(21):hover {
+          background-position: 0 -9102px; }
+      .companies--clients .companies__item:nth-child(22) {
+        background-position: 0 -9324px; }
+        .companies--clients .companies__item:nth-child(22):hover {
+          background-position: 0 -9546px; }
+      .companies--clients .companies__item:nth-child(23) {
+        background-position: 0 -9768px; }
+        .companies--clients .companies__item:nth-child(23):hover {
+          background-position: 0 -9990px; }
+      .companies--clients .companies__item:nth-child(24) {
+        background-position: 0 -10212px; }
+        .companies--clients .companies__item:nth-child(24):hover {
+          background-position: 0 -10434px; }
+      .companies--clients .companies__item:nth-child(25) {
+        background-position: 0 -10656px; }
+        .companies--clients .companies__item:nth-child(25):hover {
+          background-position: 0 -10878px; }
+      .companies--clients .companies__item:nth-child(26) {
+        background-position: 0 -11100px; }
+        .companies--clients .companies__item:nth-child(26):hover {
+          background-position: 0 -11322px; }
+      .companies--clients .companies__item:nth-child(27) {
+        background-position: 0 -11544px; }
+        .companies--clients .companies__item:nth-child(27):hover {
+          background-position: 0 -11766px; }
+      .companies--clients .companies__item:nth-child(28) {
+        background-position: 0 -11988px; }
+        .companies--clients .companies__item:nth-child(28):hover {
+          background-position: 0 -12210px; }
+      .companies--clients .companies__item:nth-child(29) {
+        background-position: 0 -12432px; }
+        .companies--clients .companies__item:nth-child(29):hover {
+          background-position: 0 -12654px; }
+      .companies--clients .companies__item:nth-child(30) {
+        background-position: 0 -12876px; }
+        .companies--clients .companies__item:nth-child(30):hover {
+          background-position: 0 -13098px; }
+      .companies--clients .companies__item:nth-child(31) {
+        background-position: 0 -13320px; }
+        .companies--clients .companies__item:nth-child(31):hover {
+          background-position: 0 -13542px; }
+      .companies--clients .companies__item:nth-child(32) {
+        background-position: 0 -13764px; }
+        .companies--clients .companies__item:nth-child(32):hover {
+          background-position: 0 -13986px; }
+      .companies--clients .companies__item:nth-child(33) {
+        background-position: 0 -14208px; }
+        .companies--clients .companies__item:nth-child(33):hover {
+          background-position: 0 -14430px; }
+      .companies--clients .companies__item:nth-child(34) {
+        background-position: 0 -14652px; }
+        .companies--clients .companies__item:nth-child(34):hover {
+          background-position: 0 -14874px; }
+      .companies--clients .companies__item:nth-child(35) {
+        background-position: 0 -15096px; }
+        .companies--clients .companies__item:nth-child(35):hover {
+          background-position: 0 -15318px; }
+      .companies--clients .companies__item:nth-child(36) {
+        background-position: 0 -15540px; }
+        .companies--clients .companies__item:nth-child(36):hover {
+          background-position: 0 -15762px; }
+      .companies--clients .companies__item:nth-child(37) {
+        background-position: 0 -15984px; }
+        .companies--clients .companies__item:nth-child(37):hover {
+          background-position: 0 -16206px; }
+      .companies--clients .companies__item--empty {
+        background: #eceded; }
+      .companies--clients .companies__item:hover .companies__title {
+        opacity: 1;
+        -webkit-transform: translateY(150px);
+            -ms-transform: translateY(150px);
+                transform: translateY(150px);
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease; }
+    .companies--clients .companies__title {
+      opacity: 1;
+      -webkit-transform: translateY(217px);
+          -ms-transform: translateY(217px);
+              transform: translateY(217px);
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      font-size: 14px; }
   .companies .isotope-pager {
     text-align: center;
     margin: 0;
     padding: 0;
     list-style-type: none;
-    padding: 20px 0 20px; }
+    padding: 12px 0 12px; }
   .companies .pager {
     display: inline-block;
     margin-right: 20px;
-    padding: 5px 10px; }
+    padding: 2px 7px;
+    width: 25px;
+    height: 25px; }
     .companies .pager:last-child {
       margin-right: 0; }
 
@@ -3032,6 +3268,30 @@ blockquote {
     list-style-type: none;
     margin: 0;
     padding: 0; }
+    .catalog__list--unfolded .catalog__item {
+      max-height: 37px;
+      -webkit-transition: max-height 0.1s ease-out;
+      -o-transition: max-height 0.1s ease-out;
+      transition: max-height 0.1s ease-out; }
+      .catalog__list--unfolded .catalog__item .catalog__links {
+        display: block;
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transition: opacity 0.5s ease-in;
+        -o-transition: opacity 0.5s ease-in;
+        transition: opacity 0.5s ease-in; }
+      .catalog__list--unfolded .catalog__item:hover {
+        max-height: 1000px;
+        -webkit-transition: max-height 0.5s ease-out;
+        -o-transition: max-height 0.5s ease-out;
+        transition: max-height 0.5s ease-out; }
+        .catalog__list--unfolded .catalog__item:hover .catalog__links {
+          display: block;
+          visibility: visible;
+          opacity: 1;
+          -webkit-transition: opacity 0.5s ease-in;
+          -o-transition: opacity 0.5s ease-in;
+          transition: opacity 0.5s ease-in; }
   .catalog__item {
     position: relative;
     border-bottom: 1px solid #eceded;
@@ -3716,7 +3976,8 @@ blockquote {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    min-height: 590px; }
   .portfolio__btns {
     width: 250px;
     list-style-type: none;

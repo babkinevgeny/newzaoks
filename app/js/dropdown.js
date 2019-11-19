@@ -36,7 +36,7 @@ $(document).ready(function() {
 
   $('.switch--checked').parent().siblings('.catalog__links').css('display', 'block');
 
-  $('.catalog__groupname').click(function() {
+  $('.catalog__list--folded .catalog__groupname').click(function() {
     if( $(this).children('.switch').hasClass('switch--checked')) {
       $(this).siblings(".catalog__links").slideUp();
       $(this).children('.switch').removeClass('switch--checked');

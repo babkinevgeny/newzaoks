@@ -73,18 +73,19 @@
   ];
 
 section.companies.companies--partners
-  h2.title.title--uppercase Наши партнеры
-  .undertitle (Широкий опыт работы с партнерами из различных отраслей позволяет нам решать задачи любой сложности)
-  ul.companies__list.companies__list--flex
-    each company in companies
-      li.companies__item
-        .companies__title= company.name
-    - let i = 0;
-    while ( (companies.length + i) % 5 )
-      li.companies__item.companies__item--empty
-        .companies__title Здесь может быть ваша компания
-        a.companies__link(href='#')
-      - i++
+  .companies__inner
+    h2.title.title--uppercase Наши партнеры
+    .undertitle (Широкий опыт работы с партнерами из различных отраслей позволяет нам решать задачи любой сложности)
+    ul.companies__list.companies__list--flex
+      each company in companies
+        li.companies__item
+          .companies__title= company.name
+      - let i = 0;
+      while ( (companies.length + i) % 5 )
+        li.companies__item.companies__item--empty
+          .companies__title Здесь может быть ваша компания
+          a.companies__link(href='#')
+        - i++
   ul.companies__popups
     each company in companies
       li

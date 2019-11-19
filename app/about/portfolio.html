@@ -125,11 +125,11 @@
         <p class="undertitle">(Мы производим более 10000 различных наименований продукции)</p>
         <div class="portfolio__container">
           <aside class="catalog">
-            <ul class="catalog__list">
+            <h2 class="title">Выбрать по критериям</h2>
+            <ul class="catalog__list catalog__list--unfolded">
               <li class="catalog__item">
                 <div class="catalog__groupname">
                   <div class="catalog__name">Виды работ</div>
-                  <div class="switch switch--checked"><span class="switch__bg"></span><span class="switch__btn"></span></div>
                 </div>
                 <ul class="catalog__links">
                   <li data-filter="*"> 
@@ -202,7 +202,6 @@
               <li class="catalog__item">
                 <div class="catalog__groupname">
                   <div class="catalog__name">Виды изделий</div>
-                  <div class="switch"><span class="switch__bg"></span><span class="switch__btn"></span></div>
                 </div>
                 <ul class="catalog__links">
                   <li data-filter=".gearboxes"> 
@@ -242,29 +241,24 @@
                   </li>
                 </ul>
               </li>
-              <li class="catalog__item catalog__item--without-title">
+              <li class="catalog__item">
+                <div class="catalog__groupname">
+                  <div class="catalog__name">Серийность</div>
+                </div>
                 <ul class="catalog__links">
                   <li data-filter=".serial_production"> 
                     <label class="check">
                       <input class="hidden" type="checkbox" name="category"><span class="check__box"></span>Серийное производство
                     </label>
                   </li>
-                </ul>
-              </li>
-              <li class="catalog__item catalog__item--without-title">
-                <ul class="catalog__links">
                   <li data-filter=".small_serial_production"> 
                     <label class="check">
                       <input class="hidden" type="checkbox" name="category"><span class="check__box"></span>Мелкосерийное производство
                     </label>
                   </li>
-                </ul>
-              </li>
-              <li class="catalog__item catalog__item--without-title">
-                <ul class="catalog__links">
                   <li data-filter=".unique_production"> 
                     <label class="check">
-                      <input class="hidden" type="checkbox" name="category"><span class="check__box"></span>Уникальное производство
+                      <input class="hidden" type="checkbox" name="category"><span class="check__box"></span>Уникальное производство                  
                     </label>
                   </li>
                 </ul>
@@ -272,6 +266,19 @@
             </ul>
           </aside>
           <div class="portfolio__grid">
+            <div class="portfolio__item *"><img src="/img/carousel/newest/31.jpg"/></div>
+            <div class="portfolio__item *"><img src="/img/carousel/newest/10.jpg"/></div>
+            <div class="portfolio__item *"><img src="/img/carousel/newest/11.jpg"/></div>
+            <div class="portfolio__item *"><img src="/img/carousel/newest/8.jpg"/></div>
+            <div class="portfolio__item *"><img src="/img/carousel/newest/43.jpg"/></div>
+            <div class="portfolio__item *"><img src="/img/carousel/newest/45.jpg"/></div>
+            <div class="portfolio__item *"><img src="/img/carousel/newest/46.jpg"/></div>
+            <div class="portfolio__item *"><img src="/img/carousel/newest/47.jpg"/></div>
+            <div class="portfolio__item *"><img src="/img/carousel/newest/49.jpg"/></div>
+            <div class="portfolio__item *"><img src="/img/carousel/newest/48.jpg"/></div>
+            <div class="portfolio__item carousel_works_with_cnc boring_works"><img src="/img/carousel/плита-выставочная.jpg"/></div>
+            <div class="portfolio__item metal_bending welding_works milling_works"><img src="/img/carousel/нонейм.jpg"/></div>
+            <div class="portfolio__item milling_works grinding_works"><img src="/img/carousel/пресс-форма1.jpg"/></div>
             <div class="portfolio__item turning_works serial_production"><img src="/img/carousel/стопорная ось.jpg"/></div>
             <div class="portfolio__item turning_works serial_production"><img src="/img/carousel/ось.jpg"/></div>
             <div class="portfolio__item turning_milling_works_with_cnc"><img src="/img/carousel/кожух.jpg"/></div>
@@ -306,7 +313,6 @@
             <div class="portfolio__item milling_works serial_production"><img src="/img/carousel/фиксатор1.jpg"/></div>
             <div class="portfolio__item turning_works serial_production"><img src="/img/carousel/фитинг2.jpg"/></div>
             <div class="portfolio__item turning_works"><img src="/img/carousel/фланец1.jpg"/></div>
-            <div class="portfolio__item milling_works grinding_works"><img src="/img/carousel/пресс-форма1.jpg"/></div>
             <div class="portfolio__item milling_works serial_production"><img src="/img/carousel/основание5.jpg"/></div>
             <div class="portfolio__item turning_works serial_production"><img src="/img/carousel/шток.jpg"/></div>
             <div class="portfolio__item turning_works serial_production"><img src="/img/carousel/штифт.jpg"/></div>
@@ -314,9 +320,8 @@
             <div class="portfolio__item milling_works cutting welding_works"><img src="/img/carousel/фрез-лаз-свар.jpg"/></div>
             <div class="portfolio__item cutting bending_works"><img src="/img/carousel/корпус2.jpg"/></div>
             <div class="portfolio__item turning_works"><img src="/img/carousel/крепление-оттяжки.jpg"/></div>
-            <div class="portfolio__item carousel_works_with_cnc boring_works"><img src="/img/carousel/плита-выставочная.jpg"/></div>
             <div class="portfolio__item turning_works milling_works serial_production"><img src="/img/carousel/полуось.jpg"/></div>
-            <div class="portfolio__item metal_bending welding_works milling_works"><img src="/img/carousel/нонейм.jpg"/></div>
+            <div class="portfolio__item *"><img src="/img/carousel/newest/44.jpg"/></div>
             <div class="portfolio__item turning_works gear_cutting_works"><img src="/img/carousel/зубчатое колесо.jpg"/></div>
             <div class="portfolio__item carousel_works_with_cnc milling_works boring_works"><img src="/img/carousel/матрица.jpg"/></div>
             <div class="portfolio__item turning_works milling_works"><img src="/img/carousel/основание1.jpg"/></div>
@@ -375,19 +380,11 @@
             <div class="portfolio__item *"><img src="/img/carousel/newest/5.jpg"/></div>
             <div class="portfolio__item *"><img src="/img/carousel/newest/6.jpg"/></div>
             <div class="portfolio__item *"><img src="/img/carousel/newest/4.jpg"/></div>
-            <div class="portfolio__item *"><img src="/img/carousel/newest/8.jpg"/></div>
-            <div class="portfolio__item *"><img src="/img/carousel/newest/10.jpg"/></div>
-            <div class="portfolio__item *"><img src="/img/carousel/newest/11.jpg"/></div>
-            <div class="portfolio__item *"><img src="/img/carousel/newest/9.jpg"/></div>
             <div class="portfolio__item *"><img src="/img/carousel/newest/13.jpg"/></div>
             <div class="portfolio__item *"><img src="/img/carousel/newest/16.jpg"/></div>
-            <div class="portfolio__item *"><img src="/img/carousel/newest/19.jpg"/></div>
-            <div class="portfolio__item *"><img src="/img/carousel/newest/37.jpg"/></div>
-            <div class="portfolio__item *"><img src="/img/carousel/newest/38.jpg"/></div>
-            <div class="portfolio__item *"><img src="/img/carousel/newest/39.jpg"/></div>
             <div class="portfolio__item *"><img src="/img/carousel/newest/40.jpg"/></div>
             <div class="portfolio__item *"><img src="/img/carousel/newest/41.jpg"/></div>
-            <div class="portfolio__item *"><img src="/img/carousel/newest/42.jpg"/></div>
+            <div class="portfolio__item *"><img src="/img/carousel/newest/37.jpg"/></div>
           </div>
           <div class="modal">
             <div class="modal-content"><img>

@@ -238,11 +238,11 @@ $(document).ready(function() {
 
 		// $(this).children('a').addClass('active');
 
-		//const activeFilter = getActiveFilter();
+		// const activeFilter = getActiveFilter();
 		// const imgs = $(`.portfolio__grid .portfolio__item${filters}`);
 		// showQuantity(imgs.length);
-		//$('.catalog__links input[type="checkbox"]:checked').attr('checked', false);
-		$(this).children('input[type="checkbox"]').attr('checked', true);
+		// $('.catalog__links input[type="checkbox"]:checked').attr('checked', false);
+		// $(this).children('input[type="checkbox"]').attr('checked', true);
 	});
 
 

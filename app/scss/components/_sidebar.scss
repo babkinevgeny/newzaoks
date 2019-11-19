@@ -32,6 +32,30 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    &--unfolded{
+      .catalog{
+        &__item{
+          max-height: 37px;
+          transition: max-height 0.1s ease-out;
+          .catalog__links{
+            display: block;
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.5s ease-in;
+          }
+          &:hover{
+            max-height: 1000px;
+            transition: max-height 0.5s ease-out;
+            .catalog__links{
+              display: block;
+              visibility: visible;
+              opacity: 1;
+              transition: opacity 0.5s ease-in;
+            }
+          }
+        }
+      }
+    }
     //padding-bottom: 20px;
   }
   &__item {

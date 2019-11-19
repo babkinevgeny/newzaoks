@@ -127,24 +127,39 @@
 }
 
 .companies--clients {
-  padding: 40px 0;
-  .companies__list .owl-stage-outer{
-    .title{
-      display: inline-block;
-      margin: 0 !important;
-      position: absolute;
-      top: 0;
-      left: 0;
-      text-transform: none;
-      padding-top: 15px;
-      a{
-        text-decoration: none;
-        display: block;
-        color: $color-blue;
-        height: 100%;
-        box-sizing: border-box;
-        &:hover{
-          color: lighten($color-blue, 5%);
+  .title{
+    font-size: 16px;
+    font-family: $font;
+    color: $color-blue;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+  }
+  .undertitle{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  .companies__list {
+    margin-top: 0;
+    .owl-stage-outer{
+      .title{
+        display: inline-block;
+        margin: 0 !important;
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-transform: none;
+        padding-top: 15px;
+        a{
+          text-decoration: none;
+          display: block;
+          color: $color-blue;
+          height: 100%;
+          box-sizing: border-box;
+          &:hover{
+            color: lighten($color-blue, 5%);
+          }
         }
       }
     }
