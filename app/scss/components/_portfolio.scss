@@ -223,7 +223,15 @@
     overflow: visible;
     font-size: 14px;
     &__links{
+      padding-top: 10px;
       padding-left: 15px;
+      position: absolute;
+      top: 0;
+      left: 100px;
+      z-index: 1;
+      background: white;
+      border-radius: 2px;
+      display: none;
       li {
         .check{
           margin-left: 1.4em;

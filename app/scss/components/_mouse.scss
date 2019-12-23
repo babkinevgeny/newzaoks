@@ -2,7 +2,7 @@
   position: relative;
   width: 32px;
   height: 48px;
-  border: 2px solid $color-blue;
+  border: 2px solid white;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
@@ -19,7 +19,7 @@
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background-color: $color-blue;
+  background-color: white;
   animation: mouse;
   animation-duration: 2s;
   animation-timing-function: ease-out;

@@ -5,9 +5,9 @@ html
   -let keywords = "металлообработка, механическая обработка металла, обработка металла, услуги по металлообработке, Set Service Group"
   -let description = 'Наша группа компаний оказывает комплексные услуги по металлообработке и производству различного оборудования по всей России.'
   include ../includes/head.pug
-  body(class=(title === 'Zaoks' ? 'body--no-top-padding body--parallax' : 'body--parallax'))
+  body.body--no-top-padding
     include ../includes/preloader.pug
-    include ../includes/main-header.pug
+    //-include ../includes/main-header.pug
     include ../includes/intro.pug
     //- include ../includes/main-slider.pug
     include ../includes/services.pug

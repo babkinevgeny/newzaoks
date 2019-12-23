@@ -83,10 +83,12 @@ let counter = () => {
 
 $(window).scroll(function() {
 
-  if ($(window).scrollTop() > (window.innerHeight - 60)) {
-    $('.main-header').removeClass('main-header--hiding');
+  if ($(window).scrollTop() > ($('.intro__inner h1.title').offset().top - 60)) {
+    $('.main-header').addClass('main-header--fixed');
+    $('.intro__inner').css('height', 'calc((100% - 70px - 60px))');
   } else{
-    $('.main-header').addClass('main-header--hiding');
+    $('.main-header').removeClass('main-header--fixed');
+    $('.intro__inner').css('height', 'calc((100% - 70px - 60px - 62px))');
   }
 
 });
@@ -103,7 +105,7 @@ $(window).scroll(function() {
 // });
 
 $('.mouse').click(function () {
-  var heightHeader =Math.round($('.intro').height() + 62);
+  var heightHeader =Math.round($('.intro').height() - 58);
   console.log(heightHeader);
   $("body,html").animate({"scrollTop":heightHeader},700);
 });

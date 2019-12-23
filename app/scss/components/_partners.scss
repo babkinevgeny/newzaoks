@@ -1,5 +1,9 @@
 .companies{
 	padding-bottom: 40px;
+	&__item {
+		overflow: hidden;
+		border: 2px solid white;
+	}
 	&__list{
 		margin: 0;
 		padding: 0;
@@ -13,6 +17,9 @@
 			margin-top: 20px;
 			width: 1340px !important;
 			cursor: pointer;
+		}
+		&--slider {
+			max-width: 1340px !important;
 		}
 	}
 	&__slide{
@@ -49,68 +56,74 @@
     		background: $color-lightgray;
 		}
 	}
-	&__item{
-		width: 262px;
-		height: 262px;
-	    margin: 3px;
-		background: url(../img/clients-sprite.png) 0px 0px no-repeat;
-		border: none;
-		position: relative;
-		overflow:hidden;
-		background-size: cover;
-		$step: 0px;
-		@for $i from 1 to 38 {
-			&:nth-child(#{$i}){
-				background-position: 0 $step;
-				$step: $step - 267px;
-				
-				&:hover{
+	&--big-squares.companies--clients {
+		.companies__item{
+			width: 262px ;
+			height: 262px;
+			margin: 3px;
+			background: url(../img/clients-sprite-big.png) 0px 0px no-repeat;
+			border: none;
+			position: relative;
+			overflow:hidden;
+			background-size: cover;
+			$step: 0px;
+			@for $i from 1 to 38 {
+				&:nth-child(#{$i}){
 					background-position: 0 $step;
 					$step: $step - 267px;
+					
+					&:hover{
+						background-position: 0 $step;
+						$step: $step - 267px;
+					}
 				}
 			}
-		}
-		&:hover{
 			.companies__title{
-				opacity:1;
-				transform: translateY(180px);
-				-webkit-transition: all 0.3s ease;
-				-moz-transition: all 0.3s ease;
-				-o-transition: all 0.3s ease;
-				-ms-transition: all 0.3s ease;
-				transition: all 0.3s ease;
-			}
-		}
-		&--empty{
-			position: relative;
-			background: $color-lightgray;
-			&:before{
-				content:"";
-				display: block;
-				width: 30px;
-			    height: 30px;
-			    background: url(../img/cancel--gray.svg) center no-repeat;
-			    position: absolute;
-			    left: 50%;
-			    top: 50%;
-			    margin-left: -15px;
-			    margin-top: -15px;
-			    transform: rotate(45deg);
-			    -webkit-transition: all 0.3s ease;
-				-moz-transition: all 0.3s ease;
-				-o-transition: all 0.3s ease;
-				-ms-transition: all 0.3s ease;
-				transition: all 0.3s ease;
+				transform: translateY(262px);
 			}
 			&:hover{
-				background: #fff;
-
+				.companies__title{
+					opacity:1;
+					transform: translateY(180px);
+					-webkit-transition: all 0.3s ease;
+					-moz-transition: all 0.3s ease;
+					-o-transition: all 0.3s ease;
+					-ms-transition: all 0.3s ease;
+					transition: all 0.3s ease;
+				}
+			}
+			&--empty{
+				position: relative;
+				background: $color-lightgray;
 				&:before{
-					transform: rotate(45deg) scale(1.5);
+					content:"";
+					display: block;
+					width: 30px;
+					height: 30px;
+					background: url(../img/cancel--gray.svg) center no-repeat;
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					margin-left: -15px;
+					margin-top: -15px;
+					transform: rotate(45deg);
+					-webkit-transition: all 0.3s ease;
+					-moz-transition: all 0.3s ease;
+					-o-transition: all 0.3s ease;
+					-ms-transition: all 0.3s ease;
+					transition: all 0.3s ease;
+				}
+				&:hover{
+					background: #fff;
+	
+					&:before{
+						transform: rotate(45deg) scale(1.5);
+					}
 				}
 			}
 		}
 	}
+
 	&__slide{
 		&--1{
 			.companies__item{
@@ -179,14 +192,16 @@
 		padding: 0;
 	}
 	.owl-stage-outer{
-		padding-top: 60px;
+		padding-top: 20px;
 	}
 	.owl-nav{
 		width: 90px;
+		height: 50px;
 		position: absolute;
-		top: 10px;
-		right: 0;
-		margin: 0;
+		
+		left: 50%;
+		//bottom: -55px;
+		margin-left: -45px;
 		display: flex;
 		justify-content: space-between;
 		button{
@@ -298,6 +313,11 @@
 			&__inner{
 				margin: auto;
 				width: 100%;
+				.title {
+					display: block;
+					font-size: 24px;
+					text-align: center;
+				}
 			}
 			&__list{
 				max-width: 1115px;

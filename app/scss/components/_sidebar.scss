@@ -41,7 +41,7 @@
             display: block;
             visibility: hidden;
             opacity: 0;
-            transition: opacity 0.5s ease-in;
+            //transition: opacity 0.5s ease-in;
           }
           &:hover{
             max-height: 1000px;
@@ -50,7 +50,7 @@
               display: block;
               visibility: visible;
               opacity: 1;
-              transition: opacity 0.5s ease-in;
+              //transition: opacity 0.5s ease-in;
             }
           }
         }

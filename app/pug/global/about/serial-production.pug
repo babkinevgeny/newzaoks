@@ -7,10 +7,82 @@ html
     section.full-height
       .container
         h1.title.title--uppercase Серийное производство
-        p.undertitle Страница в разработке
+        p.undertitle Помогаем проектам на всех стадиях
+        p.undertitle Наши специалисты помогут выстроить технологическую цепочку для создания вашего продукта.
+        section.progress
+          .progress__container
+            .progress__wrapper-bar
+              .progress__bar
+            .progress__mark
+          ul.progress__list
+            li.progress__item.progress__item--active
+              .progress__icon
+              .progress__text Создание 
+                //-br
+                | промышленного
+                br
+                | образца
+            li.progress__item
+              .progress__icon
+              .progress__text Подготовка к 
+                br
+                | производству
+            li.progress__item
+              .progress__icon
+              .progress__text Мелкосерийное 
+                br
+                | производство
+            li.progress__item
+              .progress__icon
+              .progress__text Серийное 
+                br
+                | производство
+        section.serial-articles
+          article.active
+            .article-icon
+            .article-text
+              h2 Создание промышленного образца
+              p.text.text--justify 
+                | Процесс производства любого изделия или детали начинается с 
+                b создания производственного образца
+                | . На данном этапе создается эталонная модель изделия, которая будет соответствовать всем требованиям заказчика. От того, насколько точно и скрупулезно будет проработана промышленная модель, зависит налаживание серийного производства изделия в будущем.
+          article
+            .article-icon
+            .article-text
+              h2 Подготовка к производству
+              p.text.text--justify 
+                | Следующим этапом на пути к серийному производству является 
+                b подготовка к массовому производству.
+                |  На данном этапе осуществляется создание и совершествование конструкторской документации, которая в дальнейшем потребуется для запуска производства изделия в больших объемах.
+          article
+            .article-icon
+            .article-text
+              h2  Мелкосерийное производство
+              p.text.text--justify 
+                | Запуск 
+                b мелкосерийного производства 
+                | подразумевает создание изделий и деталей в небольших (до 5 шт) объемах. Данный этап позволяет определить удовлетворяет ли данное изделие своим изначальным требованиям и решает ли оно свои задачи. На данном этапе производится усовершенствование изделия.
+          article
+            .article-icon
+            .article-text
+              h2 Cерийное производство
+              p.text.text--justify На данном этапе организуется полноценное контрактное производство в больших объемах и с использованием лучшего оборудования.
     include ../../includes/preloader.pug
     include ../../includes/main-header.pug
     include ../../includes/menu-line
     include ../../includes/popupform.pug
     include ../../includes/bottom-line.pug
 script(src="/js/common.js")
+script.
+  $('.progress__item').click(function() {
+    $('.progress__item--active').removeClass('progress__item--active');
+    $(this).addClass('progress__item--active');
+    const indexOfClicked = $(this).index('.progress__item');
+    $('.serial-articles article.active').removeClass('active');
+    $('.serial-articles article').eq(indexOfClicked).addClass('active');
+    const widthOfProgressItem = $('.progress__item').outerWidth(true);
+    const markTranslate = indexOfClicked * widthOfProgressItem;
+    $('.progress__mark').css('transform', `translateX(${markTranslate}px)`);
+    $('.progress__bar').css('transform', `translateX(${markTranslate - 675}px)`);
+    
+  })

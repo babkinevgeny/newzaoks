@@ -135,6 +135,9 @@
     display: block;
     text-align: center;
   }
+  .owl-nav {
+    left: 50%;
+  }
   .undertitle{
     margin-top: 10px;
     margin-bottom: 10px;
@@ -144,19 +147,16 @@
     margin-top: 0;
     .owl-stage-outer{
       .title{
-        display: inline-block;
-        margin: 0 !important;
-        position: absolute;
-        top: 0;
-        left: 0;
         text-transform: none;
-        padding-top: 15px;
+        margin: 0;
         a{
           text-decoration: none;
           display: block;
           color: $color-blue;
           height: 100%;
           box-sizing: border-box;
+          font-size: 24px;
+
           &:hover{
             color: lighten($color-blue, 5%);
           }
@@ -207,3 +207,116 @@
 //     }
 //   }
 // }
+.progress{
+  position: relative;
+  padding: 40px 0;
+  $width: 225px * 4 - 225px + 40px;
+  margin-bottom: 40px;
+  &__container {
+    overflow: hidden;
+    width: $width;
+    position: absolute;
+    top: 38px;
+    left: 50%;
+    margin-left: -$width / 2;
+    z-index: -1;
+  }
+  &__wrapper-bar{
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    overflow: hidden;
+    transform: translateY(25px);
+  }
+  &__bar{
+    width: 100% * 2;
+    height: 4px;
+    transform: translateX(-675px);
+    background: linear-gradient(to right, $color-blue 50%, lighten(rgb(108, 120, 144), 40%) 50%);
+    transition: all .1s ease;
+  }
+  &__mark {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: $color-blue;
+    transform: translateX(0px);
+    transition: all .1s ease;
+  }
+  &__list{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    font-family: $font;
+    justify-content: center;
+  }
+  &__item{
+    text-align: center;
+    margin: 0 5px;
+    font-size: 14px;
+    color: rgb(108, 120, 144);
+    width: 215px;
+    cursor: pointer;
+    @for $i from 1 to 5 {
+      &:nth-child(#{$i}) {
+        .progress__icon{
+          background: url('../img/step#{$i}.svg') no-repeat center;
+        }
+      }
+    }
+    &--active{
+      color: black;
+      .progress__icon{
+        transform: translateY(-40px);
+      }
+    }  
+  }
+  &__icon{
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    transition: all .1s ease;
+  }
+}
+
+.serial-articles{
+  width: 1340px;
+  margin: 0 auto;
+  article{
+    font-family: $font;
+    display: none;
+    @for $i from 1 to 5 {
+      &:nth-child(#{$i}) {
+        .article-icon{
+          background: url('../img/step#{$i}.svg') no-repeat center;
+          background-size: 150px 150px;
+        }
+      }
+    }
+    &.active{
+      display: block;
+    }
+    .article-icon {
+      width: 200px;
+      height: 200px;
+      padding: 15px;
+      border: 2px solid $color-blue;
+      border-radius: 50%;
+      display: inline-block;
+      float: left;
+      margin: 0 100px;
+    }
+    .article-text{
+      margin-right: 100px;
+      h2{
+        color: $color-blue;
+        text-align: center;
+      }
+      p {
+        font-size: 18px;
+      }
+
+    }
+    
+  }
+}

@@ -1,6 +1,6 @@
-section.companies.companies--clients
+section(class=add_link_for_clients ? 'companies companies--clients companies--big-squares' : 'companies companies--clients')
   if add_link_for_clients 
-    ul.companies__list.companies__list--slider.owl-carousel.owl-theme
+    ul.companies__list.companies__list--slider.owl-carousel.owl-theme(style='padding-bottom: 60px')
       div.companies__slide.companies__slide--1
         li.companies__item
           .companies__title АО «НПП «Промтрансавтоматика»
@@ -526,9 +526,9 @@ section.companies.companies--clients
     
 
 
-  if add_link_for_clients
-    a.companies__btn(href='/about/our-clients.html') Подробнее
-  else 
+  //- if add_link_for_clients
+  //-   a.companies__btn(href='/about/our-clients.html', style="margin-bottom: 45px; margin-top: 55px") Подробнее
+  //- else 
 
 
 //- -

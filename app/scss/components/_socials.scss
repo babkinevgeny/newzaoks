@@ -8,18 +8,22 @@
     height: 23px;
     transition: all .3s ease-in-out;
     opacity: .4;
-    &--vk{
-      background: url('../img/vk.svg') center no-repeat;
-      background-size: 23px 23px;
-    }
-    &--fb{
-      background: url('../img/facebook.svg') center no-repeat;
-      background-size: 23px 23px;
-    }
-    &--inst{
-      background: url('../img/instagram.svg') center no-repeat;
-      background-size: 23px 23px;
-    }
+    // svg {
+    //   width: 23px;
+    //   height: 23px;
+    // }
+    // &--vk{
+    //   // background: url('../img/vk.svg') center no-repeat;
+    //   // background-size: 23px 23px;
+    // }
+    // &--fb{
+    //   // background: url('../img/facebook.svg') center no-repeat;
+    //   // background-size: 23px 23px;
+    // }
+    // &--inst{
+    //   background: url('../img/instagram.svg') center no-repeat;
+    //   background-size: 23px 23px;
+    // }
     &:hover{
       opacity: 1;
     }

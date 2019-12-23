@@ -117,7 +117,6 @@ $(document).ready(function() {
 		itemSelector: itemSelector,
 		masonry: {
 			columnWidth: itemSelector,
-		  //isFitWidth: true
 		}
 	});
   

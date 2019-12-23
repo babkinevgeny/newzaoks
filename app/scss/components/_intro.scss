@@ -1,18 +1,33 @@
 .intro{
     width: 100vw;
-    height: calc(100vh - 62px);
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0, .5)), url('../img/intro.jpg') no-repeat;
+    background-size: cover;
+    background-position: 0 60%;
+    position: relative;
+    .main-header {
+        background: transparent ;
+        &__inner {
+            background: transparent; 
+        }
+    }
     &__inner{
-        margin-top: 62px;
+        //margin-top: 62px;
         display: flex;
         flex-direction: column;
         height: calc(100% - 70px - 60px - 62px);
         padding: 0 20px;
+        .title, .undertitle {
+            color: white;
+        }
     }
     &__slider{
         height: 50px;
     }
     .bx-wrapper{
         box-shadow: none;
+        background: transparent;
+        border: none;
         .bx-viewport{
             height: 50px !important;
         }
@@ -51,18 +66,18 @@
             a{
                 font-family: 'Montserrat', sans-serif;
                 text-decoration: none;
-                color: $color-blue;
+                color: white;
                 font-size: 24px;
                 display: block;
                 text-align: center;
                 span{
-                    margin-top: 30px;
+                    margin-top: 15px;
                     text-align: left;
                     display: block;
-                    font-size: 14px;
+                    font-size: 16px;
                     font-family: $font;
                     font-weight: lighter;
-                    color: $color-blue;
+                    color: white;
                 }
             }
             

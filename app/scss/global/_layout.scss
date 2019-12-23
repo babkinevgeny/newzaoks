@@ -397,3 +397,36 @@ body{
     padding: 20px 0;
   }
 }
+
+body.body--no-top-padding {
+  .main-header {
+    border-bottom: none;
+    position: relative;
+    .hamburger {
+      &__item {
+        background: white;
+      }
+    }
+    .main-header__item {
+      a {
+        color: white;
+      }
+    }
+    &.main-header--fixed {
+      border-bottom: 2px solid $color-blue;
+      position: fixed;
+      top: 0;
+      left: 0;
+      .hamburger {
+        &__item {
+          background: $color-gray;
+        }
+      }
+      .main-header__item {
+        a {
+          color: $color-gray;
+        }
+      }
+    }
+  }
+}
