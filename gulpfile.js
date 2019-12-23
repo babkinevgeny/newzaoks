@@ -10,7 +10,8 @@ let gulp = require('gulp'),
   autoprefixer = require('gulp-autoprefixer'),
   gutil = require('gulp-util'),
   ftp = require('vinyl-ftp'),
-  pug = require('gulp-pug');
+  pug = require('gulp-pug'),
+  sitemap = require('gulp-sitemap');
 
 gulp.task('scss', function() {
   return gulp.src('app/scss/*.scss')
@@ -59,6 +60,35 @@ gulp.task('clean', function() {
   return del.sync('dist');
 });
 
+gulp.task('sitemap', function () {
+  gulp.src('app/**/*.html', {
+          read: false
+      })
+      .pipe(sitemap({
+          siteUrl: 'https://zaoks.ru',
+          changefreq: 'daily',
+          priority: function(siteUrl, loc, entry) {
+            let splitedLoc = loc.split('/').slice(2).filter(elem => elem != '');
+            let priority = 1;
+
+            for (let i = 0; i < splitedLoc.length; i++) {
+
+              if (i == 0) {
+                continue
+              } else {
+                priority = priority - 0.2;
+              }
+
+            }
+          
+            priority = priority.toFixed(1);
+            return priority;
+          }
+
+      }))
+      .pipe(gulp.dest('app'));
+});
+
 // gulp.task('img', function() {
 //   return gulp.src('app/img/**/*')
 //     .pipe(cache(imagemin({
@@ -73,7 +103,7 @@ gulp.task('clean', function() {
 //     .pipe(gulp.dest('dist/img'));
 // });
 
-gulp.task('build', ['clean', 'scss', 'pug'], function() {
+gulp.task('build', ['clean', 'scss', 'pug', 'sitemap'], function() {
 
   let buildCss = gulp.src('app/css/*.css')
     .pipe(gulp.dest('dist/css'))
@@ -115,6 +145,9 @@ gulp.task('build', ['clean', 'scss', 'pug'], function() {
     .pipe(gulp.dest('dist'));
 
   let buildHtaccess = gulp.src('.htaccess')
+    .pipe(gulp.dest('dist'));
+
+  let siteMap = gulp.src('app/sitemap.xml')
     .pipe(gulp.dest('dist'));
 });
 
