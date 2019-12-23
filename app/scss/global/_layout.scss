@@ -402,6 +402,9 @@ body.body--no-top-padding {
   .main-header {
     border-bottom: none;
     position: relative;
+    &__logo {
+      background-image: url('../img/logo-horizontal-small-white.png');
+    }
     .hamburger {
       &__item {
         background: white;
@@ -417,6 +420,9 @@ body.body--no-top-padding {
       position: fixed;
       top: 0;
       left: 0;
+      .main-header__logo {
+        background-image: url('../img/logo-horizontal-small.png');
+      }
       .hamburger {
         &__item {
           background: $color-gray;

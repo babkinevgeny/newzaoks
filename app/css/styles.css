@@ -427,6 +427,8 @@ body {
 body.body--no-top-padding .main-header {
   border-bottom: none;
   position: relative; }
+  body.body--no-top-padding .main-header__logo {
+    background-image: url("../img/logo-horizontal-small-white.png"); }
   body.body--no-top-padding .main-header .hamburger__item {
     background: white; }
   body.body--no-top-padding .main-header .main-header__item a {
@@ -436,6 +438,8 @@ body.body--no-top-padding .main-header {
     position: fixed;
     top: 0;
     left: 0; }
+    body.body--no-top-padding .main-header.main-header--fixed .main-header__logo {
+      background-image: url("../img/logo-horizontal-small.png"); }
     body.body--no-top-padding .main-header.main-header--fixed .hamburger__item {
       background: #8a8a8a; }
     body.body--no-top-padding .main-header.main-header--fixed .main-header__item a {
