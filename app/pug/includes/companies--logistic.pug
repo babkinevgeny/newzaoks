@@ -36,7 +36,7 @@ section.companies.companies--logistic
         section.popup
           .popup__btn
           h1 #{company.name}
-          a.popup__link(href='http://' + company.site, target='_blank') #{company.site}
+          a.popup__link(href='http://' + company.site, target='_blank', rel="nofollow") #{company.site}
           .popup__left
             p #{company.descr}
           .popup__right

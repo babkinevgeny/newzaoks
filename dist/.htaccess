@@ -51,3 +51,7 @@ Redirect /technical-opportunities https://zaoks.ru/about/technical-opportunities
 Redirect /recommendations https://zaoks.ru/about/portfolio.html
 Redirect /vacancies https://zaoks.ru/about/vacancies.html
 Redirect /delivery https://zaoks.ru/logistic.html
+
+<Files ~ "\.pdf$">
+  Header set X-Robots-Tag "noindex, nofollow"
+</Files>

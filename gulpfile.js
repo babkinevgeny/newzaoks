@@ -183,7 +183,7 @@ gulp.task('deploySite', function() {
   let conn = ftp.create({
     host: 'zaoks.ru',
     user: 'o92903x7_zaoks',
-    password: 'JsU2RT6*',
+    password: 'Tzk8&m4E',
     parallel: 10,
     log: gutil.log
   });
