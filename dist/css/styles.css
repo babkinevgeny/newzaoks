@@ -2567,7 +2567,7 @@ blockquote {
     .popup__right .feedback {
       width: 250px;
       height: 353px; }
-  .popup h1 {
+  .popup h2, .popup h3 {
     text-align: left;
     font-size: 24px;
     color: #06abdd;
