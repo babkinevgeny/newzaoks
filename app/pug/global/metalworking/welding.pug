@@ -1,5 +1,5 @@
 doctype
-html
+html(prefix="og: http://ogp.me/ns#")
 	-let title = 'Сварочные Работы в СПБ на заказ'
 	-let heading = 'Сварочные Работы'
 	-let titleForNavigation = 'Сварочные работы'
@@ -75,6 +75,7 @@ html
 							|  или 
 							b оставить заявку с помощью формы связи
 							| .
+					article.main__article.main__articles--dropdown
 						ul.dropdown
 							li.dropdown-item
 								.dropdown-title

@@ -1,5 +1,5 @@
 doctype
-html
+html(prefix="og: http://ogp.me/ns#")
 	-let title = 'Слесарные Работы по Металлу'
 	-let heading = 'Слесарно Сборочные Работы'
 	-let titleForNavigation = 'Слесарно-сборочные работы'
@@ -62,7 +62,7 @@ html
 							b 8 (812) 627-15-16 
 							| или 
 							b заполнив форму связи.
-				section.main__articles
+				section.main__articles.main__articles--dropdown
 					ul.dropdown
 						li.dropdown-item
 							.dropdown-title

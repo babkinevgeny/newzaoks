@@ -1,7 +1,7 @@
 include ../../mixins/_portfolio__item
 
 doctype
-html
+html(prefix="og: http://ogp.me/ns#")
   -let title = 'Портфолио'
   -let description = 'Примеры работ, выполненных компанией Set Service Group'
   include ../../includes/head.pug
@@ -11,6 +11,8 @@ html
     include ../../includes/menu-line.pug
     section.portfolio
       .portfolio__inner
+        div(style="position: absolute; left: 20px; top: 0")
+          include ../../includes/breadcrumbs.pug
         h1.title.title--uppercase Портфолио
         p.undertitle (Мы производим более 10000 различных наименований продукции)
         .portfolio__container

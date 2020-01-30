@@ -1,5 +1,5 @@
 doctype
-html
+html(prefix="og: http://ogp.me/ns#")
   -let title = 'Корпуса приборов'
   -let parent = 'Продукция'
   include ../../includes/head.pug
@@ -14,7 +14,7 @@ html
         h1.title.title--left Корпуса приборов
         .main__top
           .fotorama__wrapper
-            .fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")
+            .fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false" data-maxwidth="262")
               img(src="../img/metal-products/Корпуса1.jpg")
               img(src="../img/metal-products/Корпуса2.jpg")
           .main__info
@@ -22,7 +22,7 @@ html
             .infobuttons
               .btn.btn--form Заказать производство
               
-        section.main__articles.main__articles--with-btns
+        section.main__articles.main__articles--with-btns.main__articles--with-btns--2
           .main__buttons
             .outer.active
               .inner Цельнометаллические

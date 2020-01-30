@@ -1,5 +1,5 @@
 doctype
-html
+html(prefix="og: http://ogp.me/ns#")
 	-let title = 'Разработка чертежей на заказ | Разработка 3D-моделей'
 	-let heading = 'Разработка чертежей и 3D-моделей'
 	-let titleForNavigation = 'Разработка чертежей и 3D-моделей'
@@ -65,7 +65,7 @@ html
 							|  или обратиться с вопросом 
 							b заполнив форму для связи
 							| .
-				section.main__articles
+				section.main__articles.main__articles--dropdown
 					ul.dropdown
 						li.dropdown-item
 							.dropdown-title

@@ -1,12 +1,14 @@
 doctype
-html
-  -let title = 'Set Service Group – Центр металлообработки'
+html(prefix="og: http://ogp.me/ns#")
+  -let title = 'Контакты'
   -let description = 'Контактные данные предприятия Set Service Group'
   include ../includes/head.pug
   body.body--parallax
     include ../includes/preloader.pug
     include ../includes/main-header.pug
     include ../includes/menu-line
+    div(style="max-width:1340px; margin: 0 auto; padding: 0 20px")
+      include ../includes/breadcrumbs.pug
     section.contacts
       h1.title.title--uppercase Контакты
       p.undertitle
@@ -35,6 +37,7 @@ html
                     span.tel 8 (812) 627-15-16
                     span.park Административно-хозяйственная деятельность
                     span.time 9:00 - 18:00
+                    
         li.dropdown-item
           .dropdown-title
             .container

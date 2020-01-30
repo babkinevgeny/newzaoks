@@ -1,5 +1,5 @@
 doctype
-html
+html(prefix="og: http://ogp.me/ns#")
   -let title = 'Металлообработка в СПБ на заказ - Set Service Group'
   -let add_link_for_clients = true
   -let keywords = "металлообработка, механическая обработка металла, обработка металла, услуги по металлообработке, Set Service Group"
@@ -27,7 +27,7 @@ html
             | объединенные одной большой идеей развития производственного сектора России 
             br
             | и качественного увеличения номенклатуры товаров, произведенных на территории России.
-        a(href='about/about.html') Подробнее
+        a(href='about/about') Подробнее
     //-include ../includes/counter.pug
     include ../includes/companies.pug
     include ../includes/popupform.pug

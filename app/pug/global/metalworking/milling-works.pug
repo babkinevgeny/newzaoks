@@ -1,5 +1,5 @@
 doctype
-html
+html(prefix="og: http://ogp.me/ns#")
 	-let title = 'Фрезерные работы в СПБ по металлу на заказ'
 	-let heading = 'Фрезерные Работы по Металлу'
 	-let titleForNavigation = 'Фрезерные работы'
@@ -28,7 +28,7 @@ html
 						.infobuttons
 							.btn.btn--form Заказать услугу
 							
-				section.main__articles.main__articles--with-btns
+				section.main__articles.main__articles--with-btns.main__articles--with-btns--2
 					.main__buttons
 						.outer.active
 							.inner Универсальное оборудование
@@ -81,7 +81,7 @@ html
 							|  или 
 							b оставить заявку с помощью формы связи
 							| .
-				section.main__articles
+				section.main__articles.main__articles--dropdown
 					ul.dropdown
 						li.dropdown-item
 							.dropdown-title

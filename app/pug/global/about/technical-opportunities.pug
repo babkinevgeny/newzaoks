@@ -1,6 +1,6 @@
 doctype
-html
-  -let title = 'Set Service Group – Центр металлообработки'
+html(prefix="og: http://ogp.me/ns#")
+  -let title = 'Технические возможности'
   -let description = 'Описание технических возможностей и производственных мощностей компании.'
   include ../../includes/head.pug
   body.body--parallax
@@ -9,6 +9,7 @@ html
     -let headerTitleWide = true
     include ../../includes/header-article
     ul.dropdown.dropdown--technical
+      include ../../includes/breadcrumbs.pug
       h1.title Технические возможности
       p.text.text--center
         | Мы располагаем производственной базой, обрабатывающими центрами, станками с ЧПУ, парком токарных и фрезерных станков

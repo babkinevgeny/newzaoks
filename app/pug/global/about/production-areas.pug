@@ -1,6 +1,6 @@
 doctype
-html
-  -let title = 'Set Service Group – Центр металлообработки'
+html(prefix="og: http://ogp.me/ns#")
+  -let title = 'Производственные площадки'
   -let description = 'В распоряжении нашей компании имеется 6 производственных площадок, каждая из которых предназначена для решения задач в определенной производственной сфере.'
   include ../../includes/head.pug
   body.body--parallax
@@ -21,7 +21,10 @@ html
     //-   .menu-line__item
     //-       .menu-line__btn Площадка 6
     section.prod-areas
+      div(style="max-width:1340px; margin: 0 auto; padding: 0 20px")
+        include ../../includes/breadcrumbs.pug
       .container
+        
         h1.title.title--uppercase Производственные площадки
         p.undertitle 
           | В распоряжении нашей компании имеется 6 производственных площадок, 

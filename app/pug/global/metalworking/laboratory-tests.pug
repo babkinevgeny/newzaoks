@@ -1,5 +1,5 @@
 doctype
-html
+html(prefix="og: http://ogp.me/ns#")
 	-let title = 'Лабораторные Испытания Металлов и Сплавов в СПБ'
 	-let titleForNavigation = 'Лабораторные испытания'
 	-let heading = 'Испытания Металлов'
@@ -27,7 +27,7 @@ html
 						.infobuttons
 							.btn.btn--form Заказать услугу
 							
-				section.main__articles.main__articles--with-btns
+				section.main__articles.main__articles--with-btns.main__articles--with-btns--2
 					.main__buttons
 						.outer.active
 							.inner Хим. анализ металлов и сплавов
@@ -166,7 +166,7 @@ html
 						p.text.text--justify Ультразвуковой – также позволяет выявлять дефекты только с помощью импульса ультразвука.
 						p.text.text--justify Специальные методы – это и прослушивание со стетоскопом, и испытания на циклическую вязкость и пр.
 						p.text.text--justify Все эти испытания, в том числе контрольные, очень важны: они помогают определить какие металлы подходят для разных конструкций, каким обработкам можно подвергать материал, какие режимы сварки использовать и прочее.  
-				section.main__articles
+				section.main__articles.main__articles--dropdown
 					ul.dropdown
 						li.dropdown-item
 							.dropdown-title

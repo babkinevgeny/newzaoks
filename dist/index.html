@@ -1,21 +1,48 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html prefix="og: http://ogp.me/ns#">
+  <head role="banner" itemscope itemtype="http://schema.org/WPHeader">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="keywords" content="металлообработка, механическая обработка металла, обработка металла, услуги по металлообработке, Set Service Group">
-    <meta name="description" content="Комплексные услуги Металлообработки в Санкт Петербурге на современном оборудовании от профессионалов 👷, что обеспечивает высокую скорость ⏰ и качество продукции!">
+    <meta itemprop="description" name="description" content="Комплексные услуги Металлообработки в Санкт Петербурге на современном оборудовании от профессионалов 👷, что обеспечивает высокую скорость ⏰ и качество продукции!">
     <meta name="yandex-verification" content="fd5b0d92ffa76839">
+    <meta property="og:description" content="Комплексные услуги Металлообработки в Санкт Петербурге на современном оборудовании от профессионалов 👷, что обеспечивает высокую скорость ⏰ и качество продукции!">
+    <meta property="og:title" content="Металлообработка в СПБ на заказ - Set Service Group">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:image" content="https://zaoks.ru/img/for-pic-sprites/%D1%84%D1%80%D0%B5%D0%B7%D0%B5%D1%80%D0%BD%D1%8B%D0%B5%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B.jpg">
+    <meta property="og:image:width" content="262px">
+    <meta property="og:image:height" content="262px">
+    <meta property="og:url" content="">
     <title data-title-for-navigation="">Металлообработка в СПБ на заказ - Set Service Group</title>
+    <link rel="canonical">
     <link rel="shortcut icon" type="image/png" href="/img/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&amp;amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="/css/libs.min.css">
     <link rel="stylesheet" href="/css/styles.css">
     <script src="/libs/jquery/jquery.min.js"></script>
+    <script>
+      let href = window.location.href;
+      $('meta[property="og:url"]').attr('content', href);
+      $('link[rel="canonical"]').attr('href', href);
+    </script>
     <script src="/libs/jquery.validate/jquery.validate.min.js"></script>
     <script src="/libs/form/form.min.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "SET SERVICE",
+        "url": "https://zaoks.ru/",
+        "sameAs": [
+          "https://vk.com/setservice",
+          "https://facebook.com/set.service.group",
+          "https://instagram.com/set_service_group"
+        ]
+      }
+    </script>
   </head>
   <body class="body--no-top-padding">
     <div id="preloader">
@@ -30,14 +57,14 @@
         <div class="main-header__inner">
           <div class="main-header__column main-header__column--left">    
             <div class="hamburger"><span class="hamburger__item"></span><span class="hamburger__item"></span><span class="hamburger__item"></span></div>
-            <div class="main-header__logo"><a href="/index.html"></a></div>
+            <div class="main-header__logo"><a href="/index"></a></div>
           </div>
           <div class="main-header__column main-header__column--right">
             <ul class="main-header__list">
               <li class="main-header__item"><a href="mailto:info@zaoks.ru">info@zaoks.ru</a></li>
               <li class="main-header__item"><a href="tel:+78126271516">8 (812) 627 15 16</a></li>
             </ul>
-            <div class="main-header__skolkovo"><a href="/about/skolkovo-operator.html"><img src="/img/operator.png" alt="Сколково"></a></div>
+            <div class="main-header__skolkovo"><a href="/about/skolkovo-operator"><img src="/img/operator.png" alt="Сколково"></a></div>
           </div>
         </div>
         <nav class="navigation">
@@ -46,13 +73,13 @@
             <div class="navigation__column navigation__column--first">
               <li class="navigation__title">О нас
                 <ul class="navigation__underlist">
-                  <li class="navigation__undertitle"><a href="/about/about.html">О компании</a></li>
-                  <li class="navigation__undertitle"><a href="/about/skolkovo-operator.html">ЦКП Технопарка "Сколково"</a></li>
-                  <li class="navigation__undertitle"><a href="/about/technical-opportunities.html">Технические возможности</a></li>
-                  <li class="navigation__undertitle"><a href="/about/production-areas.html">Производственные площадки</a></li>
-                  <li class="navigation__undertitle"><a href="/about/serial-production.html">Серийное производство</a></li>
-                  <li class="navigation__undertitle"><a href="/about/portfolio.html">Портфолио</a></li>
-                  <li class="navigation__undertitle"><a href="/contacts.html">Контакты</a></li>
+                  <li class="navigation__undertitle"><a href="/about/about">О компании</a></li>
+                  <li class="navigation__undertitle"><a href="/about/skolkovo-operator">ЦКП Технопарка "Сколково"</a></li>
+                  <li class="navigation__undertitle"><a href="/about/technical-opportunities">Технические возможности</a></li>
+                  <li class="navigation__undertitle"><a href="/about/production-areas">Производственные площадки</a></li>
+                  <li class="navigation__undertitle"><a href="/about/serial-production">Серийное производство</a></li>
+                  <li class="navigation__undertitle"><a href="/about/portfolio">Портфолио</a></li>
+                  <li class="navigation__undertitle"><a href="/contacts">Контакты</a></li>
                 </ul>
               </li>
               <form class="search">
@@ -67,47 +94,47 @@
                 <div>Посмотреть презентацию</div></a>
             </div>
             <div class="navigation__column navigation__column--second">
-              <li class="navigation__title"> <a class="title-link" href="/metalworking.html">Металлообработка</a>
+              <li class="navigation__title"> <a class="title-link" href="/metalworking">Металлообработка</a>
                 <ul class="navigation__underlist">
-                  <li class="navigation__undertitle"><a href="/metalworking/milling-works.html">Фрезерные работы</a></li>
-                  <li class="navigation__undertitle"><a href="/metalworking/turning-works.html">Токарные работы</a></li>
-                  <li class="navigation__undertitle"><a href="/metalworking/boring-works.html">Координатно-расточные работы</a></li>
-                  <li class="navigation__undertitle"><a href="/metalworking/grinding-works.html">Шлифовальные работы</a></li>
-                  <li class="navigation__undertitle"><a href="/metalworking/gear-cutting-works.html">Зубонарезные работы</a></li>
-                  <li class="navigation__undertitle"><a href="/metalworking/electric-erosion.html">Электроэрозия</a></li>
-                  <li class="navigation__undertitle"><a href="/metalworking/carousel-works-with-cnc.html">Карусельная обработка с ЧПУ</a></li>
-                  <li class="navigation__undertitle"><a href="/metalworking/metal-cutting.html">Резка металла</a></li>
-                  <li class="navigation__undertitle"><a href="/metalworking/metal-bending.html">Гибка металла</a></li>
-                  <li class="navigation__undertitle"><a href="/metalworking/thermal-works.html">Термическая обработка</a></li>
-                  <li class="navigation__undertitle"><a href="/metalworking/welding.html">Сварочные работы</a></li>
-                  <li class="navigation__undertitle"><a href="/metalworking/assembly-work.html">Слесарно-сборочные работы</a></li>
-                  <li class="navigation__undertitle"><a href="/metalworking/coating.html">Нанесение покрытий</a></li>
-                  <li class="navigation__undertitle"> <a href="/metalworking/laboratory-tests.html">Лабораторные испытания</a></li>
-                  <li class="navigation__undertitle"><a href="/metalworking/development-of-drawings.html">Раработка чертежей и 3D-моделей</a></li>
+                  <li class="navigation__undertitle"><a href="/metalworking/milling-works">Фрезерные работы</a></li>
+                  <li class="navigation__undertitle"><a href="/metalworking/turning-works">Токарные работы</a></li>
+                  <li class="navigation__undertitle"><a href="/metalworking/boring-works">Координатно-расточные работы</a></li>
+                  <li class="navigation__undertitle"><a href="/metalworking/grinding-works">Шлифовальные работы</a></li>
+                  <li class="navigation__undertitle"><a href="/metalworking/gear-cutting-works">Зубонарезные работы</a></li>
+                  <li class="navigation__undertitle"><a href="/metalworking/electric-erosion">Электроэрозия</a></li>
+                  <li class="navigation__undertitle"><a href="/metalworking/carousel-works-with-cnc">Карусельная обработка с ЧПУ</a></li>
+                  <li class="navigation__undertitle"><a href="/metalworking/metal-cutting">Резка металла</a></li>
+                  <li class="navigation__undertitle"><a href="/metalworking/metal-bending">Гибка металла</a></li>
+                  <li class="navigation__undertitle"><a href="/metalworking/thermal-works">Термическая обработка</a></li>
+                  <li class="navigation__undertitle"><a href="/metalworking/welding">Сварочные работы</a></li>
+                  <li class="navigation__undertitle"><a href="/metalworking/assembly-work">Слесарно-сборочные работы</a></li>
+                  <li class="navigation__undertitle"><a href="/metalworking/coating">Нанесение покрытий</a></li>
+                  <li class="navigation__undertitle"> <a href="/metalworking/laboratory-tests">Лабораторные испытания</a></li>
+                  <li class="navigation__undertitle"><a href="/metalworking/development-of-drawings">Раработка чертежей и 3D-моделей</a></li>
                 </ul>
               </li>
             </div>
             <div class="navigation__column navigation__column--third">
-              <li class="navigation__title"> <a class="title-link" href="/metal-products.html">Продукция</a>
+              <li class="navigation__title"> <a class="title-link" href="/metal-products">Продукция</a>
                 <ul class="navigation__underlist">
-                  <li class="navigation__undertitle"><a href="/metal-products/gearboxes.html">Редукторы / Зубчатые передачи / Комплектующие</a></li>
-                  <li class="navigation__undertitle"><a href="/metal-products/hydraulic-equipment.html">Гидравлическое оборудование / Гидроцилиндры / Комплектующие</a></li>
-                  <li class="navigation__undertitle"><a href="/metal-products/press-molds-stamps-matrices.html">Пресс-формы, штампы, матрицы, фильеры</a></li>
-                  <li class="navigation__undertitle"><a href="/metal-products/extrusion-lines.html">Детали для промышленного оборудования</a></li>
-                  <li class="navigation__undertitle"><a href="/metal-products/engineering-parts.html">Детали для машиностроения</a></li>
-                  <li class="navigation__undertitle"><a href="/metal-products/precision-parts.html">Детали прецизионные</a></li>
+                  <li class="navigation__undertitle"><a href="/metal-products/gearboxes">Редукторы / Зубчатые передачи / Комплектующие</a></li>
+                  <li class="navigation__undertitle"><a href="/metal-products/hydraulic-equipment">Гидравлическое оборудование / Гидроцилиндры / Комплектующие</a></li>
+                  <li class="navigation__undertitle"><a href="/metal-products/press-molds-stamps-matrices">Пресс-формы, штампы, матрицы, фильеры</a></li>
+                  <li class="navigation__undertitle"><a href="/metal-products/extrusion-lines">Детали для промышленного оборудования</a></li>
+                  <li class="navigation__undertitle"><a href="/metal-products/engineering-parts">Детали для машиностроения</a></li>
+                  <li class="navigation__undertitle"><a href="/metal-products/precision-parts">Детали прецизионные</a></li>
+                  <li class="navigation__undertitle"><a href="/metal-products/non-standart-metal-structures">Нестандартные металлоконструкции</a></li>
                 </ul>
               </li>
-              <li class="navigation__title"> <a class="title-link" href="/metalstructures.html">Металлоконструкции</a>
+              <li class="navigation__title"> <a class="title-link" href="/metalstructures">Металлоконструкции</a>
                 <ul class="navigation__underlist">
-                  <li class="navigation__undertitle"><a href="/metal-structures/pipeline-supports.html">Опоры трубопроводов</a></li>
-                  <li class="navigation__undertitle"><a href="/metal-structures/service-areas.html">Площадки обслуживания</a></li>
-                  <li class="navigation__undertitle"><a href="/metal-structures/welded-crane-girders.html">Балки подкрановые сварные</a></li>
-                  <li class="navigation__undertitle"><a href="/metal-structures/technological-tanks.html">Технологические емкости</a></li>
-                  <li class="navigation__undertitle"><a href="/metal-structures/wheeled-trolleys.html">Тележки колесные / на рельсах</a></li>
-                  <li class="navigation__undertitle"><a href="/metal-structures/bridge-metal-structures.html">Мостовые металлоконструкции</a></li>
-                  <li class="navigation__undertitle"><a href="/metal-structures/building-metal-structures.html">Строительные металлоконструкции</a></li>
-                  <li class="navigation__undertitle"><a href="/metal-structures/non-standart-metal-structures.html">Нестандартные металлоконструкции</a></li>
+                  <li class="navigation__undertitle"><a href="/metal-structures/pipeline-supports">Опоры трубопроводов</a></li>
+                  <li class="navigation__undertitle"><a href="/metal-structures/service-areas">Площадки обслуживания</a></li>
+                  <li class="navigation__undertitle"><a href="/metal-structures/welded-crane-girders">Балки подкрановые сварные</a></li>
+                  <li class="navigation__undertitle"><a href="/metal-structures/technological-tanks">Технологические емкости</a></li>
+                  <li class="navigation__undertitle"><a href="/metal-structures/wheeled-trolleys">Тележки колесные / на рельсах</a></li>
+                  <li class="navigation__undertitle"><a href="/metal-structures/bridge-metal-structures">Мостовые металлоконструкции</a></li>
+                  <li class="navigation__undertitle"><a href="/metal-structures/building-metal-structures">Строительные металлоконструкции</a></li>
                 </ul>
               </li>
             </div>
@@ -115,7 +142,7 @@
         </nav>
       </header>
       <div class="intro__inner">
-        <h1 class="title">Комплексные Услуги Металлообработки</h1>
+        <h1 class="title">Центр Металлообработки</h1>
         <div class="intro__slider">
           <div class="undertitle">Региональный оператор "Центр коллективного пользования "Сколково"</div>
           <div class="undertitle">Работаем по договорам гособоронзаказа госконтракта со спецсчетами</div>
@@ -126,70 +153,70 @@
         <div class="mouse"><span class="mouse-dot"></span></div>
       </div>
       <ul class="numbers">
-        <li class="numbers__item"><a href="/metal-products.html">
+        <li class="numbers__item"><a href="/metal-products">
              > 20 000 позиций<span>Каталог </span></a></li>
-        <li class="numbers__item"><a href="/about/our-clients.html">
+        <li class="numbers__item"><a href="/about/our-clients">
              > 60 партнеров<span>Партнеры</span></a></li>
-        <li class="numbers__item"><a href="/contacts.html">
+        <li class="numbers__item"><a href="/contacts">
              > 5 филиалов<span>Контакты</span></a></li>
-        <li class="numbers__item"><a href="/about/portfolio.html">
+        <li class="numbers__item"><a href="/about/portfolio">
              > 1000 заказов<span>Заказы</span></a></li>
       </ul>
     </section>
     <section class="services">
       <ul class="assortiment assortiment--squares owl-carousel owl-theme">
-        <li class="assortiment__item assortiment__item--1"><a class="assortiment__link" href="/metalworking/milling-works.html"><span class="assortiment__title"> <span>Фрезерные работы</span></span></a></li>
-        <li class="assortiment__item assortiment__item--2"><a class="assortiment__link" href="/metalworking/turning-works.html"><span class="assortiment__title"> <span>Токарные работы</span></span></a></li>
-        <li class="assortiment__item assortiment__item--3"><a class="assortiment__link" href="/metalworking/boring-works.html"><span class="assortiment__title"> <span>Координатно-расточные работы</span></span></a></li>
-        <li class="assortiment__item assortiment__item--4"><a class="assortiment__link" href="/metalworking/grinding-works.html"><span class="assortiment__title"> <span>Шлифовальные работы</span></span></a></li>
-        <li class="assortiment__item assortiment__item--5"><a class="assortiment__link" href="/metalworking/gear-cutting-works.html"><span class="assortiment__title"> <span>Зубонарезные работы</span></span></a></li>
-        <li class="assortiment__item assortiment__item--6"><a class="assortiment__link" href="/metalworking/electric-erosion.html"><span class="assortiment__title"> <span>Электроэрозия</span></span></a></li>
-        <li class="assortiment__item assortiment__item--7"><a class="assortiment__link" href="/metalworking/carousel-works-with-cnc.html"><span class="assortiment__title"> <span>Карусельная обработка</span></span></a></li>
-        <li class="assortiment__item assortiment__item--8"><a class="assortiment__link" href="/metalworking/metal-cutting.html"><span class="assortiment__title"> <span>Резка металла</span></span></a></li>
-        <li class="assortiment__item assortiment__item--9"><a class="assortiment__link" href="/metalworking/metal-bending.html"><span class="assortiment__title"> <span>Гибка металла</span></span></a></li>
-        <li class="assortiment__item assortiment__item--10"><a class="assortiment__link" href="/metalworking/thermal-works.html"><span class="assortiment__title"> <span>Термическая обработка</span></span></a></li>
-        <li class="assortiment__item assortiment__item--11"><a class="assortiment__link" href="/metalworking/welding.html"><span class="assortiment__title"> <span>Сварочные работы</span></span></a></li>
-        <li class="assortiment__item assortiment__item--12"><a class="assortiment__link" href="/metalworking/assembly-work.html"><span class="assortiment__title"> <span>Слесарно-сборочные работы</span></span></a></li>
-        <li class="assortiment__item assortiment__item--13"><a class="assortiment__link" href="/metalworking/coating.html"><span class="assortiment__title"> <span>Нанесение покрытий</span></span></a></li>
-        <li class="assortiment__item assortiment__item--14"><a class="assortiment__link" href="/metalworking/laboratory-tests.html"><span class="assortiment__title"> <span>Лабораторные испытания</span></span></a></li>
-        <li class="assortiment__item assortiment__item--15"><a class="assortiment__link" href="/metalworking/development-of-drawings.html"><span class="assortiment__title"> <span>Разработка чертежей и 3D-моделей</span></span></a></li>
+        <li class="assortiment__item assortiment__item--1"><a class="assortiment__link" href="/metalworking/milling-works"><span class="assortiment__title"> <span>Фрезерные работы</span></span></a></li>
+        <li class="assortiment__item assortiment__item--2"><a class="assortiment__link" href="/metalworking/turning-works"><span class="assortiment__title"> <span>Токарные работы</span></span></a></li>
+        <li class="assortiment__item assortiment__item--3"><a class="assortiment__link" href="/metalworking/boring-works"><span class="assortiment__title"> <span>Координатно-расточные работы</span></span></a></li>
+        <li class="assortiment__item assortiment__item--4"><a class="assortiment__link" href="/metalworking/grinding-works"><span class="assortiment__title"> <span>Шлифовальные работы</span></span></a></li>
+        <li class="assortiment__item assortiment__item--5"><a class="assortiment__link" href="/metalworking/gear-cutting-works"><span class="assortiment__title"> <span>Зубонарезные работы</span></span></a></li>
+        <li class="assortiment__item assortiment__item--6"><a class="assortiment__link" href="/metalworking/electric-erosion"><span class="assortiment__title"> <span>Электроэрозия</span></span></a></li>
+        <li class="assortiment__item assortiment__item--7"><a class="assortiment__link" href="/metalworking/carousel-works-with-cnc"><span class="assortiment__title"> <span>Карусельная обработка</span></span></a></li>
+        <li class="assortiment__item assortiment__item--8"><a class="assortiment__link" href="/metalworking/metal-cutting"><span class="assortiment__title"> <span>Резка металла</span></span></a></li>
+        <li class="assortiment__item assortiment__item--9"><a class="assortiment__link" href="/metalworking/metal-bending"><span class="assortiment__title"> <span>Гибка металла</span></span></a></li>
+        <li class="assortiment__item assortiment__item--10"><a class="assortiment__link" href="/metalworking/thermal-works"><span class="assortiment__title"> <span>Термическая обработка</span></span></a></li>
+        <li class="assortiment__item assortiment__item--11"><a class="assortiment__link" href="/metalworking/welding"><span class="assortiment__title"> <span>Сварочные работы</span></span></a></li>
+        <li class="assortiment__item assortiment__item--12"><a class="assortiment__link" href="/metalworking/assembly-work"><span class="assortiment__title"> <span>Слесарно-сборочные работы</span></span></a></li>
+        <li class="assortiment__item assortiment__item--13"><a class="assortiment__link" href="/metalworking/coating"><span class="assortiment__title"> <span>Нанесение покрытий</span></span></a></li>
+        <li class="assortiment__item assortiment__item--14"><a class="assortiment__link" href="/metalworking/laboratory-tests"><span class="assortiment__title"> <span>Лабораторные испытания</span></span></a></li>
+        <li class="assortiment__item assortiment__item--15"><a class="assortiment__link" href="/metalworking/development-of-drawings"><span class="assortiment__title"> <span>Разработка чертежей и 3D-моделей</span></span></a></li>
       </ul>
     </section>
     <section class="products">
       <ul class="assortiment assortiment--squares owl-carousel owl-theme">
-        <li class="assortiment__item assortiment__item--1"><a class="assortiment__link" href="/metal-products/gearboxes.html"><span class="assortiment__title"> <span>Редукторы / <br>Зубчатые передачи / <br>Комплектующие</span></span></a></li>
-        <li class="assortiment__item assortiment__item--2"><a class="assortiment__link" href="/metal-products/hydraulic-equipment.html"><span class="assortiment__title"> <span>Гидравлическое оборудование / Гидроцилиндры</span></span></a></li>
-        <li class="assortiment__item assortiment__item--3"><a class="assortiment__link" href="/metal-products/press-molds-stamps-matrices.html"><span class="assortiment__title"> <span>Пресс-формы / штампы / <br>матрицы / фильеры</span></span></a></li>
-        <li class="assortiment__item assortiment__item--4"><a class="assortiment__link" href="/metal-products/extrusion-lines.html"><span class="assortiment__title"> <span>Детали <br>для промышленного <br>оборудования</span></span></a></li>
-        <li class="assortiment__item assortiment__item--5"><a class="assortiment__link" href="/metal-products/engineering-parts.html"><span class="assortiment__title"> <span>Детали <br>для машиностроения</span></span></a></li>
-        <li class="assortiment__item assortiment__item--6"><a class="assortiment__link" href="/metal-products/precision-parts.html"><span class="assortiment__title"> <span>Детали <br>прецизионные</span></span></a></li>
-        <li class="assortiment__item assortiment__item--7"><a class="assortiment__link" href="/metal-structures/pipeline-supports.html"><span class="assortiment__title"> <span>Опоры <br>трубопроводов</span></span></a></li>
-        <li class="assortiment__item assortiment__item--8"><a class="assortiment__link" href="/metal-structures/service-areas.html"><span class="assortiment__title"> <span>Площадки <br>обслуживания</span></span></a></li>
-        <li class="assortiment__item assortiment__item--9"><a class="assortiment__link" href="/metal-structures/welded-crane-girders.html"><span class="assortiment__title"> <span>Балки подкрановые <br>сварные</span></span></a></li>
-        <li class="assortiment__item assortiment__item--10"><a class="assortiment__link" href="/metal-structures/technological-tanks.html"><span class="assortiment__title"> <span>Технологические <br>емкости</span></span></a></li>
-        <li class="assortiment__item assortiment__item--11"><a class="assortiment__link" href="/metal-structures/wheeled-trolleys.html"><span class="assortiment__title"> <span>Тележки колесные / <br>на рельсах</span></span></a></li>
-        <li class="assortiment__item assortiment__item--12"><a class="assortiment__link" href="/metal-structures/bridge-metal-structures.html"><span class="assortiment__title"> <span>Мостовые металлоконструкции</span></span></a></li>
-        <li class="assortiment__item assortiment__item--13"><a class="assortiment__link" href="/metal-structures/non-standart-metal-structures.html"><span class="assortiment__title"> <span>Нестандартные металлоконструкции</span></span></a></li>
-        <li class="assortiment__item assortiment__item--14"><a class="assortiment__link" href="/metal-structures/building-metal-structures.html"><span class="assortiment__title"> <span>Стоительные металлоконструкции</span></span></a></li>
+        <li class="assortiment__item assortiment__item--1"><a class="assortiment__link" href="/metal-products/gearboxes"><span class="assortiment__title"> <span>Редукторы / <br>Зубчатые передачи / <br>Комплектующие</span></span></a></li>
+        <li class="assortiment__item assortiment__item--2"><a class="assortiment__link" href="/metal-products/hydraulic-equipment"><span class="assortiment__title"> <span>Гидравлическое оборудование / Гидроцилиндры</span></span></a></li>
+        <li class="assortiment__item assortiment__item--3"><a class="assortiment__link" href="/metal-products/press-molds-stamps-matrices"><span class="assortiment__title"> <span>Пресс-формы / штампы / <br>матрицы / фильеры</span></span></a></li>
+        <li class="assortiment__item assortiment__item--4"><a class="assortiment__link" href="/metal-products/extrusion-lines"><span class="assortiment__title"> <span>Детали <br>для промышленного <br>оборудования</span></span></a></li>
+        <li class="assortiment__item assortiment__item--5"><a class="assortiment__link" href="/metal-products/engineering-parts"><span class="assortiment__title"> <span>Детали <br>для машиностроения</span></span></a></li>
+        <li class="assortiment__item assortiment__item--6"><a class="assortiment__link" href="/metal-products/precision-parts"><span class="assortiment__title"> <span>Детали <br>прецизионные</span></span></a></li>
+        <li class="assortiment__item assortiment__item--7"><a class="assortiment__link" href="/metal-structures/pipeline-supports"><span class="assortiment__title"> <span>Опоры <br>трубопроводов</span></span></a></li>
+        <li class="assortiment__item assortiment__item--8"><a class="assortiment__link" href="/metal-structures/service-areas"><span class="assortiment__title"> <span>Площадки <br>обслуживания</span></span></a></li>
+        <li class="assortiment__item assortiment__item--9"><a class="assortiment__link" href="/metal-structures/welded-crane-girders"><span class="assortiment__title"> <span>Балки подкрановые <br>сварные</span></span></a></li>
+        <li class="assortiment__item assortiment__item--10"><a class="assortiment__link" href="/metal-structures/technological-tanks"><span class="assortiment__title"> <span>Технологические <br>емкости</span></span></a></li>
+        <li class="assortiment__item assortiment__item--11"><a class="assortiment__link" href="/metal-structures/wheeled-trolleys"><span class="assortiment__title"> <span>Тележки колесные / <br>на рельсах</span></span></a></li>
+        <li class="assortiment__item assortiment__item--12"><a class="assortiment__link" href="/metal-structures/bridge-metal-structures"><span class="assortiment__title"> <span>Мостовые металлоконструкции</span></span></a></li>
+        <li class="assortiment__item assortiment__item--13"><a class="assortiment__link" href="/metal-structures/non-standart-metal-structures"><span class="assortiment__title"> <span>Нестандартные металлоконструкции</span></span></a></li>
+        <li class="assortiment__item assortiment__item--14"><a class="assortiment__link" href="/metal-structures/building-metal-structures"><span class="assortiment__title"> <span>Стоительные металлоконструкции</span></span></a></li>
       </ul>
     </section>
     <section class="metal-structures">
       <ul class="assortiment assortiment--squares assortiment owl-carousel owl-theme">
-        <li class="assortiment__item assortiment__item--1"><a class="assortiment__link" href="/metal-structures/pipeline-supports.html"><span class="assortiment__title"><span>Опоры <br>трубопроводов</span></span></a></li>
-        <li class="assortiment__item assortiment__item--2"><a class="assortiment__link" href="/metal-structures/service-areas.html"><span class="assortiment__title"><span>Площадки <br>обслуживания</span></span></a></li>
-        <li class="assortiment__item assortiment__item--3"><a class="assortiment__link" href="/metal-structures/welded-crane-girders.html"><span class="assortiment__title"><span>Балки подкрановые <br>сварные</span></span></a></li>
-        <li class="assortiment__item assortiment__item--4"><a class="assortiment__link" href="/metal-structures/technological-tanks.html"><span class="assortiment__title"><span>Технологические <br>емкости</span></span></a></li>
-        <li class="assortiment__item assortiment__item--5"><a class="assortiment__link" href="/metal-structures/wheeled-trolleys.html"><span class="assortiment__title"><span>Тележки колесные / <br>на рельсах</span></span></a></li>
-        <li class="assortiment__item assortiment__item--6"><a class="assortiment__link" href="/metal-structures/bridge-metal-structures.html"><span class="assortiment__title"><span> Мостовые металлоконструкции</span></span></a></li>
-        <li class="assortiment__item assortiment__item--8"><a class="assortiment__link" href="/metal-structures/building-metal-structures.html"><span class="assortiment__title"><span>Стоительные металлоконструкции</span></span></a></li>
-        <li class="assortiment__item assortiment__item--7"><a class="assortiment__link" href="/metal-structures/non-standart-metal-structures.html"><span class="assortiment__title"><span>Нестандартные металлоконструкции</span></span></a></li>
+        <li class="assortiment__item assortiment__item--1"><a class="assortiment__link" href="/metal-structures/pipeline-supports"><span class="assortiment__title"><span>Опоры <br>трубопроводов</span></span></a></li>
+        <li class="assortiment__item assortiment__item--2"><a class="assortiment__link" href="/metal-structures/service-areas"><span class="assortiment__title"><span>Площадки <br>обслуживания</span></span></a></li>
+        <li class="assortiment__item assortiment__item--3"><a class="assortiment__link" href="/metal-structures/welded-crane-girders"><span class="assortiment__title"><span>Балки подкрановые <br>сварные</span></span></a></li>
+        <li class="assortiment__item assortiment__item--4"><a class="assortiment__link" href="/metal-structures/technological-tanks"><span class="assortiment__title"><span>Технологические <br>емкости</span></span></a></li>
+        <li class="assortiment__item assortiment__item--5"><a class="assortiment__link" href="/metal-structures/wheeled-trolleys"><span class="assortiment__title"><span>Тележки колесные / <br>на рельсах</span></span></a></li>
+        <li class="assortiment__item assortiment__item--6"><a class="assortiment__link" href="/metal-structures/bridge-metal-structures"><span class="assortiment__title"><span> Мостовые металлоконструкции</span></span></a></li>
+        <li class="assortiment__item assortiment__item--8"><a class="assortiment__link" href="/metal-structures/building-metal-structures"><span class="assortiment__title"><span>Стоительные металлоконструкции</span></span></a></li>
+        <li class="assortiment__item assortiment__item--7"><a class="assortiment__link" href="/metal-structures/non-standart-metal-structures"><span class="assortiment__title"><span>Нестандартные металлоконструкции</span></span></a></li>
       </ul>
     </section>
     <section class="info">
       <p class="text text--center"><b>SET SERVICE GROUP</b>  – Центр металлообработки, основанный в 2015 году <br>для реализации программы по развитию производственного потенциала России.</p>
       <blockquote>
         <p><span>
-             Мы – это команда специалистов в различных видах металлообработки, <br>объединенные одной большой идеей развития производственного сектора России <br>и качественного увеличения номенклатуры товаров, произведенных на территории России.</span></p><a href="about/about.html">Подробнее</a>
+             Мы – это команда специалистов в различных видах металлообработки, <br>объединенные одной большой идеей развития производственного сектора России <br>и качественного увеличения номенклатуры товаров, произведенных на территории России.</span></p><a href="about/about">Подробнее</a>
       </blockquote>
     </section>
     <section class="companies companies--clients companies--big-squares">
@@ -325,482 +352,482 @@
         <li>
           <section class="popup">
             <div class="popup__btn"></div>
-            <h2>АО «НПП «Промтрансавтоматика»</h2><a class="popup__link" rel="nofollow" href="http://www.ptaspb.ru/">www.ptaspb.ru</a>
+            <div class="popup__title">АО «НПП «Промтрансавтоматика»</div><a class="popup__link" rel="nofollow" href="http://www.ptaspb.ru/">www.ptaspb.ru</a>
             <div class="popup__left">
               <p>НПП «Промтрансавтоматика» активно участвует в проектах автоматизации деятельности городских служб. Системы и аппаратно-программные комплексы применяются на разводных мостах Санкт-Петербурга, в метрополитене, на железнодорожном транспорте, на других объектах города и области.</p>
             </div>
             <div class="popup__right"><img class="feedback" src="/img/feedbacks/Промтрансавтоматика.jpg"></div>
             <div class="hashtag">
-              <h3>Выполненные работы:</h3><a class="hashtag__link" href="/metalworking/metal-cutting.html">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating.html">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works.html">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works.html">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works.html">#термическая_обработка</a>
+              <div class="hashtag__title">Выполненные работы:</div><a class="hashtag__link" href="/metalworking/metal-cutting">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works">#термическая_обработка</a>
             </div>
           </section>
         </li>
         <li>
           <section class="popup">
             <div class="popup__btn"></div>
-            <h2>АО «Концерн «ЦНИИ «Электроприбор»</h2><a class="popup__link" rel="nofollow" href="http://www.elektropribor.spb.ru">www.elektropribor.spb.ru</a>
+            <div class="popup__title">АО «Концерн «ЦНИИ «Электроприбор»</div><a class="popup__link" rel="nofollow" href="http://www.elektropribor.spb.ru">www.elektropribor.spb.ru</a>
             <div class="popup__left">
               <p>АО «Концерн «ЦНИИ «Электроприбор» является ведущим институтом страны в области высокоточной навигации, гироскопии, гравиметрии и оптоэлектронных систем наблюдения подводных лодок, успешно ведет разработки и поставляет технику морской радиосвязи и гидроакустики.</p>
             </div>
             <div class="popup__right"></div>
             <div class="hashtag">
-              <h3>Выполненные работы:</h3><a class="hashtag__link" href="/metalworking/metal-cutting.html">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating.html">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works.html">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works.html">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works.html">#термическая_обработка</a>
+              <div class="hashtag__title">Выполненные работы:</div><a class="hashtag__link" href="/metalworking/metal-cutting">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works">#термическая_обработка</a>
             </div>
           </section>
         </li>
         <li>
           <section class="popup">
             <div class="popup__btn"></div>
-            <h2>АО «ЛОМО»</h2><a class="popup__link" rel="nofollow" href="http://www.lomo.ru">www.lomo.ru</a>
+            <div class="popup__title">АО «ЛОМО»</div><a class="popup__link" rel="nofollow" href="http://www.lomo.ru">www.lomo.ru</a>
             <div class="popup__left">
               <p>АО «ЛОМО» является ведущим предприятием России по производству оптических, оптико-электронных, оптико-цифровых и оптико-механических приборов, систем и комплексов.</p>
             </div>
             <div class="popup__right"></div>
             <div class="hashtag">
-              <h3>Выполненные работы:</h3><a class="hashtag__link" href="/metalworking/metal-cutting.html">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating.html">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works.html">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works.html">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works.html">#термическая_обработка</a>
+              <div class="hashtag__title">Выполненные работы:</div><a class="hashtag__link" href="/metalworking/metal-cutting">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works">#термическая_обработка</a>
             </div>
           </section>
         </li>
         <li>
           <section class="popup">
             <div class="popup__btn"></div>
-            <h2>АО «НПП «Радар ммс»</h2><a class="popup__link" rel="nofollow" href="http://www.radar-mms.com/">www.radar-mms.com</a>
+            <div class="popup__title">АО «НПП «Радар ммс»</div><a class="popup__link" rel="nofollow" href="http://www.radar-mms.com/">www.radar-mms.com</a>
             <div class="popup__left">
               <p>АО «Научно-производственное предприятие «Радар ммс» является одним из мировых лидеров в области создания радиоэлектронных систем и комплексов специального и гражданского назначения, точного приборостроения, специального программного обеспечения.</p>
             </div>
             <div class="popup__right"></div>
             <div class="hashtag">
-              <h3>Выполненные работы:</h3><a class="hashtag__link" href="/metalworking/metal-cutting.html">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating.html">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works.html">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works.html">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works.html">#термическая_обработка</a>
+              <div class="hashtag__title">Выполненные работы:</div><a class="hashtag__link" href="/metalworking/metal-cutting">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works">#термическая_обработка</a>
             </div>
           </section>
         </li>
         <li>
           <section class="popup">
             <div class="popup__btn"></div>
-            <h2>Санкт-Петербургский государственные университет</h2><a class="popup__link" rel="nofollow" href="https://spbu.ru/">www.spbu.ru</a>
+            <div class="popup__title">Санкт-Петербургский государственные университет</div><a class="popup__link" rel="nofollow" href="https://spbu.ru/">www.spbu.ru</a>
             <div class="popup__left">
               <p>СПБГУ — крупнейший научно-образовательный центр Европы и мира. Сегодня здесь учатся более 30 тысяч студентов, работают лауреаты Нобелевской и Филдсовской премий, созданы более 15 крупных лабораторий и 26 ресурсных центров.</p>
             </div>
             <div class="popup__right"></div>
             <div class="hashtag">
-              <h3>Выполненные работы:</h3><a class="hashtag__link" href="/metalworking/metal-cutting.html">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating.html">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works.html">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works.html">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works.html">#термическая_обработка</a>
+              <div class="hashtag__title">Выполненные работы:</div><a class="hashtag__link" href="/metalworking/metal-cutting">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works">#термическая_обработка</a>
             </div>
           </section>
         </li>
         <li>
           <section class="popup">
             <div class="popup__btn"></div>
-            <h2>ООО «НТЦ «Гидротранс»</h2><a class="popup__link" rel="nofollow" href="http://hydrotrans.ru/">www.hydrotrans.ru</a>
+            <div class="popup__title">ООО «НТЦ «Гидротранс»</div><a class="popup__link" rel="nofollow" href="http://hydrotrans.ru/">www.hydrotrans.ru</a>
             <div class="popup__left">
               <p>ООО «НТЦ «Гидротранс» специализируется на проектировании, изготовлении, монтаже и обслуживании гидравлических приводов для гидротехнических сооружений, шахт, предприятий промышленности и ВПК и др.</p>
             </div>
             <div class="popup__right"></div>
             <div class="hashtag">
-              <h3>Выполненные работы:</h3><a class="hashtag__link" href="/metalworking/metal-cutting.html">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating.html">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works.html">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works.html">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works.html">#термическая_обработка</a>
+              <div class="hashtag__title">Выполненные работы:</div><a class="hashtag__link" href="/metalworking/metal-cutting">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works">#термическая_обработка</a>
             </div>
           </section>
         </li>
         <li>
           <section class="popup">
             <div class="popup__btn"></div>
-            <h2>АО «Завод «Знамя труда»</h2><a class="popup__link" rel="nofollow" href="http://zzt.ru/">www.zzt.ru</a>
+            <div class="popup__title">АО «Завод «Знамя труда»</div><a class="popup__link" rel="nofollow" href="http://zzt.ru/">www.zzt.ru</a>
             <div class="popup__left">
               <p>АО «Завод «Знамя труда» — один из крупнейших производителей трубопроводной арматуры в России. Экспортные и внутренние поставки продукции осуществляются на самые современные объекты атомной и топливной энергетики.</p>
             </div>
             <div class="popup__right"></div>
             <div class="hashtag">
-              <h3>Выполненные работы:</h3><a class="hashtag__link" href="/metalworking/metal-cutting.html">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating.html">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works.html">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works.html">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works.html">#термическая_обработка</a>
+              <div class="hashtag__title">Выполненные работы:</div><a class="hashtag__link" href="/metalworking/metal-cutting">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works">#термическая_обработка</a>
             </div>
           </section>
         </li>
         <li>
           <section class="popup">
             <div class="popup__btn"></div>
-            <h2>ООО «Инжиниринг Геотехнических Систем»</h2>
+            <div class="popup__title">ООО «Инжиниринг Геотехнических Систем»</div>
             <div class="popup__left">
               <p>Разработка строительных проектов, строительство инженерных коммуникаций для водоснабжения и водоотведения, газоснабжения, строительство коммунальных объектов для обеспечения электроэнергией и телекоммуникациями.</p>
             </div>
             <div class="popup__right"></div>
             <div class="hashtag">
-              <h3>Выполненные работы:</h3><a class="hashtag__link" href="/metalworking/metal-cutting.html">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating.html">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works.html">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works.html">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works.html">#термическая_обработка</a>
+              <div class="hashtag__title">Выполненные работы:</div><a class="hashtag__link" href="/metalworking/metal-cutting">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works">#термическая_обработка</a>
             </div>
           </section>
         </li>
         <li>
           <section class="popup">
             <div class="popup__btn"></div>
-            <h2>Caterpillar</h2><a class="popup__link" rel="nofollow" href="https://www.cat.com/ru_RU.html">www.cat.com</a>
+            <div class="popup__title">Caterpillar</div><a class="popup__link" rel="nofollow" href="https://www.cat.com/ru_RU.html">www.cat.com</a>
             <div class="popup__left">
               <p>Одна из ведущих корпораций по производству крупнейшей спецтехники в мире. Выпускает землеройно-транспортную технику, строительное оборудование, дизельные двигатели, энергетические установки (работающие на природном и попутном газах) и другие продукты, а также обувь.</p>
             </div>
             <div class="popup__right"></div>
             <div class="hashtag">
-              <h3>Выполненные работы:</h3><a class="hashtag__link" href="/metalworking/metal-cutting.html">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating.html">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works.html">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works.html">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works.html">#термическая_обработка</a>
+              <div class="hashtag__title">Выполненные работы:</div><a class="hashtag__link" href="/metalworking/metal-cutting">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works">#термическая_обработка</a>
             </div>
           </section>
         </li>
         <li>
           <section class="popup">
             <div class="popup__btn"></div>
-            <h2>АО НТЦ «РОКАД»</h2><a class="popup__link" rel="nofollow" href="http://rocad.ru/">www.rocad.ru</a>
+            <div class="popup__title">АО НТЦ «РОКАД»</div><a class="popup__link" rel="nofollow" href="http://rocad.ru/">www.rocad.ru</a>
             <div class="popup__left">
               <p>Компания Научно-Технический Центр «РОКАД» занимается наукоемкими разработками, выполнением НИР и ОКР, а также разработкой ноу-хау на заказ.</p>
             </div>
             <div class="popup__right"><img class="feedback" src="/img/feedbacks/НТЦ РОКАД.jpg"></div>
             <div class="hashtag">
-              <h3>Выполненные работы:</h3><a class="hashtag__link" href="/metalworking/metal-cutting.html">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating.html">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works.html">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works.html">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works.html">#термическая_обработка</a>
+              <div class="hashtag__title">Выполненные работы:</div><a class="hashtag__link" href="/metalworking/metal-cutting">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works">#термическая_обработка</a>
             </div>
           </section>
         </li>
         <li>
           <section class="popup">
             <div class="popup__btn"></div>
-            <h2>ООО «МОП им. Калинина»</h2><a class="popup__link" rel="nofollow" href="http://kme.su/">www.kme.su</a>
+            <div class="popup__title">ООО «МОП им. Калинина»</div><a class="popup__link" rel="nofollow" href="http://kme.su/">www.kme.su</a>
             <div class="popup__left">
               <p>ООО «МОП им. Калинина» осуществляет обработку металлов и нанесение покрытий на металлы, обработку металлических изделий с использованием основных технологических процессов машиностроения, изготовление деталей и узлов различной степени сложности.</p>
             </div>
             <div class="popup__right"><img class="feedback" src="/img/feedbacks/МОП Калинина.jpg"></div>
             <div class="hashtag">
-              <h3>Выполненные работы:</h3><a class="hashtag__link" href="/metalworking/metal-cutting.html">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating.html">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works.html">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works.html">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works.html">#термическая_обработка</a>
+              <div class="hashtag__title">Выполненные работы:</div><a class="hashtag__link" href="/metalworking/metal-cutting">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works">#термическая_обработка</a>
             </div>
           </section>
         </li>
         <li>
           <section class="popup">
             <div class="popup__btn"></div>
-            <h2>
-               ООО «Интеллектуальное <br>конструкторское бюро»</h2><a class="popup__link" rel="nofollow" href="http://rusfuture.com/">www.rusfuture.com</a>
+            <div class="popup__title">
+               ООО «Интеллектуальное <br>конструкторское бюро»</div><a class="popup__link" rel="nofollow" href="http://rusfuture.com/">www.rusfuture.com</a>
             <div class="popup__left">
               <p>ИКБ является развивающейся и перспективной многопрофильной организацией, оказывающей широкий спектр технологических услуг, обладает всеми возможностями и достаточным потенциалом для выполнения задач любой сложности.</p>
             </div>
             <div class="popup__right"><img class="feedback" src="/img/feedbacks/ИКБ.jpg"></div>
             <div class="hashtag">
-              <h3>Выполненные работы:</h3><a class="hashtag__link" href="/metalworking/metal-cutting.html">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating.html">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works.html">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works.html">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works.html">#термическая_обработка</a>
+              <div class="hashtag__title">Выполненные работы:</div><a class="hashtag__link" href="/metalworking/metal-cutting">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works">#термическая_обработка</a>
             </div>
           </section>
         </li>
         <li>
           <section class="popup">
             <div class="popup__btn"></div>
-            <h2>АО «ГМЗ «Химмаш»</h2><a class="popup__link" rel="nofollow" href="http://www.him-mash.com/">www.him-mash.com</a>
+            <div class="popup__title">АО «ГМЗ «Химмаш»</div><a class="popup__link" rel="nofollow" href="http://www.him-mash.com/">www.him-mash.com</a>
             <div class="popup__left">
               <p>АО «ГМЗ «Химмаш» является инжиниринговой компанией, специализирующейся на предоставлении инжиниринговых услуг по строительству новых, модернизации существующих энергетических мощностей на промышленных предприятиях и объектах энергетики.</p>
             </div>
             <div class="popup__right"></div>
             <div class="hashtag">
-              <h3>Выполненные работы:</h3><a class="hashtag__link" href="/metalworking/metal-cutting.html">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating.html">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works.html">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works.html">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works.html">#термическая_обработка</a>
+              <div class="hashtag__title">Выполненные работы:</div><a class="hashtag__link" href="/metalworking/metal-cutting">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works">#термическая_обработка</a>
             </div>
           </section>
         </li>
         <li>
           <section class="popup">
             <div class="popup__btn"></div>
-            <h2>АО «Нева металл посуда»</h2><a class="popup__link" rel="nofollow" href="https://nmp.ru">www.nmp.ru</a>
+            <div class="popup__title">АО «Нева металл посуда»</div><a class="popup__link" rel="nofollow" href="https://nmp.ru">www.nmp.ru</a>
             <div class="popup__left">
               <p>Компания АО «Нева металл посуда» занимается разработкой уникальной по своим потребительским свойствам и качеству посуды. Предприятие находится в Петербурге, в научно-промышленном центре, что дает возможность задействовать интеллектуально-технические ресурсы, порой недоступные на удаленных производствах.</p>
             </div>
             <div class="popup__right"><img class="feedback" src="/img/feedbacks/НМП.jpg"></div>
             <div class="hashtag">
-              <h3>Выполненные работы:</h3><a class="hashtag__link" href="/metalworking/metal-cutting.html">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating.html">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works.html">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works.html">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works.html">#термическая_обработка</a>
+              <div class="hashtag__title">Выполненные работы:</div><a class="hashtag__link" href="/metalworking/metal-cutting">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works">#термическая_обработка</a>
             </div>
           </section>
         </li>
         <li>
           <section class="popup">
             <div class="popup__btn"></div>
-            <h2>ООО «Главпромстрой»</h2><a class="popup__link" rel="nofollow" href="http://glavpromstroi.com/">www.glavpromstroi.com</a>
+            <div class="popup__title">ООО «Главпромстрой»</div><a class="popup__link" rel="nofollow" href="http://glavpromstroi.com/">www.glavpromstroi.com</a>
             <div class="popup__left">
               <p>ООО «Главпромстрой» - многопрофильная организация, успешно и стабильно работающая на рынке строительства с 1992 года, занимающаяся строительством, реконструкцией и капитальным ремонтом зданий и сооружений промышленного и коммунально-бытового назначения.</p>
             </div>
             <div class="popup__right"></div>
             <div class="hashtag">
-              <h3>Выполненные работы:</h3><a class="hashtag__link" href="/metalworking/metal-cutting.html">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating.html">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works.html">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works.html">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works.html">#термическая_обработка</a>
+              <div class="hashtag__title">Выполненные работы:</div><a class="hashtag__link" href="/metalworking/metal-cutting">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works">#термическая_обработка</a>
             </div>
           </section>
         </li>
         <li>
           <section class="popup">
             <div class="popup__btn"></div>
-            <h2>ООО НПФ «РЕОМ»</h2><a class="popup__link" rel="nofollow" href="http://npf-reom.ru/">www.npf-reom.ru</a>
+            <div class="popup__title">ООО НПФ «РЕОМ»</div><a class="popup__link" rel="nofollow" href="http://npf-reom.ru/">www.npf-reom.ru</a>
             <div class="popup__left">
               <p>НПФ «РЕОМ» разрабатывает, производит, модернизирует и поставляет климатические камеры для проведения испытаний в различных отраслях промышленности.</p>
             </div>
             <div class="popup__right"></div>
             <div class="hashtag">
-              <h3>Выполненные работы:</h3><a class="hashtag__link" href="/metalworking/metal-cutting.html">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating.html">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works.html">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works.html">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works.html">#термическая_обработка</a>
+              <div class="hashtag__title">Выполненные работы:</div><a class="hashtag__link" href="/metalworking/metal-cutting">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works">#термическая_обработка</a>
             </div>
           </section>
         </li>
         <li>
           <section class="popup">
             <div class="popup__btn"></div>
-            <h2>ООО «ОМЗ-Термопресс»</h2><a class="popup__link" rel="nofollow" href="http://www.omz-izhora.ru">www.omz-izhora.ru</a>
+            <div class="popup__title">ООО «ОМЗ-Термопресс»</div><a class="popup__link" rel="nofollow" href="http://www.omz-izhora.ru">www.omz-izhora.ru</a>
             <div class="popup__left">
               <p>ПАО "ОМЗ" – одна из ведущих компаний тяжелого машиностроения, специализирующаяся на инжиниринге, а также на производстве спецсталей и предоставлении промышленных услуг.</p>
             </div>
             <div class="popup__right"></div>
             <div class="hashtag">
-              <h3>Выполненные работы:</h3><a class="hashtag__link" href="/metalworking/metal-cutting.html">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating.html">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works.html">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works.html">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works.html">#термическая_обработка</a>
+              <div class="hashtag__title">Выполненные работы:</div><a class="hashtag__link" href="/metalworking/metal-cutting">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works">#термическая_обработка</a>
             </div>
           </section>
         </li>
         <li>
           <section class="popup">
             <div class="popup__btn"></div>
-            <h2>ООО «Обсервер»</h2><a class="popup__link" rel="nofollow" href="https://o-mp.ru/">www.o-mp.ru</a>
+            <div class="popup__title">ООО «Обсервер»</div><a class="popup__link" rel="nofollow" href="https://o-mp.ru/">www.o-mp.ru</a>
             <div class="popup__left">
               <p>Компания «Обсервер» занимается разработкой, производством и продвижением самых передовых устройств, для улучшения качества жизни инвалидов, создания безбарьерной среды и обеспечения «Равных возможностей для всех». </p>
             </div>
             <div class="popup__right"></div>
             <div class="hashtag">
-              <h3>Выполненные работы:</h3><a class="hashtag__link" href="/metalworking/metal-cutting.html">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating.html">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works.html">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works.html">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works.html">#термическая_обработка</a>
+              <div class="hashtag__title">Выполненные работы:</div><a class="hashtag__link" href="/metalworking/metal-cutting">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works">#термическая_обработка</a>
             </div>
           </section>
         </li>
         <li>
           <section class="popup">
             <div class="popup__btn"></div>
-            <h2>Tunnel Tech</h2><a class="popup__link" rel="nofollow" href="http://tunneltech.eu/">www.tunneltech.eu</a>
+            <div class="popup__title">Tunnel Tech</div><a class="popup__link" rel="nofollow" href="http://tunneltech.eu/">www.tunneltech.eu</a>
             <div class="popup__left">
               <p>Компания Tunnel Tech занимается разработкой и производством аэротруб и ветровых тоннелей различной степени мощности, а также разрабатывает программное обеспечение для управления ими.</p>
             </div>
             <div class="popup__right"></div>
             <div class="hashtag">
-              <h3>Выполненные работы:</h3><a class="hashtag__link" href="/metalworking/metal-cutting.html">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating.html">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works.html">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works.html">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works.html">#термическая_обработка</a>
+              <div class="hashtag__title">Выполненные работы:</div><a class="hashtag__link" href="/metalworking/metal-cutting">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works">#термическая_обработка</a>
             </div>
           </section>
         </li>
         <li>
           <section class="popup">
             <div class="popup__btn"></div>
-            <h2>Завод ПТО им. С.М.Кирова</h2><a class="popup__link" rel="nofollow" href="http://zpto.ru/">www.zpto.ru</a>
+            <div class="popup__title">Завод ПТО им. С.М.Кирова</div><a class="popup__link" rel="nofollow" href="http://zpto.ru/">www.zpto.ru</a>
             <div class="popup__left">
               <p>Завод ПТО им. С.М.Кирова - ведущее предприятие машиностроительной отрасли, традиционно обеспечивавшее металлургические заводы, атомные, гидро- и тепловые электростанции и другие предприятия народного хозяйства СССР высокопроизводительными грузоподъемными кранами тяжелых режимов работы. </p>
             </div>
             <div class="popup__right"></div>
             <div class="hashtag">
-              <h3>Выполненные работы:</h3><a class="hashtag__link" href="/metalworking/metal-cutting.html">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating.html">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works.html">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works.html">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works.html">#термическая_обработка</a>
+              <div class="hashtag__title">Выполненные работы:</div><a class="hashtag__link" href="/metalworking/metal-cutting">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works">#термическая_обработка</a>
             </div>
           </section>
         </li>
         <li>
           <section class="popup">
             <div class="popup__btn"></div>
-            <h2>ООО «ПО «Новатор»</h2><a class="popup__link" rel="nofollow" href="http://www.spbnovator.ru/">www.spbnovator.ru</a>
+            <div class="popup__title">ООО «ПО «Новатор»</div><a class="popup__link" rel="nofollow" href="http://www.spbnovator.ru/">www.spbnovator.ru</a>
             <div class="popup__left">
               <p>ООО «ПО «Новатор» специализируется на разработке и производстве аппаратов воздушного охлаждения (АВО), с упором на модернизацию и повышения их эффективности.</p>
             </div>
             <div class="popup__right"><img class="feedback" src="/img/feedbacks/Новатор.jpg"></div>
             <div class="hashtag">
-              <h3>Выполненные работы:</h3><a class="hashtag__link" href="/metalworking/metal-cutting.html">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating.html">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works.html">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works.html">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works.html">#термическая_обработка</a>
+              <div class="hashtag__title">Выполненные работы:</div><a class="hashtag__link" href="/metalworking/metal-cutting">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works">#термическая_обработка</a>
             </div>
           </section>
         </li>
         <li>
           <section class="popup">
             <div class="popup__btn"></div>
-            <h2>ООО «Инвайро»</h2><a class="popup__link" rel="nofollow" href="https://enviro.su/">www.enviro.su</a>
+            <div class="popup__title">ООО «Инвайро»</div><a class="popup__link" rel="nofollow" href="https://enviro.su/">www.enviro.su</a>
             <div class="popup__left">
               <p>Компания ООО «Инвайро» занимается мусоропереработкой, гащоочисткой, уничтожением опасных отходов, обезвреживанием медицинских отходов, а также рекультивацией отходов в энергию и тепло.</p>
             </div>
             <div class="popup__right"><img class="feedback" src="/img/feedbacks/Инвайро.jpg"></div>
             <div class="hashtag">
-              <h3>Выполненные работы:</h3><a class="hashtag__link" href="/metalworking/metal-cutting.html">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating.html">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works.html">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works.html">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works.html">#термическая_обработка</a>
+              <div class="hashtag__title">Выполненные работы:</div><a class="hashtag__link" href="/metalworking/metal-cutting">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works">#термическая_обработка</a>
             </div>
           </section>
         </li>
         <li>
           <section class="popup">
             <div class="popup__btn"></div>
-            <h2>ООО «Адсорбционная техника»</h2>
+            <div class="popup__title">ООО «Адсорбционная техника»</div>
             <div class="popup__left">
               <p>ООО «Адсорбционная техника» осуществляем производство теплообменных устройств, оборудования для кондиционирования воздуха промышленного холодильного и морозильного оборудования, производство оборудования для фильтрования и очистки газов.</p>
             </div>
             <div class="popup__right"><img class="feedback" src="/img/feedbacks/А-техника.jpg"></div>
             <div class="hashtag">
-              <h3>Выполненные работы:</h3><a class="hashtag__link" href="/metalworking/metal-cutting.html">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating.html">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works.html">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works.html">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works.html">#термическая_обработка</a>
+              <div class="hashtag__title">Выполненные работы:</div><a class="hashtag__link" href="/metalworking/metal-cutting">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works">#термическая_обработка</a>
             </div>
           </section>
         </li>
         <li>
           <section class="popup">
             <div class="popup__btn"></div>
-            <h2>ООО «Синтез Технолоджи»</h2><a class="popup__link" rel="nofollow" href="http://syntechno.ru/">www.syntechno.ru</a>
+            <div class="popup__title">ООО «Синтез Технолоджи»</div><a class="popup__link" rel="nofollow" href="http://syntechno.ru/">www.syntechno.ru</a>
             <div class="popup__left">
               <p>ООО «Синтез Технолоджи» занимается производством основных неорганических химических веществ, производством изделий технического назначения из драгоценных металлов, обработкой драгоценных, полудрагоценных, поделочных и синтетических камней.</p>
             </div>
             <div class="popup__right"><img class="feedback" src="/img/feedbacks/Синтез Технолоджи.jpg"></div>
             <div class="hashtag">
-              <h3>Выполненные работы:</h3><a class="hashtag__link" href="/metalworking/metal-cutting.html">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating.html">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works.html">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works.html">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works.html">#термическая_обработка</a>
+              <div class="hashtag__title">Выполненные работы:</div><a class="hashtag__link" href="/metalworking/metal-cutting">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works">#термическая_обработка</a>
             </div>
           </section>
         </li>
         <li>
           <section class="popup">
             <div class="popup__btn"></div>
-            <h2>ГК «Тира»</h2><a class="popup__link" rel="nofollow" href="https://tira.ru/">www.tira.ru</a>
+            <div class="popup__title">ГК «Тира»</div><a class="popup__link" rel="nofollow" href="https://tira.ru/">www.tira.ru</a>
             <div class="popup__left">
               <p>Группа промышленных компаний "Корпорация "ТИРА" объединяет предприятия, занимающиеся разработкой, производством, поставкой, внедрением и сопровождением мощной радиопередающей аппаратуры и комплексов для профессиональной радиосвязи военного и гражданского назначения, оборудования теле и радиовещательной продукции.</p>
             </div>
             <div class="popup__right"></div>
             <div class="hashtag">
-              <h3>Выполненные работы:</h3><a class="hashtag__link" href="/metalworking/metal-cutting.html">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating.html">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works.html">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works.html">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works.html">#термическая_обработка</a>
+              <div class="hashtag__title">Выполненные работы:</div><a class="hashtag__link" href="/metalworking/metal-cutting">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works">#термическая_обработка</a>
             </div>
           </section>
         </li>
         <li>
           <section class="popup">
             <div class="popup__btn"></div>
-            <h2>АО «Тихвинский вагоностроительный завод»</h2><a class="popup__link" rel="nofollow" href="http://www.tvsz.ru/">www.tvsz.ru</a>
+            <div class="popup__title">АО «Тихвинский вагоностроительный завод»</div><a class="popup__link" rel="nofollow" href="http://www.tvsz.ru/">www.tvsz.ru</a>
             <div class="popup__left">
               <p>Предприятие является одним из самых масштабных объектов транспортного машиностроения в Европе по объему инвестиций, производственным площадям и уровню технического оснащения.</p>
             </div>
             <div class="popup__right"></div>
             <div class="hashtag">
-              <h3>Выполненные работы:</h3><a class="hashtag__link" href="/metalworking/metal-cutting.html">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating.html">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works.html">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works.html">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works.html">#термическая_обработка</a>
+              <div class="hashtag__title">Выполненные работы:</div><a class="hashtag__link" href="/metalworking/metal-cutting">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works">#термическая_обработка</a>
             </div>
           </section>
         </li>
         <li>
           <section class="popup">
             <div class="popup__btn"></div>
-            <h2>ООО «РОСНА Инжиниринг»</h2><a class="popup__link" rel="nofollow" href="http://rosna.spb.ru/">www.rosna.spb.ru</a>
+            <div class="popup__title">ООО «РОСНА Инжиниринг»</div><a class="popup__link" rel="nofollow" href="http://rosna.spb.ru/">www.rosna.spb.ru</a>
             <div class="popup__left">
               <p>Компания занимается техническим и технологическим аудитом, поставкой и внедрением, техническим обслуживанием, ремонтом и модернизацией промышленного оборудования, а также производством собственного оборудования.</p>
             </div>
             <div class="popup__right"></div>
             <div class="hashtag">
-              <h3>Выполненные работы:</h3><a class="hashtag__link" href="/metalworking/metal-cutting.html">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating.html">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works.html">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works.html">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works.html">#термическая_обработка</a>
+              <div class="hashtag__title">Выполненные работы:</div><a class="hashtag__link" href="/metalworking/metal-cutting">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works">#термическая_обработка</a>
             </div>
           </section>
         </li>
         <li>
           <section class="popup">
             <div class="popup__btn"></div>
-            <h2>ООО «ПК «Ландскрона»</h2><a class="popup__link" rel="nofollow" href="http://www.vari.ru/">www.vari.ru</a>
+            <div class="popup__title">ООО «ПК «Ландскрона»</div><a class="popup__link" rel="nofollow" href="http://www.vari.ru/">www.vari.ru</a>
             <div class="popup__left">
               <p>Российская производственная компания, специализирующаяся на выпуске высококачественной алюминиевой посуды с антипригарным покрытием компании Whitford.</p>
             </div>
             <div class="popup__right"></div>
             <div class="hashtag">
-              <h3>Выполненные работы:</h3><a class="hashtag__link" href="/metalworking/metal-cutting.html">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating.html">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works.html">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works.html">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works.html">#термическая_обработка</a>
+              <div class="hashtag__title">Выполненные работы:</div><a class="hashtag__link" href="/metalworking/metal-cutting">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works">#термическая_обработка</a>
             </div>
           </section>
         </li>
         <li>
           <section class="popup">
             <div class="popup__btn"></div>
-            <h2>АО «Завод художественных красок «Невская палитра» </h2><a class="popup__link" rel="nofollow" href="http://www.nevskayapalitra.ru/">www.nevskayapalitra.ru</a>
+            <div class="popup__title">АО «Завод художественных красок «Невская палитра» </div><a class="popup__link" rel="nofollow" href="http://www.nevskayapalitra.ru/">www.nevskayapalitra.ru</a>
             <div class="popup__left">
               <p>Завод художественных красок «Невская палитра» на протяжении 80 лет выпускает продукцию высшего качества для профессиональных художников и любителей творчества.</p>
             </div>
             <div class="popup__right"></div>
             <div class="hashtag">
-              <h3>Выполненные работы:</h3><a class="hashtag__link" href="/metalworking/metal-cutting.html">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating.html">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works.html">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works.html">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works.html">#термическая_обработка</a>
+              <div class="hashtag__title">Выполненные работы:</div><a class="hashtag__link" href="/metalworking/metal-cutting">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works">#термическая_обработка</a>
             </div>
           </section>
         </li>
         <li>
           <section class="popup">
             <div class="popup__btn"></div>
-            <h2>ООО «Лаборатория цифрового зрения»</h2><a class="popup__link" rel="nofollow" href="https://divisionlabs.com/">www.divisionlabs.com</a>
+            <div class="popup__title">ООО «Лаборатория цифрового зрения»</div><a class="popup__link" rel="nofollow" href="https://divisionlabs.com/">www.divisionlabs.com</a>
             <div class="popup__left">
               <p>ООО «Лаборатория цифрового зрения» является российским производителем автоматических комплексов фотовидеофиксации (КФВФ) нарушений Правил дорожного движения под торговой маркой «Птолемей».</p>
             </div>
             <div class="popup__right"></div>
             <div class="hashtag">
-              <h3>Выполненные работы:</h3><a class="hashtag__link" href="/metalworking/metal-cutting.html">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating.html">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works.html">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works.html">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works.html">#термическая_обработка</a>
+              <div class="hashtag__title">Выполненные работы:</div><a class="hashtag__link" href="/metalworking/metal-cutting">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works">#термическая_обработка</a>
             </div>
           </section>
         </li>
         <li>
           <section class="popup">
             <div class="popup__btn"></div>
-            <h2>АО «Завод «Красный Выборжец»</h2><a class="popup__link" rel="nofollow" href="http://kv-spb.ru/">www.kv-spb.ru</a>
+            <div class="popup__title">АО «Завод «Красный Выборжец»</div><a class="popup__link" rel="nofollow" href="http://kv-spb.ru/">www.kv-spb.ru</a>
             <div class="popup__left">
               <p>Одно из ведущих в России предприятий по обработке цветных металлов. Предприятие выпускает широкий ассортимент изделий из меди и сплавов на ее основе в виде листов и лент. </p>
             </div>
             <div class="popup__right"></div>
             <div class="hashtag">
-              <h3>Выполненные работы:</h3><a class="hashtag__link" href="/metalworking/metal-cutting.html">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating.html">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works.html">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works.html">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works.html">#термическая_обработка</a>
+              <div class="hashtag__title">Выполненные работы:</div><a class="hashtag__link" href="/metalworking/metal-cutting">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works">#термическая_обработка</a>
             </div>
           </section>
         </li>
         <li>
           <section class="popup">
             <div class="popup__btn"></div>
-            <h2>ООО «Оптотехника»</h2><a class="popup__link" rel="nofollow" href=""> </a>
+            <div class="popup__title">ООО «Оптотехника»</div><a class="popup__link" rel="nofollow" href=""> </a>
             <div class="popup__left">
               <p>Предприятие занимается производством приборов, датчиков, аппаратуры и инструментов для измерения, контроля и испытаний, а также производством  оптических приборов, фото- и кинооборудования и разработкой программного обеспечения для них.</p>
             </div>
             <div class="popup__right"></div>
             <div class="hashtag">
-              <h3>Выполненные работы:</h3><a class="hashtag__link" href="/metalworking/metal-cutting.html">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating.html">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works.html">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works.html">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works.html">#термическая_обработка</a>
+              <div class="hashtag__title">Выполненные работы:</div><a class="hashtag__link" href="/metalworking/metal-cutting">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works">#термическая_обработка</a>
             </div>
           </section>
         </li>
         <li>
           <section class="popup">
             <div class="popup__btn"></div>
-            <h2>ООО «Производственно-техническая фирма «КонСис»</h2><a class="popup__link" rel="nofollow" href="https://www.consys.ru/">www.consys.ru</a>
+            <div class="popup__title">ООО «Производственно-техническая фирма «КонСис»</div><a class="popup__link" rel="nofollow" href="https://www.consys.ru/">www.consys.ru</a>
             <div class="popup__left">
               <p>Компания выполняет полный цикл работ по созданию автоматизированных систему управления технологическими процессами: от постановки задачи до ввода в эксплуатацию.</p>
             </div>
             <div class="popup__right"></div>
             <div class="hashtag">
-              <h3>Выполненные работы:</h3><a class="hashtag__link" href="/metalworking/metal-cutting.html">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating.html">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works.html">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works.html">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works.html">#термическая_обработка</a>
+              <div class="hashtag__title">Выполненные работы:</div><a class="hashtag__link" href="/metalworking/metal-cutting">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works">#термическая_обработка</a>
             </div>
           </section>
         </li>
         <li>
           <section class="popup">
             <div class="popup__btn"></div>
-            <h2>Производственное объединение «Технорос»</h2><a class="popup__link" rel="nofollow" href="https://tehnoros.ru/">www.tehnoros.ru</a>
+            <div class="popup__title">Производственное объединение «Технорос»</div><a class="popup__link" rel="nofollow" href="https://tehnoros.ru/">www.tehnoros.ru</a>
             <div class="popup__left">
               <p>Компания специализируется на разработке и реализации уникальных инженерно-технических решений, основанных на детальном анализе технологических особенностей каждого проекта, условий эксплуатации оборудования и индивидуальных потребностях заказчика.</p>
             </div>
             <div class="popup__right"></div>
             <div class="hashtag">
-              <h3>Выполненные работы:</h3><a class="hashtag__link" href="/metalworking/metal-cutting.html">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating.html">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works.html">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works.html">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works.html">#термическая_обработка</a>
+              <div class="hashtag__title">Выполненные работы:</div><a class="hashtag__link" href="/metalworking/metal-cutting">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works">#термическая_обработка</a>
             </div>
           </section>
         </li>
         <li>
           <section class="popup">
             <div class="popup__btn"></div>
-            <h2>АО НПП «Авиационная и Морская Электроника»</h2><a class="popup__link" rel="nofollow" href="https://nppame.ru/">www.nppame.ru</a>
+            <div class="popup__title">АО НПП «Авиационная и Морская Электроника»</div><a class="popup__link" rel="nofollow" href="https://nppame.ru/">www.nppame.ru</a>
             <div class="popup__left">
               <p>АО НПП «АМЭ» является ведущим российским производителем систем обработки и отображения информации радиоэлектронных систем различного назначения, устанавливаемых на объектах стационарного, корабельного и авиационного базирования.</p>
             </div>
             <div class="popup__right"></div>
             <div class="hashtag">
-              <h3>Выполненные работы:</h3><a class="hashtag__link" href="/metalworking/metal-cutting.html">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating.html">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works.html">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works.html">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works.html">#термическая_обработка</a>
+              <div class="hashtag__title">Выполненные работы:</div><a class="hashtag__link" href="/metalworking/metal-cutting">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works">#термическая_обработка</a>
             </div>
           </section>
         </li>
         <li>
           <section class="popup">
             <div class="popup__btn"></div>
-            <h2>АО «Машиностроение Северной верфи»</h2><a class="popup__link" rel="nofollow" href="http://www.mb-sv.ru/">www.mb-sv.ru</a>
+            <div class="popup__title">АО «Машиностроение Северной верфи»</div><a class="popup__link" rel="nofollow" href="http://www.mb-sv.ru/">www.mb-sv.ru</a>
             <div class="popup__left">
               <p>АО "Машиностроение Северной верфи" специализируется на производстве узлов и механизмов, различных металлоконструкций как основной вид деятельности.</p>
             </div>
             <div class="popup__right"></div>
             <div class="hashtag">
-              <h3>Выполненные работы:</h3><a class="hashtag__link" href="/metalworking/metal-cutting.html">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating.html">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works.html">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works.html">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works.html">#термическая_обработка</a>
+              <div class="hashtag__title">Выполненные работы:</div><a class="hashtag__link" href="/metalworking/metal-cutting">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works">#термическая_обработка</a>
             </div>
           </section>
         </li>
         <li>
           <section class="popup">
             <div class="popup__btn"></div>
-            <h2>ООО «Судостроительная компания «АКО БАРСС»</h2><a class="popup__link" rel="nofollow" href="http://sk-akobarss.ru/">www.sk-akobarss.ru</a>
+            <div class="popup__title">ООО «Судостроительная компания «АКО БАРСС»</div><a class="popup__link" rel="nofollow" href="http://sk-akobarss.ru/">www.sk-akobarss.ru</a>
             <div class="popup__left">
               <p>Основным направлением предусматривалось судостроение и судоремонт. За свою историю компания выполняла работы у большого количества различных компаний.</p>
             </div>
             <div class="popup__right"></div>
             <div class="hashtag">
-              <h3>Выполненные работы:</h3><a class="hashtag__link" href="/metalworking/metal-cutting.html">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating.html">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works.html">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works.html">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works.html">#термическая_обработка</a>
+              <div class="hashtag__title">Выполненные работы:</div><a class="hashtag__link" href="/metalworking/metal-cutting">#резка_металла</a><a class="hashtag__link" href="/metalworking/coating">#нанесение_покрытий</a><a class="hashtag__link" href="/metalworking/milling-works">#фрезерные_работы</a><a class="hashtag__link" href="/metalworking/grinding-works">#шлифовальные_работы</a><a class="hashtag__link" href="/metalworking/thermal-works">#термическая_обработка</a>
             </div>
           </section>
         </li>
@@ -816,7 +843,7 @@
         <textarea class="textarea" name="message" id="" rows="6" placeholder="Текст сообщения"></textarea>
         <label class="label--file" for="file">Загрузить файлы</label>
         <input id="file" type="file" name="file">
-        <div class="confidential">Нажимая кнопку «Отправить заявку», Вы соглашаетесь на <a href="/confidentiality.html">обработку персональных данных</a></div>
+        <div class="confidential">Нажимая кнопку «Отправить заявку», Вы соглашаетесь на <a href="/confidentiality">обработку персональных данных</a></div>
         <input class="submit" type="submit" value="Отправить заявку">
       </form>
     </section>
@@ -825,21 +852,23 @@
         <nav class="navigation">
           <div class="navigation__btn"></div>
           <ul class="navigation__underlist">
-            <li class="navigation__undertitle"><a href="/contacts.html">Контакты</a></li>
-            <li class="navigation__undertitle"><a href="/about/about.html">О компании</a></li>
-            <li class="navigation__undertitle"><a href="/about/technical-opportunities.html">Технические возможности</a></li>
-            <li class="navigation__undertitle"><a href="/about/production-areas.html">Производственные площадки</a></li>
-            <li class="navigation__undertitle"><a href="/about/serial-production.html">Серийное производство</a></li>
+            <li class="navigation__undertitle"><a href="/contacts">Контакты</a></li>
+            <li class="navigation__undertitle"><a href="/about/about">О компании</a></li>
+            <li class="navigation__undertitle"><a href="/about/technical-opportunities">Технические возможности</a></li>
+            <li class="navigation__undertitle"><a href="/about/production-areas">Производственные площадки</a></li>
+            <li class="navigation__undertitle"><a href="/about/serial-production">Серийное производство</a></li>
           </ul>
           <ul class="navigation__underlist">
-            <li class="navigation__undertitle"><a href="/about/about.html#documents">Документы и сертификаты</a></li>
-            <li class="navigation__undertitle"><a href="/logistic.html">Логистика</a></li>
-            <li class="navigation__undertitle"><a href="/about/portfolio.html">Портфолио</a></li>
-            <li class="navigation__undertitle"><a href="/about/our-clients.html">Клиенты</a></li>
-            <li class="navigation__undertitle"><a href="/about/our-partners.html">Партнеры</a></li>
+            <li class="navigation__undertitle"><a href="/about/about#documents">Документы и сертификаты</a></li>
+            <li class="navigation__undertitle"><a href="/logistic">Логистика</a></li>
+            <li class="navigation__undertitle"><a href="/about/portfolio">Портфолио</a></li>
+            <li class="navigation__undertitle"><a href="/about/our-clients">Клиенты</a></li>
+            <li class="navigation__undertitle"><a href="/about/our-partners">Партнеры</a></li>
           </ul>
-          <div class="wrapper"><a class="skolkovo-link" href="/about/skolkovo-operator.html">
-              <p>Центр коллективного пользования<br>технопарка "Сколково"</p></a><a class="set-service" href="/index.html"><img src="/img/logo--s--w.png" alt="Логотип" width="50"></a></div>
+          <div class="wrapper"><a class="skolkovo-link" href="/about/skolkovo-operator">
+              <p>Центр коллективного пользования<br>технопарка "Сколково"</p></a>
+            <div itemscope itemtype="http://schema.org/Organization"><a class="set-service" itemprop="url" href="https://zaoks.ru/"><img itemprop="logo" src="/img/logo--s--w.png" alt="Логотип" width="50"></a></div>
+          </div>
         </nav>
         <div class="line">
           <div class="socials"><a class="socials__item socials__item--vk" href="https://vk.com/setservice" target="_blank">

@@ -28,7 +28,10 @@ gulp.task('scss', function() {
 gulp.task('browser-sync', function() {
   browserSync({
     server: {
-      baseDir: 'app'
+      baseDir: 'app',
+      serveStaticOptions: {
+        extensions: ['html']
+      }
     },
     notify: false
   });

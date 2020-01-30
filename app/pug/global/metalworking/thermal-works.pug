@@ -1,5 +1,5 @@
 doctype
-html
+html(prefix="og: http://ogp.me/ns#")
 	-let title = 'Термическая Обработка Металлов и Сплавов'
 	-let heading = 'Термическая Обработка Металлов'
 	-let titleForNavigation = 'Термическая обработка'
@@ -68,7 +68,7 @@ html
 							|  или 
 							b оставить заявку с помощью формы связи
 							| . 
-				section.main__articles
+				section.main__articles.main__articles--dropdown
 					ul.dropdown
 						li.dropdown-item
 							.dropdown-title

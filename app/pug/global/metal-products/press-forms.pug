@@ -1,5 +1,5 @@
 doctype
-html
+html(prefix="og: http://ogp.me/ns#")
   -let title = 'Пресс-формы'
   -let parent = 'Продукция'
   include ../../includes/head.pug
@@ -22,7 +22,7 @@ html
             .infobuttons
               .btn.btn--form Заказать производство
               
-        section.main__articles.main__articles--with-btns
+        section.main__articles.main__articles--with-btns.main__articles--with-btns--3
           .main__buttons
             .outer.active
               .inner Пресс-формы

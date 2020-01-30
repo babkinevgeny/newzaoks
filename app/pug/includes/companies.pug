@@ -90,9 +90,11 @@ section(class=add_link_for_clients ? 'companies companies--clients companies--bi
           a.companies__link(rel="nofollow" href='#')
   else
     .companies__inner
-      h2.title.title--uppercase Наши клиенты
-      .undertitle (Мы работаем с клиентами из самых разных отраслей промышленности)
-      ul.companies__list.companies__list--flex
+      .popup__title.title.title--uppercase Наши клиенты
+      .undertitle Мы работаем с клиентами из самых разных отраслей промышленности
+      ul.companies__list.companies__list--flex(style="position: relative")
+        div(style="position: absolute; left: 0px; top: -63px")
+          include breadcrumbs.pug
         li.companies__item
           .companies__title АО «НПП «Промтрансавтоматика»
         li.companies__item
@@ -182,7 +184,7 @@ section(class=add_link_for_clients ? 'companies companies--clients companies--bi
     li
       section.popup
         .popup__btn
-        h2 АО «НПП «Промтрансавтоматика»
+        .popup__title АО «НПП «Промтрансавтоматика»
         a.popup__link(rel="nofollow" href='http://www.ptaspb.ru/') www.ptaspb.ru
         .popup__left
           p НПП «Промтрансавтоматика» активно участвует в проектах автоматизации деятельности городских служб. Системы и аппаратно-программные комплексы применяются на разводных мостах Санкт-Петербурга, в метрополитене, на железнодорожном транспорте, на других объектах города и области.
@@ -192,7 +194,7 @@ section(class=add_link_for_clients ? 'companies companies--clients companies--bi
     li
       section.popup
         .popup__btn
-        h2 АО «Концерн «ЦНИИ «Электроприбор»
+        .popup__title АО «Концерн «ЦНИИ «Электроприбор»
         a.popup__link(rel="nofollow" href='http://www.elektropribor.spb.ru') www.elektropribor.spb.ru
         .popup__left
           p АО «Концерн «ЦНИИ «Электроприбор» является ведущим институтом страны в области высокоточной навигации, гироскопии, гравиметрии и оптоэлектронных систем наблюдения подводных лодок, успешно ведет разработки и поставляет технику морской радиосвязи и гидроакустики.
@@ -201,7 +203,7 @@ section(class=add_link_for_clients ? 'companies companies--clients companies--bi
     li
       section.popup
         .popup__btn
-        h2 АО «ЛОМО»
+        .popup__title АО «ЛОМО»
         a.popup__link(rel="nofollow" href='http://www.lomo.ru') www.lomo.ru
         .popup__left
           p АО «ЛОМО» является ведущим предприятием России по производству оптических, оптико-электронных, оптико-цифровых и оптико-механических приборов, систем и комплексов.
@@ -210,7 +212,7 @@ section(class=add_link_for_clients ? 'companies companies--clients companies--bi
     li
       section.popup
         .popup__btn
-        h2 АО «НПП «Радар ммс»
+        .popup__title АО «НПП «Радар ммс»
         a.popup__link(rel="nofollow" href='http://www.radar-mms.com/') www.radar-mms.com
         .popup__left
           p АО «Научно-производственное предприятие «Радар ммс» является одним из мировых лидеров в области создания радиоэлектронных систем и комплексов специального и гражданского назначения, точного приборостроения, специального программного обеспечения.
@@ -219,7 +221,7 @@ section(class=add_link_for_clients ? 'companies companies--clients companies--bi
     li
       section.popup
         .popup__btn
-        h2 Санкт-Петербургский государственные университет
+        .popup__title Санкт-Петербургский государственные университет
         a.popup__link(rel="nofollow" href='https://spbu.ru/') www.spbu.ru
         .popup__left
           p СПБГУ — крупнейший научно-образовательный центр Европы и мира. Сегодня здесь учатся более 30 тысяч студентов, работают лауреаты Нобелевской и Филдсовской премий, созданы более 15 крупных лабораторий и 26 ресурсных центров.
@@ -228,7 +230,7 @@ section(class=add_link_for_clients ? 'companies companies--clients companies--bi
     li
       section.popup
         .popup__btn
-        h2 ООО «НТЦ «Гидротранс»
+        .popup__title ООО «НТЦ «Гидротранс»
         a.popup__link(rel="nofollow" href='http://hydrotrans.ru/') www.hydrotrans.ru
         .popup__left
           p ООО «НТЦ «Гидротранс» специализируется на проектировании, изготовлении, монтаже и обслуживании гидравлических приводов для гидротехнических сооружений, шахт, предприятий промышленности и ВПК и др.
@@ -237,7 +239,7 @@ section(class=add_link_for_clients ? 'companies companies--clients companies--bi
     li
       section.popup
         .popup__btn
-        h2 АО «Завод «Знамя труда»
+        .popup__title АО «Завод «Знамя труда»
         a.popup__link(rel="nofollow" href='http://zzt.ru/') www.zzt.ru
         .popup__left
           p АО «Завод «Знамя труда» — один из крупнейших производителей трубопроводной арматуры в России. Экспортные и внутренние поставки продукции осуществляются на самые современные объекты атомной и топливной энергетики.
@@ -246,7 +248,7 @@ section(class=add_link_for_clients ? 'companies companies--clients companies--bi
     li
       section.popup
         .popup__btn
-        h2 ООО «Инжиниринг Геотехнических Систем»
+        .popup__title ООО «Инжиниринг Геотехнических Систем»
         .popup__left
           p Разработка строительных проектов, строительство инженерных коммуникаций для водоснабжения и водоотведения, газоснабжения, строительство коммунальных объектов для обеспечения электроэнергией и телекоммуникациями.
         .popup__right
@@ -254,7 +256,7 @@ section(class=add_link_for_clients ? 'companies companies--clients companies--bi
     li
       section.popup
         .popup__btn
-        h2 Caterpillar
+        .popup__title Caterpillar
         a.popup__link(rel="nofollow" href='https://www.cat.com/ru_RU.html') www.cat.com
         .popup__left
           p Одна из ведущих корпораций по производству крупнейшей спецтехники в мире. Выпускает землеройно-транспортную технику, строительное оборудование, дизельные двигатели, энергетические установки (работающие на природном и попутном газах) и другие продукты, а также обувь.
@@ -263,7 +265,7 @@ section(class=add_link_for_clients ? 'companies companies--clients companies--bi
     li
       section.popup
         .popup__btn
-        h2 АО НТЦ «РОКАД»
+        .popup__title АО НТЦ «РОКАД»
         a.popup__link(rel="nofollow" href='http://rocad.ru/') www.rocad.ru
         .popup__left
           p Компания Научно-Технический Центр «РОКАД» занимается наукоемкими разработками, выполнением НИР и ОКР, а также разработкой ноу-хау на заказ.
@@ -273,7 +275,7 @@ section(class=add_link_for_clients ? 'companies companies--clients companies--bi
     li
       section.popup
         .popup__btn
-        h2 ООО «МОП им. Калинина»
+        .popup__title ООО «МОП им. Калинина»
         a.popup__link(rel="nofollow" href='http://kme.su/') www.kme.su
         .popup__left
           p ООО «МОП им. Калинина» осуществляет обработку металлов и нанесение покрытий на металлы, обработку металлических изделий с использованием основных технологических процессов машиностроения, изготовление деталей и узлов различной степени сложности.
@@ -283,7 +285,7 @@ section(class=add_link_for_clients ? 'companies companies--clients companies--bi
     li
       section.popup
         .popup__btn
-        h2 
+        .popup__title 
           | ООО «Интеллектуальное 
           br
           | конструкторское бюро»
@@ -296,7 +298,7 @@ section(class=add_link_for_clients ? 'companies companies--clients companies--bi
     li
       section.popup
         .popup__btn
-        h2 АО «ГМЗ «Химмаш»
+        .popup__title АО «ГМЗ «Химмаш»
         a.popup__link(rel="nofollow" href='http://www.him-mash.com/') www.him-mash.com
         .popup__left
           p АО «ГМЗ «Химмаш» является инжиниринговой компанией, специализирующейся на предоставлении инжиниринговых услуг по строительству новых, модернизации существующих энергетических мощностей на промышленных предприятиях и объектах энергетики.
@@ -305,7 +307,7 @@ section(class=add_link_for_clients ? 'companies companies--clients companies--bi
     li
       section.popup
         .popup__btn
-        h2 АО «Нева металл посуда»
+        .popup__title АО «Нева металл посуда»
         a.popup__link(rel="nofollow" href='https://nmp.ru') www.nmp.ru
         .popup__left
           p Компания АО «Нева металл посуда» занимается разработкой уникальной по своим потребительским свойствам и качеству посуды. Предприятие находится в Петербурге, в научно-промышленном центре, что дает возможность задействовать интеллектуально-технические ресурсы, порой недоступные на удаленных производствах.
@@ -315,7 +317,7 @@ section(class=add_link_for_clients ? 'companies companies--clients companies--bi
     li
       section.popup
         .popup__btn
-        h2 ООО «Главпромстрой»
+        .popup__title ООО «Главпромстрой»
         a.popup__link(rel="nofollow" href='http://glavpromstroi.com/') www.glavpromstroi.com
         .popup__left
           p ООО «Главпромстрой» - многопрофильная организация, успешно и стабильно работающая на рынке строительства с 1992 года, занимающаяся строительством, реконструкцией и капитальным ремонтом зданий и сооружений промышленного и коммунально-бытового назначения.
@@ -324,7 +326,7 @@ section(class=add_link_for_clients ? 'companies companies--clients companies--bi
     li
       section.popup
         .popup__btn
-        h2 ООО НПФ «РЕОМ»
+        .popup__title ООО НПФ «РЕОМ»
         a.popup__link(rel="nofollow" href='http://npf-reom.ru/') www.npf-reom.ru
         .popup__left
           p НПФ «РЕОМ» разрабатывает, производит, модернизирует и поставляет климатические камеры для проведения испытаний в различных отраслях промышленности.
@@ -333,7 +335,7 @@ section(class=add_link_for_clients ? 'companies companies--clients companies--bi
     li
       section.popup
         .popup__btn
-        h2 ООО «ОМЗ-Термопресс»
+        .popup__title ООО «ОМЗ-Термопресс»
         a.popup__link(rel="nofollow" href='http://www.omz-izhora.ru') www.omz-izhora.ru
         .popup__left
           p ПАО "ОМЗ" – одна из ведущих компаний тяжелого машиностроения, специализирующаяся на инжиниринге, а также на производстве спецсталей и предоставлении промышленных услуг.
@@ -342,7 +344,7 @@ section(class=add_link_for_clients ? 'companies companies--clients companies--bi
     li
       section.popup
         .popup__btn
-        h2 ООО «Обсервер»
+        .popup__title ООО «Обсервер»
         a.popup__link(rel="nofollow" href='https://o-mp.ru/') www.o-mp.ru
         .popup__left
           p Компания «Обсервер» занимается разработкой, производством и продвижением самых передовых устройств, для улучшения качества жизни инвалидов, создания безбарьерной среды и обеспечения «Равных возможностей для всех». 
@@ -351,7 +353,7 @@ section(class=add_link_for_clients ? 'companies companies--clients companies--bi
     li
       section.popup
         .popup__btn
-        h2 Tunnel Tech
+        .popup__title Tunnel Tech
         a.popup__link(rel="nofollow" href='http://tunneltech.eu/') www.tunneltech.eu
         .popup__left
           p Компания Tunnel Tech занимается разработкой и производством аэротруб и ветровых тоннелей различной степени мощности, а также разрабатывает программное обеспечение для управления ими.
@@ -360,7 +362,7 @@ section(class=add_link_for_clients ? 'companies companies--clients companies--bi
     li
       section.popup
         .popup__btn
-        h2 Завод ПТО им. С.М.Кирова
+        .popup__title Завод ПТО им. С.М.Кирова
         a.popup__link(rel="nofollow" href='http://zpto.ru/') www.zpto.ru
         .popup__left
           p Завод ПТО им. С.М.Кирова - ведущее предприятие машиностроительной отрасли, традиционно обеспечивавшее металлургические заводы, атомные, гидро- и тепловые электростанции и другие предприятия народного хозяйства СССР высокопроизводительными грузоподъемными кранами тяжелых режимов работы. 
@@ -369,7 +371,7 @@ section(class=add_link_for_clients ? 'companies companies--clients companies--bi
     li
       section.popup
         .popup__btn
-        h2 ООО «ПО «Новатор»
+        .popup__title ООО «ПО «Новатор»
         a.popup__link(rel="nofollow" href='http://www.spbnovator.ru/') www.spbnovator.ru
         .popup__left
           p ООО «ПО «Новатор» специализируется на разработке и производстве аппаратов воздушного охлаждения (АВО), с упором на модернизацию и повышения их эффективности.
@@ -379,7 +381,7 @@ section(class=add_link_for_clients ? 'companies companies--clients companies--bi
     li
       section.popup
         .popup__btn
-        h2 ООО «Инвайро»
+        .popup__title ООО «Инвайро»
         a.popup__link(rel="nofollow" href='https://enviro.su/') www.enviro.su
         .popup__left
           p Компания ООО «Инвайро» занимается мусоропереработкой, гащоочисткой, уничтожением опасных отходов, обезвреживанием медицинских отходов, а также рекультивацией отходов в энергию и тепло.
@@ -389,7 +391,7 @@ section(class=add_link_for_clients ? 'companies companies--clients companies--bi
     li
       section.popup
         .popup__btn
-        h2 ООО «Адсорбционная техника»
+        .popup__title ООО «Адсорбционная техника»
         .popup__left
           p ООО «Адсорбционная техника» осуществляем производство теплообменных устройств, оборудования для кондиционирования воздуха промышленного холодильного и морозильного оборудования, производство оборудования для фильтрования и очистки газов.
         .popup__right
@@ -398,7 +400,7 @@ section(class=add_link_for_clients ? 'companies companies--clients companies--bi
     li
       section.popup
         .popup__btn
-        h2 ООО «Синтез Технолоджи»
+        .popup__title ООО «Синтез Технолоджи»
         a.popup__link(rel="nofollow" href='http://syntechno.ru/') www.syntechno.ru
         .popup__left
           p ООО «Синтез Технолоджи» занимается производством основных неорганических химических веществ, производством изделий технического назначения из драгоценных металлов, обработкой драгоценных, полудрагоценных, поделочных и синтетических камней.
@@ -408,7 +410,7 @@ section(class=add_link_for_clients ? 'companies companies--clients companies--bi
     li
       section.popup
         .popup__btn
-        h2 ГК «Тира»
+        .popup__title ГК «Тира»
         a.popup__link(rel="nofollow" href='https://tira.ru/') www.tira.ru
         .popup__left
           p Группа промышленных компаний "Корпорация "ТИРА" объединяет предприятия, занимающиеся разработкой, производством, поставкой, внедрением и сопровождением мощной радиопередающей аппаратуры и комплексов для профессиональной радиосвязи военного и гражданского назначения, оборудования теле и радиовещательной продукции.
@@ -417,7 +419,7 @@ section(class=add_link_for_clients ? 'companies companies--clients companies--bi
     li
       section.popup
         .popup__btn
-        h2 АО «Тихвинский вагоностроительный завод»
+        .popup__title АО «Тихвинский вагоностроительный завод»
         a.popup__link(rel="nofollow" href='http://www.tvsz.ru/') www.tvsz.ru
         .popup__left
           p Предприятие является одним из самых масштабных объектов транспортного машиностроения в Европе по объему инвестиций, производственным площадям и уровню технического оснащения.
@@ -426,7 +428,7 @@ section(class=add_link_for_clients ? 'companies companies--clients companies--bi
     li
       section.popup
         .popup__btn
-        h2 ООО «РОСНА Инжиниринг»
+        .popup__title ООО «РОСНА Инжиниринг»
         a.popup__link(rel="nofollow" href='http://rosna.spb.ru/') www.rosna.spb.ru
         .popup__left
           p Компания занимается техническим и технологическим аудитом, поставкой и внедрением, техническим обслуживанием, ремонтом и модернизацией промышленного оборудования, а также производством собственного оборудования.
@@ -435,7 +437,7 @@ section(class=add_link_for_clients ? 'companies companies--clients companies--bi
     li
       section.popup
         .popup__btn
-        h2 ООО «ПК «Ландскрона»
+        .popup__title ООО «ПК «Ландскрона»
         a.popup__link(rel="nofollow" href='http://www.vari.ru/') www.vari.ru
         .popup__left
           p Российская производственная компания, специализирующаяся на выпуске высококачественной алюминиевой посуды с антипригарным покрытием компании Whitford.
@@ -444,7 +446,7 @@ section(class=add_link_for_clients ? 'companies companies--clients companies--bi
     li
       section.popup
         .popup__btn
-        h2 АО «Завод художественных красок «Невская палитра» 
+        .popup__title АО «Завод художественных красок «Невская палитра» 
         a.popup__link(rel="nofollow" href='http://www.nevskayapalitra.ru/') www.nevskayapalitra.ru
         .popup__left
           p Завод художественных красок «Невская палитра» на протяжении 80 лет выпускает продукцию высшего качества для профессиональных художников и любителей творчества.
@@ -453,7 +455,7 @@ section(class=add_link_for_clients ? 'companies companies--clients companies--bi
     li
       section.popup
         .popup__btn
-        h2 ООО «Лаборатория цифрового зрения»
+        .popup__title ООО «Лаборатория цифрового зрения»
         a.popup__link(rel="nofollow" href='https://divisionlabs.com/') www.divisionlabs.com
         .popup__left
           p ООО «Лаборатория цифрового зрения» является российским производителем автоматических комплексов фотовидеофиксации (КФВФ) нарушений Правил дорожного движения под торговой маркой «Птолемей».
@@ -462,7 +464,7 @@ section(class=add_link_for_clients ? 'companies companies--clients companies--bi
     li
       section.popup
         .popup__btn
-        h2 АО «Завод «Красный Выборжец»
+        .popup__title АО «Завод «Красный Выборжец»
         a.popup__link(rel="nofollow" href='http://kv-spb.ru/') www.kv-spb.ru
         .popup__left
           p Одно из ведущих в России предприятий по обработке цветных металлов. Предприятие выпускает широкий ассортимент изделий из меди и сплавов на ее основе в виде листов и лент. 
@@ -471,7 +473,7 @@ section(class=add_link_for_clients ? 'companies companies--clients companies--bi
     li
       section.popup
         .popup__btn
-        h2 ООО «Оптотехника»
+        .popup__title ООО «Оптотехника»
         a.popup__link(rel="nofollow" href='') 
         .popup__left
           p Предприятие занимается производством приборов, датчиков, аппаратуры и инструментов для измерения, контроля и испытаний, а также производством  оптических приборов, фото- и кинооборудования и разработкой программного обеспечения для них.
@@ -481,7 +483,7 @@ section(class=add_link_for_clients ? 'companies companies--clients companies--bi
     li
       section.popup
         .popup__btn
-        h2 ООО «Производственно-техническая фирма «КонСис»
+        .popup__title ООО «Производственно-техническая фирма «КонСис»
         a.popup__link(rel="nofollow" href='https://www.consys.ru/') www.consys.ru
         .popup__left
           p Компания выполняет полный цикл работ по созданию автоматизированных систему управления технологическими процессами: от постановки задачи до ввода в эксплуатацию.
@@ -490,7 +492,7 @@ section(class=add_link_for_clients ? 'companies companies--clients companies--bi
     li
       section.popup
         .popup__btn
-        h2 Производственное объединение «Технорос»
+        .popup__title Производственное объединение «Технорос»
         a.popup__link(rel="nofollow" href='https://tehnoros.ru/') www.tehnoros.ru
         .popup__left
           p Компания специализируется на разработке и реализации уникальных инженерно-технических решений, основанных на детальном анализе технологических особенностей каждого проекта, условий эксплуатации оборудования и индивидуальных потребностях заказчика.
@@ -499,7 +501,7 @@ section(class=add_link_for_clients ? 'companies companies--clients companies--bi
     li
       section.popup
         .popup__btn
-        h2 АО НПП «Авиационная и Морская Электроника»
+        .popup__title АО НПП «Авиационная и Морская Электроника»
         a.popup__link(rel="nofollow" href='https://nppame.ru/') www.nppame.ru
         .popup__left
           p АО НПП «АМЭ» является ведущим российским производителем систем обработки и отображения информации радиоэлектронных систем различного назначения, устанавливаемых на объектах стационарного, корабельного и авиационного базирования.
@@ -508,7 +510,7 @@ section(class=add_link_for_clients ? 'companies companies--clients companies--bi
     li
       section.popup
         .popup__btn
-        h2 АО «Машиностроение Северной верфи»
+        .popup__title АО «Машиностроение Северной верфи»
         a.popup__link(rel="nofollow" href='http://www.mb-sv.ru/') www.mb-sv.ru
         .popup__left
           p АО "Машиностроение Северной верфи" специализируется на производстве узлов и механизмов, различных металлоконструкций как основной вид деятельности.
@@ -517,7 +519,7 @@ section(class=add_link_for_clients ? 'companies companies--clients companies--bi
     li
       section.popup
         .popup__btn
-        h2 ООО «Судостроительная компания «АКО БАРСС»
+        .popup__title ООО «Судостроительная компания «АКО БАРСС»
         a.popup__link(rel="nofollow" href='http://sk-akobarss.ru/') www.sk-akobarss.ru
         .popup__left
           p Основным направлением предусматривалось судостроение и судоремонт. За свою историю компания выполняла работы у большого количества различных компаний.
@@ -705,7 +707,7 @@ section(class=add_link_for_clients ? 'companies companies--clients companies--bi
 //-   ];
 
 //- section.companies.companies--clients
-//-   h2.title.title--uppercase Наши клиенты
+//-   .popup__title.title.title--uppercase Наши клиенты
 //-   .undertitle (Мы работаем с клиентами из самых разных отраслей промышленности)
 //-   ul.companies__list
 //-     if add_link_for_clients
@@ -741,7 +743,7 @@ section(class=add_link_for_clients ? 'companies companies--clients companies--bi
     //-     li
     //-       section.popup
     //-         .popup__btn
-    //-         h2 #{companies[i].name}
+    //-         .popup__title #{companies[i].name}
     //-         if companies[i].site
     //-           a.popup__link(rel="nofollow" href='http://' + companies[i].site, target='_blank') #{companies[i].site}
     //-         .popup__left
@@ -763,7 +765,7 @@ section(class=add_link_for_clients ? 'companies companies--clients companies--bi
   //- li
   //-     section.popup
   //-       .popup__btn
-  //-       h2 ООО «МОП им. Калинина»
+  //-       .popup__title ООО «МОП им. Калинина»
   //-       a.popup__link(rel="nofollow" href='http://kme.su/') www.kme.su
   //-       .popup__left
   //-         p 

@@ -2,9 +2,22 @@ $(document).ready(function() {
   $("#performed_works").owlCarousel({
     loop:true,
     autoplay:true,
-    items: 6,
+    
     margin: 20,
-    dots:true
+    dots:true,
+    responsive: {
+      0: {
+        items: 1,
+        center: true
+      },
+      560: {
+        items: 3
+      },
+      1200: {
+        items: 6
+      }
+    }
+
   });
 
   /*Переключение вкладок во внутренних страницах*/

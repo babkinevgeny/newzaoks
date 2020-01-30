@@ -85,6 +85,12 @@
   &--squares{
     flex-wrap: wrap;
     display: flex;
+    .owl-item{
+      text-align: center;
+      .assortiment__item{
+        margin: 3px auto;
+      }
+    }
     .assortiment__item{
       width: 262px;
       height: 262px;
@@ -93,6 +99,7 @@
       border: none;
       position: relative;
       overflow:hidden;
+      text-align: center;
       &:hover{
         .assortiment__title{
           color: $color-blue;
@@ -128,12 +135,13 @@
 
 .companies--clients {
   .title{
-    font-size: 16px;
+    font-size: 16px !important;
     font-family: $font;
     color: $color-blue;
     text-transform: uppercase;
     display: block;
     text-align: center;
+    font-weight: normal !important;
   }
   .owl-nav {
     left: 50%;

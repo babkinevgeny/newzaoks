@@ -19,6 +19,7 @@
     align-items: center;
     @include respond-to(lg) {
       flex-direction: column;
+      padding: 20px 20px;
     }
   }
 
@@ -33,6 +34,7 @@
     @include respond-to(lg) {
       width: 100%;
     }
+ 
 
     &__btn {
       display: none;
@@ -91,14 +93,24 @@
     .skolkovo-link {
       margin-right: 80px;
     }
+    @include respond-to(md) {
+      display: none;
+    }
   }
   .line {
     display: flex;
     width: 100%;
     margin-bottom: 30px;
+    @include respond-to(sm) {
+      flex-direction: column;
+    }
     .socials{
       width: 25%;
       text-align: left;
+      @include respond-to(sm) {
+        width: 100%;
+        margin-bottom: 20px;
+      }
       &__item {
         width: 23px;
         height: 23px;
@@ -120,6 +132,12 @@
     line-height: 40px;
     width: 100%;
     font-size: 16px;
+    @include respond-to(sm) {
+      text-align: center;
+      font-size: 14px;
+      line-height: 22px;
+      padding-top: 10px;
+    }
   }
 }
 

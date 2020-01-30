@@ -1,12 +1,13 @@
 doctype
-html
-  -let title = 'Set Service Group – Центр металлообработки'
+html(prefix="og: http://ogp.me/ns#")
+  -let title = 'О компании'
   -let description = 'Полный цикл услуг металлообработки в СПб: лазерная резка и гравировка, листообработка, сварка, токарно-фрезерная ЧПУ обработка и другие услуги. Проверка ОТК, гарантии качества Set Service Group.'
   include ../../includes/head.pug
   body.body--parallax
     include ../../includes/preloader.pug
     include ../../includes/main-header.pug
     article.about
+      include ../../includes/breadcrumbs.pug
       h2.title Здравствуйте! Мы рады приветствовать Вас на нашем официальном сайте.
       p.text.text--justify
         b.arial 

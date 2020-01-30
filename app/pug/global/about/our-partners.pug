@@ -1,11 +1,13 @@
 doctype
-html
+html(prefix="og: http://ogp.me/ns#")
   -let title = 'Партнеры'
+  -let noindex = true
   include ../../includes/head.pug
   body.body--parallax
     include ../../includes/preloader.pug
     include ../../includes/main-header.pug
     include ../../includes/menu-line.pug
+    
     include ../../includes/companies--partners.pug
     include ../../includes/popupform.pug
     include ../../includes/bottom-line.pug

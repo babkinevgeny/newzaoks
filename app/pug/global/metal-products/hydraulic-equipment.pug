@@ -1,5 +1,5 @@
 doctype
-html
+html(prefix="og: http://ogp.me/ns#")
   -let title = 'Гидравлическое оборудование и гидроцилиндры в Set Service Group'
   -let heading = 'Гидравлическое оборудование / Гидроцилиндры / Комплектующие'
   -let parent = 'Продукция'
@@ -17,14 +17,14 @@ html
         h1.title.title--left #{heading}
         .main__top
           .fotorama__wrapper
-            .fotorama(data-loop="true" data-autoplay="false")
+            .fotorama(data-loop="true" data-autoplay="false" data-maxwidth="262")
               img(src="../img/for-pic-sprites/гидравлическое оборудование.jpg")
           .main__info
             p.text.text--justify Set Service Group занимается изготовлением гидравлического оборудования, гидроцилиндров и комплектующих по всей России. Наша продукция гарантированно отличается качеством и надежностью. Свяжитесь с нами, и ваша заявка будет обработана нашими менеджерами в самые короткие сроки.
             .infobuttons
               .btn.btn--form Заказать производство
               
-        section.main__articles.main__articles--with-btns
+        section.main__articles.main__articles--with-btns.main__articles--with-btns--3
           .main__buttons
             .outer.active
               .inner Гидравлическое оборудование

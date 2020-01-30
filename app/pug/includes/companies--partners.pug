@@ -75,8 +75,13 @@
 section.companies.companies--partners
   .companies__inner
     h2.title.title--uppercase Наши партнеры
-    .undertitle (Широкий опыт работы с партнерами из различных отраслей позволяет нам решать задачи любой сложности)
-    ul.companies__list.companies__list--flex
+    .undertitle 
+      | Широкий опыт работы с партнерами из различных отраслей 
+      br
+      | позволяет нам решать задачи любой сложности)
+    ul.companies__list.companies__list--flex(style="position: relative")
+      div(style="position: absolute; left: 0px; top: -63px")
+        include breadcrumbs.pug
       each company in companies
         li.companies__item
           .companies__title= company.name
@@ -91,7 +96,7 @@ section.companies.companies--partners
       li
         section.popup
           .popup__btn
-          h2 #{company.name}
+          .popup__title #{company.name}
           a.popup__link(href='http://' + company.site, target='_blank', rel="nofollow") #{company.site}
           .popup__left
             p #{company.descr}

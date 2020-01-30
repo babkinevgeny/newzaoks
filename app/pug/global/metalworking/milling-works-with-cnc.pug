@@ -1,5 +1,5 @@
 doctype
-html
+html(prefix="og: http://ogp.me/ns#")
 	-let title = 'Фрезерная обработка изделий и деталей на станках с ЧПУ в Set Service Group'
 	-let heading = 'Фрезерные работы ЧПУ'
 	-let parent = 'Услуги'
@@ -56,7 +56,7 @@ html
 							|  или 
 							b оставить заявку с помощью формы связи
 							| .
-					section.main__articles
+					section.main__articles.main__articles--dropdown
 						ul.dropdown
 							li.dropdown-item
 								.dropdown-title

@@ -4,35 +4,36 @@ footer.main-footer
       .navigation__btn
       ul.navigation__underlist
         li.navigation__undertitle
-          a(href='/contacts.html') Контакты
+          a(href='/contacts') Контакты
         li.navigation__undertitle
-          a(href='/about/about.html') О компании
+          a(href='/about/about') О компании
         li.navigation__undertitle
-          a(href='/about/technical-opportunities.html') Технические возможности
+          a(href='/about/technical-opportunities') Технические возможности
         li.navigation__undertitle
-          a(href='/about/production-areas.html') Производственные площадки
+          a(href='/about/production-areas') Производственные площадки
         li.navigation__undertitle
-            a(href='/about/serial-production.html') Серийное производство
+            a(href='/about/serial-production') Серийное производство
       ul.navigation__underlist
         li.navigation__undertitle
-          a(href='/about/about.html#documents') Документы и сертификаты
+          a(href='/about/about#documents') Документы и сертификаты
         li.navigation__undertitle
-          a(href='/logistic.html') Логистика
+          a(href='/logistic') Логистика
         li.navigation__undertitle
-          a(href='/about/portfolio.html') Портфолио
+          a(href='/about/portfolio') Портфолио
         li.navigation__undertitle
-          a(href='/about/our-clients.html') Клиенты
+          a(href='/about/our-clients') Клиенты
         li.navigation__undertitle
-          a(href='/about/our-partners.html') Партнеры
+          a(href='/about/our-partners') Партнеры
       .wrapper
-        a.skolkovo-link(href="/about/skolkovo-operator.html")
+        a.skolkovo-link(href="/about/skolkovo-operator")
           //-img(src="/img/operator.png", alt="Сколково", width="50")
           p
             | Центр коллективного пользования
             br
             | технопарка "Сколково"
-        a.set-service(href="/index.html")
-          img(src='/img/logo--s--w.png', alt='Логотип', width="50")
+        div(itemscope itemtype="http://schema.org/Organization")
+          a.set-service(itemprop="url" href="https://zaoks.ru/")
+            img(itemprop="logo" src='/img/logo--s--w.png', alt='Логотип', width="50")
     .line
       include socials.pug
       include yandex-metrika.pug
