@@ -1,11 +1,4 @@
-RewriteEngine On
-RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
-RewriteRule ^ /%1 [NC,L,R]
-
-RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^ %{REQUEST_URI}.html [NC,L]
-
-RewriteEngine On
+пгRewriteEngine On
 #RewriteCond %{ENV:HTTPS} !on
 #RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
@@ -68,10 +61,10 @@ RewriteCond %{ENV:HASCAPS} TRUE
 RewriteRule ^/?(.*) /$1 [R=301,L]
 
 RewriteEngine On
-Redirect 301 /metal-products/gears https://zaoks.ru/metal-products/gearboxes
-Redirect 301 /metal-products/gear-racks https://zaoks.ru/metal-products/gearboxes
-Redirect 301 /metal-products/wheels https://zaoks.ru/metal-products/gearboxes
-Redirect 301 /metal-products/clips https://zaoks.ru/metal-products/gearboxes
-Redirect 301 /metal-products/conveyor-rollers https://zaoks.ru/metal-products/extrusion-lines
-Redirect 301 /about/clients https://zaoks.ru/about/our-clients
-Redirect 301 /metal-products/press-forms https://zaoks.ru/metal-products/press-molds-stamps-matrices
+Redirect 301 /metal-products/gears.html https://zaoks.ru/metal-products/gearboxes.html
+Redirect 301 /metal-products/gear-racks.html https://zaoks.ru/metal-products/gearboxes.html
+Redirect 301 /metal-products/wheels.html https://zaoks.ru/metal-products/gearboxes.html
+Redirect 301 /metal-products/clips.html https://zaoks.ru/metal-products/gearboxes.html
+Redirect 301 /metal-products/conveyor-rollers.html https://zaoks.ru/metal-products/extrusion-lines.html
+Redirect 301 /about/clients.html https://zaoks.ru/about/our-clients.html
+Redirect 301 /metal-products/press-forms.html https://zaoks.ru/metal-products/press-molds-stamps-matrices.html

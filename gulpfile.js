@@ -29,9 +29,6 @@ gulp.task('browser-sync', function() {
   browserSync({
     server: {
       baseDir: 'app',
-      serveStaticOptions: {
-        extensions: ['html']
-      }
     },
     notify: false
   });
