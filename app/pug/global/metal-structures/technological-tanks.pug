@@ -1,5 +1,5 @@
 doctype
-html
+html(prefix="og: http://ogp.me/ns#")
   -let title = 'Производство технологических емкостей в Set Service Group'
   -let heading = 'Технологические емкости'
   -let parent = 'Металлоконструкции'
@@ -17,10 +17,8 @@ html
         h1.title.title--left #{heading}
         .main__top
           .fotorama__wrapper
-            .fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")
-              img(src="../img/metal-structures/ТехнологЕмкости1.jpg")
-              img(src="../img/metal-structures/ТехнологЕмкости2.jpg")
-              img(src="../img/metal-structures/ТехнологЕмкости3.jpg")
+            .fotorama(data-loop="true" data-autoplay="false")
+              img(src="../img/for-pic-sprites/технологические емкости.jpg")
           .main__info
             p.text.text--justify 
               b Емкости 
@@ -30,7 +28,7 @@ html
             .infobuttons
               .btn.btn--form Заказать производство
               
-        section.main__articles.main__articles--with-btns
+        section.main__articles.main__articles--with-btns.main__articles--with-btns--5
           .main__buttons
             .outer.active
               .inner Баки

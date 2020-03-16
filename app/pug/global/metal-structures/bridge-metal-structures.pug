@@ -1,5 +1,5 @@
 doctype
-html
+html(prefix="og: http://ogp.me/ns#")
   -let title = 'Производство мостовых металлоконструкций в Set Service Group'
   -let heading = 'Мостовые металлоконструкции'
   -let parent = 'Металлоконструкции'
@@ -17,10 +17,8 @@ html
         h1.title.title--left #{heading}
         .main__top
           .fotorama__wrapper
-            .fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")
-              img(src="../img/metal-structures/МостовыеМеталлоконструкции1.jpg")
-              img(src="../img/metal-structures/МостовыеМеталлоконструкции2.jpg")
-              img(src="../img/metal-structures/МостовыеМеталлоконструкции3.jpg")
+            .fotorama(data-loop="true" data-autoplay="false")
+              img(src="../img/for-pic-sprites/мостовые металлоконструкции.jpg")
           .main__info
             p.text.text--justify Сегодня значительная часть мостов и пролётных сооружений мира изготавливается с применением металлических конструкций, которые зачастую обозначаются как «мостовые металлоконструкции» или «тяжёлые металлоконструкции». Set Service Group располагает необходимым оборудованием и специалистами для реализации таких проектов.
             .infobuttons

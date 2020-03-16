@@ -1,7 +1,24 @@
-ul.breadcrumbs
-  li.breadcrumbs__item
-    a(href="/index.html") Главная
-  li.breadcrumbs__item
-    a(href="#")= parent
-  li.breadcrumbs__item
-    a.active(href="#")= title
+ul.breadcrumbs(itemscope itemtype="https://schema.org/BreadcrumbList")
+  li.breadcrumbs__item(itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem")
+    meta(itemprop="position" content="0")
+    a(href="/index" itemprop="item") 
+      span(itemprop="name") Главная
+  if parent === 'Продукция'
+    li.breadcrumbs__item(itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem")
+      meta(itemprop="position" content="1")
+      a(href="../metal-products.html")
+        span(itemprop="name")= parent
+  if parent === 'Металлоконструкции'
+    li.breadcrumbs__item(itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem")
+      meta(itemprop="position" content="1")
+      a(href="../metalstructures.html")
+        span(itemprop="name")= parent
+  if parent === 'Услуги'
+    li.breadcrumbs__item(itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem")
+      meta(itemprop="position" content="1")
+      a(href="../metalworking.html")
+        span(itemprop="name")= parent
+  li.breadcrumbs__item(itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem")
+    meta(itemprop="position" content="2")
+    a.active(href="#")
+      span(itemprop="name")= title

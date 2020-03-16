@@ -1,8 +1,8 @@
 doctype
-html
+html(prefix="og: http://ogp.me/ns#")
 	-let title = 'Фрезерная обработка изделий и деталей на станках с ЧПУ в Set Service Group'
 	-let heading = 'Фрезерные работы ЧПУ'
-	-let parent = 'Металлообработка'
+	-let parent = 'Услуги'
 	-let keywords =	"Фрезерная обработка ЧПУ, Фрезерные работы ЧПУ по металлу, Фрезерная работы ЧПУ, Фрезерные работы на станках с ЧПУ"
 	-let description = 'Set Service Group проводит фрезерные работы на станках с ЧПУ. Обработка изделий из металла на высочайшем уровне. Принимаем заказы любого объема и сложности, гарантируем качество работ'
 	include ../../includes/head.pug
@@ -56,7 +56,7 @@ html
 							|  или 
 							b оставить заявку с помощью формы связи
 							| .
-					section.main__articles
+					section.main__articles.main__articles--dropdown
 						ul.dropdown
 							li.dropdown-item
 								.dropdown-title

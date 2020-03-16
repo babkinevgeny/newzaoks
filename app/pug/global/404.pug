@@ -1,0 +1,36 @@
+doctype
+html(prefix="og: http://ogp.me/ns#")
+  -let title = 'Страница не найдена'
+  include ../includes/head.pug
+  <meta name="robots" content="noindex">
+  style.
+    .content-404 {
+        max-width: 1340px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        height: calc(100vh - 62px - 62px);
+    }
+
+    .content-404__inner {
+        margin: auto;
+    }
+
+    .title {
+        font-size: 42px;
+    }
+
+    .text {
+        text-align: center;
+    }
+  body.body--parallax
+    include ../includes/preloader.pug
+    include ../includes/main-header.pug
+    section.content-404
+        .content-404__inner
+            h1.title Что-то пошло не так...
+            p.text Страница не найдена. Откройте меню, чтобы посетить другие страницы
+    include ../includes/popupform.pug
+    include ../includes/bottom-line.pug
+script(src="/js/common.js")
+

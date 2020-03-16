@@ -1,8 +1,22 @@
 .portfolio{
   max-width: 1340px;
-  padding: 0 20px;
+  min-height: calc(100vh - 62px - 62px - 56px);
+  
+  padding: 10px 20px 0 20px;
   margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  &__inner{
+    margin: auto;
+  }
+  &__container{
+    display: flex;
+    min-height: 590px;
+    //margin-bottom: 50px;
+  }
   &__btns{
+    width: 250px;
     list-style-type: none;
     font-family: $font;
     margin: 0;
@@ -11,39 +25,283 @@
     display: -ms-flex;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     li{
-      margin-right: 20px;
-      margin-bottom: 20px;
-      padding: 13px 10px;
+      //margin-right: 5px;
+      margin-bottom: 10px;
+      padding: 5px 10px;
+      border-radius: 2px;
       &:last-child{
-        margin-right: 0;
+        margin-bottom: 0;
       }
     }
   }
+  .title{
+    font-size: 16px;
+    margin-top: 0px !important;
+    margin-bottom: 5px !important;
+  }
+  .undertitle{
+    font-size: 16px;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+  }
   &__grid{
-    width: 100% !important;
+    width: 991px !important;
+    //min-height: 800px;
   }
 
   &__item{
-    width: 20%;
-    padding: 10px;
+    width: calc(100% / 5);
+    padding: 0px 2px;
     box-sizing: border-box;
+    cursor: pointer;
+    text-align: center;
+    &:hover{
+      img{ 
+        box-shadow: 0px 0px 10px $color-gray;
+      }
+    }
     img{
-      width: 100%;
+      transition: all .2s ease-in-out;
+      width: 98%;
     }
   }
+  &__pager{
+    width: 100%;
+    height: 50px;
+    position: relative;
+  }
   .isotope-pager{
+    width: 100%;
     text-align: center;
     margin: 0;
     padding: 0;
     list-style-type: none;
-    padding: 30px 0 40px;
+    // padding: 10px 0 10px;
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    left: 0;
+    //bottom: 0px;
   }
   .pager{
     display: inline-block;
     margin-right: 20px;
+    width: 25px;
+    height: 25px;
+    padding: 2px 7px;
     &:last-child{
       margin-right: 0;
+    }
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Sit on top */
+    //padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto;
+    cursor: pointer;
+    background: rgba(255,255,255,.7);
+  }
+  
+  /* Modal Content (Image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    position: relative;
+    img{
+      width: 100%;
+      cursor: default;
+    }
+  }
+  .modal__btns{
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    left: 0;
+    width: 100%;
+  }
+  .modal__btn{
+    cursor: pointer;
+    border: none;
+    background: none;
+    outline: none;
+    width: 40px;
+    height: 40px;
+    transition: all .2s ease-in-out;
+    position: absolute;
+    top: 0;
+    &--prev{
+      background: url('../img/play-button.svg') no-repeat;
+      background-size: 20px 20px;
+      background-position: 12px 10px;
+      transform: rotate(180deg);
+      left: 10px;
+  
+      &:hover{
+        opacity: .5;
+      }
+    }
+    &--next{
+      background: url('../img/play-button.svg') no-repeat;
+      background-size: 20px 20px;
+      background-position: 12px 10px;
+      right: 10px;
+      &:hover{
+        opacity: .5;
+      }
+    }
+    &--disabled{
+      display: none;
+    }
+  }
+  
+  
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+   
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+
+  .catalog{ 
+    width: 350px;
+    list-style-type: none;
+    font-family: $font;
+    margin: 0;
+    padding: 0 10px;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+    top: 0;
+    left: 0;
+    //margin-bottom: 70px;
+    margin-top: 10px;
+    border: none;
+    overflow: visible;
+    font-size: 14px;
+    &__links{
+      padding-top: 10px;
+      padding-left: 15px;
+      position: absolute;
+      top: 0;
+      left: 100px;
+      z-index: 1;
+      background: white;
+      border-radius: 2px;
+      display: none;
+      li {
+        .check{
+          margin-left: 1.4em;
+          line-height: 18px;
+          font-size: 14px;
+          cursor: pointer;
+          input {
+            appearance: none;
+            position: absolute;
+            &:checked + .check__box{
+              background: url('../img/check-symbol.svg') center no-repeat;
+              background-size: 0.6em;
+            }
+          }
+          &__box {
+            position: absolute;
+            width: 0.8em;
+            height: 0.8em;
+            border: 1px solid $color-blue;
+            border-radius: 2px;
+            background: white;
+            margin-left: -1.4em;
+            margin-bottom: 2px;
+          }
+        }
+      }
+    }
+    &__item{
+      overflow: visible;
+      border-bottom: 1px solid $color-lightgray;
+      //padding: 7px 0;
+      &--without-title{
+        padding: 4px 0;
+        .catalog__links{
+          display: block;
+          padding: 0; 
+          .check{
+            margin-left: 2.35em;
+          }
+        }
+      }
+    }
+    &__groupname{
+      padding: 7px 0;
+      font-weight: 500;
+      cursor: pointer;
+      color: $color-gray;
+      display: flex;
+      min-width: 20px;
+      height: 22px;
+      position: relative;
+      justify-content: space-between;
+      &:hover{
+        color: darken($color-gray, 25%);
+        transition: $animation;
+      }
+      a{
+        text-decoration: none;
+        color: $color-gray;
+        &:hover{
+          color: darken($color-gray, 25%);
+          transition: $animation;
+        }
+        &.active{
+          color: #000;
+        }
+      }
+    }
+    &__name{
+      display: inline-block;
     }
   }
 }

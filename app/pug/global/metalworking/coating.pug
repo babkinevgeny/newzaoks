@@ -1,10 +1,11 @@
 doctype
-html
-	-let title = 'Нанесение покрытий на металлические изделия в Set Service Group'
-	-let heading = 'Нанесение покрытий'
-	-let parent = 'Металлообработка'
+html(prefix="og: http://ogp.me/ns#")
+	-let title = 'Нанесение Покрытий на Металлические Изделия в СПБ'
+	-let titleForNavigation = 'Нанесение покрытий'
+	-let heading = 'Нанесение Покрытий на Металлы'
+	-let parent = 'Услуги'
 	-let keywords = "нанесение покрытий, нанесение покрытий по металлу, порошковая окраска, гальваническое цинкование, горячее цинкование"
-	-let description = 'Порошковая окраска, горячее цинкование, гальваническое цинкование, термодиффузионное цинкование. Нанесение покрытий на металлы.'
+	-let description = 'Услуги по нанесению Покрытий на Металлы: ✅Порошковая окраска ✅Горячее цинкование ✅Гальваническое цинкование ✅Термодиффузионное цинкование!'
 	include ../../includes/head.pug
 	body.body--parallax
 		include ../../includes/preloader.pug
@@ -17,18 +18,15 @@ html
 				h1.title.title--left #{heading}
 				.main__top
 					.fotorama__wrapper
-						.fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")
-							img(src='../img/metalworking/НанесениеПокрытий1.jpg')
-							img(src='../img/metalworking/НанесениеПокрытий2.jpg')
-							img(src='../img/metalworking/НанесениеПокрытий3.jpg')
-							img(src='../img/metalworking/НанесениеПокрытий4.jpg')
+						.fotorama(data-loop="true" data-autoplay="false")
+							img(src='../img/for-pic-sprites/нанесение покрытий.jpg')
 					.main__info
 						p.text.text--justify Set Service Group располагает всеми необходимыми материалами и современным оборудованием для процедур в сфере обработки покрытий металла и других поверхностей.
 						p.text.text--justify Цинковые покрытия сравнительно дешевы и обеспечивают длительную противокоррозионную защиту стальной подложки. Наибольшее распространение в практике защиты от коррозии металлоизделий нашли следующие методы цинкования: гальваническое, «горячее» из расплава цинка, газотермическое цинкование напылением, «холодное» путем окраски металлоизделий цинкнаполненными красками, термодиффузионное цинкование.
 						.infobuttons
 							.btn.btn--form Заказать услугу
 							
-				section.main__articles.main__articles--with-btns
+				section.main__articles.main__articles--with-btns.main__articles--with-btns--4
 					.main__buttons
 						.outer.active
 							.inner Порошковая окраска
@@ -153,7 +151,7 @@ html
 							b 8 (812) 627-15-16 
 							| или 
 							b заполнив форму связи.
-				section.main__articles
+				section.main__articles.main__articles--dropdown
 					ul.dropdown
 						li.dropdown-item
 							.dropdown-title

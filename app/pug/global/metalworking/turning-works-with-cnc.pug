@@ -1,8 +1,8 @@
 doctype
-html
+html(prefix="og: http://ogp.me/ns#")
 	-let title = 'Токарная обработка изделий и деталей на станках с ЧПУ'
 	-let heading = 'Токарные работы ЧПУ'
-	-let parent = 'Металлообработка'
+	-let parent = 'Услуги'
 	-let keywords = "Токарная обработка ЧПУ, Токарная обработка ЧПУ на заказ, токарные работы ЧПУ по металлу, токарная работа ЧПУ, Токарные работы на станках с ЧПУ"
 	-let description = 'Высококачественные токарные работы по металлу на заказ любой сложности. Токарная обработка изделий и деталей на современных станках с ЧПУ по доступным ценам.'
 	include ../../includes/head.pug
@@ -66,7 +66,7 @@ html
 							|  или 
 							b оставить заявку с помощью формы связи
 							| .
-					section.main__articles
+					section.main__articles.main__articles--dropdown
 						ul.dropdown
 							li.dropdown-item
 								.dropdown-title

@@ -1,5 +1,5 @@
 doctype
-html
+html(prefix="og: http://ogp.me/ns#")
   -let title = 'Производство подкрановых балок в Set Service Group'
   -let heading = 'Балки подкрановые сварные'
   -let parent = 'Металлоконструкции'
@@ -17,9 +17,8 @@ html
         h1.title.title--left #{heading}
         .main__top
           .fotorama__wrapper
-            .fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")
-              img(src="../img/metal-structures/БалкиПодкрановые1.jpg")
-              img(src="../img/metal-structures/БалкиПодкрановые2.jpg")
+            .fotorama(data-loop="true" data-autoplay="false")
+              img(src="../img/for-pic-sprites/балки.jpg")
           .main__info
             p.text.text--justify Set Service Group готов предоставить услуги своих специалистов для производства сварных подкрановых балок. Вы можете оставить свою заявку по этой позиции и она будет рассмотрена в кратчайшие сроки.
             .infobuttons

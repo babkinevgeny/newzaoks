@@ -14,7 +14,21 @@ $(document).ready(function() {
     navText: [],
     items: 5,
     autoplay: false,
-    dots: false 
+    dots: false ,
+    responsive:{
+      0:{
+          items:1,
+      },
+      600:{
+        items:2,
+      },
+      800:{
+        items:3,
+      },
+      1340:{
+          items:5,
+      }
+  }
   });
   $('.products .assortiment .owl-stage-outer').prepend('<h2 class="title title--uppercase"><a href="metal-products.html">Продукция</a></h2>');
   $('.services .assortiment .owl-stage-outer').prepend('<h2 class="title title--uppercase"><a href="metalworking.html">Услуги</a></h2>');
@@ -36,12 +50,17 @@ $(document).ready(function() {
   // $('.bx-wrapper--services').prepend('<h2 class="title title--uppercase">Услуги</h2>');
   $('.companies--clients .companies__list').owlCarousel({
     loop: true,
-    nav: true,
+    nav: false,
     navText: [],
     items: 1,
     autoplay: false,
     autoHeight: true,
-    dots: false 
+    dots: false,
+    responsive:{
+      1200: {
+        nav: true
+      }
+    }
   });
   $('.companies--clients .companies__list .owl-stage-outer').prepend('<h2 class="title title--uppercase"><a href="/about/our-clients.html">Наши клиенты</a></h2>');
 
@@ -83,10 +102,12 @@ let counter = () => {
 
 $(window).scroll(function() {
 
-  if ($(window).scrollTop() > (window.innerHeight - 60)) {
-    $('.main-header').removeClass('main-header--hiding');
+  if ($(window).scrollTop() > ($('.intro__inner h1.title').offset().top - 60)) {
+    $('.main-header').addClass('main-header--fixed');
+    $('.intro__inner').css('height', 'calc((100% - 70px - 60px))');
   } else{
-    $('.main-header').addClass('main-header--hiding');
+    $('.main-header').removeClass('main-header--fixed');
+    $('.intro__inner').css('height', 'calc((100% - 70px - 60px - 62px))');
   }
 
 });
@@ -103,6 +124,7 @@ $(window).scroll(function() {
 // });
 
 $('.mouse').click(function () {
-  var heightHeader = $('.intro').height();
+  var heightHeader =Math.round($('.intro').height() - 58);
+  console.log(heightHeader);
   $("body,html").animate({"scrollTop":heightHeader},700);
 });

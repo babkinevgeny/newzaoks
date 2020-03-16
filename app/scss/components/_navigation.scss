@@ -1,14 +1,17 @@
 .navigation{
   width: 100%;
-  height: calc(100vh - 60px);
+  height: 100vh;
   z-index: 2;
-  position: absolute;
-  top: 60px;
+  position: fixed;
+  top: 0;
   left: 0;
   background: $color-white;
   display: none;
   text-align: left;
   font-family: $font;
+  @include respond-to(md) {
+    overflow-y: scroll;
+  }
   &__btn{
     position: absolute;
     top: 0px;
@@ -19,6 +22,9 @@
     z-index: 1;
     -webkit-transition: -webkit-transform .5s ease-in-out;
     transition: transform .5s ease-in-out;
+    @include respond-to(md) {
+      top: 30px;
+    }
     &::before, &::after{
       content: '';
       display: block;
@@ -46,9 +52,24 @@
     width: 308px;
     margin: 0 15px;
     position: relative;
+    @include respond-to(xl) {
+      margin: 0 5px
+    }
+    @include respond-to(lg) {
+      width: 245px;
+    }
+    @include respond-to(md) {
+      width: 100%;
+    }
     &--first{
       width: 300px;
       position: relative;
+      @include respond-to(lg) {
+        width: 245px;
+      }
+      @include respond-to(md) {
+        width: 100%;
+      }
       .presentation{
         display: block;
         width: 100%;
@@ -65,6 +86,9 @@
         text-align: center;
         transition: all .3s ease-in-out;
         margin-top: 30px;
+        @include respond-to(md) {
+          display: none;
+        }
         &:hover{
           color: $color-blue;
           span{
@@ -137,6 +161,11 @@
     flex-direction: row;
     color: $color-blue;
     position: relative;
+    @include respond-to(md) {
+      flex-direction: column;
+      padding: 30px 0;
+    }
+    
   }
   &__underlist{
     list-style: none;
@@ -157,7 +186,10 @@
     	text-decoration: none;
     	color: $color-gray;
     	transition: all .3s ease-in-out;
-    	display: inline-block;
+      display: inline-block;
+      @include respond-to(lg) {
+        font-size: 14px;
+      }
     	&:hover{
     		color: $color-blue;
     		transform: translateX(13px);
@@ -176,6 +208,9 @@
   .search{
     margin-top: 40px;
     margin-bottom: 20px;
+    @include respond-to(lg) {
+      display: none;
+    }
     input{
       width: 300px;
       height: 42px;

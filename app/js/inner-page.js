@@ -2,9 +2,22 @@ $(document).ready(function() {
   $("#performed_works").owlCarousel({
     loop:true,
     autoplay:true,
-    items:6,
-    margin:10,
-    dots:true
+    
+    margin: 20,
+    dots:true,
+    responsive: {
+      0: {
+        items: 1,
+        center: true
+      },
+      560: {
+        items: 3
+      },
+      1200: {
+        items: 6
+      }
+    }
+
   });
 
   /*Переключение вкладок во внутренних страницах*/
@@ -30,7 +43,7 @@ $(document).ready(function() {
 });
 
 function catalogLinks () {
-  let title = $('h1.title').text();
+  let title = $('title').attr('data-title-for-navigation');
   let catalog = $('.catalog__item a');
   let activeLink = catalog.filter(function() {
     return $(this).text() === title;

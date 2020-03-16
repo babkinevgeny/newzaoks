@@ -11,8 +11,7 @@ body{
 .services,
 .products,
 .metal-structures{
-  //padding-bottom: 26px;
-  padding: 40px 0;
+  padding: 20px 0 0 0;
   .title{
     a{
       color: $color-blue;
@@ -29,17 +28,75 @@ body{
   }
 }
 
-.products{
+.services,
+.metalworking{
   border-bottom: 1px solid $color-lightgray;
   border-top: 1px solid $color-lightgray;
+  // padding-top: 20px;
+  .assortiment{
+    &--squares{
+      .assortiment__item{
+        background: url(../img/services-pic-sprite.jpg) 0px 0px no-repeat;
+        $step: 0px;
+        @for $i from 1 to 14 {
+          &--#{$i}{
+            background-position: 0 $step;
+            $step: $step - 267px;
+            &:hover{
+              background-position: 0 $step;
+              $step: $step - 267px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
-.services{
+.products,
+.metalproducts{
   border-bottom: 1px solid $color-lightgray;
+  .assortiment{
+    &--squares{
+      .assortiment__item{
+        background: url(../img/products-pic-sprite.jpg) 0px 0px no-repeat;
+        $step: 0px;
+        @for $i from 1 to 15 {
+          &--#{$i}{
+            background-position: 0 $step;
+            $step: $step - 267px;
+            &:hover{
+              background-position: 0 $step;
+              $step: $step - 267px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
+.metalstructures,
 .metal-structures{
   border-bottom: 1px solid $color-lightgray;
+  .assortiment{
+    &--squares{
+      .assortiment__item{
+        background: url(../img/products-pic-sprite.jpg) 0px 0px no-repeat;
+        $step: -267px * 12;
+        @for $i from 1 to 9 {
+          &--#{$i}{
+            background-position: 0 $step;
+            $step: $step - 267px;
+            &:hover{
+              background-position: 0 $step;
+              $step: $step - 267px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 .info{
@@ -52,54 +109,58 @@ body{
   blockquote{
     max-width: 1340px;
     margin: 0 auto 40px auto;
+    padding-bottom: 0;
     p {
       font-size: 18px;
     }
   }
 }
-.products{
-  .assortiment{
-    $step: 0px;
-    @for $i from 1 to 16 {
-      &__item--#{$i}{
-        .assortiment{
-          &__link{
-            .assortiment__icon{
-              background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
-              background-position: 0 $step;
-              $step: $step - 85px;
-            }
-          }
-        }
-      }
-    }
-  }
-}
+// .products{
+//   .assortiment{
+//     $step: 0px;
+//     @for $i from 1 to 16 {
+//       &__item--#{$i}{
+//         .assortiment{
+//           &__link{
+//             .assortiment__icon{
+//               background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
+//               background-position: 0 $step;
+//               $step: $step - 85px;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 
-.services{
-  .assortiment{
-    $step: 0px;
-    @for $i from 1 to 15 {
-      &__item--#{$i}{
-        .assortiment{
-          &__link{
-            .assortiment__icon{
-              background: url(../img/services-sprite.png) no-repeat;
-              background-position: 0 $step;
-              $step: $step - 85px;
-            }
-          }
-        }
-      }
-    }
-  }
-}
+// .services{
+//   .assortiment{
+//     $step: 0px;
+//     @for $i from 1 to 15 {
+//       &__item--#{$i}{
+//         .assortiment{
+//           &__link{
+//             .assortiment__icon{
+//               background: url(../img/services-sprite.png) no-repeat;
+//               background-position: 0 $step;
+//               $step: $step - 85px;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 
 .metalstructures,
 .metalproducts,
 .metalworking{
-  padding: 50px 0;
+  padding: 20px 0;
   position: relative;
+  .breadcrumbs {
+    margin-left: 82px;
+  }
   .title{
     font-size: 24px;
   }
@@ -114,69 +175,69 @@ body{
   }
 }
 
-.metalstructures,
-.metal-structures{
-  .assortiment{
-    $step: -85px * 6;
-    margin-bottom: 40px;
-    @for $i from 1 to 10 {
-      &__item--#{$i}{
-        .assortiment{
-          &__link{
-            .assortiment__icon{
-              background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
-              background-position: 0 $step;
-              $step: $step - 85px;
-            }
-          }
-        }
-      }
-    }
-  }
-}
+// .metalstructures,
+// .metal-structures{
+//   .assortiment{
+//     $step: -85px * 6;
+//     margin-bottom: 40px;
+//     @for $i from 1 to 10 {
+//       &__item--#{$i}{
+//         .assortiment{
+//           &__link{
+//             .assortiment__icon{
+//               background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
+//               background-position: 0 $step;
+//               $step: $step - 85px;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 
-.metalproducts{
-  .assortiment{
-    $step: 0;
-    margin-bottom: 40px;
-    margin-top: 40px;
-    @for $i from 1 to 10 {
-      &__item--#{$i}{
-        .assortiment{
-          &__link{
-            .assortiment__icon{
-              background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
-              background-position: 0 $step;
-              $step: $step - 85px;
-            }
-          }
-        }
-      }
-    }
-  }
-}
+// .metalproducts{
+//   .assortiment{
+//     $step: 0;
+//     margin-bottom: 40px;
+//     margin-top: 40px;
+//     @for $i from 1 to 10 {
+//       &__item--#{$i}{
+//         .assortiment{
+//           &__link{
+//             .assortiment__icon{
+//               background: url(../img/products-and-metalstructures-sprite.png) no-repeat;
+//               background-position: 0 $step;
+//               $step: $step - 85px;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 
-.metalworking{
-  .assortiment{
-    flex-wrap: wrap;
-    $step: 0;
-    margin-bottom: 40px;
-    margin-top: 40px;
-    @for $i from 1 to 15 {
-      &__item--#{$i}{
-        .assortiment{
-          &__link{
-            .assortiment__icon{
-              background: url(../img/services-sprite.png) no-repeat;
-              background-position: 0 $step;
-              $step: $step - 85px;
-            }
-          }
-        }
-      }
-    }
-  }
-}
+// .metalworking{
+//   .assortiment{
+//     flex-wrap: wrap;
+//     $step: 0;
+//     margin-bottom: 40px;
+//     margin-top: 40px;
+//     @for $i from 1 to 15 {
+//       &__item--#{$i}{
+//         .assortiment{
+//           &__link{
+//             .assortiment__icon{
+//               background: url(../img/services-sprite.png) no-repeat;
+//               background-position: 0 $step;
+//               $step: $step - 85px;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 
 
 
@@ -310,6 +371,13 @@ body{
 .metalstructures{
   .assortiment{
     flex-wrap: wrap;
+    max-width: calc(268px * 4);
+  }
+}
+
+.metalproducts{
+  .assortiment{
+    max-width: calc(268px * 3);
   }
 }
 .phones{
@@ -319,5 +387,58 @@ body{
       margin: 0 auto;
 
     }
+  }
+}
+
+.full-height{
+  height: calc(100vh - 62px * 2);
+  .title{
+    margin: 0;
+    padding: 20px 0;
+  }
+}
+
+body.body--no-top-padding {
+  .main-header {
+    border-bottom: none;
+    position: relative;
+    &__logo {
+      background-image: url('../img/logo-horizontal-small-white.png');
+    }
+    .hamburger {
+      &__item {
+        background: white;
+      }
+    }
+    .main-header__item {
+      a {
+        color: white;
+      }
+    }
+    &.main-header--fixed {
+      border-bottom: 2px solid $color-blue;
+      position: fixed;
+      top: 0;
+      left: 0;
+      .main-header__logo {
+        background-image: url('../img/logo-horizontal-small.png');
+      }
+      .hamburger {
+        &__item {
+          background: $color-gray;
+        }
+      }
+      .main-header__item {
+        a {
+          color: $color-gray;
+        }
+      }
+    }
+  }
+}
+
+main {
+  .breadcrumbs {
+    padding: 0;
   }
 }

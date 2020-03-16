@@ -24,18 +24,23 @@
 			color: $color-gray;
 			font-weight: normal;
 			margin-left: 20px;
+			@include respond-to(md) {
+				margin-left: 0;
+				display: block;
+			}
 		}
 	}
 	&__title{
 		font-size: 16px;
 		font-family: $color-gray;
 		color: $color-blue;
-    font-family: $font;
+    	font-family: $font;
 		font-weight: normal;
 		text-align: left;
 	}
 	&__links{
 		text-align: right;
+		width: 99px;
 		a{
 			display: inline-block;
 			width: 32px;

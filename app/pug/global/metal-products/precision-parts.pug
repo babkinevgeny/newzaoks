@@ -1,5 +1,5 @@
 doctype
-html
+html(prefix="og: http://ogp.me/ns#")
   -let title = 'Производство прецизионных деталей в Set Service Groupе'
   -let heading = 'Детали прецизионные'
   -let parent = 'Продукция'
@@ -17,9 +17,8 @@ html
         h1.title.title--left #{heading}
         .main__top
           .fotorama__wrapper
-            .fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")
-              img(src="../img/metal-products/Прецизионные1.jpg")
-              img(src="../img/metal-products/Прецизионные2.jpg")
+            .fotorama(data-loop="true" data-autoplay="false")
+              img(src="../img/for-pic-sprites/прецизионные детали.jpg")
           .main__info
             p.text.text--justify Производственное подразделение Set Service Group предоставляет услуги по производству прецизионных деталей. Наши специалисты в кратчайшие сроки обработают вашу заявку и предложат качественные варианты реализации проекта.
             .infobuttons

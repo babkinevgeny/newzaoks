@@ -1,5 +1,5 @@
 doctype
-html
+html(prefix="og: http://ogp.me/ns#")
   -let title = 'Производство деталей для промышленного оборудования в Set Service Group'
   -let heading = 'Детали для промышленного оборудования'
   -let parent = 'Продукция'
@@ -17,16 +17,14 @@ html
         h1.title.title--left #{heading}
         .main__top
           .fotorama__wrapper
-            .fotorama(data-allowfullscreen="true" data-loop="true" data-autoplay="false")
-              img(src="../img/metal-products/Экструзионные1.jpg")
-              img(src="../img/metal-products/Экструзионные2.jpg")
-              img(src="../img/metal-products/Экструзионные3.jpg")
+            .fotorama(data-loop="true" data-autoplay="false")
+              img(src="../img/for-pic-sprites/детали для промышленного оборудования.jpg")
           .main__info
             p.text.text--justify Производственное подразделение Set Service Group предоставляет услуги по производству экструзионных линий, шнековых пар и комплектующих к ним. Наши специалисты в кратчайшие сроки обработают вашу заявку и предложат качественные варианты реализации проекта.
             .infobuttons
               .btn.btn--form Заказать производство
               
-        section.main__articles.main__articles--with-btns
+        section.main__articles.main__articles--with-btns.main__articles--with-btns--3
           .main__buttons
             .outer.active
               .inner Экструзионные линии

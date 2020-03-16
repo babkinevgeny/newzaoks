@@ -1,7 +1,10 @@
-.bottom-line
+-let conditional = parent === 'Продукция' || parent === 'Металлоконструкции' || parent === 'Металлообработка';
+div(class=conditional ? 'bottom-line bottom-line--over' : 'bottom-line')
   .bottom-line__inner
     .bottom-line__column.bottom-line__column--left
-      img(src='/img/logo--s.png', alt='Логотип', width="50")
+      div(itemscope itemtype="http://schema.org/Organization")
+          a(itemprop="url" href="https://zaoks.ru/")
+            img(itemprop="logo" src='/img/logo--s.png', alt='Логотип', width="50")
       p
         | Полный цикл металлообработки 
         br
@@ -9,7 +12,7 @@
     .bottom-line__column.bottom-line__column--center(style="flex-direction: column")
       .flex
         p
-          | 193318, г. Санкт-Петербург, ул. Ворошилова, 2, 
+          | 193318, Россия, г. Санкт-Петербург, ул. Ворошилова, 2, 
         .flex
           span +7(812) 627-15-16
           include socials.pug

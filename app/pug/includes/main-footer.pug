@@ -12,7 +12,10 @@ footer.main-footer
         li.navigation__undertitle
           a(href='/about/production-areas.html') Производственные площадки
         li.navigation__undertitle
-          a(href='/about/about.html#documents') Документы и сертификаты
+            a(href='/about/serial-production.html') Серийное производство
+      ul.navigation__underlist
+        li.navigation__undertitle
+          a(href='/about/about#documents') Документы и сертификаты
         li.navigation__undertitle
           a(href='/logistic.html') Логистика
         li.navigation__undertitle
@@ -21,15 +24,33 @@ footer.main-footer
           a(href='/about/our-clients.html') Клиенты
         li.navigation__undertitle
           a(href='/about/our-partners.html') Партнеры
-    form.form-footer(action='#')
-      .form-footer__title Обратная связь
-      .form-footer__block
-        .form-footer__column.form-footer__column--left
-          input(type='text', placeholder='Ваше имя')
-          input(type='text', placeholder='Компания')
-        .form-footer__column.form-footer__column--right
-          input(type='text', placeholder='Телефон')
-          input(type='text', placeholder='E-mail')
-      textarea(name='', id='', cols='30', rows='4', placeholder='Текст заявки')
-      input(type='submit', value='Отправить')
-  include bottom-line.pug
+      .wrapper
+        a.skolkovo-link(href="/about/skolkovo-operator.html")
+          //-img(src="/img/operator.png", alt="Сколково", width="50")
+          p
+            | Центр коллективного пользования
+            br
+            | технопарка "Сколково"
+        div(itemscope itemtype="http://schema.org/Organization")
+          a.set-service(itemprop="url" href="https://zaoks.ru/")
+            img(itemprop="logo" src='/img/logo--s--w.png', alt='Логотип', width="50")
+    .line
+      include socials.pug
+      include yandex-metrika.pug
+    .copyright
+      | © Set Service Group 2016 - 2019 | Центр металлообработки полного цикла
+      br
+      | 193318, Россия, г. Санкт-Петербург, ул. Ворошилова, 2, +7 (812) 627-15-16
+
+    //- form.form-footer(action='#')
+    //-   .form-footer__title Обратная связь
+    //-   .form-footer__block
+    //-     .form-footer__column.form-footer__column--left
+    //-       input(type='text', placeholder='Ваше имя')
+    //-       input(type='text', placeholder='Компания')
+    //-     .form-footer__column.form-footer__column--right
+    //-       input(type='text', placeholder='Телефон')
+    //-       input(type='text', placeholder='E-mail')
+    //-   textarea(name='', id='', cols='30', rows='4', placeholder='Текст заявки')
+    //-   input(type='submit', value='Отправить')
+  //-include bottom-line.pug

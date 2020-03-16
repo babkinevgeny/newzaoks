@@ -10,15 +10,30 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
+    @include respond-to(sm) {
+        margin-bottom: 60px;
+    }
     li{
         display: flex;
         margin: 20px;
+        @include respond-to(sm) {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+            &:last-child {
+                margin-bottom: 20px;
+            }
+        }
     }
     .column{
         &--left{
             width: 200px;
             height: 200px;
             margin-right: 50px;
+            @include respond-to(sm) {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
             img{
                 width: 100%;
                 height: 100%;
@@ -28,6 +43,10 @@
             width: calc(100% - 200px - 50px);
             display: flex;
             flex-direction: column;
+            @include respond-to(sm) {
+                width: 100%;
+                padding: 0 20px ;
+            }
             span{
                 font-size: 14px;
                 font-family: $font;

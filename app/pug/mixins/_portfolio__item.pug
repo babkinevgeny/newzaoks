@@ -1,0 +1,3 @@
+mixin portfolio__item(src, ...categories)
+  .portfolio__item(class= categories.join(' '))
+    img(src= `/img/carousel/${src}`)

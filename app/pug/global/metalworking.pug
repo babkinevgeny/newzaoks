@@ -1,8 +1,8 @@
 doctype
-html
+html(prefix="og: http://ogp.me/ns#")
   -let calatog_full_height = true;
-  -let title = 'Металлообработка на заказ'
-  -let description = 'Широкий спектр услуг по металлообработке от профессионалов группы компанийSet Service Group'
+  -let title = 'Услуги'
+  -let description = 'Широкий спектр услуг по металлообработке от профессионалов группы компаний Set Service Group'
   -let keywords = 'металлообработка, услуги металлообработки, обработка металла'
   include ../includes/head.pug
   body.body--parallax
@@ -10,64 +10,69 @@ html
     include ../includes/main-header.pug
     section.metalworking
       include ../includes/catalog.pug
+      include ../includes/breadcrumbs.pug
       h1.title Услуги
-      ul.assortiment
+      ul.assortiment.assortiment--squares
         li.assortiment__item.assortiment__item--1
           a.assortiment__link(href='/metalworking/milling-works.html')
-            span.assortiment__icon         
-            span.assortiment__title Фрезерные работы
+            span.assortiment__title 
+              span Фрезерные работы
         li.assortiment__item.assortiment__item--2
-          a.assortiment__link(href='/metalworking/milling-works-with-cnc.html')
-            span.assortiment__icon         
-            span.assortiment__title Фрезерные работы ЧПУ
-        li.assortiment__item.assortiment__item--3
           a.assortiment__link(href='/metalworking/turning-works.html')
-            span.assortiment__icon         
-            span.assortiment__title Токарные работы
-        li.assortiment__item.assortiment__item--4
-          a.assortiment__link(href='/metalworking/turning-works-with-cnc.html')
-            span.assortiment__icon         
-            span.assortiment__title Токарные работы ЧПУ
-        li.assortiment__item.assortiment__item--5
+            span.assortiment__title 
+              span Токарные работы
+        li.assortiment__item.assortiment__item--3
           a.assortiment__link(href='/metalworking/boring-works.html')
-            span.assortiment__icon         
-            span.assortiment__title Координатно-расточные работы
-        li.assortiment__item.assortiment__item--6
+            span.assortiment__title 
+              span Координатно-расточные работы
+        li.assortiment__item.assortiment__item--4
           a.assortiment__link(href='/metalworking/grinding-works.html')
-            span.assortiment__icon         
-            span.assortiment__title Шлифовальные работы
+            span.assortiment__title 
+              span Шлифовальные работы
+        li.assortiment__item.assortiment__item--5
+          a.assortiment__link(href='/metalworking/gear-cutting-works.html')
+            span.assortiment__title 
+              span Зубонарезные работы
+        li.assortiment__item.assortiment__item--6
+          a.assortiment__link(href='/metalworking/electric-erosion.html')
+            span.assortiment__title 
+              span Электроэрозия
         li.assortiment__item.assortiment__item--7
-          a.assortiment__link(href='/metalworking/metal-cutting.html')
-            span.assortiment__icon         
-            span.assortiment__title Резка металла
+          a.assortiment__link(href='/metalworking/carousel-works-with-cnc.html')
+            span.assortiment__title 
+              span Карусельная обработка
         li.assortiment__item.assortiment__item--8
-          a.assortiment__link(href='/metalworking/metal-bending.html')
-            span.assortiment__icon         
-            span.assortiment__title Гибка металла
+          a.assortiment__link(href='/metalworking/metal-cutting.html')
+            span.assortiment__title 
+              span Резка металла
         li.assortiment__item.assortiment__item--9
-          a.assortiment__link(href='/metalworking/thermal-works.html')
-            span.assortiment__icon         
-            span.assortiment__title Термическая обработка
+          a.assortiment__link(href='/metalworking/metal-bending.html')
+            span.assortiment__title 
+              span Гибка металла
         li.assortiment__item.assortiment__item--10
-          a.assortiment__link(href='/metalworking/welding.html')
-            span.assortiment__icon         
-            span.assortiment__title Сварочные работы
+          a.assortiment__link(href='/metalworking/thermal-works.html')
+            span.assortiment__title 
+              span Термическая обработка
         li.assortiment__item.assortiment__item--11
-          a.assortiment__link(href='/metalworking/assembly-work.html')
-            span.assortiment__icon         
-            span.assortiment__title Слесарно-сборочные работы
+          a.assortiment__link(href='/metalworking/welding.html')
+            span.assortiment__title 
+              span Сварочные работы
         li.assortiment__item.assortiment__item--12
-          a.assortiment__link(href='/metalworking/coating.html')
-            span.assortiment__icon         
-            span.assortiment__title Нанесение покрытий
+          a.assortiment__link(href='/metalworking/assembly-work.html')
+            span.assortiment__title 
+              span Слесарно-сборочные работы
         li.assortiment__item.assortiment__item--13
-          a.assortiment__link(href='/metalworking/laboratory-tests.html')
-            span.assortiment__icon         
-            span.assortiment__title Лабораторные испытания
+          a.assortiment__link(href='/metalworking/coating.html')
+            span.assortiment__title 
+              span Нанесение покрытий
         li.assortiment__item.assortiment__item--14
-          a.assortiment__link(href='/metalworking/development-of-drawings.html')
-            span.assortiment__icon         
-            span.assortiment__title Разработка чертежей и 3D-моделей
+          a.assortiment__link(href='/metalworking/laboratory-tests.html')
+            span.assortiment__title 
+              span Лабораторные испытания
+        //- li.assortiment__item.assortiment__item--15
+        //-   a.assortiment__link(href='/metalworking/development-of-drawings.html')
+        //-     span.assortiment__title 
+        //-       span Разработка чертежей и 3D-моделей
       p.text.text--justify Set Service Group оказывает полный спектр услуг по металлообработке, а так же выполняет мелкосерийное и серийное изготовление продукции на выгодных условиях и в самые оперативные сроки
       p.text.text--justify Мы выполняем обработку металла на заказ по опытным образцам, эскизам или чертежам заказчика. В случае необходимости наше конструкторское бюро разрабатывает всю необходимую техническую документацию для реализации Вашего проекта.
       p.text.text--justify Сотрудничество с Set Service Group в направлении металлообработки помогает непрофильным предприятиям быстро и с небольшими затратами решать не свойственные им задачи. Также это дает возможность разгрузить производственные мощности металлообрабатывающих предприятий при возникновении необходимости срочного изготовления большого объема металлопродукции.
